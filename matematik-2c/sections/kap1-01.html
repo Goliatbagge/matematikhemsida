@@ -16,6 +16,133 @@
         };
     </script>
     <script src="../../animations.js" defer></script>
+    <style>
+        /* Flikstil */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin: 2rem 0 0 0;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-family: 'Google Sans', 'Inter', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            color: #6b7280;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            bottom: -2px;
+        }
+
+        .tab-button:hover {
+            color: #4a90e2;
+            background: #f3f4f6;
+        }
+
+        .tab-button.active {
+            color: #4a90e2;
+            border-bottom-color: #4a90e2;
+            font-weight: 600;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 2rem 0;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Övningsuppgifter stil */
+        .exercise {
+            background: white;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .exercise-input {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .exercise-input input {
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 150px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .exercise-input input:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+
+        .check-btn {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .check-btn:hover {
+            background: #357abd;
+        }
+
+        .feedback {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .feedback.correct {
+            background: #d1fae5;
+            border: 2px solid #10b981;
+            color: #065f46;
+            display: block;
+        }
+
+        .feedback.incorrect {
+            background: #fee2e2;
+            border: 2px solid #ef4444;
+            color: #991b1b;
+            display: block;
+        }
+
+        .solution {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid #f39c12;
+        }
+    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
@@ -120,111 +247,213 @@
         <section id="kap1-01" class="content-section">
             <h2>Kapitel 1.1: Grafisk lösning av linjära ekvationssystem</h2>
 
-            <div class="definition-box">
-                <h3>Ekvationssystem</h3>
-                <p>När vi har flera ekvationer som ska ha gemensamma (likadana) lösningar, så bildar vi ett <strong>ekvationssystem</strong>. När vi löser ekvationssystem med hjälp av dess grafer genomför vi en <strong>grafisk lösning</strong>.</p>
+            <!-- Flikar -->
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'genomgang')">Genomgång</button>
+                <button class="tab-button" onclick="openTab(event, 'exempel')">Exempel</button>
+                <button class="tab-button" onclick="openTab(event, 'ovningar')">Övningsuppgifter</button>
             </div>
 
-            <h3>Ekvationer med flera lösningar</h3>
-            <p>Betrakta ekvationen</p>
-            <p>$$y = 2x - 4$$</p>
-            <p>Den består av två olika variabler, $x$ och $y$. Den har flera (oändligt många) par av lösningar, t.ex.</p>
+            <!-- Genomgång -->
+            <div id="genomgang" class="tab-content active">
+                <div class="definition-box">
+                    <h3>Ekvationssystem</h3>
+                    <p>När vi har flera ekvationer som ska ha gemensamma (likadana) lösningar, så bildar vi ett <strong>ekvationssystem</strong>. När vi löser ekvationssystem med hjälp av dess grafer genomför vi en <strong>grafisk lösning</strong>.</p>
+                </div>
 
-            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 500px; margin: 1rem 0;">
-                <div style="text-align: center;">
-                    $$\begin{cases} x = 0 \\ y = -4 \end{cases}$$
+                <h3>Ekvationer med flera lösningar</h3>
+                <p>Betrakta ekvationen</p>
+                <p>$$y = 2x - 4$$</p>
+                <p>Den består av två olika variabler, $x$ och $y$. Den har flera (oändligt många) par av lösningar, t.ex.</p>
+
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 500px; margin: 1rem 0;">
+                    <div style="text-align: center;">
+                        $$\begin{cases} x = 0 \\ y = -4 \end{cases}$$
+                    </div>
+                    <div style="text-align: center;">
+                        $$\begin{cases} x = 1 \\ y = -2 \end{cases}$$
+                    </div>
+                    <div style="text-align: center;">
+                        $$\begin{cases} x = 2 \\ y = 0 \end{cases}$$
+                    </div>
+                    <div style="text-align: center;">
+                        $$\begin{cases} x = 3 \\ y = 2 \end{cases}$$
+                    </div>
                 </div>
-                <div style="text-align: center;">
-                    $$\begin{cases} x = 1 \\ y = -2 \end{cases}$$
+
+                <p>och så vidare. För varje värde vi sätter in på $x$, så får vi ett bestämt värde på $y$.</p>
+
+                <p>Detsamma gäller för ekvationen</p>
+                <p>$$y = -x + 5$$</p>
+                <p>Den har på motsvarande sätt också oändligt antal lösningar.</p>
+
+                <h3>Gemensamma lösningar</h3>
+                <p>Om vi vill hitta en gemensam lösning till båda ekvationer bildar vi ett ekvationssystem, vilket markeras med en krullparentes enligt</p>
+                <p>$$\begin{cases} y = 2x - 4 \\ y = -x + 5 \end{cases}$$</p>
+
+                <div class="method-box">
+                    <h3>När vi ska lösa ett ekvationssystem grafiskt gör vi enligt följande:</h3>
+                    <ol>
+                        <li>Rita upp ekvationernas grafer genom att skriva in dem i Geogebra.</li>
+                        <li>Ta fram eventuella skärningspunkters koordinater.</li>
+                        <li>$x$-koordinaten är lösningen till $x$ och $y$-koordinaten är lösningen till $y$.</li>
+                    </ol>
                 </div>
-                <div style="text-align: center;">
-                    $$\begin{cases} x = 2 \\ y = 0 \end{cases}$$
-                </div>
-                <div style="text-align: center;">
-                    $$\begin{cases} x = 3 \\ y = 2 \end{cases}$$
+
+                <h3>Antal lösningar till ett linjärt ekvationssystem</h3>
+                <p>Antalet lösningar till ett linjärt ekvationssystem beror på linjernas $k$- och $m$-värden:</p>
+
+                <div style="overflow-x: auto; margin: 2rem 0;">
+                    <table style="width: 100%; border-collapse: collapse; text-align: center;">
+                        <thead>
+                            <tr style="background: #4a90e2; color: white;">
+                                <th style="padding: 1rem; border: 1px solid #ddd;">Olika $k$-värden, $m$-värdet spelar ingen roll</th>
+                                <th style="padding: 1rem; border: 1px solid #ddd;">Samma $k$-värde, olika $m$-värden</th>
+                                <th style="padding: 1rem; border: 1px solid #ddd;">Samma $k$-värde, samma $m$-värde</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 1rem; border: 1px solid #ddd; background: #e8f4f8;">
+                                    <strong>1 lösning</strong><br>
+                                    <small>Linjerna skär varandra i en punkt</small>
+                                </td>
+                                <td style="padding: 1rem; border: 1px solid #ddd; background: #ffe8e8;">
+                                    <strong>Saknar lösningar</strong><br>
+                                    <small>Parallella linjer</small>
+                                </td>
+                                <td style="padding: 1rem; border: 1px solid #ddd; background: #e8ffe8;">
+                                    <strong>Oändligt många lösningar</strong><br>
+                                    <small>Samma linje</small>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 
-            <p>och så vidare. För varje värde vi sätter in på $x$, så får vi ett bestämt värde på $y$.</p>
+            <!-- Exempel -->
+            <div id="exempel" class="tab-content">
+                <h3>Exempel 1: Lös ekvationssystemet grafiskt</h3>
+                <p>$$\begin{cases} y = 2x - 4 \\ y = -x + 5 \end{cases}$$</p>
 
-            <p>Detsamma gäller för ekvationen</p>
-            <p>$$y = -x + 5$$</p>
-            <p>Den har på motsvarande sätt också oändligt antal lösningar.</p>
+                <div class="example-box">
+                    <p><strong>VAD:</strong> Ritar upp $y = 2x - 4$ och $y = -x + 5$ i Geogebra och tar fram skärningspunktens koordinater.</p>
+                    <p><strong>HUR:</strong> Skärningspunktens koordinater ger lösningen.</p>
 
-            <h3>Gemensamma lösningar</h3>
-            <p>Om vi vill hitta en gemensam lösning till båda ekvationer bildar vi ett ekvationssystem, vilket markeras med en krullparentes enligt</p>
-            <p>$$\begin{cases} y = 2x - 4 \\ y = -x + 5 \end{cases}$$</p>
+                    <div class="info-box" style="background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-left: 4px solid #4a90e2;">
+                        <p style="margin: 0.5rem 0;"><strong>I Geogebra:</strong></p>
+                        <ul style="margin: 0.5rem 0;">
+                            <li>Skriv in $f: y = 2x - 4$ i inmatningsfältet</li>
+                            <li>Skriv in $g: y = -x + 5$ i inmatningsfältet</li>
+                            <li>Klicka på "Skärning mellan två objekt" verktyget</li>
+                            <li>Klicka på de två linjerna för att få fram skärningspunkten</li>
+                        </ul>
+                        <p style="margin: 0.5rem 0;"><strong>Skärningspunkt:</strong> $A = (3, 2)$</p>
+                    </div>
 
-            <div class="method-box">
-                <h3>När vi ska lösa ett ekvationssystem grafiskt gör vi enligt följande:</h3>
-                <ol>
-                    <li>Rita upp ekvationernas grafer genom att skriva in dem i Geogebra.</li>
-                    <li>Ta fram eventuella skärningspunkters koordinater.</li>
-                    <li>$x$-koordinaten är lösningen till $x$ och $y$-koordinaten är lösningen till $y$.</li>
-                </ol>
-            </div>
+                    <p class="answer"><strong>Svar:</strong> $$\begin{cases} x = 3 \\ y = 2 \end{cases}$$</p>
+                </div>
 
-            <h3>Exempel: Lös nedanstående ekvationssystem grafiskt</h3>
-            <p>$$\begin{cases} y = 2x - 4 \\ y = -x + 5 \end{cases}$$</p>
+                <h3>Exempel 2: Bestäm $k$ och $m$ så att ekvationssystemet saknar lösningar</h3>
+                <p>$$\begin{cases} y = kx + m \\ y = 2x + 5 \end{cases}$$</p>
 
-            <div class="example-box">
-                <p><strong>VAD:</strong> Ritar upp $y = 2x - 4$ och $y = -x + 5$ i Geogebra och tar fram skärningspunktens koordinater.</p>
-                <p><strong>HUR:</strong> Skärningspunktens koordinater ger lösningen.</p>
+                <div class="example-box">
+                    <p><strong>Lösning:</strong></p>
+                    <p>För att ekvationen ska sakna lösning krävs att de har samma $k$-värde, men olika $m$-värden.</p>
+                    <p>För den undre ekvationen gäller $k = 2$ och $m = 5$.</p>
+                    <p>Den övre ekvationen måste alltså ha samma $k$-värde, så $k = 2$.</p>
+                    <p>$m$-värdena ska vara olika så $m$ kan vara vad som helst utom 5, dvs. $m \neq 5$.</p>
+                    <p class="answer"><strong>Svar:</strong> $k = 2$ och $m \neq 5$</p>
+                </div>
 
-                <div class="info-box" style="background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-left: 4px solid #4a90e2;">
-                    <p style="margin: 0.5rem 0;"><strong>I Geogebra:</strong></p>
-                    <ul style="margin: 0.5rem 0;">
-                        <li>Skriv in $f: y = 2x - 4$ i inmatningsfältet</li>
-                        <li>Skriv in $g: y = -x + 5$ i inmatningsfältet</li>
-                        <li>Klicka på "Skärning mellan två objekt" verktyget</li>
-                        <li>Klicka på de två linjerna för att få fram skärningspunkten</li>
+                <h3>Exempel 3: Hur många lösningar har ekvationssystemet?</h3>
+                <p>$$\begin{cases} y = 3x + 2 \\ y = -x + 6 \end{cases}$$</p>
+
+                <div class="example-box">
+                    <p><strong>Lösning:</strong></p>
+                    <p>Vi jämför $k$-värdena:</p>
+                    <ul>
+                        <li>Första ekvationen: $k = 3$, $m = 2$</li>
+                        <li>Andra ekvationen: $k = -1$, $m = 6$</li>
                     </ul>
-                    <p style="margin: 0.5rem 0;"><strong>Skärningspunkt:</strong> $A = (3, 2)$</p>
+                    <p>Eftersom $k$-värdena är olika ($3 \neq -1$), kommer linjerna att skära varandra i exakt en punkt.</p>
+                    <p class="answer"><strong>Svar:</strong> Ekvationssystemet har <strong>1 lösning</strong>.</p>
+                </div>
+            </div>
+
+            <!-- Övningsuppgifter -->
+            <div id="ovningar" class="tab-content">
+                <h3>Övningsuppgifter</h3>
+                <p>Testa dina kunskaper genom att lösa uppgifterna nedan. Skriv in ditt svar och klicka på "Rätta" för att se om du har rätt!</p>
+
+                <!-- Uppgift 1 -->
+                <div class="exercise">
+                    <h4>Uppgift 1</h4>
+                    <p>Lös ekvationssystemet grafiskt (använd Geogebra):</p>
+                    <p>$$\begin{cases} y = x + 3 \\ y = -2x + 6 \end{cases}$$</p>
+
+                    <div class="exercise-input">
+                        <label>$x =$</label>
+                        <input type="number" id="ex1-x" step="0.1" placeholder="Ditt svar">
+                        <label>$y =$</label>
+                        <input type="number" id="ex1-y" step="0.1" placeholder="Ditt svar">
+                        <button class="check-btn" onclick="checkAnswer1()">Rätta</button>
+                    </div>
+
+                    <div id="feedback1" class="feedback"></div>
                 </div>
 
-                <p class="answer"><strong>Svar:</strong> $$\begin{cases} x = 3 \\ y = 2 \end{cases}$$</p>
-            </div>
+                <!-- Uppgift 2 -->
+                <div class="exercise">
+                    <h4>Uppgift 2</h4>
+                    <p>Lös ekvationssystemet grafiskt:</p>
+                    <p>$$\begin{cases} y = 2x - 1 \\ y = -x + 5 \end{cases}$$</p>
 
-            <h3>Antal lösningar till ett linjärt ekvationssystem</h3>
-            <p>Antalet lösningar till ett linjärt ekvationssystem beror på linjernas $k$- och $m$-värden:</p>
+                    <div class="exercise-input">
+                        <label>$x =$</label>
+                        <input type="number" id="ex2-x" step="0.1" placeholder="Ditt svar">
+                        <label>$y =$</label>
+                        <input type="number" id="ex2-y" step="0.1" placeholder="Ditt svar">
+                        <button class="check-btn" onclick="checkAnswer2()">Rätta</button>
+                    </div>
 
-            <div style="overflow-x: auto; margin: 2rem 0;">
-                <table style="width: 100%; border-collapse: collapse; text-align: center;">
-                    <thead>
-                        <tr style="background: #4a90e2; color: white;">
-                            <th style="padding: 1rem; border: 1px solid #ddd;">Olika $k$-värden, $m$-värdet spelar ingen roll</th>
-                            <th style="padding: 1rem; border: 1px solid #ddd;">Samma $k$-värde, olika $m$-värden</th>
-                            <th style="padding: 1rem; border: 1px solid #ddd;">Samma $k$-värde, samma $m$-värde</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="padding: 1rem; border: 1px solid #ddd; background: #e8f4f8;">
-                                <strong>1 lösning</strong><br>
-                                <small>Linjerna skär varandra i en punkt</small>
-                            </td>
-                            <td style="padding: 1rem; border: 1px solid #ddd; background: #ffe8e8;">
-                                <strong>Saknar lösningar</strong><br>
-                                <small>Parallella linjer</small>
-                            </td>
-                            <td style="padding: 1rem; border: 1px solid #ddd; background: #e8ffe8;">
-                                <strong>Oändligt många lösningar</strong><br>
-                                <small>Samma linje</small>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                    <div id="feedback2" class="feedback"></div>
+                </div>
 
-            <h3>Exempel: Bestäm $k$ och $m$ så att ekvationssystemet saknar lösningar</h3>
-            <p>$$\begin{cases} y = kx + m \\ y = 2x + 5 \end{cases}$$</p>
+                <!-- Uppgift 3 -->
+                <div class="exercise">
+                    <h4>Uppgift 3</h4>
+                    <p>Hur många lösningar har följande ekvationssystem?</p>
+                    <p>$$\begin{cases} y = 4x + 2 \\ y = 4x - 3 \end{cases}$$</p>
 
-            <div class="example-box">
-                <p>För att ekvationen ska sakna lösning krävs att de har samma $k$-värde, men olika $m$-värden.</p>
-                <p>För den undre ekvationen gäller $k = 2$ och $m = 5$.</p>
-                <p>Den övre ekvationen måste alltså ha samma $k$-värde, så $k = 2$.</p>
-                <p>$m$-värdena ska vara olika så $m$ kan vara vad som helst utom 5, dvs. $m \neq 5$.</p>
-                <p class="answer"><strong>Svar:</strong> $k = 2$ och $m \neq 5$</p>
+                    <div class="exercise-input">
+                        <select id="ex3-answer" style="padding: 0.75rem; border: 2px solid #e5e7eb; border-radius: 4px; font-size: 1rem;">
+                            <option value="">Välj antal lösningar</option>
+                            <option value="0">0 lösningar (parallella linjer)</option>
+                            <option value="1">1 lösning (skär varandra)</option>
+                            <option value="inf">Oändligt många lösningar (samma linje)</option>
+                        </select>
+                        <button class="check-btn" onclick="checkAnswer3()">Rätta</button>
+                    </div>
+
+                    <div id="feedback3" class="feedback"></div>
+                </div>
+
+                <!-- Uppgift 4 -->
+                <div class="exercise">
+                    <h4>Uppgift 4</h4>
+                    <p>Bestäm värdet på $k$ så att följande ekvationssystem har oändligt många lösningar:</p>
+                    <p>$$\begin{cases} y = kx + 7 \\ y = 3x + 7 \end{cases}$$</p>
+
+                    <div class="exercise-input">
+                        <label>$k =$</label>
+                        <input type="number" id="ex4-k" step="0.1" placeholder="Ditt svar">
+                        <button class="check-btn" onclick="checkAnswer4()">Rätta</button>
+                    </div>
+
+                    <div id="feedback4" class="feedback"></div>
+                </div>
             </div>
 
         </section>
@@ -262,5 +491,156 @@
 
     <script src="../../script.js"></script>
     <script src="../../graphs.js"></script>
+
+    <script>
+        // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+
+        // Övningsuppgift 1: x=1, y=4
+        function checkAnswer1() {
+            const xInput = parseFloat(document.getElementById('ex1-x').value);
+            const yInput = parseFloat(document.getElementById('ex1-y').value);
+            const feedback = document.getElementById('feedback1');
+
+            const correctX = 1;
+            const correctY = 4;
+
+            if (Math.abs(xInput - correctX) < 0.01 && Math.abs(yInput - correctY) < 0.01) {
+                feedback.className = 'feedback correct';
+                feedback.innerHTML = '<strong>Rätt!</strong> Skärningspunkten är $(1, 4)$. Bra jobbat!';
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = `
+                    <strong>Fel svar.</strong> Försök igen!
+                    <div class="solution">
+                        <h4>Lösningsförslag:</h4>
+                        <p>Rita upp båda linjerna i Geogebra:</p>
+                        <ul>
+                            <li>$y = x + 3$ (lutning 1, skär y-axeln vid 3)</li>
+                            <li>$y = -2x + 6$ (lutning -2, skär y-axeln vid 6)</li>
+                        </ul>
+                        <p>Använd verktyget "Skärning mellan två objekt" för att hitta skärningspunkten.</p>
+                        <p><strong>Facit:</strong> $x = 1$ och $y = 4$</p>
+                    </div>
+                `;
+            }
+
+            if (typeof MathJax !== 'undefined') {
+                MathJax.typesetPromise([feedback]);
+            }
+        }
+
+        // Övningsuppgift 2: x=2, y=3
+        function checkAnswer2() {
+            const xInput = parseFloat(document.getElementById('ex2-x').value);
+            const yInput = parseFloat(document.getElementById('ex2-y').value);
+            const feedback = document.getElementById('feedback2');
+
+            const correctX = 2;
+            const correctY = 3;
+
+            if (Math.abs(xInput - correctX) < 0.01 && Math.abs(yInput - correctY) < 0.01) {
+                feedback.className = 'feedback correct';
+                feedback.innerHTML = '<strong>Rätt!</strong> Skärningspunkten är $(2, 3)$. Utmärkt!';
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = `
+                    <strong>Fel svar.</strong> Försök igen!
+                    <div class="solution">
+                        <h4>Lösningsförslag:</h4>
+                        <p>Rita upp båda linjerna i Geogebra:</p>
+                        <ul>
+                            <li>$y = 2x - 1$ (lutning 2, skär y-axeln vid -1)</li>
+                            <li>$y = -x + 5$ (lutning -1, skär y-axeln vid 5)</li>
+                        </ul>
+                        <p>Hitta skärningspunkten med verktyget.</p>
+                        <p><strong>Facit:</strong> $x = 2$ och $y = 3$</p>
+                    </div>
+                `;
+            }
+
+            if (typeof MathJax !== 'undefined') {
+                MathJax.typesetPromise([feedback]);
+            }
+        }
+
+        // Övningsuppgift 3: 0 lösningar (parallella)
+        function checkAnswer3() {
+            const answer = document.getElementById('ex3-answer').value;
+            const feedback = document.getElementById('feedback3');
+
+            if (answer === '0') {
+                feedback.className = 'feedback correct';
+                feedback.innerHTML = '<strong>Rätt!</strong> Linjerna är parallella eftersom de har samma $k$-värde (4) men olika $m$-värden (2 och -3).';
+            } else if (answer === '') {
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = '<strong>Du måste välja ett alternativ först!</strong>';
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = `
+                    <strong>Fel svar.</strong> Tänk igen!
+                    <div class="solution">
+                        <h4>Lösningsförslag:</h4>
+                        <p>Jämför $k$- och $m$-värdena:</p>
+                        <ul>
+                            <li>Första ekvationen: $k = 4$, $m = 2$</li>
+                            <li>Andra ekvationen: $k = 4$, $m = -3$</li>
+                        </ul>
+                        <p>Samma $k$-värde men olika $m$-värden betyder att linjerna är <strong>parallella</strong>.</p>
+                        <p><strong>Facit:</strong> 0 lösningar</p>
+                    </div>
+                `;
+            }
+
+            if (typeof MathJax !== 'undefined') {
+                MathJax.typesetPromise([feedback]);
+            }
+        }
+
+        // Övningsuppgift 4: k=3
+        function checkAnswer4() {
+            const kInput = parseFloat(document.getElementById('ex4-k').value);
+            const feedback = document.getElementById('feedback4');
+
+            const correctK = 3;
+
+            if (Math.abs(kInput - correctK) < 0.01) {
+                feedback.className = 'feedback correct';
+                feedback.innerHTML = '<strong>Rätt!</strong> När $k = 3$ blir båda ekvationerna identiska ($y = 3x + 7$), vilket ger oändligt många lösningar.';
+            } else {
+                feedback.className = 'feedback incorrect';
+                feedback.innerHTML = `
+                    <strong>Fel svar.</strong> Tänk efter!
+                    <div class="solution">
+                        <h4>Lösningsförslag:</h4>
+                        <p>För att ett ekvationssystem ska ha <strong>oändligt många lösningar</strong> måste ekvationerna vara identiska.</p>
+                        <p>Det betyder att både $k$-värdet och $m$-värdet måste vara lika.</p>
+                        <p>Den andra ekvationen har $k = 3$ och $m = 7$.</p>
+                        <p>För att den första ekvationen ska bli identisk måste $k = 3$ och $m = 7$ (vilket redan stämmer).</p>
+                        <p><strong>Facit:</strong> $k = 3$</p>
+                    </div>
+                `;
+            }
+
+            if (typeof MathJax !== 'undefined') {
+                MathJax.typesetPromise([feedback]);
+            }
+        }
+    </script>
 </body>
 </html>
