@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.7 Negativa exponenter och exponenten 0 - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-07" class="content-section">
+            <h2>Kapitel 1.7: Negativa exponenter och exponenten 0</h2>
+
+            <div class="definition-box">
+                <h3>Exponenten noll</h3>
+                <p>$7^3$ betyder att 7 ska multipliceras med sig själv 3 gånger, dvs. $7^3 = 7 \cdot 7 \cdot 7$, men hur ska vi tolka exponenten noll, t.ex. $7^0$?</p>
+            </div>
+
+            <div class="proof-box">
+                <h3>Undersökning – Tolkning av exponenten noll</h3>
+                <p>För att undersöka det så studerar vi t.ex. kvoten $\displaystyle\frac{7^5}{7^5}$ och beräknar den på två sätt.</p>
+                <p><strong>Med potenslagarna:</strong> $\displaystyle\frac{7^5}{7^5} = 7^{5-5} = 7^0$</p>
+                <p><strong>Lika stora tal divideras:</strong> $\displaystyle\frac{7^5}{7^5} = 1$</p>
+                <p>Båda sätt är korrekta. Vi ser alltså att $7^0 = 1$. Detta gäller för alla reella tal. Enda undantaget är 0, eftersom det skulle motsvara en division med 0. Till exempel: $0^0 = \displaystyle\frac{0^5}{0^5} = \frac{0}{0}$ som inte är definierat.</p>
+            </div>
+
+            <div class="formula-box">
+                <h3>Exponenten noll</h3>
+                <p>$$a^0 = 1, \text{ där } a \neq 0$$</p>
+                <p><strong>VARNING!</strong> $7^0 \neq 0$</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna med exponenten noll</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $25^0$</p>
+                <p>$$25^0 = 1$$</p>
+                <p class="answer"><strong>Svar:</strong> 1</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $4^0 + (-7)^0$</p>
+                <p>$$4^0 + (-7)^0 = 1 + 1 = 2$$</p>
+                <p class="answer"><strong>Svar:</strong> 2</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Negativa exponenter</h3>
+                <p>Hur ska vi tolka negativa exponenter, t.ex. $2^{-3}$? Vi undersöker!</p>
+            </div>
+
+            <div class="proof-box">
+                <h3>Undersökning – Tolkning av negativa exponenter</h3>
+                <p>På motsvarande sätt som för exponenten noll, så undersöker vi tolkningen av negativa tal genom att beräkna t.ex. kvoten $\displaystyle\frac{2^2}{2^5}$ på två olika sätt.</p>
+                <p><strong>Med potenslagarna:</strong> $\displaystyle\frac{2^2}{2^5} = 2^{2-5} = 2^{-3}$</p>
+                <p><strong>Med förkortning av bråk:</strong> $\displaystyle\frac{2^2}{2^5} = \frac{2 \cdot 2}{2 \cdot 2 \cdot 2 \cdot 2 \cdot 2} = \frac{1}{2 \cdot 2 \cdot 2} = \frac{1}{2^3}$</p>
+                <p>Båda sätt är korrekta. Vi ser alltså att $2^{-3} = \displaystyle\frac{1}{2^3}$. Vi kan upprepa samma resonemang och visa att t.ex. $3^{-7} = \displaystyle\frac{1}{3^7}$ och $5^{-4} = \displaystyle\frac{1}{5^4}$.</p>
+                <p><strong>Slutsats:</strong> Tal upphöjt till negativa tal kan skrivas som "1 dividerat med samma tal, men utan minustecknet framför exponenten".</p>
+            </div>
+
+            <div class="formula-box">
+                <h3>Negativa exponenter</h3>
+                <p>$$a^{-n} = \frac{1}{a^n}, \text{ där } a \neq 0$$</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna utan räknare</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $4^{-2}$</p>
+                <p>$$4^{-2} = \frac{1}{4^2} = \frac{1}{16}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\displaystyle\frac{1}{16}$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $5^{-1}$</p>
+                <p>$$5^{-1} = \frac{1}{5^1} = \frac{1}{5}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\displaystyle\frac{1}{5}$</p>
+            </div>
+
+            <h3>Exempel 3: Skriv i potensform</h3>
+
+            <div class="example-box">
+                <p>Skriv $\displaystyle\frac{1}{3^5}$ i potensform.</p>
+                <p>Vi ska skriva $\displaystyle\frac{1}{3^5}$ som en potens. Eftersom $3^{-5} = \displaystyle\frac{1}{3^5}$ måste givetvis det omvända gälla. Så:</p>
+                <p>$$\frac{1}{3^5} = 3^{-5}$$</p>
+                <p class="answer"><strong>Svar:</strong> $3^{-5}$</p>
+            </div>
+
+            <h3>Exempel 4: Skriv som en potens med basen x</h3>
+
+            <div class="example-box">
+                <p>Skriv $\displaystyle\frac{5}{x}$ som en potens med basen x.</p>
+                <p>Ett alternativt sätt att tänka när vi ska skriva om bråk som potenser är att "flytta upp" nämnaren till täljaren. Samtidigt som vi gör det ska vi byta tecken på exponenten, så:</p>
+                <p>$$\frac{5}{x} = \frac{5}{x^1} = 5x^{-1}$$</p>
+                <p class="answer"><strong>Svar:</strong> $5x^{-1}$</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Upphöja bråk till (-1)</h3>
+                <p>Att upphöja bråk till (-1) är samma sak som att invertera bråket.</p>
+            </div>
+
+            <div class="proof-box">
+                <h3>Bevis – Upphöja bråk till (-1) är samma sak som bråkets invers</h3>
+                <p>Vi studerar bråket $\displaystyle\left(\frac{a}{b}\right)^{-1}$. Enligt reglerna för negativa exponenter och division av bråk gäller:</p>
+                <p>$$\left(\frac{a}{b}\right)^{-1} = \frac{1}{\left(\frac{a}{b}\right)^1} = \frac{1}{\frac{a}{b}} = 1 \cdot \frac{b}{a} = \frac{b}{a}$$</p>
+                <p>dvs. $\displaystyle\left(\frac{a}{b}\right)^{-1} = \frac{b}{a}$ vsv.</p>
+            </div>
+
+            <h3>Exempel 5: Beräkna bråk upphöjt till negativa exponenter</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $\displaystyle\left(\frac{3}{4}\right)^{-1}$</p>
+                <p>$$\left(\frac{3}{4}\right)^{-1} = \frac{4}{3}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\displaystyle\frac{4}{3}$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $\displaystyle\left(\frac{4}{5}\right)^{-2}$</p>
+                <p>$$\left(\frac{4}{5}\right)^{-2} = \left(\frac{5}{4}\right)^2 = \frac{5^2}{4^2} = \frac{25}{16}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\displaystyle\frac{25}{16}$</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-06.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.6 Potenser med positiva heltalsexponenter</a>
+            <a href="kap1-08.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.8 Rationella exponenter →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-07';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

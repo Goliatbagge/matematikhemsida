@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.03 Multiplikation med parenteser - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.03 Multiplikation med parenteser</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>Om vi har ett parentesuttryck med en faktor framför kan vi <strong>multiplicera in</strong> faktorn i parentesen. Att skriva om ett uttryck, så att det står utan parenteser kallas att <strong>utveckla uttrycket</strong>. Faktorn framför parentesen ska multipliceras med varje term inuti parentesen. Denna regel kallas <strong>distributiva lagen</strong>.</p>
+
+            <div class="definition-box">
+                <h3>Distributiva lagen</h3>
+                <p class="formula">\(a(b + c) = ab + ac\)</p>
+            </div>
+
+            <div class="note-box">
+                <h3>Kontroll – Distributiva lagen</h3>
+                <p>Vi kontrollerar om den distributiva lagen gäller med de räkneregler vi vet sedan tidigare. Vi beräknar t.ex. \(3 \cdot (9 - 4)\) på två olika sätt.</p>
+
+                <p><strong>Med prioriteringsreglerna:</strong></p>
+                <p>\(3 \cdot (9 - 4) = 3 \cdot 5 = 15\)</p>
+
+                <p><strong>Med distributiva lagen:</strong></p>
+                <p>\(3 \cdot (9 - 4) = 3 \cdot 9 - 3 \cdot 4 = 27 - 12 = 15\)</p>
+
+                <p>Vi få samma svar med distributiva lagen som med prioriteringsreglerna! Regeln verkar stämma!</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Förenkla</strong></p>
+            <p><strong>a)</strong> \(2(2x - 1)\)<br>
+            <strong>b)</strong> \(8(3x + 4) - 2(5x - 7)\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+                <div class="calculation">
+                    \(2(2x - 1) = 2 \cdot 2x - 2 \cdot 1 = 4x - 2\)
+                </div>
+                <p class="answer">Svar: \(4x - 2\)</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    &8(3x + 4) - 2(5x - 7) = \\
+                    &8 \cdot 3x + 8 \cdot 4 - (2 \cdot 5x - 2 \cdot 7) = && \text{Har kvar parentesen och multiplicerar in 2.} \\
+                    &24x + 32 - (10x - 14) = && \text{Förenklar inuti parentesen.} \\
+                    &24x + 32 - 10x + 14 = && \text{Tar bort parentesen och ändrar tecken.} \\
+                    &14x + 46
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(14x + 46\)</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <p>När två parentespar multipliceras med varandra ska den <strong>första termen</strong> i den <strong>första parentesen</strong> multipliceras med <strong>alla termer i den andra parentesen</strong>. Därefter ska den <strong>andra termen</strong> i den <strong>första parentesen</strong> multipliceras med <strong>alla termer i den andra parentesen</strong>. Om det är fler än två termer i den första parentesen fortsätter man likadant tills man har multiplicerat in alla termer i den första parentesen in i den andra.</p>
+
+            <div class="definition-box">
+                <h3>Multiplicera parenteser</h3>
+                <p class="formula">\((a + b)(c + d) = a \cdot c + a \cdot d + b \cdot c + b \cdot d\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Utveckla och förenkla</strong></p>
+            <p><strong>a)</strong> \((x + 7)(x + 3)\)<br>
+            <strong>b)</strong> \((3x - 5)(8x + 9)\)<br>
+            <strong>c)</strong> \(10 - (x - 2)(x - 3)\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+                <div class="calculation">
+                    \((x + 7)(x + 3) = x^2 + 3x + 7x + 21 = x^2 + 10x + 21\)
+                </div>
+                <p class="answer">Svar: \(x^2 + 10x + 21\)</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \((3x - 5)(8x + 9) = 24x^2 + 27x - 40x - 45 = 24x^2 - 13x - 45\)
+                </div>
+                <p class="answer">Svar: \(24x^2 - 13x - 45\)</p>
+
+                <p><strong>c)</strong> När vi har ett minustecken framför ett dubbelt parentespar ska vi behålla en stor parentes runt det utvecklade uttrycket eftersom vi efteråt ska byta tecken på alla termer inne i parentesen.</p>
+                <div class="calculation">
+                    \begin{align}
+                    &10 - (x - 2)(x - 3) \\
+                    &10 - (x^2 - 3x - 2x + 6) && | \text{ Behåller en parentes kring det utvecklade uttrycket.} \\
+                    &10 - x^2 + 3x + 2x - 6 && | \text{ Byter tecken på alla termer inuti parentesen.} \\
+                    &4 - x^2 + 5x && | \text{ Förenklar.}
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(4 - x^2 + 5x\) alternativt \(-x^2 + 5x + 4\)</p>
+                <p style="font-size: 0.9em; color: #666;">(Ofta vill man ha termerna med störst exponent först, men inget måste.)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 3</h3>
+            <p><strong>Lös ekvationen \((1 + 4x)(3x - 2) = x(12x - 6)\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <div class="calculation">
+                    \begin{align}
+                    (1 + 4x)(3x - 2) &= x(12x - 6) \\
+                    3x - 2 + 12x^2 - 8x &= 12x^2 - 6x && | \text{ Utvecklar parenteserna.} \\
+                    3x - 2 + 12x^2 - 8x - 12x^2 &= 12x^2 - 6x - 12x^2 && | \text{ Subtraherar } 12x^2 \text{ från båda sidor.} \\
+                    -5x - 2 &= -6x && | \text{ Förenklar båda led.} \\
+                    -5x - 2 + 6x &= -6x + 6x && | \text{ Adderar } 6x \text{ till båda led.} \\
+                    x - 2 &= 0 && | \text{ Förenklar båda led.} \\
+                    x - 2 + 2 &= 0 + 2 && | \text{ Adderar } 2 \text{ till båda led.} \\
+                    x &= 2 && | \text{ Förenklar båda led.}
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(x = 2\)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

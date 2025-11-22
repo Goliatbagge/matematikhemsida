@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kapitel 5: Integraler - Integral symbol med area -->
+
+  <!-- Kurva -->
+  <path d="M 25 15 Q 35 25, 40 45" fill="none" stroke="#2563EB" stroke-width="2"/>
+
+  <!-- Area under kurva (riemann-summa med rektanglar) -->
+  <rect x="25" y="35" width="3" height="10" fill="#2563EB" opacity="0.2"/>
+  <rect x="28" y="32" width="3" height="13" fill="#2563EB" opacity="0.2"/>
+  <rect x="31" y="30" width="3" height="15" fill="#2563EB" opacity="0.2"/>
+  <rect x="34" y="32" width="3" height="13" fill="#2563EB" opacity="0.2"/>
+  <rect x="37" y="36" width="3" height="9" fill="#2563EB" opacity="0.2"/>
+
+  <!-- x-axel -->
+  <line x1="20" y1="45" x2="50" y2="45" stroke="#9CA3AF" stroke-width="1"/>
+
+  <!-- Integral symbol -->
+  <text x="48" y="35" font-size="28" font-family="serif" fill="#F59E0B" font-weight="bold">∫</text>
+</svg>

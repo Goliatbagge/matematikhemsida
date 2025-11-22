@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.5 Tal i decimalform - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-05" class="content-section">
+            <h2>Kapitel 1.5: Tal i decimalform</h2>
+
+            <div class="definition-box">
+                <h3>Det decimala talsystemet</h3>
+                <p>Vårt positionssystem bygger på basen 10 och kallas det <strong>decimala talsystemet</strong>. ("Decem" betyder 10 på latin, jämför t.ex. med "decennium" som betyder årtionde.) Beroende på positionen i talet, står siffran för olika saker.</p>
+                <p>Vi studerar talet 2708,539:</p>
+                <p style="text-align: center; font-size: 1.2em; margin: 1rem 0;">2708,539</p>
+                <p>2:an står alltså för hur många tusental vi har, 7:an för hur många hundratal vi har osv.</p>
+                <ul style="list-style: none;">
+                    <li><strong>2</strong> tusental</li>
+                    <li><strong>7</strong> hundratal</li>
+                    <li><strong>0</strong> tiotal</li>
+                    <li><strong>8</strong> ental</li>
+                    <li><strong>5</strong> tiondelar</li>
+                    <li><strong>3</strong> hundradelar</li>
+                    <li><strong>9</strong> tusendelar</li>
+                </ul>
+            </div>
+
+            <div class="definition-box">
+                <h3>Avrundning</h3>
+                <p>Ett värde som är avrundat kallas <strong>närmevärde</strong>. Den siffra som ska avrundas kallas <strong>avrundningssiffra</strong>.</p>
+                <table style="border-collapse: collapse; margin: 1rem auto; width: 100%; max-width: 600px;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">Om avrundningssiffran följs av...</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">... så ...</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">0, 1, 2, 3 eller 4</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">behåll avrundningssiffran (avrunda nedåt)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">5, 6, 7, 8 eller 9</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">öka avrundningssiffran med 1 (avrunda uppåt)</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Avrunda 61,4738 till</h3>
+
+            <div class="example-box">
+                <p><strong>a) tiondelar</strong></p>
+                <p>Siffran 4 är tiondelssiffran. Siffran efter fyran är 7, så fyran ökas med 1 (och blir 5).</p>
+                <p class="answer"><strong>Svar:</strong> 61,5</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b) ental</strong></p>
+                <p>Siffran 1 är entalssiffran. Siffran efter ettan är 4, så ettan behålls.</p>
+                <p class="answer"><strong>Svar:</strong> 61</p>
+                <p><strong>Observera</strong> att vi inte kan avrunda i två steg från svaret i a-uppgiften, eftersom det då hade blivit 62.</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>c) tiotal</strong></p>
+                <p>Siffran 6 är tiotalssiffran. Siffran efter sexan är 1, så sexan behålls (och sedan fyller vi på med nollor).</p>
+                <p class="answer"><strong>Svar:</strong> 60</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Värdesiffror</h3>
+                <p>När vi löser uppgifter som beskriver verkliga situationer behöver vi ofta avrunda. Ett mått på hur noggrant ett närmevärde är kallas <strong>värdesiffror</strong> eller <strong>gällande siffror</strong> och det styr hur mycket vi ska avrunda ett svar.</p>
+                <p>Jämför meningarna "brädan är 4 meter" och "brädan är 4,00 meter". Även om 4 och 4,00 är samma tal, så indikerar 4,00 att vi har mätt brädan noggrannare. 4,00 har fler värdesiffror!</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Antal värdesiffror i ett tal</h3>
+                <p>Den <strong>första värdesiffran</strong> är den första siffran i ett tal som inte är 0. Den <strong>sista värdesiffran</strong> är den sista siffran i talet. Nollor i slutet av heltal måste inte vara värdesiffror – det beror på om det är avrundningsnollor eller inte.</p>
+                <p><strong>Några exempel:</strong></p>
+                <table style="border-collapse: collapse; margin: 1rem auto;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Tal</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Antal värdesiffror</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">0,0238</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">0,02380</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">4</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">4</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">1</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">4,00</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">68</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">6 800</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">2, 3 eller 4</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="method-box">
+                <h3>Antal värdesiffror i ett svar</h3>
+                <p>Vid</p>
+                <ul>
+                    <li><strong>multiplikation och division</strong> gäller att värdet med minsta antalet värdesiffror ger antalet värdesiffror i svaret (vanligast)</li>
+                    <li><strong>addition och subtraktion</strong> gäller att värdet med minsta antalet decimaler ger antalet decimaler i svaret</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 2: Värdesiffror vid multiplikation</h3>
+
+            <div class="example-box">
+                <p>Framsidan av en bok är 19,5 cm × 24 cm. Bestäm framsidans area.</p>
+                <p>Area = bas · höjd = 19,5 · 24 = 468 cm²</p>
+                <p>Vi har räknat multiplikation, så vi tittar på antalet värdesiffror. 19,5 har tre värdesiffror och 24 har två värdesiffror. Vi avrundar till det minsta antalet värdesiffror, dvs. till två värdesiffror.</p>
+                <p>Area = 468 cm² ≈ 470 cm²</p>
+                <p class="answer"><strong>Svar:</strong> 470 cm²</p>
+            </div>
+
+            <h3>Exempel 3: Värdesiffror vid subtraktion</h3>
+
+            <div class="example-box">
+                <p>Du har en bräda som är 1,73 meter och sågar av 1,3 meter. Hur lång är brädbiten som är kvar?</p>
+                <p>brädbitens längd = 1,73 m − 1,3 m = 0,43 m</p>
+                <p>Vi har räknat subtraktion, så vi tittar på antalet decimaler. 1,73 har två decimaler och 1,3 m en decimal. Vi avrundar till det minsta antalet decimaler, dvs. till en decimal.</p>
+                <p class="answer"><strong>Svar:</strong> 0,4 m</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-04.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.4 Multiplikation och division av bråk</a>
+            <a href="kap1-06.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.6 Potenser med positiva heltalsexponenter →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-05';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

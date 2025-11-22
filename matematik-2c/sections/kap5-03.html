@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.3 Exponentialekvationer och tiologaritmer - Matematik 2c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 2c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html"> Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Ekvationssystem</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Grafisk lösning av ekvationssystem</a>
+                        <a href="kap1-02.html">1.2 Substitutionsmetoden</a>
+                        <a href="kap1-03.html">1.3 Additionsmetoden</a>
+                        <a href="kap1-04.html">1.4 Problemlösning med ekvationssystem</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Andragradsekvationer</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Kvadreringsreglerna och konjugatregeln</a>
+                        <a href="kap2-02.html">2.2 Faktorisering av uttryck</a>
+                        <a href="kap2-03.html">2.3 Nollproduktmetoden</a>
+                        <a href="kap2-04.html">2.4 pq-formeln</a>
+                        <a href="kap2-05.html">2.5 abc-formeln</a>
+                        <a href="kap2-06.html">2.6 Antal lösningar</a>
+                        <a href="kap2-07.html">2.7 Problemlösning</a>
+                        <a href="kap2-08.html">2.8 Rotekvationer</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Andragradsfunktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Grafen till en andragradsfunktion</a>
+                        <a href="kap3-02.html">3.2 Andragradsekvationer och funktioner</a>
+                        <a href="kap3-04.html">3.4 Andragradsfunktioner och modellering</a>
+                        <a href="kap3-05.html">3.5 Andragradsekvationer och olikheter</a>
+                        <a href="kap3-06.html">3.6 Problemlösning med grafritande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Geometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Olika slags vinklar</a>
+                        <a href="kap4-02.html">4.2 Vinklar i trianglar och månghörningar</a>
+                        <a href="kap4-03.html">4.3 Implikation och ekvivalens</a>
+                        <a href="kap4-04.html">4.4 Satser och bevis</a>
+                        <a href="kap4-05.html">4.5 Pythagoras sats</a>
+                        <a href="kap4-06.html">4.6 Avståndsformeln och mittpunktsformeln</a>
+                        <a href="kap4-07.html">4.7 Likformiga figurer</a>
+                        <a href="kap4-08.html">4.8 Triangelsatserna</a>
+                        <a href="kap4-09.html">4.9 Kongruens</a>
+                        <a href="kap4-10.html">4.10 Randvinkelsatsen</a>
+                        <a href="kap4-11.html">4.11 Kordasatsen och inskrivna fyrhörningar</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Logaritmer</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Exponential- och potensekvationer</a>
+                        <a href="kap5-02.html">5.2 Tiologaritmer</a>
+                        <a href="kap5-03.html">5.3 Exponentialekvationer och tiologaritmer</a>
+                        <a href="kap5-04.html">5.4 Logaritmlagarna</a>
+                        <a href="kap5-05.html">5.5 Tillämpningar av logaritmer</a>
+                        <a href="kap5-06.html">5.6 Logaritmer med andra baser</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Statistik</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Lägesmått</a>
+                        <a href="kap6-02.html">6.2 Spridningsmått, lådagram och percentiler</a>
+                        <a href="kap6-03.html">6.3 Statistik med digitala verktyg</a>
+                        <a href="kap6-04.html">6.4 Standardavvikelse</a>
+                        <a href="kap6-05.html">6.5 Normalfördelning</a>
+                        <a href="kap6-06.html">6.6 Linjär regression</a>
+                        <a href="kap6-07.html">6.7 Olika regressionsmodeller</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap5-03" class="content-section">
+            <h2>Kapitel 5.3: Exponentialekvationer och tiologaritmer</h2>
+
+            <div class="info-box" style="background: #e8f4f8; padding: 1rem; margin: 1rem 0; border-left: 4px solid #4a90e2;">
+                <h4>Kom ihåg: Skriva ett tal med basen 10</h4>
+                <p style="text-align: center; margin: 0.5rem 0;">$$a = 10^{\lg a} \text{ där } a > 0$$</p>
+            </div>
+
+            <p>För att lösa exponentialekvationer med hjälp av tiologaritmer använder vi principen att om två potenser med samma bas är lika, så måste också deras exponenter vara lika.</p>
+            <p>Exempelvis, om $2^x = 2^7$, så måste $x = 7$.</p>
+
+            <div class="method-box">
+                <h3>Lösa exponentialekvationer med tiologaritmer</h3>
+                <ol>
+                    <li>Skriv om båda led med basen 10 enligt principen $a = 10^{\lg a}$.</li>
+                    <li>Förenkla med potenslagarna.</li>
+                    <li>Sätt exponenterna lika och lös ekvationen.</li>
+                </ol>
+            </div>
+
+            <h3>Logaritmekvationer</h3>
+            <div class="definition-box">
+                <h3>Definition: Logaritmekvation</h3>
+                <p>En ekvation där variabeln finns i logaritmen, t.ex. $\lg x = 3$, kallas <strong>logaritmekvation</strong>.</p>
+                <p>Dessa löser vi enklast genom att skriva om ekvationen från logaritmform till potensform och sedan lösa ekvationen enligt tidigare metoder.</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Lösa logaritmekvationer</h3>
+                <p style="text-align: center; margin: 1rem 0;">$$\lg x = a \text{ (logaritmform)} \Leftrightarrow 10^a = x \text{ (potensform)}$$</p>
+                <p><strong>Omskrivning från logaritmform till potensform med ord:</strong><br>
+                "10 upphöjt till det som står i högra ledet är lika med det vi har logaritmen för."</p>
+            </div>
+
+            <h3>Exempel: Lös ekvationerna nedan. Svara exakt och med två decimaler.</h3>
+            <p><strong>a)</strong> $10^x = 53$ <strong>b)</strong> $2^x = 37$ <strong>c)</strong> $5 \cdot 3^{2x} - 4 = 31$</p>
+
+            <div class="example-box">
+                <h4>Lösning a) $10^x = 53$</h4>
+                <p>Vi skriver om HL till basen 10 och sätter sedan exponenterna lika.</p>
+                <p>$$10^x = 10^{\lg 53}$$</p>
+                <p>$$x = \lg 53$$</p>
+                <p>$$x \approx 1{,}72$$</p>
+
+                <div class="info-box" style="background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-left: 4px solid #4a90e2;">
+                    <p style="margin: 0;"><em>Om du direkt från ekvationen $10^x = 53$ ser att $x = \lg 53$, utifrån definitionen, går det bra att skriva det direkt, utan mellanled.</em></p>
+                </div>
+
+                <p class="answer"><strong>Svar:</strong> $x = \lg 53 \approx 1{,}72$</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Lösning b) $2^x = 37$</h4>
+                <p>Vi skriver om båda led till basen 10 och förenklar med potenslagar.</p>
+                <p>$$(10^{\lg 2})^x = 10^{\lg 37}$$</p>
+                <p>$$10^{x \cdot \lg 2} = 10^{\lg 37}$$</p>
+
+                <p>Vi kan nu sätta exponenterna lika och får</p>
+                <p>$$x \cdot \lg 2 = \lg 37$$</p>
+                <p>$$\frac{x \cdot \lg 2}{\lg 2} = \frac{\lg 37}{\lg 2}$$</p>
+                <p>$$x = \frac{\lg 37}{\lg 2} \approx 5{,}21$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $x = \frac{\lg 37}{\lg 2} \approx 5{,}21$</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Lösning c) $5 \cdot 3^{2x} - 4 = 31$</h4>
+                <p>Vi börjar med att lösa ut potensen $3^{2x}$.</p>
+                <p>$$5 \cdot 3^{2x} - 4 + 4 = 31 + 4$$</p>
+                <p>$$5 \cdot 3^{2x} = 35$$</p>
+                <p>$$\frac{5 \cdot 3^{2x}}{5} = \frac{35}{5}$$</p>
+                <p>$$3^{2x} = 7$$</p>
+
+                <p>Skriver om båda led till basen 10 och förenklar med potenslagar.</p>
+                <p>$$(10^{\lg 3})^{2x} = 10^{\lg 7}$$</p>
+                <p>$$10^{2x \cdot \lg 3} = 10^{\lg 7}$$</p>
+
+                <p>Sätter exponenterna lika och löser ekvationen.</p>
+                <p>$$2x \cdot \lg 3 = \lg 7$$</p>
+                <p>$$\frac{2x \cdot \lg 3}{2 \cdot \lg 3} = \frac{\lg 7}{2 \cdot \lg 3}$$</p>
+                <p>$$x = \frac{\lg 7}{2 \cdot \lg 3} \approx 0{,}89$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $x = \frac{\lg 7}{2 \cdot \lg 3} \approx 0{,}89$</p>
+            </div>
+
+            <h3>Exempel: Lös logaritmekvationerna</h3>
+            <p><strong>a)</strong> $\lg x = 3$ <strong>b)</strong> $\lg 5x = 2{,}7$</p>
+
+            <div class="example-box">
+                <h4>Lösning a) $\lg x = 3$</h4>
+                <p>Vi skriver om ekvationen till potensform. "10 upphöjt till det som står i högra ledet, ska bli det vi har logaritmen för."</p>
+                <p>$$10^3 = x$$</p>
+                <p>$$x = 1\,000$$</p>
+
+                <div class="info-box" style="background: #f8f9fa; padding: 1rem; margin: 1rem 0; border-left: 4px solid #4a90e2;">
+                    <p style="margin: 0;"><em>Om du direkt från ekvationen ser att $x = 1\,000$ eftersom $\lg 1\,000 = 3$, går det bra att skriva det direkt, utan mellanled.</em></p>
+                </div>
+
+                <p class="answer"><strong>Svar:</strong> $x = 1\,000$</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Lösning b) $\lg 5x = 2{,}7$</h4>
+                <p>Vi skriver om ekvationen till potensform. Kom ihåg: "10 upphöjt till det som står i högra ledet, ska bli det vi har logaritmen för."</p>
+                <p>$$10^{2{,}7} = 5x$$</p>
+                <p>$$\frac{10^{2{,}7}}{5} = \frac{5x}{5}$$</p>
+                <p>$$100{,}24 \approx x$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $x \approx 100{,}24$</p>
+            </div>
+
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap5-02.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #6c757d; color: white; text-decoration: none; border-radius: 4px;"> Föregående: 5.2 Tiologaritmer</a>
+            <a href="kap5-04.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 5.4 Logaritmlagarna </a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma2c-kap5-03';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 2c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

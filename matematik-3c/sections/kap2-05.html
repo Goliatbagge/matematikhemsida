@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Förkortning och förlängning</a>
+                        <a href="kap1-02.html">1.2 Addition och subtraktion</a>
+                        <a href="kap1-03.html">1.3 Multiplikation och division</a>
+                        <a href="kap1-04.html">1.4 Gränsvärden</a>
+                        <a href="kap1-05.html">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Sekantens lutning</a>
+                        <a href="kap2-02.html">2.2 Tangentens lutning</a>
+                        <a href="kap2-03.html">2.3 Derivatans definition</a>
+                        <a href="kap2-04.html">2.4 Använda derivata</a>
+                        <a href="kap2-05.html">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="kap3-02.html">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="kap3-03.html">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="kap3-04.html">3.4 Derivatan av e^x</a>
+                        <a href="kap3-05.html">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="kap3-06.html">3.6 Tillämpningar av derivata</a>
+                        <a href="kap3-07.html">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Växande och avtagande funktioner</a>
+                        <a href="kap4-02.html">4.2 Derivatans nollställen</a>
+                        <a href="kap4-03.html">4.3 Största och minsta värde</a>
+                        <a href="kap4-04.html">4.4 Andraderivatan och funktioner</a>
+                        <a href="kap4-05.html">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="kap4-06.html">4.6 Extremvärdesproblem</a>
+                        <a href="kap4-07.html">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Primitiva funktioner</a>
+                        <a href="kap5-02.html">5.2 Primitiva funktioner med villkor</a>
+                        <a href="kap5-03.html">5.3 Arean under en kurva</a>
+                        <a href="kap5-04.html">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="kap5-05.html">5.5 Beräkna integraler digitalt</a>
+                        <a href="kap5-06.html">5.6 Area mellan kurvor</a>
+                        <a href="kap5-07.html">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="kap6-02.html">6.2 Enhetscirkeln</a>
+                        <a href="kap6-03.html">6.3 Trigonometriska ekvationer</a>
+                        <a href="kap6-04.html">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="kap6-05.html">6.5 Areasatsen</a>
+                        <a href="kap6-06.html">6.6 Sinussatsen</a>
+                        <a href="kap6-07.html">6.7 Cosinussatsen</a>
+                        <a href="kap6-08.html">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav><main class="container" role="main" id="main-content">
+        <section id="kap2-05" class="content-section">
+<h2>Kapitel 2.5: Deriverbarhet och absolutbelopp</h2>
+<div class="definition-box">
+<h3>Deriverbar funktion</h3>
+<p>En funktion är <strong>deriverbar</strong> i en punkt om derivatan existerar i den punkten.</p>
+<p>En funktion är deriverbar i en punkt om kurvan är "slät" (inga hörn eller hopp) i den punkten.</p>
+</div>
+<div class="info-box">
+<h3>När är en funktion INTE deriverbar?</h3>
+<p>En funktion är inte deriverbar i en punkt om:</p>
+<ul>
+<li>Funktionen har ett <strong>hörn</strong> i punkten (kurvan "knäcker")</li>
+<li>Funktionen är <strong>diskontinuerlig</strong> i punkten (har ett hopp)</li>
+<li>Tangenten är <strong>vertikal</strong> i punkten (oändlig lutning)</li>
+</ul>
+</div>
+<div class="math-figure">
+<img alt="Visualisering av deriverbarhet och absolutbeloppsfunktionen" src="../../images/kap2/kap2-05-deriverbarhet-absolutbelopp.png"/>
+<p class="figure-caption">Figur 2.5: Deriverbarhet - funktionen |x| har ett hörn vid x=0</p>
+</div>
+<h3>Absolutbeloppsfunktionen</h3>
+<div class="example-box">
+<p>Funktionen $f(x) = |x|$ (absolutbelopp av $x$) är definierad som:</p>
+<p>$$f(x) = \begin{cases} x &amp; \text{om } x \geq 0 \\ -x &amp; \text{om } x &lt; 0 \end{cases}$$</p>
+<div class="graph-container">
+<h4>Graf: $f(x) = |x|$</h4>
+<div id="graph-absolutbelopp"></div>
+</div>
+<p>Funktionen har ett <strong>hörn</strong> vid $x = 0$, vilket betyder att den inte är deriverbar där.</p>
+<p>Vi kan kontrollera detta genom att undersöka derivatan från vänster och höger:</p>
+<p><strong>Från höger ($x &gt; 0$):</strong></p>
+<p>$f(x) = x$ så $f'(x) = 1$</p>
+<p><strong>Från vänster ($x &lt; 0$):</strong></p>
+<p>$f(x) = -x$ så $f'(x) = -1$</p>
+<p>Eftersom derivatan från vänster ($-1$) inte är lika med derivatan från höger ($1$), existerar inte derivatan i $x = 0$.</p>
+</div>
+<h3>Exempel 1: Undersök deriverbarhet</h3>
+<div class="example-box">
+<p>Undersök om funktionen $f(x) = |x - 2|$ är deriverbar i $x = 2$.</p>
+<p>Funktionen kan skrivas som:</p>
+<p>$$f(x) = \begin{cases} x - 2 &amp; \text{om } x \geq 2 \\ -(x - 2) = 2 - x &amp; \text{om } x &lt; 2 \end{cases}$$</p>
+<p><strong>Från höger ($x &gt; 2$):</strong></p>
+<p>$f(x) = x - 2$ så $f'(x) = 1$</p>
+<p><strong>Från vänster ($x &lt; 2$):</strong></p>
+<p>$f(x) = 2 - x$ så $f'(x) = -1$</p>
+<p>Eftersom $1 \neq -1$ är funktionen inte deriverbar i $x = 2$.</p>
+<p class="answer"><strong>Svar:</strong> Nej, funktionen är inte deriverbar i $x = 2$</p>
+</div>
+<h3>Exempel 2: Deriverbar funktion med villkor</h3>
+<div class="example-box">
+<p>För vilket värde på $a$ är funktionen</p>
+<p>$$f(x) = \begin{cases} x^2 &amp; \text{om } x \leq 1 \\ ax + 3 &amp; \text{om } x &gt; 1 \end{cases}$$</p>
+<p>deriverbar i $x = 1$?</p>
+<p><strong>Kontinuitet (nödvändigt villkor):</strong></p>
+<p>För att funktionen ska vara deriverbar måste den först vara kontinuerlig:</p>
+<p>$$\lim_{x \to 1^-} f(x) = 1^2 = 1$$</p>
+<p>$$\lim_{x \to 1^+} f(x) = a \cdot 1 + 3 = a + 3$$</p>
+<p>För kontinuitet: $1 = a + 3$, alltså $a = -2$</p>
+<p><strong>Deriverbarhet:</strong></p>
+<p>Derivatan från vänster: $f'(x) = 2x$ ger $f'(1^-) = 2$</p>
+<p>Derivatan från höger: $f'(x) = a$ ger $f'(1^+) = a$</p>
+<p>För deriverbarhet: $2 = a$</p>
+<p><strong>Konflikt!</strong> Vi får $a = -2$ från kontinuitet men $a = 2$ från deriverbarhet.</p>
+<p>Detta innebär att funktionen inte kan vara deriverbar i $x = 1$ för något värde på $a$ som gör den kontinuerlig.</p>
+<p class="answer"><strong>Svar:</strong> Det finns inget värde på $a$ som gör funktionen både kontinuerlig och deriverbar i $x = 1$</p>
+</div>
+        </section>
+
+<div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+    <a href="kap2-04.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 2.4 Använda derivata</a>
+    <a href="kap3-01.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 3.1 Derivatan av enkla potensfunktioner →</a>
+</div>
+
+
+
+<!-- Kommentarsfält -->
+<div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'kap2-05';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://enkel-matematik.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+</div>
+
+    </main>
+
+    <footer>
+<div class="container">
+<p>© 2024 Matematik 3c Kurshemsida</p>
+</div>
+</footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+
+</body>
+</html>

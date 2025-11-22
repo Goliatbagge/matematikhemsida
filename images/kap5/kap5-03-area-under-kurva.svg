@@ -1,0 +1,71 @@
+<svg viewBox="0 0 450 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="450" height="350" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="225" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Bestämd integral: Area under kurva</text>
+
+  <!-- Koordinatsystem -->
+  <defs>
+    <marker id="arrow2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Axlar -->
+  <line x1="50" y1="280" x2="410" y2="280" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="50" y1="280" x2="50" y2="50" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- Axellabels -->
+  <text x="405" y="295" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="35" y="55" font-size="14" font-weight="600" fill="#4B5563">y</text>
+
+  <!-- Gränser a och b (vertikala linjer) -->
+  <line x1="100" y1="60" x2="100" y2="280" stroke="#B45309" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="350" y1="60" x2="350" y2="280" stroke="#B45309" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Area under kurvan (fylld polygon) -->
+  <path d="M 100 280 L 100 180 Q 225 100 350 200 L 350 280 Z"
+        fill="#2563EB" opacity="0.3" stroke="none"/>
+
+  <!-- Kurvan f(x) -->
+  <path d="M 100 180 Q 225 100 350 200"
+        fill="none" stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Markeringar på x-axeln -->
+  <line x1="100" y1="275" x2="100" y2="285" stroke="#B45309" stroke-width="2"/>
+  <line x1="350" y1="275" x2="350" y2="285" stroke="#B45309" stroke-width="2"/>
+
+  <!-- Labels a och b -->
+  <text x="100" y="305" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">a</text>
+  <text x="350" y="305" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">b</text>
+
+  <!-- Funktionsetikett -->
+  <text x="280" y="90" font-size="14" fill="#2563EB" font-weight="600">y = f(x)</text>
+
+  <!-- Area-etikett -->
+  <text x="225" y="210" font-size="20" font-weight="700" fill="#1E40AF" text-anchor="middle">A</text>
+
+  <!-- Formel-box -->
+  <rect x="120" y="320" width="210" height="25" fill="#FFF7ED" stroke="#B45309" stroke-width="1.5" rx="4"/>
+  <text x="225" y="338" font-size="14" fill="#92400E" text-anchor="middle" font-weight="600">
+    A = ∫ₐᵇ f(x) dx = F(b) - F(a)
+  </text>
+
+  <!-- Förklaringstext -->
+  <g transform="translate(10, 55)">
+    <rect width="75" height="55" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" rx="4"/>
+    <text x="37" y="15" font-size="10" font-weight="600" fill="#1E40AF" text-anchor="middle">Arean är:</text>
+    <text x="5" y="30" font-size="9" fill="#4B5563">• Begränsad av</text>
+    <text x="9" y="41" font-size="9" fill="#4B5563">kurvan y=f(x)</text>
+    <text x="5" y="51" font-size="9" fill="#4B5563">• x-axeln</text>
+    <text x="5" y="61" font-size="9" fill="#4B5563" dy="-10">• x=a och x=b</text>
+  </g>
+
+  <!-- Pilar som pekar på gränserna -->
+  <path d="M 30 150 Q 40 120 90 90" stroke="#B45309" stroke-width="1.5" fill="none" marker-end="url(#arrow2)"/>
+  <text x="25" y="155" font-size="11" fill="#B45309">x = a</text>
+
+  <path d="M 390 150 Q 380 120 360 90" stroke="#B45309" stroke-width="1.5" fill="none" marker-end="url(#arrow2)"/>
+  <text x="365" y="155" font-size="11" fill="#B45309">x = b</text>
+</svg>

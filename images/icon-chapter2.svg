@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kapitel 2: Derivatans definition - Sekant och tangent -->
+
+  <!-- Kurva (parabola) -->
+  <path d="M 10 50 Q 32 10 54 50" fill="none" stroke="#2563EB" stroke-width="2"/>
+
+  <!-- Sekant (mellan två punkter) -->
+  <line x1="18" y1="42" x2="46" y2="42" stroke="#9CA3AF" stroke-width="1.5" stroke-dasharray="3,3"/>
+
+  <!-- Tangent (vid en punkt) -->
+  <line x1="20" y1="28" x2="44" y2="52" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- Punkter -->
+  <circle cx="18" cy="42" r="2.5" fill="#2563EB"/>
+  <circle cx="32" cy="23" r="2.5" fill="#F59E0B"/>
+  <circle cx="46" cy="42" r="2.5" fill="#2563EB"/>
+</svg>

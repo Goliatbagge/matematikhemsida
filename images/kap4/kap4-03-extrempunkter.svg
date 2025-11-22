@@ -1,0 +1,99 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="500" height="400" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="250" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Extrempunkter: Maximum och Minimum</text>
+  <text x="250" y="42" font-size="13" fill="#6B7280" text-anchor="middle">f(x) = x² - 4x + 3</text>
+
+  <!-- Koordinatsystem -->
+  <defs>
+    <marker id="arrow3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Rutnät (subtilt) -->
+  <g stroke="#E5E7EB" stroke-width="0.5">
+    <line x1="60" y1="100" x2="440" y2="100"/>
+    <line x1="60" y1="150" x2="440" y2="150"/>
+    <line x1="60" y1="200" x2="440" y2="200"/>
+    <line x1="60" y1="250" x2="440" y2="250"/>
+    <line x1="60" y1="300" x2="440" y2="300"/>
+
+    <line x1="150" y1="60" x2="150" y2="340"/>
+    <line x1="250" y1="60" x2="250" y2="340"/>
+    <line x1="350" y1="60" x2="350" y2="340"/>
+  </g>
+
+  <!-- Axlar -->
+  <line x1="60" y1="340" x2="440" y2="340" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow3)"/>
+  <line x1="60" y1="340" x2="60" y2="60" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow3)"/>
+
+  <!-- Axellabels -->
+  <text x="435" y="355" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="45" y="65" font-size="14" font-weight="600" fill="#4B5563">y</text>
+
+  <!-- Skalmarkeringar på x-axeln -->
+  <line x1="150" y1="335" x2="150" y2="345" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="250" y1="335" x2="250" y2="345" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="350" y1="335" x2="350" y2="345" stroke="#4B5563" stroke-width="1.5"/>
+
+  <text x="150" y="360" font-size="12" fill="#6B7280" text-anchor="middle">1</text>
+  <text x="250" y="360" font-size="12" fill="#6B7280" text-anchor="middle">2</text>
+  <text x="350" y="360" font-size="12" fill="#6B7280" text-anchor="middle">3</text>
+
+  <!-- Parabel f(x) = x² - 4x + 3 -->
+  <!-- Vertex vid x=2, y=-1 -->
+  <!-- Path: från x=0 till x=4 -->
+  <path d="M 60 340 Q 250 250 440 340" fill="none" stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Intervall-markeringar -->
+  <!-- Avtagande intervall (x < 2) - röd/orange -->
+  <rect x="60" y="370" width="190" height="8" fill="#EF4444" opacity="0.6"/>
+  <text x="155" y="392" font-size="11" fill="#991B1B" text-anchor="middle" font-weight="600">Avtagande (f'(x) &lt; 0)</text>
+
+  <!-- Växande intervall (x > 2) - grön -->
+  <rect x="250" y="370" width="190" height="8" fill="#10B981" opacity="0.6"/>
+  <text x="345" y="392" font-size="11" fill="#065F46" text-anchor="middle" font-weight="600">Växande (f'(x) &gt; 0)</text>
+
+  <!-- Minimumpunkt vid x=2 -->
+  <circle cx="250" cy="250" r="6" fill="#B45309"/>
+  <circle cx="250" cy="250" r="10" fill="none" stroke="#B45309" stroke-width="2"/>
+
+  <!-- Vertikal streckad linje vid x=2 -->
+  <line x1="250" y1="250" x2="250" y2="340" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Tangent vid minimumpunkten (horisontell) -->
+  <line x1="180" y1="250" x2="320" y2="250" stroke="#F59E0B" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Label för minimumpunkt -->
+  <text x="270" y="240" font-size="13" font-weight="700" fill="#B45309">Min</text>
+  <text x="270" y="255" font-size="11" fill="#92400E">(2, -1)</text>
+
+  <!-- Tangent-etikett -->
+  <text x="330" y="245" font-size="11" fill="#F59E0B" font-style="italic">f'(2) = 0</text>
+
+  <!-- Förklarings-box -->
+  <rect x="10" y="80" width="200" height="120" fill="#FFF7ED" stroke="#B45309" stroke-width="1.5" rx="6"/>
+  <text x="110" y="100" font-size="12" font-weight="700" fill="#92400E" text-anchor="middle">Extrempunkt när:</text>
+
+  <text x="20" y="120" font-size="11" fill="#4B5563">1. f'(x) = 0</text>
+  <text x="25" y="135" font-size="10" fill="#6B7280">(tangenten horisontell)</text>
+
+  <text x="20" y="155" font-size="11" fill="#4B5563">2. f'(x) byter tecken:</text>
+  <text x="25" y="170" font-size="10" fill="#6B7280">• Från - till + → Min</text>
+  <text x="25" y="184" font-size="10" fill="#6B7280">• Från + till - → Max</text>
+
+  <!-- Derivata-information -->
+  <g transform="translate(280, 80)">
+    <rect width="150" height="50" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" rx="4"/>
+    <text x="75" y="18" font-size="11" font-weight="600" fill="#1E40AF" text-anchor="middle">Derivata:</text>
+    <text x="10" y="35" font-size="10" fill="#4B5563">f'(x) = 2x - 4</text>
+    <text x="10" y="48" font-size="10" fill="#4B5563">f'(2) = 0 ✓</text>
+  </g>
+
+  <!-- Pilar som visar riktning -->
+  <path d="M 120 310 L 110 315 M 120 310 L 110 305" stroke="#EF4444" stroke-width="2"/>
+  <path d="M 380 310 L 390 315 M 380 310 L 390 305" stroke="#10B981" stroke-width="2"/>
+</svg>

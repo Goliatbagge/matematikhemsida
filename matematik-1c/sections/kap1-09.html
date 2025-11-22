@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.9 Prefix - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-09" class="content-section">
+            <h2>Kapitel 1.9: Grundpotensform och prefix</h2>
+
+            <div class="definition-box">
+                <h3>Grundpotensform</h3>
+                <p>En potens av 10 kallas <strong>tiopotens</strong>. För att enklare skriva stora och små tal kan man använda sig av tiopotenser. Om man anger ett tal med ett tal mellan 1-10 följt av en tiopotens är det skrivet i <strong>grundpotensform</strong>.</p>
+                <p>Ett tal i grundpotensform skrivs $a \cdot 10^n$ där $1 \leq a < 10$ och $n$ är ett heltal.</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Tiopotensens exponent</h3>
+                <p>Om ett tal är skrivet i grundpotensform gäller för tal</p>
+                <ul>
+                    <li><strong>större än 1</strong> att tiopotensens exponent anger antalet heltalssiffror efter den första siffran</li>
+                    <li><strong>mindre än 1</strong> att tiopotensens exponent anger antalet nollor innan första siffran</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Skriv i grundpotensform</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> 8 000 000 000</p>
+                <p>Det inledande talet ska vara mellan 1 och 10. I detta fall är det 8. Antalet siffror efter den första ger tiopotensens exponent. I detta fall är det 9.</p>
+                <p class="answer"><strong>Svar:</strong> $8 \cdot 10^9$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> 743 000</p>
+                <p>I detta fall inleds grundpotensformen med 7,43. Antalet siffror efter den första ger tiopotensens exponent. I detta fall är det 5.</p>
+                <p class="answer"><strong>Svar:</strong> $7,43 \cdot 10^5$</p>
+                <p><strong>Observera</strong> att exponenten ska vara 5 och inte 3</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>c)</strong> 0,0009</p>
+                <p>I detta fall inleds grundpotensformen med 9. Antalet nollor före den första icke-nollan ger tiopotensens negativa exponent. I detta fall är det 4 nollor.</p>
+                <p class="answer"><strong>Svar:</strong> $9 \cdot 10^{-4}$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>d)</strong> 0,000024</p>
+                <p>I detta fall inleds grundpotensformen med 2,4. Antalet nollor före den första icke-nollan ger tiopotensens negativa exponent. I detta fall är det 5 nollor.</p>
+                <p class="answer"><strong>Svar:</strong> $2,4 \cdot 10^{-5}$</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Prefix</h3>
+                <p>En bokstav som ersätter en tiopotens och sätts framför en enhet kallas <strong>prefix</strong>. Alla nödvändiga prefix finns i formelbladet.</p>
+                <table style="border-collapse: collapse; margin: 1rem auto; width: 100%;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Beteckning</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">T</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">G</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">M</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">k</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">h</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">da</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">d</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">c</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">m</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">μ</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">n</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">p</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Namn</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">tera</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">giga</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">mega</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">kilo</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">hekto</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">deka</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">deci</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">centi</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">milli</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">mikro</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">nano</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">piko</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Tiopotens</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{12}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^9$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^6$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^3$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^2$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-1}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-2}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-3}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-6}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-9}$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$10^{-12}$</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 2: Skriv med lämpligt prefix</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> 2 000 000 000 000 B</p>
+                <p>Ett bra första steg är att skriva talet i grundpotensform:</p>
+                <p>$$2\,000\,000\,000\,000\text{ B} = 2,0 \cdot 10^{12}\text{ B}$$</p>
+                <p>Därefter byter du ut tiopotensen mot sitt prefix. $10^{12}$ byts här ut mot T (se tabellen ovan).</p>
+                <p class="answer"><strong>Svar:</strong> 2,0 TB</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> 0,0047 l</p>
+                <p>$$0,0047\text{ l} = 4,7 \cdot 10^{-3}\text{ l} = 4,7\text{ ml}$$</p>
+                <p class="answer"><strong>Svar:</strong> 4,7 ml</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>c)</strong> 270 000 N</p>
+                <p>$$270\,000\text{ N} = 2,7 \cdot 10^5\text{ N}$$</p>
+                <p>Vi har inget prefix för $10^5$. Vi skriver om talet med en tiopotens i närheten som vi har prefix för, t.ex. $10^6$. <strong>OBS!</strong> När vi ökar tiopotensen från $10^5$ till $10^6$ gör vi tiopotensen 10 gånger så stor. För att talet ska behålla sin storlek måste vi samtidigt göra talet framför tiopotensen 10 "gånger så liten", dvs. 2,7 ska då ändras till $\frac{2,7}{10} = 0,27$.</p>
+                <p>$$2,7 \cdot 10^5\text{ N} = 0,27 \cdot 10^6\text{ N} = 0,27\text{ MN}$$</p>
+                <p class="answer"><strong>Svar:</strong> 0,27 MN</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>d)</strong> 0,000082 g</p>
+                <p>$$0,000082\text{ g} = 8,2 \cdot 10^{-5}\text{ g} = 82 \cdot 10^{-6}\text{ g} = 82\text{ μg}$$</p>
+                <p class="answer"><strong>Svar:</strong> 82 μg</p>
+            </div>
+
+            <h3>Exempel 3: Skriv 5 MHz utan prefix</h3>
+
+            <div class="example-box">
+                <p>Ersätt prefixet med sin tiopotens:</p>
+                <p>$$5\text{ MHz} = 5 \cdot 10^6\text{ Hz}$$</p>
+                <p class="answer"><strong>Svar:</strong> $5 \cdot 10^6$ Hz (5 000 000 Hz)</p>
+            </div>
+
+            <h3>Exempel 4: Tillämpning</h3>
+
+            <div class="example-box">
+                <p>Josefin har köpt en extern hårddisk på 2 TB. Hur många videofiler får plats på den om en fil i genomsnitt är 4 GB?</p>
+                <p>Vi ska ta reda på hur många filer med storleken 4,0 GB som får plats på en hårddisk med storleken 2,0 TB. Vi ska alltså dividera hårddiskens storlek med storleken hos en fil för att få antalet. För att få det korrekta antalet behöver vi göra om det till samma enhet i täljare och nämnare, t.ex. genom att skriva om prefixen som tiopotenser:</p>
+                <p>$$\text{Antal filer} = \frac{2,0\text{ TB}}{4,0\text{ GB}} = \frac{2,0 \cdot 10^{12}\text{ B}}{4,0 \cdot 10^9\text{ B}} = 0,5 \cdot 10^3 = 500\text{ st}$$</p>
+                <p class="answer"><strong>Svar:</strong> 500 st</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-08.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.8 Rationella exponenter</a>
+            <a href="kap1-10.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.10 Prioriteringsregler →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-09';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

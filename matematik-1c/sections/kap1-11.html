@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.11 Räknaren - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-11" class="content-section">
+            <h2>Kapitel 1.11: Hur du slår på din räknare</h2>
+
+            <div class="info-box">
+                <h3>Introduktion</h3>
+                <p>Kontrollera att du kan göra de vanligaste uträkningarna med din räknare. Testa att slå nedanstående beräkningar och se att du får korrekt svar med din räknare.</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Test av grundläggande funktioner</h3>
+                <table style="border-collapse: collapse; margin: 1rem auto; width: 100%;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">Beräkning</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd; text-align: left;">Förväntat svar</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\sqrt{7}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 2,65</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\sqrt[3]{10}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 2,15</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\sqrt[3]{543}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 2,20</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$1,5^9$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 38,44</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$45^{2/3}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 12,65</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$35^{-2}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">≈ 0,00082</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$(-3,7)^2$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">= 13,69</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="method-box">
+                <h3>Parenteser i täljare/nämnare</h3>
+                <p>När du ska räkna ut bråk med beräkningar i täljare eller nämnare, tänk på att använda parenteser korrekt:</p>
+                <p>$$\frac{360}{2 \cdot 3} = 60$$</p>
+                <p>Slå detta på räknaren som: 360 / (2 * 3)</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Svara som bråk</h3>
+                <p>Många räknare kan ge svar i bråkform istället för decimalform. Till exempel:</p>
+                <p>$$\frac{17}{51} = \frac{1}{3}$$</p>
+                <p>Leta efter en funktion på din räknare som låter dig konvertera mellan decimal- och bråkform.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Tolka räknarens tiopotenser</h3>
+                <p>När räknaren visar mycket stora eller små tal använder den ofta tiopotenser. Så här tolkar du dem:</p>
+                <ul>
+                    <li><strong>3,7E12</strong> = $3,7 \cdot 10^{12}$ = 3 700 000 000 000</li>
+                    <li><strong>2,5E-4</strong> = $2,5 \cdot 10^{-4}$ = 0,000 25</li>
+                </ul>
+                <p>"E" står för "Exponent" och betyder "gånger 10 upphöjt till".</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Tips för effektiv användning</h3>
+                <ul>
+                    <li>Lär dig hitta rot-funktionen på din räknare (ofta $\sqrt{\ }$ och $\sqrt[n]{\ }$)</li>
+                    <li>Använd parenteser för att säkerställa korrekt beräkningsordning</li>
+                    <li>Kontrollera att räknaren är i rätt läge (grader/radianer för vinklar)</li>
+                    <li>Använd minnet (M+, M-, MR, MC) för att spara mellanresultat</li>
+                    <li>Dubbelkolla alltid att svaret verkar rimligt</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-10.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.10 Prioriteringsregler</a>
+            <a href="kap2-01.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 2.1 Teckna och tolka uttryck →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-11';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

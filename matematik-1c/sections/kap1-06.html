@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.6 Potenser med positiva heltalsexponenter - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-06" class="content-section">
+            <h2>Kapitel 1.6: Potenser med positiva heltalsexponenter</h2>
+
+            <div class="info-box">
+                <h3>Introduktion</h3>
+                <p>På samma sätt som att 3 + 3 + 3 + 3 + 3 kan skrivas 3 · 5, så kan 3 · 3 · 3 · 3 · 3 skrivas $3^5$ (utläses "3 upphöjt till 5").</p>
+                <p>Man säger att $3^5$ är en <strong>potens</strong>. Delarna i en potens kallas för <strong>bas</strong> (det man upphöjer) och <strong>exponent</strong> (det man upphöjer till). Så i exemplet $3^5$ är basen 3 och exponenten 5.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Potensform och faktorform</h3>
+                <p>När ett tal skrivs</p>
+                <ul>
+                    <li>som en potens (med bas och exponent) är det skrivet i <strong>potensform</strong></li>
+                    <li>med sina faktorer (som en multiplikation) är det skrivet i <strong>faktorform</strong> eller som en <strong>produkt</strong></li>
+                </ul>
+                <p><strong>Exempel:</strong> $3^5$ är skrivet i potensform. $3 \cdot 3 \cdot 3 \cdot 3 \cdot 3$ är skrivet i faktorform.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Utläsningar</h3>
+                <p>En</p>
+                <ul>
+                    <li>tvåa i exponenten kan även utläsas "i kvadrat", så $7^2$ kan utläsas "7 i kvadrat"</li>
+                    <li>trea i exponenten kan även utläsas "i kubik", så $7^3$ kan utläsas "7 i kubik"</li>
+                </ul>
+            </div>
+
+            <div class="formula-box">
+                <h3>Potenslagar</h3>
+                <p>För att räkna med potenser ska vi använda potenslagarna:</p>
+                <table style="border-collapse: collapse; margin: 1rem auto; width: 100%;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Generell form</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Exempel</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$a^x \cdot a^y = a^{x+y}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$7^2 \cdot 7^3 = 7^{2+3} = 7^5$</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\displaystyle\frac{a^x}{a^y} = a^{x-y}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\displaystyle\frac{7^5}{7^3} = 7^{5-3} = 7^2$</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$(a^x)^y = a^{x \cdot y}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$(7^2)^3 = 7^{2 \cdot 3} = 7^6$</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\displaystyle\left(\frac{a}{b}\right)^x = \frac{a^x}{b^x}$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$\displaystyle\left(\frac{5}{3}\right)^2 = \frac{5^2}{3^2}$</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$(ab)^x = a^x \cdot b^x$</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">$(3 \cdot 4)^2 = 3^2 \cdot 4^2$</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Beräkna potenser</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $(-9)^2$</p>
+                <p>$$(-9)^2 = (-9) \cdot (-9) = 81$$</p>
+                <p>(när två negativa tal multipliceras bli produkten positiv)</p>
+                <p class="answer"><strong>Svar:</strong> 81</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $-9^2$</p>
+                <p>$$-9^2 = -9 \cdot 9 = -81$$</p>
+                <p>(observera skillnaden jämfört med föregående uppgift!)</p>
+                <p class="answer"><strong>Svar:</strong> −81</p>
+            </div>
+
+            <h3>Exempel 2: Skriv 64 som en potens med basen 4</h3>
+
+            <div class="example-box">
+                <p>Tänk "4 upphöjt till något ska bli 64" alternativt "hur många fyror ska multipliceras för att produkten ska bli 64?".</p>
+                <p>Testar:</p>
+                <p>$4 \cdot 4 = 16$ (för litet)</p>
+                <p>$4 \cdot 4 \cdot 4 = 16 \cdot 4 = 64$ (stämmer!)</p>
+                <p class="answer"><strong>Svar:</strong> $4^3$</p>
+            </div>
+
+            <h3>Exempel 3: Utveckla $(7x)^2$</h3>
+
+            <div class="example-box">
+                <p>Alla faktorer inne i parentesen ska upphöjas till 2:</p>
+                <p>$$(7x)^2 = 7^2 \cdot x^2 = 49x^2$$</p>
+                <p class="answer"><strong>Svar:</strong> $49x^2$</p>
+            </div>
+
+            <h3>Exempel 4: Förenkla $\displaystyle\frac{42x^5}{x^2}$</h3>
+
+            <div class="example-box">
+                <p>$$\frac{42x^5}{x^2} = 42x^{5-2} = 42x^3$$</p>
+                <p class="answer"><strong>Svar:</strong> $42x^3$</p>
+            </div>
+
+            <h3>Exempel 5: Lös ekvationen $8^m \cdot 8^5 = 8^7$</h3>
+
+            <div class="example-box">
+                <p>Skriv om båda led som en enda potens av 8. Sedan kan man sätta exponenterna lika och lösa ekvationen därifrån:</p>
+                <p>$$8^m \cdot 8^5 = 8^7$$</p>
+                <p>$$8^{m+5} = 8^7$$</p>
+                <p>Nu är båda led skrivna som en enda potens av 8. Då måste exponenterna vara lika, så:</p>
+                <p>$$m + 5 = 7$$</p>
+                <p>$$m = 2$$</p>
+                <p class="answer"><strong>Svar:</strong> $m = 2$</p>
+            </div>
+
+            <h3>Exempel 6: Förenkla $\displaystyle\frac{27^{5x}}{3^x + 3^x + 3^x}$</h3>
+
+            <div class="example-box">
+                <p>När vi ska förenkla bråkuttryck med potenser ska vi först sikta på att skriva om både täljare och nämnare som en potens. Därefter skriver vi om potenserna, så att de får samma bas. Därefter brukar det bli enkelt. Vi börjar med att skriva om nämnaren som en multiplikation:</p>
+                <p>$$\frac{27^{5x}}{3^x + 3^x + 3^x} = \frac{27^{5x}}{3 \cdot 3^x}$$</p>
+                <p>Sedan skriver vi om nämnaren som en potens:</p>
+                <p>$$= \frac{27^{5x}}{3^1 \cdot 3^x} = \frac{27^{5x}}{3^{1+x}}$$</p>
+                <p>Nu har vi en enda potens i både täljare och nämnare. Nu skriver vi om dem med samma bas. Eftersom $27 = 3^3$ gäller:</p>
+                <p>$$= \frac{(3^3)^{5x}}{3^{1+x}} = \frac{3^{15x}}{3^{1+x}} = 3^{15x-(1+x)} = 3^{15x-1-x} = 3^{14x-1}$$</p>
+                <p class="answer"><strong>Svar:</strong> $3^{14x-1}$</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-05.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.5 Tal i decimalform</a>
+            <a href="kap1-07.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.7 Negativa exponenter och exponenten 0 →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-06';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.12 Använda formler - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.12 Använda formler</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>Något som kan mätas kallas <strong>storhet</strong>. Längd, tid, vikt och hastighet är exempel på storheter. En ekvation som beskriver ett samband mellan olika storheter kallas <strong>formel</strong> och fungerar som hjälpmedel för att lösa problem.</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Formeln för att beräkna hastigheten \(v\) utifrån hur lång tid \(t\) det tar att färdas en viss sträcka \(s\) beräknas med formeln \(v = \frac{s}{t}\). Lös ut \(t\) och beräkna hur lång tid det tar att åka 35 mil med medelhastigheten 70 km/h.</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Vi börjar med att lösa ut \(t\) från formeln</p>
+                <div class="calculation">
+                    \(v = \frac{s}{t} \iff s = v \cdot t \iff t = \frac{s}{v} \quad (1)\)
+                </div>
+
+                <p>Vi skriver sedan upp de värden vi har. <strong>OBS!</strong> Eftersom hastigheten är angiven i enheten km/h är det viktigt att vi anger sträckan i km och tiden i timmar.</p>
+
+                <div style="margin-left: 20px;">
+                    <p>\(s = 35\) mil \(= 350\) km</p>
+                    <p>\(v = 70\) km/h</p>
+                </div>
+
+                <p>Insättning av värdena ovan i formeln (1) ger</p>
+                <div class="calculation">
+                    \(t = \frac{s}{v} = \frac{350}{70} = 5\text{ timmar}\)
+                </div>
+
+                <p class="answer">Svar: 5 timmar</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Den totala kostnaden \(H\) kr för att hyra en bil under ett år är en fast kostnad på 21 000 kr och sedan ett rörlig kostnad på 2,5 kr/km. Formeln för den totala kostnaden om man kör \(m\) kilometer är då</strong></p>
+            <p class="formula">\(H = 21\,000 + 2{,}5m\)</p>
+
+            <p><strong>a)</strong> Vad blir kostnaden för bilen om man kör 2 000 mil under året?<br>
+            <strong>b)</strong> Hur långt kan du köra för 30 000 kr?</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Enheterna är viktiga! Observera att \(m\) står för sträckan i kilometer. Sträckan 2 000 mil motsvarar 20 000 km. Det betyder att \(m = 20\,000\). Insättning av \(m = 20\,000\) i formeln ger</p>
+
+                <div class="calculation">
+                    \(H = 21\,000 + 2{,}5 \cdot 20\,000 = 21\,000 + 50\,000 = 71\,000\text{ kr}\)
+                </div>
+
+                <p class="answer">Svar: 71 000 kr</p>
+
+                <p><strong>b)</strong> Den totala kostnaden motsvarar 30 000 kr. Insättning av \(H = 30\,000\) i formeln ger</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    30\,000 &= 21\,000 + 2{,}5m \\
+                    30\,000 - 21\,000 &= 21\,000 + 2{,}5m - 21\,000 \\
+                    9\,000 &= 2{,}5m \\
+                    \frac{9\,000}{2{,}5} &= \frac{2{,}5m}{2{,}5} \\
+                    360 &= m \\
+                    m &= 360\text{ mil}
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: 360 mil</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Förkortning och förlängning</a>
+                        <a href="kap1-02.html">1.2 Addition och subtraktion</a>
+                        <a href="kap1-03.html">1.3 Multiplikation och division</a>
+                        <a href="kap1-04.html">1.4 Gränsvärden</a>
+                        <a href="kap1-05.html">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Sekantens lutning</a>
+                        <a href="kap2-02.html">2.2 Tangentens lutning</a>
+                        <a href="kap2-03.html">2.3 Derivatans definition</a>
+                        <a href="kap2-04.html">2.4 Använda derivata</a>
+                        <a href="kap2-05.html">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="kap3-02.html">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="kap3-03.html">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="kap3-04.html">3.4 Derivatan av e^x</a>
+                        <a href="kap3-05.html">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="kap3-06.html">3.6 Tillämpningar av derivata</a>
+                        <a href="kap3-07.html">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Växande och avtagande funktioner</a>
+                        <a href="kap4-02.html">4.2 Derivatans nollställen</a>
+                        <a href="kap4-03.html">4.3 Största och minsta värde</a>
+                        <a href="kap4-04.html">4.4 Andraderivatan och funktioner</a>
+                        <a href="kap4-05.html">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="kap4-06.html">4.6 Extremvärdesproblem</a>
+                        <a href="kap4-07.html">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Primitiva funktioner</a>
+                        <a href="kap5-02.html">5.2 Primitiva funktioner med villkor</a>
+                        <a href="kap5-03.html">5.3 Arean under en kurva</a>
+                        <a href="kap5-04.html">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="kap5-05.html">5.5 Beräkna integraler digitalt</a>
+                        <a href="kap5-06.html">5.6 Area mellan kurvor</a>
+                        <a href="kap5-07.html">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="kap6-02.html">6.2 Enhetscirkeln</a>
+                        <a href="kap6-03.html">6.3 Trigonometriska ekvationer</a>
+                        <a href="kap6-04.html">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="kap6-05.html">6.5 Areasatsen</a>
+                        <a href="kap6-06.html">6.6 Sinussatsen</a>
+                        <a href="kap6-07.html">6.7 Cosinussatsen</a>
+                        <a href="kap6-08.html">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav><main class="container" role="main" id="main-content">
+        <section id="kap3-06" class="content-section">
+<h2>Kapitel 3.6: Tillämpningar av derivata</h2>
+<div class="info-box">
+<h3>Derivatan i verkligheten</h3>
+<p>Derivatan används för att beskriva <strong>förändringshastigheter</strong> i många olika sammanhang:</p>
+<ul>
+<li><strong>Fysik:</strong> Hastighet (derivatan av sträcka), acceleration (derivatan av hastighet)</li>
+<li><strong>Ekonomi:</strong> Marginalkostnad, marginalvinst, tillväxttakt</li>
+<li><strong>Biologi:</strong> Befolkningstillväxt, enzymkinetik</li>
+<li><strong>Kemi:</strong> Reaktionshastighet</li>
+</ul>
+</div>
+<div class="math-figure">
+<img alt="Tillämpningar av derivata - hastighet och acceleration" src="../../images/kap3/kap3-06-tillampningar-derivata.png"/>
+<p class="figure-caption">Figur 3.6: Tillämpning - derivatan i rörelseanalys</p>
+</div>
+<h3>Exempel 1: Rörelse - Sträcka, hastighet och acceleration</h3>
+<div class="example-box">
+<p>En bil rör sig längs en väg. Dess position efter $t$ sekunder ges av $s(t) = 2t^3 - 15t^2 + 36t$ (sträcka i meter).</p>
+<p><strong>a)</strong> Bestäm bilens hastighet efter 3 sekunder.</p>
+<p>Hastigheten är derivatan av sträckan: $v(t) = s'(t)$</p>
+<p>$$v(t) = 6t^2 - 30t + 36$$</p>
+<p>$$v(3) = 6 \cdot 9 - 30 \cdot 3 + 36 = 54 - 90 + 36 = 0$$</p>
+<p class="answer"><strong>Svar a):</strong> 0 m/s (bilen står still)</p>
+<p><strong>b)</strong> Bestäm bilens acceleration efter 3 sekunder.</p>
+<p>Accelerationen är derivatan av hastigheten: $a(t) = v'(t) = s''(t)$</p>
+<p>$$a(t) = 12t - 30$$</p>
+<p>$$a(3) = 36 - 30 = 6$$</p>
+<p class="answer"><strong>Svar b):</strong> 6 m/s²</p>
+<p><strong>c)</strong> När vänder bilen?</p>
+<p>Bilen vänder när hastigheten byter tecken, dvs. när $v(t) = 0$:</p>
+<p>$$6t^2 - 30t + 36 = 0$$</p>
+<p>$$t^2 - 5t + 6 = 0$$</p>
+<p>$$(t - 2)(t - 3) = 0$$</p>
+<p>$t = 2$ eller $t = 3$</p>
+<p class="answer"><strong>Svar c):</strong> Efter 2 och 3 sekunder</p>
+</div>
+<h3>Exempel 2: Ekonomi - Marginalkostnad</h3>
+<div class="example-box">
+<p>Ett företag tillverkar produkter. Kostnaden för att tillverka $x$ produkter ges av $C(x) = 0{,}1x^2 + 50x + 1000$ (kostnad i kr).</p>
+<p><strong>a)</strong> Vad är marginalkostnaden (kostnaden för att tillverka en extra produkt) när $x = 100$?</p>
+<p>Marginalkostnaden är $C'(x)$:</p>
+<p>$$C'(x) = 0{,}2x + 50$$</p>
+<p>$$C'(100) = 0{,}2 \cdot 100 + 50 = 70$$</p>
+<p class="answer"><strong>Svar a):</strong> 70 kr</p>
+<p><strong>b)</strong> För vilket antal produkter är marginalkostnaden 90 kr?</p>
+<p>$$C'(x) = 90$$</p>
+<p>$$0{,}2x + 50 = 90$$</p>
+<p>$$0{,}2x = 40$$</p>
+<p>$$x = 200$$</p>
+<p class="answer"><strong>Svar b):</strong> 200 produkter</p>
+</div>
+<h3>Exempel 3: Biologi - Bakterietillväxt</h3>
+<div class="example-box">
+<p>En bakteriepopulation växer enligt $P(t) = 500e^{0{,}2t}$ där $t$ är tiden i timmar.</p>
+<p><strong>a)</strong> Hur stor är populationen efter 5 timmar?</p>
+<p>$$P(5) = 500e^{1} = 500e \approx 1359$$</p>
+<p class="answer"><strong>Svar a):</strong> Cirka 1359 bakterier</p>
+<p><strong>b)</strong> Hur snabbt växer populationen efter 5 timmar?</p>
+<p>$$P'(t) = 500 \cdot 0{,}2 \cdot e^{0{,}2t} = 100e^{0{,}2t}$$</p>
+<p>$$P'(5) = 100e^{1} = 100e \approx 272$$</p>
+<p class="answer"><strong>Svar b):</strong> Cirka 272 bakterier per timme</p>
+</div>
+        </section>
+
+<div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+    <a href="kap3-05.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 3.5 Derivatan av e^kx och a^x</a>
+    <a href="kap3-07.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 3.7 Tillämpningar med digitala verktyg →</a>
+</div>
+
+
+
+<!-- Kommentarsfält -->
+<div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'kap3-06';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://enkel-matematik.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+</div>
+
+    </main>
+
+    <footer>
+<div class="container">
+<p>© 2024 Matematik 3c Kurshemsida</p>
+</div>
+</footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+
+</body>
+</html>

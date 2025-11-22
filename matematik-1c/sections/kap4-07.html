@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.7 Funktion och funktionsvärde - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap4-07" class="content-section">
+            <h2>Kapitel 4.7: Funktion och funktionsvärde</h2>
+
+            <p>Ett samband mellan två variabler, t.ex. $x$ och $y$, där varje tillåtet x-värde ger exakt ett y-värde kallas <strong>funktion</strong>. Om vi ritar upp grafen till en funktion innebär det att om vi lägger en penna lodrätt över grafen kan den bara skära grafen en gång.</p>
+
+            <p>I sambandet $y = 2x + 3$ säger vi att "y är en funktion av x".</p>
+
+            <p>Vad $y$ har för värde beror på vad $x$ har för värde. Därför kallas $y$ den <strong>beroende variabeln</strong>. På motsvarande sätt kallas $x$ för den <strong>oberoende variabeln</strong>. Det värde som funktionen $y$ får kallas <strong>funktionsvärde</strong>.</p>
+
+            <h3>Funktionsnotation</h3>
+            <p>För att förtydliga att vi har en funktion och för att visa vilken variabel den beror på används ett annat skrivsätt. Istället för $y$ skriver vi $f(x)$, där $f$ är namnet på funktionen och $x$ står för vilken variabel den beror på. Alltså gäller $y = f(x)$. $f(x)$ utläses "f av x".</p>
+
+            <p>Om vi vill skriva sambandet $y = 2x + 3$ som en funktion skriver vi alltså</p>
+            <p>$$f(x) = 2x + 3$$</p>
+
+            <p>Om vi skulle rita grafen till $f(x) = 2x + 3$ skulle det bli en rät linje (jämför med $y = kx + m$). Detta kallas därför en <strong>linjär funktion</strong>.</p>
+
+            <p>Om vi vill ta reda på funktionsvärdet när $x = 5$ skriver vi $f(5)$ och beräknar det genom att ersätta $x$ med 5 i vårt samband.</p>
+            <p>$$f(5) = 2 \cdot 5 + 3 = 10 + 3 = 13$$</p>
+            <p>Så $f(5) = 13$.</p>
+
+            <div class="info-box">
+                <p>Funktionen brukar liknas vid en maskin eller en regel. Vi stoppar in ett värde i maskinen/regeln och så ger det ett nytt värde. I funktionen ovan stoppade vi in värdet 5 som bearbetades enligt "regeln" $2x + 3$ och vi fick ut värdet 13.</p>
+            </div>
+
+            <p>Precis som att vi kan beteckna variabler med olika bokstäver, t.ex. $x, y, z, \ldots$, så kan funktioner betecknas med olika bokstäver, vanligtvis $f, g, h, \ldots$</p>
+
+            <p>$f(x) = 2x + 3$ betyder alltså samma sak som $g(x) = 2x + 3$.</p>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Låt $f(x) = 5x - 3$. Bestäm</p>
+                <p>a) $f(4)$<br>
+                b) $f(-2)$<br>
+                c) $f(3a)$<br>
+                d) $f(7) - f(6)$</p>
+
+                <h5>Lösning:</h5>
+
+                <h5>a)</h5>
+                <p>För att beräkna $f(4)$ ersätter vi alla $x$ med 4 i funktionen $f(x) = 5x - 3$.</p>
+                <p>$$f(4) = 5 \cdot 4 - 3 = 20 - 3 = 17$$</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> 17
+                </div>
+
+                <h5>b)</h5>
+                <p>Vi gör på motsvarande sätt som i a-uppgiften.</p>
+                <p>$$f(x) = 5x - 3$$</p>
+                <p>$$f(-2) = 5 \cdot (-2) - 3 = -10 - 3 = -13$$</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> $-13$
+                </div>
+
+                <h5>c)</h5>
+                <p>Ibland kan vi sätta in variabler i vår funktion. Principen är dock densamma. När vi beräknar $f(3a)$ byter vi ut alla $x$ mot $3a$ och förenklar sedan som vanligt.</p>
+                <p>$$f(x) = 5x - 3$$</p>
+                <p>$$f(3a) = 5 \cdot 3a - 3 = 15a - 3$$</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> $15a - 3$
+                </div>
+
+                <h5>d)</h5>
+                <p>Ibland kan vi ha uttryck med flera funktioner. Då beräknar vi dem var och en för sig för att sedan lägga ihop dem eller så räknar vi ut dem tillsammans på en gång.</p>
+                <p>$$f(x) = 5x - 3$$</p>
+
+                <p><strong>Metod 1: Var och en för sig</strong></p>
+                <p>$$f(7) = 5 \cdot 7 - 3 = 35 - 3 = 32$$</p>
+                <p>$$f(6) = 5 \cdot 6 - 3 = 30 - 3 = 27$$</p>
+                <p>$$f(7) - f(6) = 32 - 27 = 5$$</p>
+
+                <p><strong>Metod 2: Tillsammans på en gång</strong></p>
+                <p>$$f(7) - f(6) = 5 \cdot 7 - 3 - (5 \cdot 6 - 3) = 35 - 3 - (30 - 3) = 32 - 27 = 5$$</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> 5
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Är $f(x)$ och $g(x)$, som är uppritade nedan, funktioner? Motivera ditt svar.</p>
+
+                <h5>Lösning:</h5>
+                <p>För att graferna ska vara funktioner ska varje giltigt x-värde ge ett enda y-värde. Grafen till $g(x)$ har oändligt många y-värden för $x = -2$ (om varje ruta motsvarar 1) och är därför inte någon funktion.</p>
+
+                <p>Vi lägger en penna lodrätt över grafen till $f(x)$ och ser att den skär grafen mer än en gång (två gånger). $f(x)$ är alltså inte heller en funktion.</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> Nej, de är inte funktioner eftersom ett x-värde kan ge flera y-värden.
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Grafen till funktionen $f$ är uppritad.</p>
+                <p>a) Bestäm $f(2)$<br>
+                b) Bestäm $f(0)$<br>
+                c) Lös ekvationen $f(x) = 0$</p>
+
+                <h5>Lösning:</h5>
+
+                <h5>a)</h5>
+                <p>$f(2)$ motsvarar funktionsvärdet (y-värdet) då $x = 2$. Vi läser av grafen vid $x = 2$ och ser att y-koordinaten där är $-3$. Så $f(2) = -3$.</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> $-3$
+                </div>
+
+                <h5>b)</h5>
+                <p>$f(0)$ motsvarar funktionsvärdet (y-värdet) då $x = 0$. Vi läser av grafen vid $x = 0$ (vilket motsvarar skärningen med y-axeln) och ser att y-koordinaten där är 3. Så $f(0) = 3$.</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> 3
+                </div>
+
+                <h5>c)</h5>
+                <p>$f(x) = 0$ motsvarar att funktionsvärdet (y-värdet) är lika med 0. Vi läser av grafen vid $y = 0$ (vilket motsvarar skärningarna med x-axeln) och ser att det gäller när $x = -1$, $x = 1$ och $x = 3$. Ekvationen har alltså tre lösningar.</p>
+                <div class="answer-box">
+                    <strong>Svar:</strong> $x_1 = -1$, $x_2 = 1$ och $x_3 = 3$
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li><strong>Funktion:</strong> Varje x-värde ger exakt ett y-värde</li>
+                    <li>Funktionsnotation: $f(x)$ (utläses "f av x")</li>
+                    <li>$x$ = oberoende variabeln</li>
+                    <li>$y$ eller $f(x)$ = beroende variabeln (funktionsvärdet)</li>
+                    <li><strong>Linjär funktion:</strong> En funktion vars graf är en rät linje</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap4-06.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 4.6 Parallella och lodräta linjer</a>
+            <a href="kap4-08.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 4.8 Ekvationslösning med grafritande hjälpmedel →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap4-07';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

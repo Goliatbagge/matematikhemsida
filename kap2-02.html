@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.02 Förenkla uttryck - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.02 Förenkla uttryck</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>När vi skriver ett uttryck på ett enklare sätt kallas det att <strong>förenkla uttryck</strong>.</p>
+
+            <div class="method-box">
+                <h3>Förenkla uttryck</h3>
+                <p>Vi kan bara lägga ihop likadana termer med varandra, dvs. \(x\)-termer för sig, \(y\)-termer för sig, \(x^2\)-termer för sig, konstanttermer för sig, och så vidare. Var noga med att titta på tecknet framför varje term!</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Förenkla</strong></p>
+            <p><strong>a)</strong> \(8x + 3y - 2x + 9y\)<br>
+            <strong>b)</strong> \(5x^2 + 3x - x^2\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Vi markerar \(x\)-termer i grönt och \(y\)-termer i rött.</p>
+                <p style="margin-left: 20px;">\(8x + 3y - 2x + 9y\)</p>
+
+                <p>Vi ser att \(x\)-termerna bildar \(8x - 2x = 6x\) och \(y\)-termerna bildar \(3y + 9y = 12y\)</p>
+                <div class="calculation">
+                    \(8x + 3y - 2x + 9y = 6x + 12y\)
+                </div>
+                <p class="answer">Svar: \(6x + 12y\)</p>
+
+                <p><strong>b)</strong> Vi kan bara lägga ihop \(x^2\)-termer för sig och \(x\)-termer för sig.</p>
+                <div class="calculation">
+                    \(5x^2 + 3x - x^2 = 4x^2 + 3x\)
+                </div>
+                <p class="answer">Svar: \(4x^2 + 3x\)</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="definition-box">
+                <h3>Addition och subtraktion med parentesuttryck</h3>
+                <p>När ett</p>
+                <ul>
+                    <li><strong>plustecken</strong> står framför en parentes kan parentesen tas bort utan att ändra något inuti parentesen
+                        <p>\(a + (b + c) = a + b + c\) &nbsp;&nbsp;&nbsp; \(a + (b - c) = a + b - c\)</p>
+                    </li>
+                    <li><strong>minustecken</strong> står framför en parentes kan parentesen tas bort om man samtidigt ändrar tecknen på termerna inuti parentesen (plustecken blir minustecken och minustecken blir plustecken).
+                        <p>\(a - (b + c) = a - b - c\) &nbsp;&nbsp;&nbsp; \(a - (b - c) = a - b + c\)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Förenkla \(20x - (5 + 3x - 7y)\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <div class="calculation">
+                    \begin{align}
+                    20x - (5 + 3x - 7y) &= \\
+                    20x - 5 - 3x + 7y &= \\
+                    17x - 5 + 7y
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(17x - 5 + 7y\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 3</h3>
+            <p><strong>Teckna ett förenklat uttryck för omkretsen till rektangeln nedan.</strong></p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="300" height="150" style="border: 1px solid #ddd;">
+                    <rect x="50" y="30" width="200" height="90" fill="#90EE90" stroke="black" stroke-width="2"/>
+                    <text x="150" y="25" text-anchor="middle" font-size="16">\(2x + 3\)</text>
+                    <text x="260" y="75" text-anchor="start" font-size="16">\(x\)</text>
+                </svg>
+            </div>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Eftersom motstående sidor i en rektangel är lika långa måste vänstersidan vara \(x\) och ovansidan vara \(2x + 3\). Omkretsen fås genom att lägga ihop alla sidor, dvs. som</p>
+                <div class="calculation">
+                    \begin{align}
+                    &(2x + 3) + (2x + 3) + x + x = \\
+                    &2x + 3 + 2x + 3 + x + x = \\
+                    &6x + 6
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(6x + 6\)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

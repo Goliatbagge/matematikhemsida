@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2 Förändringsfaktor - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap3-02" class="content-section">
+            <h2>Kapitel 3.2: Förändringsfaktor</h2>
+
+            <div class="definition-box">
+                <h3>Förändringsfaktor</h3>
+                <p>En faktor som anger hur mycket något har förändrats kallas <strong>förändringsfaktor</strong> och kan användas för att snabbt beräkna nya värden vid procentuella förändringar.</p>
+            </div>
+
+            <div class="formula-box">
+                <h3>Förändringsfaktor och nya värdet</h3>
+                <p>$$\text{förändringsfaktor} = \frac{\text{nya värdet}}{\text{gamla värdet}} \quad \Leftrightarrow \quad \text{nya värdet} = \text{förändringsfaktor} \cdot \text{gamla värdet}$$</p>
+                <p>Vi kan alltså få det nya värdet med en enda enkel uträkning om vi vet förändringsfaktorn.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Bestämma förändringsfaktorn</h3>
+                <p>Vi får förändringsfaktorn genom att lägga till ändringen i procentform till 100 % (100 % står för det vi har från början) och sedan göra om till decimalform.</p>
+
+                <table style="width: 100%; margin: 1rem 0; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">Förändring</th>
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">Förändringsfaktor (procentform)</th>
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">Förändringsfaktor (decimalform)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">+ 5 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">100 % + 5 % = 105 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">1,05</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">+ 27 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">100 % + 27 % = 127 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">1,27</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">+ 140 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">100 % + 140 % = 240 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">2,40</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">− 4 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">100 % − 4 % = 96 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">0,96</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">− 25 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">100 % − 25 % = 75 %</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">0,75</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="info-box">
+                <h3>Jämförelser</h3>
+                <p>Ibland jämför vi två värden procentuellt och då är det inte alltid självklart vad som är "nya värdet" och "gamla värdet".</p>
+                <p><strong>Vid jämförelser motsvarar det vi JÄMFÖR MED det gamla värdet.</strong></p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel 1: Beräkna nytt pris efter prisändring</h3>
+                <p><strong>Uppgift:</strong> En begagnad bil kostar 72 000 kr för sedan sänkas i pris med 8 %. Vilket blir det nya priset?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Förändringsfaktorn = 100 % − 8 % = 92 % = 0,92</p>
+                <p>Nya värdet = förändringsfaktor · gamla värdet = 0,92 · 72 000 kr = 66 240 kr</p>
+
+                <p><strong>Svar:</strong> 66 240 kr</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel 2: Beräkna procentuell ökning</h3>
+                <p><strong>Uppgift:</strong> Ett pris ökar från 175 kr till 231 kr. Hur många procents prisökning motsvarar det?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi bestämmer prisökningen med en enda uträkning genom att bestämma förändringsfaktorn.</p>
+
+                <p>$$\text{Förändringsfaktor} = \frac{\text{nya värdet}}{\text{gamla värdet}} = \frac{231}{175} = 1{,}32 = 132\,\%$$</p>
+
+                <p>Vi jämför förändringsfaktorn mot 100 %. Priset har alltså ökat med (132 % − 100 %) = 32 %</p>
+
+                <p><strong>Svar:</strong> 32 %</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel 3: Jämförelse mellan priser</h3>
+                <p><strong>Uppgift:</strong> Butik A säljer en chokladkaka för 18 kr. Butik B säljer en likadan chokladkaka för 22 kr. Hur många procent</p>
+                <p>a) dyrare är chokladkakan i butik B jämfört med butik A?</p>
+                <p>b) billigare är chokladkakan i butik A jämfört med butik B?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p><strong>a)</strong> Vi löser uppgiften med förändringsfaktor. Vi jämför med butik A vars pris (18 kr) då motsvarar "gamla värdet" i formeln.</p>
+
+                <p>$$\text{förändringsfaktor} = \frac{\text{nya värdet}}{\text{gamla värdet}} = \frac{22}{18} = 1{,}222\ldots \approx 1{,}22 = 122\,\% \Rightarrow 22\,\% \text{ dyrare}$$</p>
+
+                <p><strong>Svar:</strong> 22 % dyrare.</p>
+
+                <p><strong>b)</strong> Vi löser uppgiften med förändringsfaktor. Vi jämför med butik B vars pris (22 kr) då motsvarar "gamla värdet" i formeln.</p>
+
+                <p>$$\text{förändringsfaktor} = \frac{\text{nya värdet}}{\text{gamla värdet}} = \frac{18}{22} = 0{,}818\ldots \approx 0{,}82 = 82\,\% \Rightarrow 18\,\% \text{ billigare}$$</p>
+
+                <p><strong>Svar:</strong> 18 % billigare</p>
+            </div>
+
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap3-01.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 3.1 Procent, promille och ppm</a>
+            <a href="kap3-03.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 3.3 Upprepade procentuella förändringar →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap3-02';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

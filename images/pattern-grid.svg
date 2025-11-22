@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtilt matematiskt rutnätsmönster (tilleable) -->
+
+  <!-- Vertikala linjer -->
+  <line x1="0" y1="0" x2="0" y2="200" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="50" y1="0" x2="50" y2="200" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="100" y1="0" x2="100" y2="200" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="150" y1="0" x2="150" y2="200" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Horisontella linjer -->
+  <line x1="0" y1="0" x2="200" y2="0" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="50" x2="200" y2="50" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="100" x2="200" y2="100" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="150" x2="200" y2="150" stroke="#E5E7EB" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Små dekorativa punkter vid några korsningar -->
+  <circle cx="50" cy="50" r="1.5" fill="#2563EB" opacity="0.1"/>
+  <circle cx="150" cy="50" r="1.5" fill="#2563EB" opacity="0.1"/>
+  <circle cx="50" cy="150" r="1.5" fill="#F59E0B" opacity="0.1"/>
+  <circle cx="150" cy="150" r="1.5" fill="#F59E0B" opacity="0.1"/>
+  <circle cx="100" cy="100" r="1.5" fill="#2563EB" opacity="0.15"/>
+</svg>

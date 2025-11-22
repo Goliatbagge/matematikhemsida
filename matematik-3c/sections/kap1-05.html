@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Förkortning och förlängning</a>
+                        <a href="kap1-02.html">1.2 Addition och subtraktion</a>
+                        <a href="kap1-03.html">1.3 Multiplikation och division</a>
+                        <a href="kap1-04.html">1.4 Gränsvärden</a>
+                        <a href="kap1-05.html">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Sekantens lutning</a>
+                        <a href="kap2-02.html">2.2 Tangentens lutning</a>
+                        <a href="kap2-03.html">2.3 Derivatans definition</a>
+                        <a href="kap2-04.html">2.4 Använda derivata</a>
+                        <a href="kap2-05.html">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="kap3-02.html">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="kap3-03.html">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="kap3-04.html">3.4 Derivatan av e^x</a>
+                        <a href="kap3-05.html">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="kap3-06.html">3.6 Tillämpningar av derivata</a>
+                        <a href="kap3-07.html">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Växande och avtagande funktioner</a>
+                        <a href="kap4-02.html">4.2 Derivatans nollställen</a>
+                        <a href="kap4-03.html">4.3 Största och minsta värde</a>
+                        <a href="kap4-04.html">4.4 Andraderivatan och funktioner</a>
+                        <a href="kap4-05.html">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="kap4-06.html">4.6 Extremvärdesproblem</a>
+                        <a href="kap4-07.html">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Primitiva funktioner</a>
+                        <a href="kap5-02.html">5.2 Primitiva funktioner med villkor</a>
+                        <a href="kap5-03.html">5.3 Arean under en kurva</a>
+                        <a href="kap5-04.html">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="kap5-05.html">5.5 Beräkna integraler digitalt</a>
+                        <a href="kap5-06.html">5.6 Area mellan kurvor</a>
+                        <a href="kap5-07.html">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="kap6-02.html">6.2 Enhetscirkeln</a>
+                        <a href="kap6-03.html">6.3 Trigonometriska ekvationer</a>
+                        <a href="kap6-04.html">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="kap6-05.html">6.5 Areasatsen</a>
+                        <a href="kap6-06.html">6.6 Sinussatsen</a>
+                        <a href="kap6-07.html">6.7 Cosinussatsen</a>
+                        <a href="kap6-08.html">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav><main class="container" role="main" id="main-content">
+        <section id="kap1-05" class="content-section">
+<h2>Kapitel 1.5: Symbolhanterande hjälpmedel</h2>
+<p>En räknare som inte bara kan hantera numeriska beräkningar (beräkningar med siffror), utan också kan hantera algebraiska uttryck kallas <strong>symbolhanterande hjälpmedel</strong>. Geogebra är ett exempel på ett sådant hjälpmedel.</p>
+<p>Symbolhanterande hjälpmedel kan t.ex. användas för att förenkla uttryck, faktorisera uttryck, lösa ekvationer och bestämma gränsvärden.</p>
+<table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+<tr>
+<th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Uppgift</th>
+<th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Kommando i Geogebra</th>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Förenkla uttryck</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Utveckla( Uttryck )</td>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Faktorisera uttryck</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Faktorisera( Polynom )</td>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Lösa ekvationer numeriskt</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">NLös( Ekvation )</td>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Lösa ekvationer exakt</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Lös( Ekvation )</td>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Bestämma funktionsvärde</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">f(x) = ... och sedan t.ex. f(3)</td>
+</tr>
+<tr>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Beräkna gränsvärde</td>
+<td style="padding: 0.5rem; border: 1px solid #ddd;">Gränsvärde( Funktion, Värde )</td>
+</tr>
+</table>
+<h3>Exempel 1: Förenkla $(x+3)(x-1)(x+5)$</h3>
+<div class="example-box">
+<p>I Geogebras inmatningsfält skriver vi "utv" och väljer <strong>Utveckla( Uttryck )</strong>.</p>
+<p>Vi skriver in uttrycket och slår Enter.</p>
+<p class="answer"><strong>Svar:</strong> $x^3 + 7x^2 + 7x - 15$</p>
+</div>
+<h3>Exempel 2: Faktorisera $x^3 + 7x^2 + 7x - 15$</h3>
+<div class="example-box">
+<p>I Geogebras inmatningsfält skriver vi "fakt" och väljer <strong>Faktorisera( Polynom )</strong>.</p>
+<p>Vi skriver in uttrycket och slår Enter.</p>
+<p class="answer"><strong>Svar:</strong> $(x-1)(x+3)(x+5)$</p>
+</div>
+<h3>Exempel 3: Lös $x^3 - x^2 - 3x + 3 = 0$</h3>
+<div class="example-box">
+<p><strong>a)</strong> Med två decimaler:</p>
+<p>Använd <strong>NLös( Ekvation )</strong> i Geogebra.</p>
+<p class="answer"><strong>Svar:</strong> $x_1 \approx -1{,}73$, $x_2 = 1$ och $x_3 \approx 1{,}73$</p>
+<p><strong>b)</strong> Exakt:</p>
+<p>Använd <strong>Lös( Ekvation )</strong> i Geogebra.</p>
+<p class="answer"><strong>Svar:</strong> $x_1 = -\sqrt{3}$, $x_2 = 1$ och $x_3 = \sqrt{3}$</p>
+</div>
+<h3>Exempel 4: Funktionen $f(x) = x^3 - 4x^2$</h3>
+<div class="example-box">
+<p><strong>a)</strong> Bestäm $f(7)$</p>
+<p>Definiera funktionen genom att skriva f(x) = x^3 - 4x^2 i inmatningsfältet. Därefter skriver vi f(7) på raden under.</p>
+<p class="answer"><strong>Svar:</strong> 147</p>
+<p><strong>b)</strong> Lös $f(x) = 7$</p>
+<p>Använd kommandot Lös( f(x) = 7 ) eller Lös( f = 7 ).</p>
+<p class="answer"><strong>Svar:</strong> $x \approx 4{,}37$</p>
+</div>
+<h3>Exempel 5: Bestäm $\lim_{x \to \infty} \frac{3x+2}{x-1}$</h3>
+<div class="example-box">
+<p>I Geogebras inmatningsfält skriver vi "grän" och väljer <strong>Gränsvärde( Funktion, Värde )</strong>.</p>
+<p>Vi skriver in uttrycket och värdet som variabeln går mot (infinity för $\infty$).</p>
+<p class="answer"><strong>Svar:</strong> 3</p>
+</div>
+        </section>
+
+<div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+    <a href="kap1-04.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.4 Gränsvärden</a>
+    <a href="kap2-01.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 2.1 Sekantens lutning →</a>
+</div>
+
+
+
+<!-- Kommentarsfält -->
+<div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'kap1-05';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://enkel-matematik.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+</div>
+
+    </main>
+
+    <footer>
+<div class="container">
+<p>© 2024 Matematik 3c Kurshemsida</p>
+</div>
+</footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+
+</body>
+</html>

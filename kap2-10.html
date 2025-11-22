@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.10 Potensekvationer - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.10 Potensekvationer</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>En ekvation där variabeln, t.ex. \(x\), är en potens ("upphöjt till något") kallas för <strong>potensekvation</strong>. Dessa kan lösas med två algebraiska metoder: med potenslagar eller med rotuttryck.</p>
+
+            <div class="definition-box">
+                <h3>Lösa potensekvationer med potenslagar</h3>
+                <p>\(x^n = a\) har lösningen</p>
+                <p class="formula">\(x = a^{1/n}\)</p>
+            </div>
+
+            <div class="note-box">
+                <h3>Härledning – Lösa potensekvationer med potenslagar</h3>
+                <p>Vi utgår från den generella ekvationen</p>
+                <p>\(x^n = a\)</p>
+
+                <p>Vi upphöjer båda led till exponentens invers, i detta fall \(\frac{1}{n}\).</p>
+                <div class="calculation">
+                    \begin{align}
+                    (x^n)^{1/n} &= a^{1/n} \\
+                    x^{n/n} &= a^{1/n} \\
+                    x^1 &= a^{1/n} \\
+                    x &= a^{1/n}
+                    \end{align}
+                </div>
+                <p>vsv.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Lösa potensekvationer med rötter</h3>
+                <p>\(x^n = a\) har lösningen</p>
+                <p class="formula">\(x = \sqrt[n]{a}\)</p>
+
+                <p><strong>OBS!</strong> Om exponenten är jämn får ekvationen, i allmänhet, två lösningar – en positiv och en negativ. Då ska ± placeras framför rottecknet/lösningen. Om exponenten är udda får ekvationen en lösning och inget ± ska placeras framför rottecknet/lösningen.</p>
+            </div>
+
+            <div class="note-box">
+                <h3>Antal lösningar till en potensekvation</h3>
+                <p>En potensekvation \(x^n = a\) med</p>
+                <ul>
+                    <li>jämn exponent har två, en eller noll lösningar</li>
+                    <li>udda exponent har en lösning</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös ekvationerna och avrunda svaret till två decimaler.</strong></p>
+            <p><strong>a)</strong> \(x^{14} = 80\,000\)<br>
+            <strong>b)</strong> \(3x^5 - 21 = 0\)<br>
+            <strong>c)</strong> \(x^{3{,}4} = 98\)<br>
+            <strong>d)</strong> \(x^{1/2} = 4\)<br>
+            <strong>e)</strong> \(x^{2/5} = 10\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+
+                <table style="width: 100%; margin: 20px 0;">
+                    <tr>
+                        <td style="width: 50%; vertical-align: top; padding-right: 10px;">
+                            <strong>Med potenslagar:</strong>
+                            <div class="calculation">
+                                \begin{align}
+                                x^{14} &= 80\,000 \\
+                                (x^{14})^{1/14} &= 80\,000^{1/14} \\
+                                x &= \pm 2{,}239\ldots \approx \pm 2{,}24
+                                \end{align}
+                            </div>
+                        </td>
+                        <td style="width: 50%; vertical-align: top; padding-left: 10px;">
+                            <strong>Med rotuttryck:</strong>
+                            <div class="calculation">
+                                \begin{align}
+                                x^{14} &= 80\,000 \\
+                                x &= \pm\sqrt[14]{80\,000} \\
+                                x &= \pm 2{,}239\ldots \approx \pm 2{,}24
+                                \end{align}
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <p class="answer">Svar: \(x \approx \pm 2{,}24\)</p>
+
+                <p><strong>b)</strong> Vi börjar med att lösa ut \(x^5\).</p>
+                <div class="calculation">
+                    \begin{align}
+                    3x^5 - 21 &= 0 \\
+                    3x^5 - 21 + 21 &= 0 + 21 \\
+                    3x^5 &= 21 \\
+                    \frac{3x^5}{3} &= \frac{21}{3} \\
+                    x^5 &= 7
+                    \end{align}
+                </div>
+
+                <p>Därefter löser vi ekvationen med potenslagar eller med rotuttryck.</p>
+                <div class="calculation">
+                    \(x = 7^{1/5} = \sqrt[5]{7} = 1{,}475\ldots \approx 1{,}48\)
+                </div>
+                <p>(Inget ± eftersom exponenten är udda.)</p>
+
+                <p class="answer">Svar: \(x \approx 1{,}48\)</p>
+
+                <p><strong>c)</strong> Vi löser ekvationer med decimaltal i exponenten på motsvarande sätt.</p>
+                <div class="calculation">
+                    \begin{align}
+                    x^{3{,}4} &= 98 \\
+                    x &= \sqrt[3{,}4]{98} = 98^{1/3{,}4} = 3{,}851\ldots \approx 3{,}85
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x \approx 3{,}85\)</p>
+
+                <p><strong>d)</strong> När vi har bråk i exponenten börjar vi med att få bort nämnaren i exponenten genom att upphöja båda led till den, i det här fallet med 2.</p>
+                <div class="calculation">
+                    \begin{align}
+                    (x^{1/2})^2 &= 4^2 \\
+                    x &= 16
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = 16\)</p>
+
+                <p><strong>e)</strong> Vi har återigen ett bråk i exponenten. Vi upphöjer båda led till exponentens nämnare 5.</p>
+                <div class="calculation">
+                    \begin{align}
+                    (x^{2/5})^5 &= 10^5 \\
+                    x^2 &= 100\,000
+                    \end{align}
+                </div>
+
+                <p>Därefter löser vi ekvationen som vanligt.</p>
+                <div class="calculation">
+                    \(x = \pm\sqrt{100\,000} = \pm 316{,}227\ldots \approx \pm 316{,}23\)
+                </div>
+
+                <p class="answer">Svar: \(\pm x \approx 316{,}23\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Bestäm antal lösningar till ekvationen</strong></p>
+            <p><strong>a)</strong> \(x^{12} = 154\)<br>
+            <strong>b)</strong> \(x^4 = 0\)<br>
+            <strong>c)</strong> \(x^{100} = -50\)<br>
+            <strong>d)</strong> \(x^{99} = -5\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^{12} &= 154 \\
+                    x &= \pm\sqrt[12]{154}
+                    \end{align}
+                </div>
+                <p class="answer">Svar: Två lösningar</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^4 &= 0 \\
+                    x &= \sqrt[4]{0} = 0
+                    \end{align}
+                </div>
+                <p class="answer">Svar: En lösning</p>
+
+                <p><strong>c)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^{100} &= -50 \\
+                    x &= \sqrt[100]{-50}
+                    \end{align}
+                </div>
+                <p class="answer">Svar: Saknar lösningar</p>
+
+                <p><strong>d)</strong> Potensekvationer med udda exponent har alltid en lösning.</p>
+                <p class="answer">Svar: En lösning.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

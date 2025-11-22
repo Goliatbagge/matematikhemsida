@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.1 Statistiska undersökningar, urval och felkällor - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap5-01" class="content-section">
+            <h2>Kapitel 5.1: Statistiska undersökningar, urval och felkällor</h2>
+
+            <h3>Statistiska undersökningar och urval</h3>
+
+            <div class="definition">
+                <p>Information som behandlas i en undersökning kallas <strong>data</strong>.</p>
+            </div>
+
+            <div class="definition">
+                <p>Den mängd som undersökningen handlar om kallas <strong>population</strong>. Populationen kan utgöras av t.ex. människor eller föremål.</p>
+            </div>
+
+            <div class="definition">
+                <p>Om man samlar in data från en hel population kallas det <strong>totalundersökning</strong>. Totalundersökningar är exakta, men tidskrävande om populationen är stor.</p>
+            </div>
+
+            <div class="definition">
+                <p>Om man väljer ut och undersöker en mindre del av populationen kallas detta för <strong>stickprovsundersökning</strong>. Den är mindre exakt, men är lättare att genomföra.</p>
+            </div>
+
+            <div class="definition">
+                <p>Vid stickprovsundersökningar måste man på något sätt välja vilka i populationen som ska delta i undersökningen. Hur man väljer dessa kallas <strong>urval</strong>.</p>
+            </div>
+
+            <h4>Urvalsmetoder</h4>
+
+            <p>Det finns tre vanliga urvalsmetoder:</p>
+
+            <div class="definition">
+                <h5>Obundet slumpmässigt urval</h5>
+                <p>Varje individ i populationen tilldelas ett tal. Sedan väljs ett tal med en slumpgenerator. "Dra namnlappar ur en hatt." Urvalet blir helt slumpmässigt.</p>
+            </div>
+
+            <div class="definition">
+                <h5>Systematiskt urval</h5>
+                <p>Man använder ett system för hur man gör sitt urval, t.ex. att välja var femte person från en klasslista. Till skillnad från vad man kan tro är detta sätt inte slumpmässigt (om man inte har slumpat ordningen i klasslistan innan).</p>
+            </div>
+
+            <div class="definition">
+                <h5>Stratifierat urval</h5>
+                <p>Man anpassar valet av individer i stickprovet för att spegla populationen. T.ex. om 75 % av en population är kvinnor, ska även 75 % av stickprovet vara kvinnor, om man tror att kön har inverkan på resultatet.</p>
+            </div>
+
+            <h3>Felkällor</h3>
+
+            <p>Statistiska undersökningar kan ge felaktiga resultat. Orsaker till felaktiga resultat kallas <strong>felkällor</strong>.</p>
+
+            <div class="definition">
+                <h5>Urvalsfel</h5>
+                <p>Fel som beror på att urvalet inte representerar populationen kallas <strong>urvalsfel</strong>.</p>
+                <p><em>Exempel:</em> Att stå utanför en kyrka och ställa frågan "Tror du på Gud?" för att dra en slutsats om gudstron i en stad. Eftersom kyrkobesökare i större utsträckning är religiösa är sannolikheten att de tror på Gud större än för hela populationen i staden. Därför blir urvalet olämpligt.</p>
+            </div>
+
+            <div class="definition">
+                <h5>Mätfel</h5>
+                <p>Fel som gör att de insamlade värdena blir felaktiga kallas <strong>mätfel</strong>. Mätfel kan orsakas av en felgraderad linjal, men även av otydliga eller ledande frågor eller svarsalternativ som inte täcker in alla möjliga svar.</p>
+
+                <p><strong>Exempel på ledande frågor:</strong></p>
+                <ul>
+                    <li>"Matematik är väl ett roligt ämne?" – Mycket ledande fråga</li>
+                    <li>"Är matematik ett roligt ämne?" – Ledande fråga</li>
+                    <li>"Vad tycker du om matematik?" – Bra</li>
+                </ul>
+            </div>
+
+            <div class="definition">
+                <h5>Svarsbortfall</h5>
+                <p>Om alla som tillfrågas i en undersökning inte svarar får vi ett <strong>svarsbortfall</strong>. Om bortfallet är stort eller om de personer som ingår i bortfallet kan misstänkas svara annorlunda på undersökningen behöver hänsyn till bortfallet tas.</p>
+            </div>
+
+            <h3>Exempel</h3>
+
+            <div class="example">
+                <h4>Exempel 1: Problem med enkätfråga</h4>
+                <p><strong>Fråga:</strong> Du vill undersöka uppfattningen om språk och ställer nedanstående fråga i en enkät:</p>
+
+                <div class="info-box">
+                    <p>Vilket språk tycker du är vackrast: spanska eller franska?</p>
+                    <p>☐ Katalanska</p>
+                    <p>☐ Franska</p>
+                </div>
+
+                <p>Finns det några problem med undersökningen?</p>
+
+                <p><strong>Svar:</strong> Ja, svarsalternativen täcker inte in alla möjliga svar. Det är inte säkert att en svarande föredrar något av språken. Det är inte heller säkert att en svarande vet hur t.ex. katalanska låter. Alternativen "Inget" och "Vet ej" saknas alltså.</p>
+            </div>
+
+            <div class="example">
+                <h4>Exempel 2: Bortfall i enkät</h4>
+                <p>En enkät skickades ut till 1 000 personer. Frågan var "Är du positiv eller negativ till utbyggnad av kärnkraft?". Resultatet blev</p>
+                <ul>
+                    <li>Positiv: 420 st</li>
+                    <li>Negativ: 380 st</li>
+                    <li>Vet ej: 80 st</li>
+                </ul>
+
+                <p><strong>a)</strong> Hur stor andel av de som svarade var positiva till utbyggnad av kärnkraft?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi har 420 positiva av (420 + 380 + 80) = 880 svarande. Andelen positiva är då</p>
+                <div class="formula">
+                    $$\frac{420}{880} = 0{,}477\ldots \approx 0{,}48 = 48\,\%$$
+                </div>
+                <p><strong>Svar:</strong> 48 %</p>
+
+                <p><strong>b)</strong> Hur stort var bortfallet procentuellt?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>1 000 enkäter skickades ut och 880 svarade. Antalet i bortfallet är alltså (1 000 − 880) = 120 st.</p>
+                <p>Det procentuella bortfallet är alltså</p>
+                <div class="formula">
+                    $$\frac{120}{1\,000} = 0{,}12 = 12\,\%$$
+                </div>
+                <p><strong>Svar:</strong> 12 %</p>
+
+                <p><strong>c)</strong> Om vi tar hänsyn till bortfallet, mellan vilka värden kan andelen positiva till utbyggnad av kärnkraft ligga?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi får den undre gränsen om ingen i bortfallet är positiv. Antalet positiva är i så fall fortfarande 420 och andelen är då</p>
+                <div class="formula">
+                    $$\frac{420}{1\,000} = 0{,}42 = 42\,\%$$
+                </div>
+
+                <p>Den övre gränsen fås om alla i bortfallet är positiva. Antalet positiva är i så fall (420 + 120) = 540 st, vilket ger andelen</p>
+                <div class="formula">
+                    $$\frac{540}{1\,000} = 0{,}54 = 54\,\%$$
+                </div>
+
+                <p><strong>Svar:</strong> Mellan 42 % och 54 %.</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap4-09.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 4.9 Definitionsmängd och värdemängd</a>
+            <a href="kap5-02.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 5.2 Felmarginal och signifikans →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap5-01';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.4 Bestämma sträckor och vinklar i koordinatsystem - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap6-04" class="content-section">
+            <h2>Kapitel 6.4: Bestämma sträckor och vinklar i koordinatsystem</h2>
+
+            <h3>Pythagoras sats - Repetition</h3>
+            <p>Om två sidor är kända i en rätvinklig triangel kan vi bestämma den tredje med <strong>Pythagoras sats</strong>.</p>
+
+            <div class="definition-box">
+                <h4>Pythagoras sats</h4>
+                <p>$$a^2 + b^2 = c^2$$</p>
+                <p>eller</p>
+                <p>$$\text{katet}^2 + \text{katet}^2 = \text{hypotenusa}^2$$</p>
+            </div>
+
+            <h3>Sträckor och vinklar i koordinatsystem</h3>
+            <p>Om vi ska bestämma en sträcka eller vinkel mellan två punkter i ett koordinatsystem, så bildar vi en rätvinklig triangel med hörn i två av punkterna. Sträckan motsvarar hypotenusan som kan beräknas med Pythagoras sats. Vinkeln beräknas med trigonometri.</p>
+
+            <h3>Exempel: Sträcka och vinkel mellan två punkter</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> En sträcka dras mellan punkterna (−2, 1) och (2, 4). Bestäm</p>
+                <p>a) sträckans längd</p>
+                <p>b) vinkeln mellan sträckan och $x$-axeln</p>
+
+                <p><strong>Lösning a):</strong></p>
+                <p>Vi börjar med att rita upp punkterna i ett koordinatsystem och drar sträckan mellan dem.</p>
+
+                <p>Vi bildar nu en rätvinklig triangel. Vi tittar på skalan och ser att varje ruta motsvarar 1 l.e. (längdenhet). Vi räknar rutor och ser att den ena kateten (basen) är 4 l.e. och den andra kateten (höjden) är 3 l.e.</p>
+
+                <p>Vi bestämmer nu sträckan $c$ med Pythagoras sats, $c^2 = a^2 + b^2$.</p>
+
+                <p>Insättning av $a = 4$ och $b = 3$ ger:</p>
+                <p>$$c^2 = 4^2 + 3^2$$</p>
+                <p>$$c^2 = 16 + 9$$</p>
+                <p>$$c^2 = 25$$</p>
+                <p>$$c = \pm\sqrt{25} = \pm 5$$</p>
+
+                <p>Eftersom en sträcka inte kan vara negativ bortser vi från den negativa lösningen.</p>
+
+                <p><strong>Svar:</strong> 5 l.e.</p>
+
+                <p><strong>Lösning b):</strong></p>
+                <p>Vi studerar återigen den rätvinkliga triangeln och markerar vinkeln $v$ mellan sträckan och $x$-axeln (eller en valfri vågrät linje, enklast att välja triangelns bas).</p>
+
+                <p>Vi har den motstående kateten (3 l.e.) och den närliggande kateten (4 l.e.) till vinkeln $v$. Vi kan då beräkna vinkeln med tangens eftersom $\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}}$.</p>
+
+                <p>Insättning av motstående katet = 3 och närliggande katet = 4 ger:</p>
+                <p>$$\tan v = \frac{3}{4}$$</p>
+
+                <p>$$v = \tan^{-1}\left(\frac{3}{4}\right) = 36{,}869\ldots° \approx 37°$$</p>
+
+                <p><strong>Svar:</strong> 37°</p>
+            </div>
+
+            <div class="key-points">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li>Använd Pythagoras sats för att beräkna sträckor i koordinatsystem: $a^2 + b^2 = c^2$</li>
+                    <li>Bilda en rätvinklig triangel mellan två punkter</li>
+                    <li>Hypotenusan motsvarar sträckan mellan punkterna</li>
+                    <li>Kateterna motsvarar förflyttningen i $x$-led och $y$-led</li>
+                    <li>Använd trigonometri för att beräkna vinklar</li>
+                    <li>Vinkeln mellan sträckan och $x$-axeln beräknas med tangens</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap6-03.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 6.3 Bestämma vinklar med inversa funktioner</a>
+            <a href="kap6-05.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 6.5 Vektorer och skalärer →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap6-04';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

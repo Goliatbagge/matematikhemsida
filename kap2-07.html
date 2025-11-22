@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.07 Ekvationer med nämnare - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.07 Ekvationer med nämnare</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <div class="warning-box">
+                <h3>OBS!</h3>
+                <p>När vi har ekvationer med variabler, t.ex. \(x\), i nämnaren får den inte anta ett värde som gör att nämnaren blir lika med 0 eftersom division med 0 inte är definierat. Innan vi löser sådana ekvationer skriver vi vilka värden på variabeln som inte är tillåtna.</p>
+            </div>
+
+            <p>Inte sällan är det nämnaren som gör en ekvation svår att lösa, så för att lösa ekvationer med nämnare är en nyckel att snabbt bli av med nämnarna. Att bli av med nämnarna går att göra på olika sätt, beroende på hur ekvationen ser ut. Det finns tre vanliga varianter.</p>
+
+            <div class="method-box">
+                <h3>1. En bråkterm i ena ledet, ingen bråkterm i andra ledet</h3>
+                <p><strong>Metod:</strong> Täljaren är lika med produkten av kvoten och nämnaren.</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös \(\frac{130}{3x} = 5\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Vi har \(3x\) i nämnaren, så \(3x \neq 0\), vilket ger \(x \neq 0\).</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    130 &= 5 \cdot 3x \\
+                    130 &= 15x \\
+                    \frac{130}{15} &= \frac{15x}{15} \\
+                    \frac{26}{3} &= x
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = \frac{26}{3}\)</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="method-box">
+                <h3>2. En bråkterm i ena ledet, en bråkterm i andra ledet</h3>
+                <p><strong>Metod:</strong> Korsvis multiplikation.</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Lös \(\frac{9}{2x} = \frac{3}{8}\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Vi har \(2x\) i nämnaren så \(2x \neq 0\), vilket ger \(x \neq 0\).</p>
+
+                <p>Vi multiplicerar "korsvis", dvs. vi multiplicerar täljaren i ena bråket med nämnaren i det andra bråket och vice versa. Ordningen spelar ingen roll!</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    3 \cdot 2x &= 9 \cdot 8 \\
+                    6x &= 72 \\
+                    \frac{6x}{6} &= \frac{72}{6} \\
+                    x &= 12
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = 12\)</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="method-box">
+                <h3>3. Tre eller fler bråktermer i en ekvation</h3>
+                <p><strong>Metod:</strong> Multiplicera båda led med MGN (minsta gemensamma nämnaren) eller skriv om båda led som ett bråk och använd korsvis multiplikation.</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 3</h3>
+            <p><strong>Lös \(\frac{x}{3} + \frac{1}{4} = \frac{5}{6}\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>Alternativ 1: Multiplicera med MGN (eller någon gemensam nämnare)</strong></p>
+
+                <p>För att hitta MGN eller en gemensam nämnare kan man göra på lite olika sätt, men en variant är att du tittar på talen som står i nämnaren. Vi har 3, 4 och 6. Då tänker du: "Vilket är det minsta tal jag kan komma på som är delbart med 3, 4 och 6?". Svaret är 12. Då är 12 den minsta gemensamma nämnaren.</p>
+
+                <p>Vi multiplicerar båda led med MGN = 12.</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    12\left(\frac{x}{3} + \frac{1}{4}\right) &= 12 \cdot \frac{5}{6} \\
+                    \frac{12x}{3} + \frac{12 \cdot 1}{4} &= \frac{12 \cdot 5}{6} \\
+                    4x + 3 &= 10 \\
+                    4x + 3 - 3 &= 10 - 3 \\
+                    4x &= 7 \\
+                    \frac{4x}{4} &= \frac{7}{4} \\
+                    x &= \frac{7}{4}
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = \frac{7}{4}\)</p>
+
+                <p><strong>Alternativ 2: Skriv om båda led som ett bråk och sedan använda korsvis multiplikation</strong></p>
+
+                <p>Vi förlänger bråken i VL med varandras nämnare för att göra dem liknämniga.</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    \frac{x \cdot 4}{3 \cdot 4} + \frac{1 \cdot 3}{4 \cdot 3} &= \frac{5}{6} \\
+                    \frac{4x}{12} + \frac{3}{12} &= \frac{5}{6} \\
+                    \frac{4x + 3}{12} &= \frac{5}{6}
+                    \end{align}
+                </div>
+
+                <p>Nu använder vi korsvis multiplikation.</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    6(4x + 3) &= 12 \cdot 5 \\
+                    24x + 18 &= 60 \\
+                    24x + 18 - 18 &= 60 - 18 \\
+                    24x &= 42 \\
+                    \frac{24x}{24} &= \frac{42}{24} \\
+                    x &= \frac{42}{24} = \frac{21}{12} = \frac{7}{4}
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = \frac{7}{4}\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 4</h3>
+            <p><strong>Lös \(\frac{5}{3x} - \frac{1}{2x} = \frac{1}{6}\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Vi har \(3x\) och \(2x\) i nämnarna, vilka båda ger att \(x \neq 0\).</p>
+
+                <p>Det här är en variant med tre bråk, så vi löser den genom att multiplicera båda led med MGN. Lägg märke till att MGN även ska vara delbart med \(x\), eftersom \(x\) finns med i nämnarna. Så MGN = \(6x\).</p>
+
+                <p>När vi multiplicerar med MGN = \(6x\) kan vi direkt göra det genom att multiplicera varje täljare med \(6x\), så går lösningen snabbare.</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    \frac{6x \cdot 5}{3x} - \frac{6x \cdot 1}{2x} &= \frac{6x \cdot 1}{6} \\
+                    2 \cdot 5 - 3 \cdot 1 &= x \cdot 1 \\
+                    10 - 3 &= x \\
+                    7 &= x
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = 7\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 5</h3>
+            <p><strong>Lös \(\frac{5x - 35}{x - 7} = 4\)</strong></p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p>Vi har \((x - 7)\) i nämnaren, så \(x \neq 7\).</p>
+
+                <div class="calculation">
+                    \begin{align}
+                    5x - 35 &= 4(x - 7) \\
+                    5x - 35 &= 4x - 28 \\
+                    5x - 35 - 4x &= 4x - 28 - 4x \\
+                    x - 35 &= -28 \\
+                    x - 35 + 35 &= -28 + 35 \\
+                    x &= 7
+                    \end{align}
+                </div>
+
+                <p>Men \(x \neq 7\), så ekvationen saknar lösning.</p>
+
+                <p class="answer">Svar: Saknar lösning.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="500" height="400" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="250" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Riemann-summa: Area under kurva</text>
+  <text x="250" y="42" font-size="13" fill="#6B7280" text-anchor="middle">Approximation med 8 rektanglar</text>
+
+  <!-- Koordinatsystem -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Axlar -->
+  <line x1="60" y1="330" x2="460" y2="330" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="60" y1="330" x2="60" y2="60" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Gränser a och b -->
+  <line x1="100" y1="325" x2="100" y2="335" stroke="#B45309" stroke-width="2"/>
+  <line x1="420" y1="325" x2="420" y2="335" stroke="#B45309" stroke-width="2"/>
+  <text x="100" y="350" font-size="14" font-weight="600" fill="#B45309" text-anchor="middle">a</text>
+  <text x="420" y="350" font-size="14" font-weight="600" fill="#B45309" text-anchor="middle">b</text>
+
+  <!-- Axelmarkeringar -->
+  <text x="455" y="345" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="45" y="65" font-size="14" font-weight="600" fill="#4B5563">y</text>
+
+  <!-- Funktion f(x) = 0.002(x-100)^2 + 80 (parabel) -->
+  <!-- Riemann-rektanglar (8 stycken) -->
+
+  <!-- Rektangel 1: x=100 till x=140 -->
+  <rect x="100" y="170" width="40" height="160" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 2: x=140 till x=180 -->
+  <rect x="140" y="138" width="40" height="192" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 3: x=180 till x=220 -->
+  <rect x="180" y="122" width="40" height="208" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 4: x=220 till x=260 -->
+  <rect x="220" y="118" width="40" height="212" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 5: x=260 till x=300 -->
+  <rect x="260" y="122" width="40" height="208" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 6: x=300 till x=340 -->
+  <rect x="300" y="138" width="40" height="192" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 7: x=340 till x=380 -->
+  <rect x="340" y="170" width="40" height="160" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Rektangel 8: x=380 till x=420 -->
+  <rect x="380" y="218" width="40" height="112" fill="#2563EB" opacity="0.25" stroke="#2563EB" stroke-width="1.5"/>
+
+  <!-- Kurvan f(x) - parabel över rektanglarna -->
+  <path d="M 100 170 Q 260 110 420 218" fill="none" stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Markeringar på rektanglarna -->
+  <!-- Höjdmarkering på rektangel 4 (i mitten) -->
+  <line x1="240" y1="118" x2="240" y2="330" stroke="#B45309" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="240" cy="118" r="4" fill="#B45309"/>
+
+  <!-- Breddmarkering -->
+  <path d="M 100 315 L 100 320 L 140 320 L 140 315" stroke="#6B7280" stroke-width="1.5" fill="none"/>
+  <text x="120" y="312" font-size="11" fill="#6B7280" text-anchor="middle">Δx</text>
+
+  <!-- Förklaringar -->
+  <g transform="translate(30, 380)">
+    <text x="0" y="0" font-size="12" fill="#4B5563">
+      <tspan x="0">Area ≈ </tspan>
+      <tspan fill="#2563EB" font-weight="600">Σ f(xᵢ)·Δx</tspan>
+      <tspan x="160"> = summa av alla rektanglar</tspan>
+    </text>
+  </g>
+
+  <!-- Notis-box -->
+  <rect x="10" y="80" width="180" height="90" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" rx="6"/>
+  <text x="100" y="100" font-size="11" font-weight="600" fill="#1E40AF" text-anchor="middle">Ju fler rektanglar:</text>
+  <text x="20" y="118" font-size="10" fill="#4B5563">• Bättre approximation</text>
+  <text x="20" y="133" font-size="10" fill="#4B5563">• Mindre fel</text>
+  <text x="20" y="148" font-size="10" fill="#4B5563">• När Δx → 0 får vi</text>
+  <text x="25" y="163" font-size="11" fill="#2563EB" font-weight="600">  exakt area = ∫ₐᵇ f(x)dx</text>
+
+  <!-- Funktionsetikett -->
+  <text x="320" y="95" font-size="13" fill="#2563EB" font-weight="600">y = f(x)</text>
+  <line x1="315" y1="98" x2="280" y2="115" stroke="#2563EB" stroke-width="1" marker-end="url(#arrow)"/>
+</svg>

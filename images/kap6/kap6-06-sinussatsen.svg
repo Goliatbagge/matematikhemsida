@@ -1,0 +1,126 @@
+<svg viewBox="0 0 550 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="550" height="400" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="275" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Sinussatsen</text>
+  <text x="275" y="42" font-size="13" fill="#6B7280" text-anchor="middle">a/sin(A) = b/sin(B) = c/sin(C)</text>
+
+  <defs>
+    <marker id="arrow10" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#EF4444"/>
+    </marker>
+    <marker id="arrow11" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#B45309"/>
+    </marker>
+  </defs>
+
+  <!-- TRIANGEL (sned triangel, ej rätvinklig) -->
+  <!-- A = topp (270, 80), B = höger nere (430, 290), C = vänster nere (100, 270) -->
+
+  <!-- Triangel fylld lätt -->
+  <polygon points="270,80 430,290 100,270"
+           fill="#EFF6FF" opacity="0.7"
+           stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Hörn markerade med STORA cirklar -->
+  <circle cx="270" cy="80" r="7" fill="#B45309"/>
+  <circle cx="430" cy="290" r="7" fill="#B45309"/>
+  <circle cx="100" cy="270" r="7" fill="#B45309"/>
+
+  <!-- Hörnlabels (STORA bokstäver = vinklar) med ringen runt -->
+  <circle cx="270" cy="80" r="12" fill="none" stroke="#B45309" stroke-width="2"/>
+  <circle cx="430" cy="290" r="12" fill="none" stroke="#B45309" stroke-width="2"/>
+  <circle cx="100" cy="270" r="12" fill="none" stroke="#B45309" stroke-width="2"/>
+
+  <text x="270" y="60" font-size="20" fill="#B45309" font-weight="700" text-anchor="middle">A</text>
+  <text x="450" y="298" font-size="20" fill="#B45309" font-weight="700">B</text>
+  <text x="70" y="275" font-size="20" fill="#B45309" font-weight="700">C</text>
+
+  <!-- Vinkelbågar -->
+  <path d="M 290,90 A 25 25 0 0 0 285,110"
+        fill="none" stroke="#B45309" stroke-width="2"/>
+  <path d="M 410,285 A 25 25 0 0 0 415,265"
+        fill="none" stroke="#B45309" stroke-width="2"/>
+  <path d="M 120,265 A 25 25 0 0 0 125,283"
+        fill="none" stroke="#B45309" stroke-width="2"/>
+
+  <!-- SIDLABELS (SMÅ bokstäver = sidor) -->
+  <!-- Sida a (motstående vinkel A) = mellan B och C (botten) -->
+  <text x="265" y="295" font-size="18" fill="#2563EB" font-weight="700" text-anchor="middle">a</text>
+
+  <!-- Sida b (motstående vinkel B) = mellan A och C (vänster) -->
+  <text x="170" y="180" font-size="18" fill="#2563EB" font-weight="700">b</text>
+
+  <!-- Sida c (motstående vinkel C) = mellan A och B (höger) -->
+  <text x="360" y="190" font-size="18" fill="#2563EB" font-weight="700">c</text>
+
+  <!-- Pilar som visar KOPPLINGEN: vinkel ↔ motstående sida -->
+  <!-- A ↔ a -->
+  <line x1="270" y1="95" x2="265" y2="270" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,3"/>
+  <path d="M 265 270 L 262 265" stroke="#EF4444" stroke-width="1.5"/>
+  <path d="M 265 270 L 268 265" stroke="#EF4444" stroke-width="1.5"/>
+
+  <!-- B ↔ b -->
+  <line x1="420" y1="280" x2="180" y2="185" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- C ↔ c -->
+  <line x1="110" y1="265" x2="350" y2="195" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Formelbox -->
+  <rect x="60" y="330" width="430" height="60"
+        fill="#FFF7ED" stroke="#B45309" stroke-width="2" rx="6"/>
+  <text x="275" y="355" font-size="18" fill="#92400E"
+        text-anchor="middle" font-weight="700">
+    a/sin(A) = b/sin(B) = c/sin(C)
+  </text>
+  <text x="275" y="373" font-size="11" fill="#6B7280" text-anchor="middle">
+    (varje sida dividerat med sinus av sin motstående vinkel)
+  </text>
+  <text x="275" y="386" font-size="10" fill="#EF4444" font-weight="600" text-anchor="middle">
+    Viktigt: Sidan a ligger MITTEMOT vinkeln A!
+  </text>
+
+  <!-- Förklaringsbox -->
+  <rect x="10" y="60" width="190" height="120"
+        fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" rx="5"/>
+  <text x="105" y="78" font-size="12" font-weight="700" fill="#1E40AF" text-anchor="middle">
+    Sinussatsen används när:
+  </text>
+
+  <text x="20" y="98" font-size="11" fill="#4B5563">• Två vinklar + en sida</text>
+  <text x="30" y="112" font-size="9" fill="#6B7280">(då kan vi beräkna annan sida)</text>
+
+  <text x="20" y="130" font-size="11" fill="#4B5563">• Två sidor + en vinkel</text>
+  <text x="30" y="144" font-size="9" fill="#6B7280">(om vinkeln är motstående</text>
+  <text x="30" y="156" font-size="9" fill="#6B7280">till en av sidorna)</text>
+
+  <text x="20" y="172" font-size="9" fill="#10B981" font-style="italic">→ Lös med korsvis multiplikation</text>
+
+  <!-- Exempel-box -->
+  <rect x="350" y="60" width="190" height="100"
+        fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" rx="5"/>
+  <text x="445" y="78" font-size="11" font-weight="700" fill="#065F46" text-anchor="middle">
+    Exempel:
+  </text>
+
+  <text x="360" y="98" font-size="10" fill="#4B5563">A = 30°, B = 45°, a = 10 cm</text>
+  <text x="360" y="114" font-size="10" fill="#4B5563">Bestäm b:</text>
+
+  <text x="360" y="132" font-size="10" fill="#065F46" font-weight="600">10/sin(30°) = b/sin(45°)</text>
+  <text x="360" y="146" font-size="10" fill="#065F46" font-weight="600">b = 10 · sin(45°)/sin(30°)</text>
+  <text x="360" y="158" font-size="10" fill="#065F46" font-weight="600">b ≈ 14,1 cm</text>
+
+  <!-- Minnesregel-box -->
+  <rect x="210" y="180" width="130" height="35"
+        fill="#FEE2E2" stroke="#EF4444" stroke-width="1.5" rx="4"/>
+  <text x="275" y="197" font-size="10" fill="#991B1B" font-weight="600" text-anchor="middle">
+    Minnesregel:
+  </text>
+  <text x="275" y="210" font-size="9" fill="#991B1B" text-anchor="middle">
+    STOR bokstav = vinkel
+  </text>
+  <text x="275" y="221" font-size="9" fill="#991B1B" text-anchor="middle">
+    liten bokstav = sida mittemot
+  </text>
+</svg>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2 Proportionalitet - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap4-02" class="content-section">
+            <h2>Kapitel 4.2: Proportionalitet</h2>
+
+            <p>Ett samband där förhållandet mellan variablerna är konstant kallas <strong>proportionalitet</strong>. En proportionalitet är ett specialfall av linjärt samband som kan beskrivas av formeln $y = kx$ och där grafen alltid är en rät linje som går genom origo. Förhållandet $k$ mellan $y$ och $x$ kallas <strong>proportionalitetskonstant</strong>.</p>
+
+            <p>Proportionaliteter uppstår t.ex. i linjära modeller där startvärdet är 0. Exempel: När du köper lösviktsgodis betalar du ett visst kilopris. Priset beror på vikten. Köper du 0 kg godis betalar du 0 kr (startvärdet är 0). Vi säger att "priset är proportionellt mot vikten". Proportionalitetskonstanten $k$ motsvarar kilopriset.</p>
+
+            <div class="definition-box">
+                <h4>Proportionalitet som formel</h4>
+                <p>Alla proportionaliteter kan skrivas</p>
+                <p style="text-align: center;">$$y = kx$$</p>
+                <p>där $k$ kallas proportionalitetskonstant.</p>
+                <p>Ur formeln följer att proportionalitetskonstanten kan beräknas</p>
+                <p style="text-align: center;">$$k = \frac{y}{x}$$</p>
+            </div>
+
+            <div class="definition-box">
+                <h4>Proportionalitet som graf</h4>
+                <p>Grafen till en proportionalitet går alltid genom origo.</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Fabian tankar sin moped med bensin för 20,00 kr/liter. Visa sambandet mellan kostnaden $y$ kr och mängden bensin $x$ liter han tankar med en</p>
+                <p>a) formel och ange proportionalitetskonstanten<br>
+                b) värdetabell<br>
+                c) graf.</p>
+
+                <h5>Lösning:</h5>
+
+                <h5>a) Formel</h5>
+                <p>Eftersom literpriset 20,00 kr ska multipliceras med varje liter $x$ han tankar för att få kostnaden måste termen 20,00$x$ finnas med. Vi har inget startvärde/ingen startavgift eller liknande, så ingen konstantterm ska finnas med i formeln för kostnaden.</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> $y = 20{,}00x$ och proportionalitetskonstanten är 20,00.
+                </div>
+
+                <h5>b) Värdetabell</h5>
+                <p>Utifrån formeln ovan kan vi göra en värdetabell. Vi gör en kolumn för antalet liter bensin $x$ och en för motsvarande kostnad $y$ och fyller i några värden.</p>
+
+                <table style="margin: 1rem auto; border-collapse: collapse; text-align: center;">
+                    <tr style="background-color: #f0f0f0;">
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$x$ (liter)</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$y$ (kr)</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">5</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">100</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">10</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">200</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">15</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">300</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">20</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">400</td>
+                    </tr>
+                </table>
+
+                <h5>c) Graf</h5>
+                <p>Utifrån värdetabellen ovan kan vi rita upp en graf. Vi ritar upp ett koordinatsystem och prickar in motsvarande punkter $(0, 0)$, $(5, 100)$, $(10, 200)$, $(15, 300)$ och $(20, 400)$. Vi behöver en x-axel som sträcker sig till 20 och en y-axel som sträcker sig till 400.</p>
+
+                <p>Därefter förbinder vi punkterna med en rät linje, vilket ger vår graf.</p>
+
+                <div class="info-box">
+                    <p><strong>Observera:</strong> Grafen går genom origo eftersom det är en proportionalitet!</p>
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Vilken eller vilka av graferna nedan visar en proportionalitet?</p>
+
+                <h5>Lösning:</h5>
+                <p>För att grafen ska motsvara en proportionalitet ska den vara en rät linje OCH gå genom origo. Graf B är en rät linje, men går inte genom origo och är därför inte en proportionalitet. Graf C går visserligen genom origo, men är inte en rät linje och därför inte en proportionalitet. Endast graf A uppfyller kriterierna för en proportionalitet.</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> A
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li><strong>Proportionalitet:</strong> Ett samband där förhållandet mellan variablerna är konstant</li>
+                    <li>Formel: $y = kx$ där $k$ är proportionalitetskonstanten</li>
+                    <li>Grafen går alltid genom origo</li>
+                    <li>Proportionalitetskonstanten: $k = \frac{y}{x}$</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap4-01.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 4.1 Koordinatsystem och linjära modeller</a>
+            <a href="kap4-03.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 4.3 Från ekvation till graf →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap4-02';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

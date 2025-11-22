@@ -1,0 +1,122 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="500" height="400" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="250" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Växande och avtagande funktioner</text>
+  <text x="250" y="42" font-size="13" fill="#6B7280" text-anchor="middle">f(x) = x³ - 3x med f'(x) = 3x² - 3</text>
+
+  <defs>
+    <marker id="arrow6" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Rutnät -->
+  <g stroke="#E5E7EB" stroke-width="0.5">
+    <line x1="60" y1="120" x2="440" y2="120"/>
+    <line x1="60" y1="180" x2="440" y2="180"/>
+    <line x1="60" y1="240" x2="440" y2="240"/>
+    <line x1="60" y1="300" x2="440" y2="300"/>
+
+    <line x1="150" y1="60" x2="150" y2="340"/>
+    <line x1="250" y1="60" x2="250" y2="340"/>
+    <line x1="350" y1="60" x2="350" y2="340"/>
+  </g>
+
+  <!-- Koordinatsystem -->
+  <line x1="60" y1="240" x2="440" y2="240" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow6)"/>
+  <line x1="250" y1="340" x2="250" y2="60" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow6)"/>
+
+  <!-- Skalmarkeringar -->
+  <line x1="150" y1="235" x2="150" y2="245" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="350" y1="235" x2="350" y2="245" stroke="#4B5563" stroke-width="1.5"/>
+  <text x="150" y="260" font-size="12" fill="#6B7280" text-anchor="middle">-1</text>
+  <text x="250" y="260" font-size="12" fill="#6B7280" text-anchor="middle">0</text>
+  <text x="350" y="260" font-size="12" fill="#6B7280" text-anchor="middle">1</text>
+
+  <!-- Axellabels -->
+  <text x="435" y="255" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="235" y="65" font-size="14" font-weight="600" fill="#4B5563">y</text>
+
+  <!-- Färgade bakgrundsregioner för intervall -->
+  <!-- Växande: x < -1 (grön) -->
+  <rect x="60" y="60" width="90" height="280" fill="#10B981" opacity="0.15"/>
+
+  <!-- Avtagande: -1 < x < 1 (röd) -->
+  <rect x="150" y="60" width="200" height="280" fill="#EF4444" opacity="0.15"/>
+
+  <!-- Växande: x > 1 (grön) -->
+  <rect x="350" y="60" width="90" height="280" fill="#10B981" opacity="0.15"/>
+
+  <!-- Kubisk kurva f(x) = x³ - 3x -->
+  <path d="M 60 140 Q 100 110 150 120 Q 200 180 250 180 Q 300 180 350 120 Q 400 90 440 60"
+        fill="none" stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Extrempunkter markerade -->
+  <!-- Lokalt maximum vid x = -1 -->
+  <circle cx="150" cy="120" r="6" fill="#B45309"/>
+  <circle cx="150" cy="120" r="10" fill="none" stroke="#B45309" stroke-width="2"/>
+  <text x="155" y="110" font-size="11" fill="#B45309" font-weight="600">Max</text>
+
+  <!-- Lokalt minimum vid x = 1 -->
+  <circle cx="350" cy="120" r="6" fill="#B45309"/>
+  <circle cx="350" cy="120" r="10" fill="none" stroke="#B45309" stroke-width="2"/>
+  <text x="355" y="110" font-size="11" fill="#B45309" font-weight="600">Min</text>
+
+  <!-- Tangenter vid extrempunkterna (horisontella) -->
+  <line x1="110" y1="120" x2="190" y2="120" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="310" y1="120" x2="390" y2="120" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Labels för intervall -->
+  <g transform="translate(105, 350)">
+    <text x="0" y="0" font-size="11" fill="#065F46" font-weight="600" text-anchor="middle">Växande</text>
+    <text x="0" y="13" font-size="9" fill="#065F46" text-anchor="middle">f'(x) &gt; 0</text>
+  </g>
+
+  <g transform="translate(250, 350)">
+    <text x="0" y="0" font-size="11" fill="#991B1B" font-weight="600" text-anchor="middle">Avtagande</text>
+    <text x="0" y="13" font-size="9" fill="#991B1B" text-anchor="middle">f'(x) &lt; 0</text>
+  </g>
+
+  <g transform="translate(395, 350)">
+    <text x="0" y="0" font-size="11" fill="#065F46" font-weight="600" text-anchor="middle">Växande</text>
+    <text x="0" y="13" font-size="9" fill="#065F46" text-anchor="middle">f'(x) &gt; 0</text>
+  </g>
+
+  <!-- Förklarings-box -->
+  <rect x="10" y="70" width="180" height="95" fill="#FFF7ED" stroke="#B45309" stroke-width="1.5" rx="6"/>
+  <text x="100" y="90" font-size="12" font-weight="700" fill="#92400E" text-anchor="middle">Samband:</text>
+
+  <text x="20" y="110" font-size="11" fill="#4B5563">• f'(x) &gt; 0  →  Växande</text>
+  <circle cx="155" cy="108" r="3" fill="#10B981"/>
+
+  <text x="20" y="128" font-size="11" fill="#4B5563">• f'(x) &lt; 0  →  Avtagande</text>
+  <circle cx="155" cy="126" r="3" fill="#EF4444"/>
+
+  <text x="20" y="146" font-size="11" fill="#4B5563">• f'(x) = 0  →  Extrempunkt</text>
+  <circle cx="155" cy="144" r="3" fill="#B45309"/>
+
+  <!-- Teckentabell (kompakt) -->
+  <rect x="310" y="270" width="180" height="65" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" rx="5"/>
+  <text x="400" y="288" font-size="11" font-weight="600" fill="#1E40AF" text-anchor="middle">Teckentabell f'(x):</text>
+
+  <g transform="translate(320, 295)">
+    <text x="0" y="10" font-size="9" fill="#4B5563">x &lt; -1:</text>
+    <text x="50" y="10" font-size="9" fill="#065F46" font-weight="600">+</text>
+    <text x="70" y="10" font-size="8" fill="#6B7280">(växande)</text>
+
+    <text x="0" y="24" font-size="9" fill="#4B5563">-1 &lt; x &lt; 1:</text>
+    <text x="50" y="24" font-size="9" fill="#991B1B" font-weight="600">−</text>
+    <text x="70" y="24" font-size="8" fill="#6B7280">(avtagande)</text>
+
+    <text x="0" y="38" font-size="9" fill="#4B5563">x &gt; 1:</text>
+    <text x="50" y="38" font-size="9" fill="#065F46" font-weight="600">+</text>
+    <text x="70" y="38" font-size="8" fill="#6B7280">(växande)</text>
+  </g>
+
+  <!-- Pilar som visar riktning -->
+  <path d="M 80 200 L 70 205 M 80 200 L 70 195" stroke="#10B981" stroke-width="2"/>
+  <path d="M 420 200 L 430 205 M 420 200 L 430 195" stroke="#10B981" stroke-width="2"/>
+  <path d="M 280 200 L 270 205 M 280 200 L 270 195" stroke="#EF4444" stroke-width="2"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Subtila matematiska symboler som bakgrundsmönster -->
+
+  <!-- Integralsymbol -->
+  <text x="50" y="80" font-size="40" font-family="serif" fill="#2563EB" opacity="0.04">∫</text>
+
+  <!-- Sigma (summa) -->
+  <text x="220" y="80" font-size="40" font-family="serif" fill="#F59E0B" opacity="0.04">Σ</text>
+
+  <!-- Pi -->
+  <text x="50" y="220" font-size="40" font-family="serif" fill="#F59E0B" opacity="0.04">π</text>
+
+  <!-- Delta (förändring) -->
+  <text x="220" y="220" font-size="40" font-family="serif" fill="#2563EB" opacity="0.04">Δ</text>
+
+  <!-- Partiell derivata -->
+  <text x="135" y="150" font-size="40" font-family="serif" fill="#2563EB" opacity="0.05">∂</text>
+
+  <!-- Små geometriska former -->
+  <circle cx="150" cy="50" r="3" fill="#9CA3AF" opacity="0.03"/>
+  <circle cx="50" cy="150" r="3" fill="#9CA3AF" opacity="0.03"/>
+  <circle cx="250" cy="150" r="3" fill="#9CA3AF" opacity="0.03"/>
+  <circle cx="150" cy="250" r="3" fill="#9CA3AF" opacity="0.03"/>
+</svg>

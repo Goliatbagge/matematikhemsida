@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.13 Mönster och formler - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.13 Mönster och formler</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>En serie av tal kallas <strong>talföljd</strong>. Talen i talföljden kallas <strong>element</strong>.</p>
+
+            <p>Betrakta nedanstående talföljd.</p>
+            <p class="formula">3, 7, 11, 15, 19, …</p>
+
+            <p>Elementen betecknas \(a_n\) där \(n\) står för <strong>ordningsnumret</strong>. Här gäller</p>
+            <div style="margin-left: 20px;">
+                <p>\(a_1 = 3\)</p>
+                <p>\(a_2 = 7\)</p>
+                <p>\(a_3 = 11\)</p>
+                <p>…</p>
+            </div>
+
+            <p>En formel för att direkt beräkna ett element i talföljden kallas <strong>sluten formel</strong>.</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Vi har talföljden 3, 7, 11, 15, 19, …</strong></p>
+            <p><strong>a)</strong> Ange en sluten formel för talföljden.<br>
+            <strong>b)</strong> Vilket är det 100:e talet i talföljden?</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Vi kallar det \(n\):te talet i talföljden \(a_n\). Vi ser att varje tal i talföljden fås genom att addera 4 till det föregående talet. Då måste termen \(4n\) finnas med i formeln, så</p>
+                <p style="margin-left: 20px;">\(a_n = 4n\)</p>
+
+                <p>Vi vet att \(a_1 = 3\), så om vi sätter in \(n = 1\) i formeln ska det bli 3. Vi testar:</p>
+                <p style="margin-left: 20px;">\(a_1 = 4 \cdot 1 = 4\)</p>
+
+                <p>\(a_1\) blev 4 som är 1 för mycket (det skulle bli 3). Eftersom det blev 1 för mycket subtraherar vi med 1 i formeln så</p>
+                <p style="margin-left: 20px;">\(a_n = 4n - 1\)</p>
+
+                <p>Vi testar igen.</p>
+                <div style="margin-left: 20px;">
+                    <p>\(a_1 = 4 \cdot 1 - 1 = 4 - 1 = 3\) &nbsp; Stämmer!</p>
+                    <p>\(a_2 = 4 \cdot 2 - 1 = 8 - 1 = 7\) &nbsp; Stämmer!</p>
+                    <p>\(a_3 = 4 \cdot 3 - 1 = 12 - 1 = 11\) &nbsp; Stämmer!</p>
+                </div>
+
+                <p>Vi har hittat vår formel!</p>
+
+                <p class="answer">Svar: \(a_n = 4n - 1\)</p>
+
+                <p><strong>b)</strong> Vi sätter in \(n = 100\) i den slutna formeln \(a_n = 4n - 1\) och får</p>
+                <div class="calculation">
+                    \(a_{100} = 4 \cdot 100 - 1 = 400 - 1 = 399\)
+                </div>
+
+                <p class="answer">Svar: 399</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Nedanstående figurer byggs.</strong></p>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <svg width="600" height="120">
+                    <!-- Figur 1 -->
+                    <circle cx="80" cy="50" r="8" fill="black"/>
+                    <circle cx="60" cy="70" r="8" fill="black"/>
+                    <circle cx="80" cy="70" r="8" fill="black"/>
+                    <circle cx="100" cy="70" r="8" fill="black"/>
+                    <text x="80" y="110" text-anchor="middle" font-size="16">Figur 1</text>
+
+                    <!-- Figur 2 -->
+                    <circle cx="280" cy="30" r="8" fill="black"/>
+                    <circle cx="280" cy="50" r="8" fill="black"/>
+                    <circle cx="240" cy="70" r="8" fill="black"/>
+                    <circle cx="260" cy="70" r="8" fill="black"/>
+                    <circle cx="280" cy="70" r="8" fill="black"/>
+                    <circle cx="300" cy="70" r="8" fill="black"/>
+                    <circle cx="320" cy="70" r="8" fill="black"/>
+                    <text x="280" y="110" text-anchor="middle" font-size="16">Figur 2</text>
+
+                    <!-- Figur 3 -->
+                    <circle cx="480" cy="10" r="8" fill="black"/>
+                    <circle cx="480" cy="30" r="8" fill="black"/>
+                    <circle cx="480" cy="50" r="8" fill="black"/>
+                    <circle cx="420" cy="70" r="8" fill="black"/>
+                    <circle cx="440" cy="70" r="8" fill="black"/>
+                    <circle cx="460" cy="70" r="8" fill="black"/>
+                    <circle cx="480" cy="70" r="8" fill="black"/>
+                    <circle cx="500" cy="70" r="8" fill="black"/>
+                    <circle cx="520" cy="70" r="8" fill="black"/>
+                    <circle cx="540" cy="70" r="8" fill="black"/>
+                    <text x="480" y="110" text-anchor="middle" font-size="16">Figur 3</text>
+                </svg>
+            </div>
+
+            <p><strong>a)</strong> Ange en sluten formel för antalet prickar i figur \(n\).<br>
+            <strong>b)</strong> Hur många prickar finns det i figur 1 000?</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Vi studerar antalet prickar i varje figur.</p>
+                <div style="margin-left: 20px;">
+                    <p>\(a_1 = 4\)</p>
+                    <p>\(a_2 = 7\)</p>
+                    <p>\(a_3 = 10\)</p>
+                </div>
+
+                <p>För varje figur ökar antalet prickar med 3. Termen \(3n\) bör därför vara med i formeln, så</p>
+                <p style="margin-left: 20px;">\(a_n = 3n\)</p>
+
+                <p>Vi vet att \(a_1 = 4\). Vi testar att sätta in \(n = 1\) och får</p>
+                <p style="margin-left: 20px;">\(a_1 = 3 \cdot 1 = 3\).</p>
+
+                <p>3 är 1 för lite. Vi måste alltså addera 1 i formeln för att \(a_1\) ska bli 4. Detta ger</p>
+                <p style="margin-left: 20px;">\(a_n = 3n + 1\)</p>
+
+                <p>Vi testar igen.</p>
+                <div style="margin-left: 20px;">
+                    <p>\(a_1 = 3 \cdot 1 + 1 = 3 + 1 = 4\) &nbsp; Stämmer!</p>
+                    <p>\(a_2 = 3 \cdot 2 + 1 = 6 + 1 = 7\) &nbsp; Stämmer!</p>
+                    <p>\(a_3 = 3 \cdot 3 + 1 = 9 + 1 = 10\) &nbsp; Stämmer!</p>
+                </div>
+
+                <p>Vi har hittat korrekt formel.</p>
+
+                <p class="answer">Svar: \(a_n = 3n + 1\)</p>
+
+                <p><strong>b)</strong> Från a-uppgiften har vi att \(a_n = 3n + 1\)</p>
+
+                <p>Insättning av \(n = 1\,000\) ger</p>
+                <div class="calculation">
+                    \(a_{1000} = 3 \cdot 1\,000 + 1 = 3\,001\)
+                </div>
+
+                <p class="answer">Svar: 3 001</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

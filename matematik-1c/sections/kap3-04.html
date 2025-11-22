@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.4 Sparande och ränteberäkningar - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap3-04" class="content-section">
+            <h2>Kapitel 3.4: Sparande och ränteberäkningar</h2>
+
+            <div class="definition-box">
+                <h3>Grundläggande begrepp</h3>
+                <p>När du sätter in pengar på ett konto kan pengarna växa med en viss <strong>ränta</strong> (mer om ränta i nästa genomgång). <strong>Årsräntan</strong> anger med hur många procent beloppet på kontot växer varje år. Står det bara "ränta" i en uppgift är det underförstått årsräntan. Beloppet som finns på kontot kallas <strong>behållning</strong>.</p>
+                <p>Om vi snabbt vill ta reda på behållningen på ett konto varje år kan vi använda ett <strong>kalkylblad</strong>, t.ex. Google Kalkylark eller Microsoft Excel.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Kalkylblad</h3>
+                <p>Ett kalkylblad byggs upp av rutor som kallas <strong>celler</strong>. Varje cell har ett namn som består av en bokstav och ett tal. Varje cell som ligger i kolumn A börjar med bokstaven A och varje cell som ligger på rad 1 slutar på talet 1. Cellen i kolumn A på rad 1 heter alltså A1. Cellen i kolumn C på rad 5 heter C5.</p>
+                <p><strong>Om vi ska skriva in beräkningar i en cell inleds formeln i cellen alltid med ett likhetstecken, =.</strong></p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel: Sparande med fast ränta</h3>
+                <p><strong>Uppgift:</strong> Du sätter in pengar på ett konto. Använd ett kalkylark och beräkna behållningen på kontot varje år till och med år 8 om du</p>
+                <p>a) sätter in 30 000 kr med räntan 3,5 %.</p>
+                <p>b) sätter in 40 000 kr med räntan 3,5 %</p>
+                <p>c) sätter in 40 000 kr med räntan 4,5 %</p>
+
+                <p><strong>Lösning a):</strong></p>
+                <p>Vi öppnar ett kalkylark och gör en kolumn för "År" och en kolumn för "Behållning (kr)". Vi fyller i kolumnen från år 0 till och med år 8. Vi fyller också i insättningen 30 000 kr samt förändringsfaktorn som motsvarar en ökning med 3,5 %, dvs. 1 + 0,035 = 1,035.</p>
+
+                <p>För att få behållningen efter ett år ska vi multiplicera 30 000 (värdet i B2) med förändringsfaktorn (värdet i B12).</p>
+                <p>Vi ställer oss i cell B3 och skriver "=B2*B12" och får värdet efter 1 år (31 050 kr).</p>
+
+                <p>För att upprepa beräkningen för de resterande cellerna, så markera cell B3, ta tag i fyllnadshandtaget (det runda hörnet i högra nederkanten) och dra ner till och med cell B10. Eftersom varje värde ska multipliceras med förändringsfaktorn i B12 ska den cellen "låsas" med dollartecken: =B2*$B$12.</p>
+
+                <table style="width: 60%; margin: 1rem auto; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">År</th>
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">Behållning (kr)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">0</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">30 000,00 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">1</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">31 050,00 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">2</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">32 136,75 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">3</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">33 261,54 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">4</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">34 425,69 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">5</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">35 630,59 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">6</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">36 877,66 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">7</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">38 168,38 kr</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">8</td>
+                            <td style="padding: 0.75rem; border: 1px solid #ddd;">39 504,27 kr</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Svar a):</strong> Se tabellen ovan.</p>
+
+                <p><strong>Lösning b):</strong> Om insättningen istället är 40 000 kr går vi nu bara till cell B2 och ändrar beloppet där till 40 000 kr. De resterande värdena ändras automatiskt (automagiskt!).</p>
+
+                <table style="width: 60%; margin: 1rem auto; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f0f0f0;">
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">År</th>
+                            <th style="padding: 0.75rem; border: 1px solid #ddd;">Behållning (kr)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">0</td><td style="padding: 0.75rem; border: 1px solid #ddd;">40 000,00 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">1</td><td style="padding: 0.75rem; border: 1px solid #ddd;">41 400,00 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">2</td><td style="padding: 0.75rem; border: 1px solid #ddd;">42 849,00 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">3</td><td style="padding: 0.75rem; border: 1px solid #ddd;">44 348,72 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">4</td><td style="padding: 0.75rem; border: 1px solid #ddd;">45 900,92 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">5</td><td style="padding: 0.75rem; border: 1px solid #ddd;">47 507,45 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">6</td><td style="padding: 0.75rem; border: 1px solid #ddd;">49 170,21 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">7</td><td style="padding: 0.75rem; border: 1px solid #ddd;">50 891,17 kr</td></tr>
+                        <tr><td style="padding: 0.75rem; border: 1px solid #ddd;">8</td><td style="padding: 0.75rem; border: 1px solid #ddd;">52 672,36 kr</td></tr>
+                    </tbody>
+                </table>
+
+                <p><strong>Svar b):</strong> Se tabellen ovan.</p>
+
+                <p><strong>Lösning c):</strong> Om räntan istället är 4,5 % går vi nu bara till cell B12 och ändrar förändringsfaktorn till 1,045. De resterande värdena ändras återigen automatiskt.</p>
+
+                <p><strong>Svar c):</strong> Behållningen efter 8 år blir 42 663,02 kr (när förändringsfaktorn är 1,045).</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel: Årliga insättningar</h3>
+                <p><strong>Uppgift:</strong> Du sätter in 5 000 kr i slutet av varje år på ett konto med 2,8 % ränta. Vad är behållningen på kontot direkt efter 10:e insättningen?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi öppnar ett kalkylark och gör en kolumn för "Insättning" och en kolumn för "Behållning (kr)". Vi fyller i kolumnen från insättning 1 till och med insättning 10. Vi fyller också i insättningen 5 000 kr för den första insättningen.</p>
+
+                <p>För att få behållningen efter den andra insättningen ska det föregående beloppet (5 000 kr) ha vuxit med 2,8 % samtidigt du lägger till ytterligare 5 000 kr.</p>
+
+                <p>Vi ställer oss i cell B3 och skriver "=B2*1,028+5000" och får värdet efter den andra insättningen (10 140 kr).</p>
+
+                <p>Vi tar tag i fyllnadshandtaget och drar ner till och med insättning 10 och ser att beloppet blir 56 794,24 kr.</p>
+
+                <p><strong>Svar:</strong> 56 794,24 kr</p>
+            </div>
+
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap3-03.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 3.3 Upprepade procentuella förändringar</a>
+            <a href="kap3-05.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 3.5 Lån och ränteberäkningar →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap3-04';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

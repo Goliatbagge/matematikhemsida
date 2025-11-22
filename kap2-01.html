@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.01 Teckna och tolka uttryck - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.01 Teckna och tolka uttryck</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>Att hyra en studio kostar 800 kr i en fast avgift och sedan 150 kr per timme. Den totala kostnaden för att hyra studion ett visst antal timmar kan då sammanställas i en tabell:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Antal timmar</th>
+                        <th>Total kostnad (kr)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>\(800 + 150 \cdot 1\)</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>\(800 + 150 \cdot 2\)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>\(800 + 150 \cdot 3\)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>\(800 + 150 \cdot 5\)</td>
+                    </tr>
+                    <tr>
+                        <td>\(x\)</td>
+                        <td>\(800 + 150 \cdot x\)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Vi kan skriva ett uttryck för kostnaden att hyra studion i \(x\) timmar som</p>
+            <p class="formula">\(800 + 150 \cdot x\) eller \(800 + 150x\)</p>
+
+            <p>Vi ska nu titta på uttrycket \(800 + 150x\) och gå igenom vad de olika delarna heter. Lär dig de fetmarkerade begreppen i högra kolumnen!</p>
+
+            <div class="definition-box">
+                <h3>Begrepp i algebraiska uttryck</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Innehåll</th>
+                            <th>Förklaring</th>
+                            <th>Begrepp</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>bokstaven</td>
+                            <td><strong>variabel</strong></td>
+                        </tr>
+                        <tr>
+                            <td>150</td>
+                            <td>"talet framför \(x\)", talet som multipliceras med variabeln</td>
+                            <td><strong>koefficient</strong></td>
+                        </tr>
+                        <tr>
+                            <td>\(150x\)</td>
+                            <td>hela termen som innehåller variabeln</td>
+                            <td><strong>variabelterm</strong></td>
+                        </tr>
+                        <tr>
+                            <td>800</td>
+                            <td>termen som bara består av ett tal</td>
+                            <td><strong>konstantterm</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>Kostnaden för att hyra studion i exempelvis 12 timmar beräknar vi genom att sätta \(x = 12\) och sätta in i formeln \(800 + 150x\)</p>
+
+            <div class="calculation">
+                \(800 + 150 \cdot 12 = 800 + 1800 = 2600\)
+            </div>
+
+            <p>Kostnaden blir alltså 2 600 kr där 2 600 kallas uttryckets <strong>värde</strong>.</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Linn är \(x\) år. Albin är 3 gånger så gammal som Linn var för 4 år sedan. Ställ upp ett uttryck för</strong></p>
+            <p><strong>a)</strong> Linns ålder för 12 år sedan<br>
+            <strong>b)</strong> Albins ålder.</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Om Linn är \(x\) år nu, måste vi subtrahera 12 för att få hennes ålder för 12 år sedan.</p>
+                <p class="answer">Svar: \(x - 12\)</p>
+
+                <p><strong>b)</strong> Linn är \(x\) år nu. För 4 år sedan var hon \((x - 4)\) år. Albin är alltså 3 gånger så gammal som det, dvs. Albin är \(3(x - 4)\) år</p>
+
+                <p>Faktorer framför parenteser multiplicerar vi in med varje term.</p>
+                <p>\(3(x - 4) = 3x - 12\)</p>
+
+                <p class="answer">Svar: \(3(x - 4)\) eller \(3x - 12\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Äpplen kostar \(a\) kr/st och päron \(b\) kr/st. Tolka</strong></p>
+            <p><strong>a)</strong> \(3a + 4b\)<br>
+            <strong>b)</strong> \(10a - 7b\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Kostnaden för 3 äpplen och 4 päron.</p>
+
+                <p><strong>b)</strong> Prisskillnaden mellan 10 äpplen och 7 päron.</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 3</h3>
+            <p><strong>Beräkna värdet för \(20 - 3x\) om</strong></p>
+            <p><strong>a)</strong> \(x = 4\)<br>
+            <strong>b)</strong> \(x = -5\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Ersätt \(x\) med 4 i uttrycket och beräkna.</p>
+                <div class="calculation">
+                    \(20 - 3 \cdot 4 = 20 - 12 = 8\)
+                </div>
+                <p class="answer">Svar: 8</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \(20 - 3 \cdot (-5) = 20 + 15 = 35\)
+                </div>
+                <p class="answer">Svar: 35</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

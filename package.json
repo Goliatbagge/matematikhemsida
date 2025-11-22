@@ -1,0 +1,19 @@
+{
+  "name": "hemsida-course-validation",
+  "version": "1.0.0",
+  "description": "Automated validation system for Hemsida course content consistency",
+  "scripts": {
+    "validate": "node validate-courses.js",
+    "fix": "node fix-course-cards.js",
+    "validate-fix": "node fix-course-cards.js && node validate-courses.js",
+    "check": "node validate-courses.js"
+  },
+  "keywords": [
+    "validation",
+    "courses",
+    "content",
+    "consistency"
+  ],
+  "author": "Hemsida Team",
+  "license": "MIT"
+}

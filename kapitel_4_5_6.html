@@ -1,0 +1,1106 @@
+<!-- KOPIERA DETTA INNEHÅLL OCH KLISTRA IN I index.html PRECIS FÖRE </main>-taggen -->
+
+        <!-- KAPITEL 4: DERIVATAN OCH FUNKTIONER -->
+
+        <!-- Kapitel 4.1 -->
+        <section id="kap4-01" class="content-section">
+            <h2>Kapitel 4.1: Växande och avtagande funktioner</h2>
+
+            <div class="definition-box">
+                <h3>Växande och avtagande funktioner</h3>
+                <p>En funktion $f$ är:</p>
+                <ul>
+                    <li><strong>Växande</strong> i ett intervall om $f(x_2) > f(x_1)$ när $x_2 > x_1$</li>
+                    <li><strong>Avtagande</strong> i ett intervall om $f(x_2) < f(x_1)$ när $x_2 > x_1$</li>
+                </ul>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan och monotonitet</h3>
+                <p>Sambandet mellan derivatan och funktionens förändring:</p>
+                <ul>
+                    <li>Om $f'(x) > 0$ i ett intervall, så är $f$ <strong>växande</strong> i intervallet</li>
+                    <li>Om $f'(x) < 0$ i ett intervall, så är $f$ <strong>avtagande</strong> i intervallet</li>
+                    <li>Om $f'(x) = 0$ i ett intervall, så är $f$ <strong>konstant</strong> i intervallet</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm när funktionen växer och avtar</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^2 - 4x + 3$, bestäm när funktionen växer och när den avtar.</p>
+
+                <p><strong>Steg 1:</strong> Derivera funktionen</p>
+                <p>$$f'(x) = 2x - 4$$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm när $f'(x) = 0$</p>
+                <p>$$2x - 4 = 0 \Rightarrow x = 2$$</p>
+
+                <p><strong>Steg 3:</strong> Undersök tecknet på $f'(x)$ i olika intervall</p>
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Intervall</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Testvärde</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$f'(x)$</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Växer/Avtar</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x < 2$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x = 0$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-4$ (negativ)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Avtagande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x > 2$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x = 3$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$2$ (positiv)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                </table>
+
+                <p class="answer"><strong>Svar:</strong> Funktionen avtar för $x < 2$ och växer för $x > 2$</p>
+            </div>
+
+            <h3>Exempel 2: Undersök monotonitet</h3>
+            <div class="example-box">
+                <p>Bestäm i vilka intervall $f(x) = x^3 - 3x$ växer respektive avtar.</p>
+
+                <p>$$f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$$</p>
+                <p>$f'(x) = 0$ när $x = -1$ eller $x = 1$</p>
+
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Intervall</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$f'(x)$</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Växer/Avtar</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x < -1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$+$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-1 < x < 1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Avtagande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x > 1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$+$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                </table>
+
+                <p class="answer"><strong>Svar:</strong> Växande för $x < -1$ och $x > 1$; Avtagande för $-1 < x < 1$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.2 -->
+        <section id="kap4-02" class="content-section">
+            <h2>Kapitel 4.2: Derivatans nollställen</h2>
+
+            <div class="definition-box">
+                <h3>Stationär punkt</h3>
+                <p>En punkt där $f'(x) = 0$ kallas en <strong>stationär punkt</strong> eller <strong>kritisk punkt</strong>.</p>
+                <p>I en stationär punkt har funktionen en horisontell tangent.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Typer av stationära punkter</h3>
+                <p>En stationär punkt kan vara:</p>
+                <ul>
+                    <li><strong>Lokalt maximum</strong> - funktionen har ett "berg"</li>
+                    <li><strong>Lokalt minimum</strong> - funktionen har en "dal"</li>
+                    <li><strong>Terrasspunkt</strong> - funktionen fortsätter åt samma håll</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm stationära punkter</h3>
+            <div class="example-box">
+                <p>Bestäm de stationära punkterna för $f(x) = x^3 - 6x^2 + 9x + 1$.</p>
+
+                <p><strong>Steg 1:</strong> Derivera</p>
+                <p>$$f'(x) = 3x^2 - 12x + 9$$</p>
+
+                <p><strong>Steg 2:</strong> Lös $f'(x) = 0$</p>
+                <p>$$3x^2 - 12x + 9 = 0$$</p>
+                <p>$$x^2 - 4x + 3 = 0$$</p>
+                <p>$$(x-1)(x-3) = 0$$</p>
+                <p>$x = 1$ eller $x = 3$</p>
+
+                <p><strong>Steg 3:</strong> Bestäm y-koordinaterna</p>
+                <p>$$f(1) = 1 - 6 + 9 + 1 = 5$$</p>
+                <p>$$f(3) = 27 - 54 + 27 + 1 = 1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Stationära punkter: $(1, 5)$ och $(3, 1)$</p>
+            </div>
+
+            <h3>Exempel 2: Klassificera stationära punkter</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^3 - 3x + 1$, bestäm och klassificera de stationära punkterna.</p>
+
+                <p>$$f'(x) = 3x^2 - 3 = 0 \Rightarrow x^2 = 1 \Rightarrow x = \pm 1$$</p>
+
+                <p>Testar tecknet på $f'(x)$ runt de stationära punkterna:</p>
+                <ul>
+                    <li>För $x = -1$: $f'$ byter från $+$ till $-$ → <strong>Lokalt maximum</strong></li>
+                    <li>För $x = 1$: $f'$ byter från $-$ till $+$ → <strong>Lokalt minimum</strong></li>
+                </ul>
+
+                <p>$$f(-1) = -1 + 3 + 1 = 3$$</p>
+                <p>$$f(1) = 1 - 3 + 1 = -1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Lokalt maximum i $(-1, 3)$ och lokalt minimum i $(1, -1)$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.3 -->
+        <section id="kap4-03" class="content-section">
+            <h2>Kapitel 4.3: Största och minsta värde</h2>
+
+            <div class="method-box">
+                <h3>Hitta största och minsta värde på ett slutet intervall</h3>
+                <ol>
+                    <li>Hitta alla stationära punkter (där $f'(x) = 0$) i intervallet</li>
+                    <li>Beräkna funktionsvärdet i de stationära punkterna</li>
+                    <li>Beräkna funktionsvärdet i intervallets ändpunkter</li>
+                    <li>Det största värdet är det globala max, det minsta är det globala min</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Största och minsta värde på intervall</h3>
+            <div class="example-box">
+                <p>Bestäm största och minsta värdet för $f(x) = x^3 - 3x + 2$ på intervallet $[-2, 2]$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta stationära punkter</p>
+                <p>$$f'(x) = 3x^2 - 3 = 0 \Rightarrow x = \pm 1$$</p>
+                <p>Båda ligger i intervallet $[-2, 2]$</p>
+
+                <p><strong>Steg 2-3:</strong> Beräkna funktionsvärden</p>
+                <ul>
+                    <li>$f(-2) = -8 + 6 + 2 = 0$</li>
+                    <li>$f(-1) = -1 + 3 + 2 = 4$</li>
+                    <li>$f(1) = 1 - 3 + 2 = 0$</li>
+                    <li>$f(2) = 8 - 6 + 2 = 4$</li>
+                </ul>
+
+                <p class="answer"><strong>Svar:</strong> Största värdet är 4 (vid $x = -1$ och $x = 2$), minsta värdet är 0 (vid $x = -2$ och $x = 1$)</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.4 -->
+        <section id="kap4-04" class="content-section">
+            <h2>Kapitel 4.4: Andraderivatan och funktioner</h2>
+
+            <div class="definition-box">
+                <h3>Andraderivatan</h3>
+                <p><strong>Andraderivatan</strong> $f''(x)$ är derivatan av derivatan.</p>
+                <p>Om $f'(x)$ beskriver förändringshastigheten, så beskriver $f''(x)$ hur förändringshastigheten förändras.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Andraderivatan och kurvighet</h3>
+                <ul>
+                    <li>Om $f''(x) > 0$ är funktionen <strong>konvex</strong> (kupig nedåt, som en U)</li>
+                    <li>Om $f''(x) < 0$ är funktionen <strong>konkav</strong> (kupig uppåt, som ett ∩)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna andraderivatan</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = x^4 - 2x^3 + 5x$</p>
+                <p>$$f'(x) = 4x^3 - 6x^2 + 5$$</p>
+                <p>$$f''(x) = 12x^2 - 12x$$</p>
+                <p class="answer"><strong>Svar:</strong> $f''(x) = 12x^2 - 12x$</p>
+
+                <p><strong>b)</strong> $g(x) = e^{2x}$</p>
+                <p>$$g'(x) = 2e^{2x}$$</p>
+                <p>$$g''(x) = 4e^{2x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $g''(x) = 4e^{2x}$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm kurvighet</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^3 - 3x^2$, bestäm i vilka intervall funktionen är konvex resp. konkav.</p>
+
+                <p>$$f'(x) = 3x^2 - 6x$$</p>
+                <p>$$f''(x) = 6x - 6 = 6(x - 1)$$</p>
+
+                <p>$f''(x) = 0$ när $x = 1$</p>
+
+                <ul>
+                    <li>För $x < 1$: $f''(x) < 0$ → konkav</li>
+                    <li>För $x > 1$: $f''(x) > 0$ → konvex</li>
+                </ul>
+
+                <p class="answer"><strong>Svar:</strong> Konkav för $x < 1$, konvex för $x > 1$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.5 -->
+        <section id="kap4-05" class="content-section">
+            <h2>Kapitel 4.5: Andraderivatan och lokala extrempunkter</h2>
+
+            <div class="formula-box important">
+                <h3>Andraderivattestet för extrempunkter</h3>
+                <p>Om $f'(a) = 0$ och:</p>
+                <ul>
+                    <li>$f''(a) > 0$, så har $f$ ett <strong>lokalt minimum</strong> i $x = a$</li>
+                    <li>$f''(a) < 0$, så har $f$ ett <strong>lokalt maximum</strong> i $x = a$</li>
+                    <li>$f''(a) = 0$, så ger testet ingen information</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm extrempunkter med andraderivatan</h3>
+            <div class="example-box">
+                <p>Bestäm och klassificera extrempunkterna för $f(x) = x^3 - 6x^2 + 9x + 1$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta stationära punkter</p>
+                <p>$$f'(x) = 3x^2 - 12x + 9 = 0$$</p>
+                <p>$$x = 1 \text{ eller } x = 3$$</p>
+
+                <p><strong>Steg 2:</strong> Beräkna andraderivatan</p>
+                <p>$$f''(x) = 6x - 12$$</p>
+
+                <p><strong>Steg 3:</strong> Använd andraderivattestet</p>
+                <ul>
+                    <li>$f''(1) = 6 - 12 = -6 < 0$ → Lokalt maximum vid $x = 1$</li>
+                    <li>$f''(3) = 18 - 12 = 6 > 0$ → Lokalt minimum vid $x = 3$</li>
+                </ul>
+
+                <p>$$f(1) = 1 - 6 + 9 + 1 = 5$$</p>
+                <p>$$f(3) = 27 - 54 + 27 + 1 = 1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Lokalt maximum i $(1, 5)$, lokalt minimum i $(3, 1)$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.6 -->
+        <section id="kap4-06" class="content-section">
+            <h2>Kapitel 4.6: Extremvärdesproblem</h2>
+
+            <div class="info-box">
+                <h3>Extremvärdesproblem i verkligheten</h3>
+                <p>Extremvärdesproblem handlar om att hitta det bästa (största eller minsta) värdet av en storhet, t.ex.:</p>
+                <ul>
+                    <li>Maximera vinst eller intäkt</li>
+                    <li>Minimera kostnad eller materialåtgång</li>
+                    <li>Maximera volym eller area</li>
+                </ul>
+            </div>
+
+            <div class="method-box">
+                <h3>Lös extremvärdesproblem</h3>
+                <ol>
+                    <li>Läs uppgiften noggrant och identifiera vad som ska maximeras/minimeras</li>
+                    <li>Rita en figur om möjligt</li>
+                    <li>Sätt upp en funktion för storheten som ska optimeras</li>
+                    <li>Om funktionen har flera variabler, använd bivillkor för att uttrycka funktionen i en variabel</li>
+                    <li>Derivera och hitta stationära punkter</li>
+                    <li>Kontrollera att det verkligen är ett maximum/minimum</li>
+                    <li>Svara på frågan</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Maximera area</h3>
+            <div class="example-box">
+                <p>Du har 40 meter stängsel och ska bygga en rektangulär hage med en sida mot en vägg. Vilka dimensioner ger största möjliga area?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Låt $x$ = bredden och $y$ = längden (parallellt med väggen)</p>
+                <p>Stängsel behövs för tre sidor: $2x + y = 40$, alltså $y = 40 - 2x$</p>
+
+                <p>Area: $A(x) = x \cdot y = x(40 - 2x) = 40x - 2x^2$</p>
+
+                <p>$$A'(x) = 40 - 4x = 0 \Rightarrow x = 10$$</p>
+                <p>$$A''(x) = -4 < 0$$ → Maximum!</p>
+
+                <p>$y = 40 - 2 \cdot 10 = 20$</p>
+
+                <p class="answer"><strong>Svar:</strong> Bredden 10 m och längden 20 m ger maximal area 200 m²</p>
+            </div>
+
+            <h3>Exempel 2: Minimera kostnad</h3>
+            <div class="example-box">
+                <p>En låda utan lock ska ha volymen 500 cm³. Basen är kvadratisk. Vilket sidmått på basen ger minsta material?</p>
+
+                <p>Låt $x$ = sidlängd på basen, $h$ = höjden</p>
+                <p>Volym: $x^2 h = 500 \Rightarrow h = \frac{500}{x^2}$</p>
+
+                <p>Material (area): $A = x^2 + 4xh = x^2 + 4x \cdot \frac{500}{x^2} = x^2 + \frac{2000}{x}$</p>
+
+                <p>$$A'(x) = 2x - \frac{2000}{x^2} = 0$$</p>
+                <p>$$2x = \frac{2000}{x^2}$$</p>
+                <p>$$x^3 = 1000$$</p>
+                <p>$$x = 10$$</p>
+
+                <p>$h = \frac{500}{100} = 5$ cm</p>
+
+                <p class="answer"><strong>Svar:</strong> Bas 10×10 cm och höjd 5 cm</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.7 -->
+        <section id="kap4-07" class="content-section">
+            <h2>Kapitel 4.7: Extremvärdesproblem med digitala verktyg</h2>
+
+            <div class="info-box">
+                <p>GeoGebra kan användas för att:</p>
+                <ul>
+                    <li>Rita funktioner och deras derivator</li>
+                    <li>Hitta extrempunkter grafiskt</li>
+                    <li>Verifiera analytiska lösningar</li>
+                </ul>
+            </div>
+
+            <div class="method-box">
+                <h3>Användbara GeoGebra-kommandon</h3>
+                <ul>
+                    <li><code>Extrempunkt(f)</code> - Hittar alla extrempunkter</li>
+                    <li><code>Minimum(f, a, b)</code> - Minsta värde på intervall [a,b]</li>
+                    <li><code>Maximum(f, a, b)</code> - Största värde på intervall [a,b]</li>
+                    <li><code>Lös(f'(x) = 0)</code> - Hittar stationära punkter</li>
+                </ul>
+            </div>
+
+            <h3>Exempel: Optimering med GeoGebra</h3>
+            <div class="example-box">
+                <p>Optimera funktionen $A(x) = 40x - 2x^2$ (från hageexemplet).</p>
+
+                <p><strong>I GeoGebra:</strong></p>
+                <ol>
+                    <li><code>A(x) = 40*x - 2*x^2</code></li>
+                    <li><code>Extrempunkt(A)</code> → visar punkt $(10, 200)$</li>
+                    <li><code>A'(x)</code> → visar $40 - 4x$</li>
+                    <li><code>Lös(A'(x) = 0)</code> → visar $x = 10$</li>
+                </ol>
+
+                <p>Detta bekräftar vår analytiska lösning!</p>
+            </div>
+        </section>
+
+        <!-- KAPITEL 5: INTEGRALER -->
+
+        <!-- Kapitel 5.1 -->
+        <section id="kap5-01" class="content-section">
+            <h2>Kapitel 5.1: Primitiva funktioner</h2>
+
+            <div class="definition-box">
+                <h3>Primitiv funktion</h3>
+                <p>En funktion $F(x)$ är en <strong>primitiv funktion</strong> till $f(x)$ om $F'(x) = f(x)$.</p>
+                <p>Primitiv funktion kallas också <strong>antiderivata</strong>.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Obestämd integral</h3>
+                <p>Alla primitiva funktioner till $f(x)$ skrivs:</p>
+                <p class="formula">$$\int f(x) \, dx = F(x) + C$$</p>
+                <p>där $C$ är en godtycklig konstant (integrationskonstanten).</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Grundläggande integrationsregler</h3>
+                <table class="rules-table">
+                    <tr>
+                        <td>$\int x^n \, dx$</td>
+                        <td>$=$</td>
+                        <td>$\frac{x^{n+1}}{n+1} + C$ (för $n \neq -1$)</td>
+                    </tr>
+                    <tr>
+                        <td>$\int k \, dx$</td>
+                        <td>$=$</td>
+                        <td>$kx + C$</td>
+                    </tr>
+                    <tr>
+                        <td>$\int e^x \, dx$</td>
+                        <td>$=$</td>
+                        <td>$e^x + C$</td>
+                    </tr>
+                    <tr>
+                        <td>$\int e^{kx} \, dx$</td>
+                        <td>$=$</td>
+                        <td>$\frac{1}{k}e^{kx} + C$</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Bestäm primitiva funktioner</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\int x^5 \, dx$</p>
+                <p>$$= \frac{x^6}{6} + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{x^6}{6} + C$</p>
+
+                <p><strong>b)</strong> $\int (3x^2 - 4x + 5) \, dx$</p>
+                <p>$$= x^3 - 2x^2 + 5x + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $x^3 - 2x^2 + 5x + C$</p>
+
+                <p><strong>c)</strong> $\int e^{3x} \, dx$</p>
+                <p>$$= \frac{1}{3}e^{3x} + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{1}{3}e^{3x} + C$</p>
+            </div>
+
+            <h3>Exempel 2: Kontrollera genom derivering</h3>
+            <div class="example-box">
+                <p>Kontrollera att $F(x) = x^3 - 2x$ är en primitiv funktion till $f(x) = 3x^2 - 2$.</p>
+                <p>$$F'(x) = 3x^2 - 2 = f(x)$$ ✓</p>
+                <p class="answer"><strong>Svar:</strong> Ja, det stämmer!</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.2 -->
+        <section id="kap5-02" class="content-section">
+            <h2>Kapitel 5.2: Primitiva funktioner med villkor</h2>
+
+            <div class="info-box">
+                <p>När vi vet funktionsvärdet i en viss punkt kan vi bestämma integrationskonstanten $C$.</p>
+            </div>
+
+            <h3>Exempel 1: Bestäm C med villkor</h3>
+            <div class="example-box">
+                <p>Bestäm den primitiva funktionen till $f(x) = 2x + 3$ som går genom punkten $(1, 7)$.</p>
+
+                <p><strong>Steg 1:</strong> Integrera</p>
+                <p>$$F(x) = \int (2x + 3) \, dx = x^2 + 3x + C$$</p>
+
+                <p><strong>Steg 2:</strong> Använd villkoret $F(1) = 7$</p>
+                <p>$$1^2 + 3 \cdot 1 + C = 7$$</p>
+                <p>$$1 + 3 + C = 7$$</p>
+                <p>$$C = 3$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $F(x) = x^2 + 3x + 3$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm funktion från derivata</h3>
+            <div class="example-box">
+                <p>En funktion $f$ har derivatan $f'(x) = 6x - 4$ och $f(2) = 10$. Bestäm $f(x)$.</p>
+
+                <p>$$f(x) = \int (6x - 4) \, dx = 3x^2 - 4x + C$$</p>
+                <p>$$f(2) = 3 \cdot 4 - 8 + C = 10$$</p>
+                <p>$$12 - 8 + C = 10$$</p>
+                <p>$$C = 6$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $f(x) = 3x^2 - 4x + 6$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.3 -->
+        <section id="kap5-03" class="content-section">
+            <h2>Kapitel 5.3: Arean under en kurva</h2>
+
+            <div class="definition-box">
+                <h3>Bestämd integral</h3>
+                <p>Arean mellan kurvan $y = f(x)$, x-axeln och linjerna $x = a$ och $x = b$ ges av den <strong>bestämda integralen</strong>:</p>
+                <p class="formula">$$A = \int_a^b f(x) \, dx$$</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Analysens fundamentalsats</h3>
+                <p>Om $F(x)$ är en primitiv funktion till $f(x)$, så gäller:</p>
+                <p class="formula">$$\int_a^b f(x) \, dx = F(b) - F(a) = [F(x)]_a^b$$</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna bestämd integral</h3>
+            <div class="example-box">
+                <p>$\int_1^3 x^2 \, dx$</p>
+
+                <p><strong>Steg 1:</strong> Hitta primitiv funktion</p>
+                <p>$$F(x) = \frac{x^3}{3}$$</p>
+
+                <p><strong>Steg 2:</strong> Använd fundamentalsatsen</p>
+                <p>$$\int_1^3 x^2 \, dx = \left[\frac{x^3}{3}\right]_1^3 = \frac{27}{3} - \frac{1}{3} = 9 - \frac{1}{3} = \frac{26}{3}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{26}{3} \approx 8{,}67$ ae</p>
+            </div>
+
+            <h3>Exempel 2: Area under kurva</h3>
+            <div class="example-box">
+                <p>Beräkna arean under kurvan $y = x^2 + 1$ mellan $x = 0$ och $x = 2$.</p>
+
+                <p>$$A = \int_0^2 (x^2 + 1) \, dx = \left[\frac{x^3}{3} + x\right]_0^2$$</p>
+                <p>$$= \left(\frac{8}{3} + 2\right) - (0 + 0) = \frac{8}{3} + \frac{6}{3} = \frac{14}{3}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{14}{3} \approx 4{,}67$ ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.4 -->
+        <section id="kap5-04" class="content-section">
+            <h2>Kapitel 5.4: Integralkalkylens fundamentalsats</h2>
+
+            <div class="formula-box important">
+                <h3>Integralkalkylens fundamentalsats (detaljerad)</h3>
+                <p>Fundamentalsatsen kopplar samman derivering och integration:</p>
+                <p><strong>Del 1:</strong> Om $F(x) = \int_a^x f(t) \, dt$, så är $F'(x) = f(x)$</p>
+                <p><strong>Del 2:</strong> Om $F'(x) = f(x)$, så är $\int_a^b f(x) \, dx = F(b) - F(a)$</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Vad betyder detta?</h3>
+                <p>Fundamentalsatsen säger att:</p>
+                <ul>
+                    <li>Integration och derivering är <strong>motsatta operationer</strong></li>
+                    <li>För att beräkna en area (integral) behöver vi bara hitta en primitiv funktion och sätta in gränsvärdena</li>
+                </ul>
+            </div>
+
+            <h3>Exempel: Använd fundamentalsatsen</h3>
+            <div class="example-box">
+                <p>$\int_0^4 (3x^2 - 2x + 1) \, dx$</p>
+
+                <p>Primitiv funktion: $F(x) = x^3 - x^2 + x$</p>
+                <p>$$\int_0^4 (3x^2 - 2x + 1) \, dx = [x^3 - x^2 + x]_0^4$$</p>
+                <p>$$= (64 - 16 + 4) - (0) = 52$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 52 ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.5 -->
+        <section id="kap5-05" class="content-section">
+            <h2>Kapitel 5.5: Beräkna integraler digitalt</h2>
+
+            <div class="method-box">
+                <h3>GeoGebra-kommandon för integraler</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Kommando</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Beskrivning</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>Integral(f, a, b)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Beräknar bestämd integral</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>Integral(f)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Hittar primitiv funktion</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>IntegralMellan(f, g, a, b)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Area mellan två kurvor</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel: Beräkna med GeoGebra</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> Beräkna $\int_1^4 (x^2 + 2) \, dx$</p>
+                <p>I GeoGebra: <code>Integral(x^2 + 2, 1, 4)</code></p>
+                <p class="answer"><strong>Svar från GeoGebra:</strong> 27</p>
+
+                <p><strong>b)</strong> Hitta primitiv funktion till $f(x) = 3x^2 - 5x$</p>
+                <p>I GeoGebra: <code>Integral(3x^2 - 5x)</code></p>
+                <p class="answer"><strong>Svar från GeoGebra:</strong> $x^3 - 2{,}5x^2$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.6 -->
+        <section id="kap5-06" class="content-section">
+            <h2>Kapitel 5.6: Area mellan kurvor</h2>
+
+            <div class="formula-box">
+                <h3>Area mellan två kurvor</h3>
+                <p>Arean mellan $y = f(x)$ och $y = g(x)$ från $x = a$ till $x = b$ (där $f(x) \geq g(x)$):</p>
+                <p class="formula">$$A = \int_a^b [f(x) - g(x)] \, dx$$</p>
+            </div>
+
+            <h3>Exempel 1: Area mellan två kurvor</h3>
+            <div class="example-box">
+                <p>Beräkna arean mellan kurvorna $y = x^2$ och $y = x$ från $x = 0$ till $x = 1$.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm vilken kurva som ligger högst</p>
+                <p>För $0 \leq x \leq 1$ gäller $x \geq x^2$ (testa t.ex. $x = 0{,}5$)</p>
+
+                <p><strong>Steg 2:</strong> Beräkna integralen</p>
+                <p>$$A = \int_0^1 (x - x^2) \, dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1$$</p>
+                <p>$$= \frac{1}{2} - \frac{1}{3} = \frac{3-2}{6} = \frac{1}{6}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{1}{6}$ ae</p>
+            </div>
+
+            <h3>Exempel 2: Hitta skärningspunkter först</h3>
+            <div class="example-box">
+                <p>Beräkna arean mellan $f(x) = x^2 - 4$ och $g(x) = -x^2 + 2x + 4$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta skärningspunkter</p>
+                <p>$$x^2 - 4 = -x^2 + 2x + 4$$</p>
+                <p>$$2x^2 - 2x - 8 = 0$$</p>
+                <p>$$x^2 - x - 4 = 0$$</p>
+                <p>$$x = -2 \text{ eller } x = 4$$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm vilken kurva som ligger högst</p>
+                <p>$g(x) \geq f(x)$ mellan skärningspunkterna</p>
+
+                <p><strong>Steg 3:</strong> Beräkna arean</p>
+                <p>$$A = \int_{-2}^4 [(-x^2 + 2x + 4) - (x^2 - 4)] \, dx$$</p>
+                <p>$$= \int_{-2}^4 (-2x^2 + 2x + 8) \, dx = \left[-\frac{2x^3}{3} + x^2 + 8x\right]_{-2}^4$$</p>
+                <p>$$= \left(-\frac{128}{3} + 16 + 32\right) - \left(\frac{16}{3} + 4 - 16\right) = 36$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 36 ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.7 -->
+        <section id="kap5-07" class="content-section">
+            <h2>Kapitel 5.7: Tillämpningar av integraler</h2>
+
+            <div class="info-box">
+                <h3>Integraler i verkligheten</h3>
+                <p>Integraler används för att beräkna:</p>
+                <ul>
+                    <li><strong>Sträcka</strong> från hastighet: $s = \int v(t) \, dt$</li>
+                    <li><strong>Totalt ackumulerad förändring</strong></li>
+                    <li><strong>Volym</strong> av rotationskroppar</li>
+                    <li><strong>Totalkostnad</strong> från marginalkostnad</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Sträcka från hastighet</h3>
+            <div class="example-box">
+                <p>En bil har hastigheten $v(t) = 20 + 2t$ m/s. Hur lång sträcka färdas bilen under de första 10 sekunderna?</p>
+
+                <p>$$s = \int_0^{10} (20 + 2t) \, dt = [20t + t^2]_0^{10}$$</p>
+                <p>$$= (200 + 100) - 0 = 300$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 300 meter</p>
+            </div>
+
+            <h3>Exempel 2: Totalkostnad från marginalkostnad</h3>
+            <div class="example-box">
+                <p>Ett företags marginalkostnad är $C'(x) = 0{,}3x + 20$ kr/enhet. Fasta kostnaden är 5000 kr. Vad är totalkostnaden för att producera 100 enheter?</p>
+
+                <p>Variabel kostnad: $\int_0^{100} (0{,}3x + 20) \, dx = [0{,}15x^2 + 20x]_0^{100}$</p>
+                <p>$= 1500 + 2000 = 3500$ kr</p>
+
+                <p>Totalkostnad = Fast kostnad + Variabel kostnad = 5000 + 3500 = 8500 kr</p>
+
+                <p class="answer"><strong>Svar:</strong> 8500 kr</p>
+            </div>
+
+            <h3>Exempel 3: Vattenflöde</h3>
+            <div class="example-box">
+                <p>Vatten rinner in i en tank med hastigheten $r(t) = 50 - 2t$ liter/minut. Hur mycket vatten har runnit in under de första 10 minuterna?</p>
+
+                <p>$$V = \int_0^{10} (50 - 2t) \, dt = [50t - t^2]_0^{10}$$</p>
+                <p>$$= (500 - 100) - 0 = 400$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 400 liter</p>
+            </div>
+        </section>
+
+        <!-- KAPITEL 6: TRIGONOMETRI -->
+
+        <!-- Kapitel 6.1 -->
+        <section id="kap6-01" class="content-section">
+            <h2>Kapitel 6.1: Trigonometri i rätvinkliga trianglar</h2>
+
+            <div class="definition-box">
+                <h3>De trigonometriska funktionerna</h3>
+                <p>I en rätvinklig triangel med vinkeln $v$ definieras:</p>
+                <p class="formula">$$\sin v = \frac{\text{motstående katet}}{\text{hypotenusa}}$$</p>
+                <p class="formula">$$\cos v = \frac{\text{närliggande katet}}{\text{hypotenusa}}$$</p>
+                <p class="formula">$$\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}} = \frac{\sin v}{\cos v}$$</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Trigonometriska ettan</h3>
+                <p class="formula">$$\sin^2 v + \cos^2 v = 1$$</p>
+                <p>Denna formel gäller för alla vinklar!</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna sidlängder</h3>
+            <div class="example-box">
+                <p>I en rätvinklig triangel är hypotenusan 10 cm och en vinkel är 30°. Beräkna kateternas längder.</p>
+
+                <p>Motstående katet: $a = 10 \cdot \sin 30° = 10 \cdot 0{,}5 = 5$ cm</p>
+                <p>Närliggande katet: $b = 10 \cdot \cos 30° = 10 \cdot \frac{\sqrt{3}}{2} \approx 8{,}66$ cm</p>
+
+                <p class="answer"><strong>Svar:</strong> 5 cm och cirka 8,66 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel</h3>
+            <div class="example-box">
+                <p>I en rätvinklig triangel är den motstående kateten 7 cm och hypotenusan 15 cm. Beräkna vinkeln.</p>
+
+                <p>$$\sin v = \frac{7}{15}$$</p>
+                <p>$$v = \arcsin\left(\frac{7}{15}\right) \approx 27{,}8°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 27,8°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.2 -->
+        <section id="kap6-02" class="content-section">
+            <h2>Kapitel 6.2: Enhetscirkeln</h2>
+
+            <div class="definition-box">
+                <h3>Enhetscirkeln</h3>
+                <p><strong>Enhetscirkeln</strong> är en cirkel med radie 1 och centrum i origo.</p>
+                <p>En punkt på enhetscirkeln har koordinaterna $(\cos v, \sin v)$ där $v$ är vinkeln från positiva x-axeln.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Viktiga vinklar på enhetscirkeln</h3>
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Vinkel</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Grader</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Radianer</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">sin v</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">cos v</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/6</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">30°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/6</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√3/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/4</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">45°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/4</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√2/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√2/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/3</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">60°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/3</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√3/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">90°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">180°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">-1</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel: Bestäm exakta värden</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\sin 60°$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{\sqrt{3}}{2}$</p>
+
+                <p><strong>b)</strong> $\cos \frac{\pi}{4}$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{\sqrt{2}}{2}$ eller $\frac{1}{\sqrt{2}}$</p>
+
+                <p><strong>c)</strong> $\tan 45°$</p>
+                <p>$$\tan 45° = \frac{\sin 45°}{\cos 45°} = \frac{\sqrt{2}/2}{\sqrt{2}/2} = 1$$</p>
+                <p class="answer"><strong>Svar:</strong> 1</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.3 -->
+        <section id="kap6-03" class="content-section">
+            <h2>Kapitel 6.3: Trigonometriska ekvationer</h2>
+
+            <div class="method-box">
+                <h3>Lös trigonometriska ekvationer</h3>
+                <ol>
+                    <li>Isolera den trigonometriska funktionen (sin, cos eller tan)</li>
+                    <li>Hitta en lösning med arcsin, arccos eller arctan</li>
+                    <li>Hitta alla lösningar i det angivna intervallet med hjälp av enhetscirkeln eller symmetri</li>
+                </ol>
+            </div>
+
+            <div class="formula-box">
+                <h3>Periodiska egenskaper</h3>
+                <p>Om $\sin v = a$ har lösningen $v_0$, så är alla lösningar:</p>
+                <ul>
+                    <li>$v = v_0 + n \cdot 360°$ eller $v = (180° - v_0) + n \cdot 360°$ (i grader)</li>
+                    <li>$v = v_0 + 2n\pi$ eller $v = (\pi - v_0) + 2n\pi$ (i radianer)</li>
+                </ul>
+                <p>där $n$ är ett heltal.</p>
+            </div>
+
+            <h3>Exempel 1: Grundläggande trigonometrisk ekvation</h3>
+            <div class="example-box">
+                <p>Lös $\sin v = 0{,}5$ för $0° \leq v \leq 360°$</p>
+
+                <p>En lösning: $v_1 = \arcsin(0{,}5) = 30°$</p>
+                <p>Andra lösningen (symmetri): $v_2 = 180° - 30° = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 30°$ eller $v = 150°$</p>
+            </div>
+
+            <h3>Exempel 2: Cosinus-ekvation</h3>
+            <div class="example-box">
+                <p>Lös $\cos v = -0{,}6$ för $0 \leq v < 2\pi$</p>
+
+                <p>En lösning: $v_1 = \arccos(-0{,}6) \approx 2{,}21$ rad</p>
+                <p>Symmetri ger: $v_2 = 2\pi - 2{,}21 \approx 4{,}07$ rad</p>
+
+                <p class="answer"><strong>Svar:</strong> $v \approx 2{,}21$ eller $v \approx 4{,}07$ radianer</p>
+            </div>
+
+            <h3>Exempel 3: Ekvation med algebra</h3>
+            <div class="example-box">
+                <p>Lös $2\sin v - 1 = 0$ för $0° \leq v < 360°$</p>
+
+                <p>$$2\sin v = 1$$</p>
+                <p>$$\sin v = 0{,}5$$</p>
+                <p>$v = 30°$ eller $v = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 30°$ eller $v = 150°$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.4 -->
+        <section id="kap6-04" class="content-section">
+            <h2>Kapitel 6.4: Trigonometriska ekvationer (forts.)</h2>
+
+            <h3>Exempel 1: Kvadratisk trigonometrisk ekvation</h3>
+            <div class="example-box">
+                <p>Lös $2\sin^2 v - \sin v = 0$ för $0° \leq v < 360°$</p>
+
+                <p>Faktorisera: $\sin v(2\sin v - 1) = 0$</p>
+
+                <p><strong>Fall 1:</strong> $\sin v = 0$</p>
+                <p>$v = 0°$ eller $v = 180°$</p>
+
+                <p><strong>Fall 2:</strong> $2\sin v - 1 = 0$</p>
+                <p>$\sin v = 0{,}5$</p>
+                <p>$v = 30°$ eller $v = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 0°, 30°, 150°$ eller $180°$</p>
+            </div>
+
+            <h3>Exempel 2: Använd trigonometriska ettan</h3>
+            <div class="example-box">
+                <p>Lös $\cos^2 v + \sin v = 1$ för $0 \leq v < 2\pi$</p>
+
+                <p>Använd $\cos^2 v = 1 - \sin^2 v$:</p>
+                <p>$$1 - \sin^2 v + \sin v = 1$$</p>
+                <p>$$-\sin^2 v + \sin v = 0$$</p>
+                <p>$$\sin v(1 - \sin v) = 0$$</p>
+
+                <p>$\sin v = 0$ ger $v = 0$ eller $v = \pi$</p>
+                <p>$\sin v = 1$ ger $v = \frac{\pi}{2}$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 0, \frac{\pi}{2}$ eller $\pi$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.5 -->
+        <section id="kap6-05" class="content-section">
+            <h2>Kapitel 6.5: Areasatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Areasatsen</h3>
+                <p>Arean av en triangel med sidorna $a$ och $b$ och mellanliggande vinkel $C$ är:</p>
+                <p class="formula">$$A = \frac{1}{2}ab\sin C$$</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna triangelarea</h3>
+            <div class="example-box">
+                <p>En triangel har sidorna $a = 8$ cm och $b = 12$ cm med mellanliggande vinkel $C = 45°$. Beräkna arean.</p>
+
+                <p>$$A = \frac{1}{2} \cdot 8 \cdot 12 \cdot \sin 45° = 48 \cdot \frac{\sqrt{2}}{2} = 24\sqrt{2} \approx 33{,}9 \text{ cm}^2$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 33,9 cm²</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm vinkel från area</h3>
+            <div class="example-box">
+                <p>En triangel har sidorna 10 cm och 15 cm och arean 60 cm². Bestäm mellanliggande vinkel.</p>
+
+                <p>$$60 = \frac{1}{2} \cdot 10 \cdot 15 \cdot \sin C$$</p>
+                <p>$$60 = 75\sin C$$</p>
+                <p>$$\sin C = \frac{60}{75} = 0{,}8$$</p>
+                <p>$$C = \arcsin(0{,}8) \approx 53{,}1°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 53,1°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.6 -->
+        <section id="kap6-06" class="content-section">
+            <h2>Kapitel 6.6: Sinussatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Sinussatsen</h3>
+                <p>I en triangel med sidor $a$, $b$, $c$ och motstående vinklar $A$, $B$, $C$ gäller:</p>
+                <p class="formula">$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$</p>
+            </div>
+
+            <div class="info-box">
+                <h3>När använder vi sinussatsen?</h3>
+                <p>Sinussatsen används när vi vet:</p>
+                <ul>
+                    <li>Två vinklar och en sida (VSV eller VVS)</li>
+                    <li>Två sidor och en vinkel motstående en av sidorna (SVV)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna sida med sinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $A = 30°$, $B = 45°$ och $a = 10$ cm. Bestäm $b$.</p>
+
+                <p>$$\frac{a}{\sin A} = \frac{b}{\sin B}$$</p>
+                <p>$$\frac{10}{\sin 30°} = \frac{b}{\sin 45°}$$</p>
+                <p>$$\frac{10}{0{,}5} = \frac{b}{\sqrt{2}/2}$$</p>
+                <p>$$20 = \frac{b}{\sqrt{2}/2}$$</p>
+                <p>$$b = 20 \cdot \frac{\sqrt{2}}{2} = 10\sqrt{2} \approx 14{,}1 \text{ cm}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 14,1 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel med sinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $a = 12$ cm, $b = 15$ cm och $A = 50°$. Bestäm $B$.</p>
+
+                <p>$$\frac{a}{\sin A} = \frac{b}{\sin B}$$</p>
+                <p>$$\frac{12}{\sin 50°} = \frac{15}{\sin B}$$</p>
+                <p>$$\sin B = \frac{15 \cdot \sin 50°}{12} = \frac{15 \cdot 0{,}766}{12} \approx 0{,}958$$</p>
+                <p>$$B = \arcsin(0{,}958) \approx 73{,}2°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 73,2°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.7 -->
+        <section id="kap6-07" class="content-section">
+            <h2>Kapitel 6.7: Cosinussatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Cosinussatsen</h3>
+                <p>I en triangel med sidor $a$, $b$, $c$ och motstående vinklar $A$, $B$, $C$ gäller:</p>
+                <p class="formula">$$a^2 = b^2 + c^2 - 2bc\cos A$$</p>
+                <p class="formula">$$b^2 = a^2 + c^2 - 2ac\cos B$$</p>
+                <p class="formula">$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+            </div>
+
+            <div class="info-box">
+                <h3>När använder vi cosinussatsen?</h3>
+                <p>Cosinussatsen används när vi vet:</p>
+                <ul>
+                    <li>Två sidor och mellanliggande vinkel (SVS)</li>
+                    <li>Alla tre sidor (SSS)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna sida med cosinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $b = 8$ cm, $c = 10$ cm och $A = 60°$. Bestäm $a$.</p>
+
+                <p>$$a^2 = b^2 + c^2 - 2bc\cos A$$</p>
+                <p>$$a^2 = 64 + 100 - 2 \cdot 8 \cdot 10 \cdot \cos 60°$$</p>
+                <p>$$a^2 = 164 - 160 \cdot 0{,}5 = 164 - 80 = 84$$</p>
+                <p>$$a = \sqrt{84} \approx 9{,}17 \text{ cm}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 9,17 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel med cosinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $a = 7$ cm, $b = 9$ cm och $c = 12$ cm. Bestäm vinkel $C$.</p>
+
+                <p>$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+                <p>$$144 = 49 + 81 - 2 \cdot 7 \cdot 9 \cdot \cos C$$</p>
+                <p>$$144 = 130 - 126\cos C$$</p>
+                <p>$$14 = -126\cos C$$</p>
+                <p>$$\cos C = -\frac{14}{126} \approx -0{,}111$$</p>
+                <p>$$C = \arccos(-0{,}111) \approx 96{,}4°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 96,4°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.8 -->
+        <section id="kap6-08" class="content-section">
+            <h2>Kapitel 6.8: Tillämpningar av triangelsatser</h2>
+
+            <div class="method-box">
+                <h3>Välj rätt metod</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Givet</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Metod</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Rätvinklig triangel</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Pythagoras, sin, cos, tan</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två sidor + mellanliggande vinkel (SVS)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Cosinussatsen (eller Areasatsen för area)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Alla tre sidor (SSS)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Cosinussatsen</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två vinklar + en sida (VVS eller VSV)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Sinussatsen</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två sidor + vinkel motstående en sida (SVV)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Sinussatsen</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Navigering</h3>
+            <div class="example-box">
+                <p>Ett fartyg seglar 20 km österut, sedan 30 km i riktning 60° norr om öster. Hur långt är fartyget från startpunkten?</p>
+
+                <p>Vi har en triangel med två sidor (20 km och 30 km) och mellanliggande vinkel (180° - 60° = 120°)</p>
+
+                <p>Använd cosinussatsen:</p>
+                <p>$$d^2 = 20^2 + 30^2 - 2 \cdot 20 \cdot 30 \cdot \cos 120°$$</p>
+                <p>$$d^2 = 400 + 900 - 1200 \cdot (-0{,}5) = 1300 + 600 = 1900$$</p>
+                <p>$$d = \sqrt{1900} \approx 43{,}6 \text{ km}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 43,6 km</p>
+            </div>
+
+            <h3>Exempel 2: Höjdbestämning</h3>
+            <div class="example-box">
+                <p>Från två punkter A och B, 100 m från varandra, observeras toppen av ett torn. Från A är elevationsvinkeln 35° och från B är den 45°. Hur högt är tornet?</p>
+
+                <p>Låt $h$ = tornets höjd</p>
+                <p>Från punkt B: $\tan 45° = \frac{h}{x}$ där $x$ är avståndet från B till tornet</p>
+                <p>$1 = \frac{h}{x}$, alltså $x = h$</p>
+
+                <p>Från punkt A: $\tan 35° = \frac{h}{x + 100}$</p>
+                <p>$$0{,}700 = \frac{h}{h + 100}$$</p>
+                <p>$$0{,}700h + 70 = h$$</p>
+                <p>$$70 = 0{,}3h$$</p>
+                <p>$$h \approx 233 \text{ m}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 233 m</p>
+            </div>
+
+            <h3>Exempel 3: Landmätning</h3>
+            <div class="example-box">
+                <p>En tomt har formen av en triangel med sidorna 40 m, 50 m och 60 m. Beräkna tomtens area.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm en vinkel med cosinussatsen</p>
+                <p>$$60^2 = 40^2 + 50^2 - 2 \cdot 40 \cdot 50 \cdot \cos C$$</p>
+                <p>$$3600 = 1600 + 2500 - 4000\cos C$$</p>
+                <p>$$3600 = 4100 - 4000\cos C$$</p>
+                <p>$$\cos C = \frac{500}{4000} = 0{,}125$$</p>
+                <p>$$C = \arccos(0{,}125) \approx 82{,}8°$$</p>
+
+                <p><strong>Steg 2:</strong> Använd areasatsen</p>
+                <p>$$A = \frac{1}{2} \cdot 40 \cdot 50 \cdot \sin 82{,}8° \approx 1000 \cdot 0{,}992 \approx 992 \text{ m}^2$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 992 m²</p>
+            </div>
+        </section>

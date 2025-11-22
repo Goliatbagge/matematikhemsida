@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Förkortning och förlängning</a>
+                        <a href="kap1-02.html">1.2 Addition och subtraktion</a>
+                        <a href="kap1-03.html">1.3 Multiplikation och division</a>
+                        <a href="kap1-04.html">1.4 Gränsvärden</a>
+                        <a href="kap1-05.html">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Sekantens lutning</a>
+                        <a href="kap2-02.html">2.2 Tangentens lutning</a>
+                        <a href="kap2-03.html">2.3 Derivatans definition</a>
+                        <a href="kap2-04.html">2.4 Använda derivata</a>
+                        <a href="kap2-05.html">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="kap3-02.html">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="kap3-03.html">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="kap3-04.html">3.4 Derivatan av e^x</a>
+                        <a href="kap3-05.html">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="kap3-06.html">3.6 Tillämpningar av derivata</a>
+                        <a href="kap3-07.html">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Växande och avtagande funktioner</a>
+                        <a href="kap4-02.html">4.2 Derivatans nollställen</a>
+                        <a href="kap4-03.html">4.3 Största och minsta värde</a>
+                        <a href="kap4-04.html">4.4 Andraderivatan och funktioner</a>
+                        <a href="kap4-05.html">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="kap4-06.html">4.6 Extremvärdesproblem</a>
+                        <a href="kap4-07.html">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Primitiva funktioner</a>
+                        <a href="kap5-02.html">5.2 Primitiva funktioner med villkor</a>
+                        <a href="kap5-03.html">5.3 Arean under en kurva</a>
+                        <a href="kap5-04.html">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="kap5-05.html">5.5 Beräkna integraler digitalt</a>
+                        <a href="kap5-06.html">5.6 Area mellan kurvor</a>
+                        <a href="kap5-07.html">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="kap6-02.html">6.2 Enhetscirkeln</a>
+                        <a href="kap6-03.html">6.3 Trigonometriska ekvationer</a>
+                        <a href="kap6-04.html">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="kap6-05.html">6.5 Areasatsen</a>
+                        <a href="kap6-06.html">6.6 Sinussatsen</a>
+                        <a href="kap6-07.html">6.7 Cosinussatsen</a>
+                        <a href="kap6-08.html">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav><main class="container" role="main" id="main-content">
+        <section id="kap2-02" class="content-section">
+<h2>Kapitel 2.2: Tangentens lutning</h2>
+<div class="info-box">
+<h3>Från sekant till tangent</h3>
+<p>En <strong>tangent</strong> är en linje som "vidrör" kurvan i en punkt. Tangenten visar kurvans <strong>momentana lutning</strong> i just den punkten.</p>
+<p>För att bestämma tangentens lutning kan vi låta sekantens två punkter komma närmare och närmare varandra tills de "smälter samman" till en enda punkt.</p>
+</div>
+<div class="graph-container">
+<h4>Illustration: Från sekant till tangent</h4>
+<p style="text-align: center; color: #666; font-style: italic; margin-bottom: 1rem;">
+                    🎮 Interaktiv! Använd reglaget för att flytta den andra punkten närmare den första och se hur sekanten övergår till en tangent.
+                </p>
+<div class="slider-controls">
+<div class="slider-row">
+<label for="tangent-h">Avstånd h: <span id="tangent-h-value">2.00</span></label>
+<input id="tangent-h" max="3" min="0.1" step="0.1" type="range" value="2"/>
+</div>
+</div>
+<div id="graph-tangent-intro"></div>
+</div>
+<div class="formula-box">
+<h3>Tangentens lutning</h3>
+<p>Om vi har en funktion $f(x)$ och vill bestämma tangentens lutning i punkten $(x, f(x))$, kan vi använda en punkt nära den första punkten, $(x+h, f(x+h))$.</p>
+<p>Sekantens lutning mellan dessa punkter är:</p>
+<p class="formula">$$k = \frac{f(x+h) - f(x)}{(x+h) - x} = \frac{f(x+h) - f(x)}{h}$$</p>
+<p>När $h$ går mot 0 (dvs. punkterna kommer närmare varandra) får vi tangentens lutning.</p>
+</div>
+<div class="math-figure">
+<img alt="Illustration av tangentens lutning med gränsvärde" src="../../images/kap2/kap2-02-tangent-lutning.png"/>
+<p class="figure-caption">Figur 2.2: Tangentens lutning som gränsvärde av sekantens lutning</p>
+</div>
+<h3>Exempel 1: Beräkna tangentens lutning för $f(x) = x^2$ i punkten $(2, 4)$</h3>
+<div class="example-box">
+<p>Vi använder formeln för sekantens lutning med en punkt nära $(2, 4)$.</p>
+<p>Låt $h = 0.1$. Den andra punkten blir då $(2.1, f(2.1)) = (2.1, 4.41)$</p>
+<p>$$k = \frac{f(2.1) - f(2)}{2.1 - 2} = \frac{4.41 - 4}{0.1} = \frac{0.41}{0.1} = 4.1$$</p>
+<p>Låt $h = 0.01$. Den andra punkten blir då $(2.01, f(2.01)) = (2.01, 4.0401)$</p>
+<p>$$k = \frac{f(2.01) - f(2)}{2.01 - 2} = \frac{4.0401 - 4}{0.01} = \frac{0.0401}{0.01} = 4.01$$</p>
+<p>Vi ser att när $h$ blir mindre, närmar sig lutningen värdet 4.</p>
+<p class="answer"><strong>Svar:</strong> Tangentens lutning i punkten $(2, 4)$ är $k = 4$</p>
+</div>
+<h3>Exempel 2: Bestäm tangentens lutning</h3>
+<div class="example-box">
+<p>Bestäm tangentens lutning för $f(x) = x^2 + 1$ i punkten där $x = 3$.</p>
+<p>Vi använder en punkt nära $x = 3$, säg $x = 3.001$</p>
+<p>$$f(3) = 3^2 + 1 = 10$$</p>
+<p>$$f(3.001) = (3.001)^2 + 1 = 9.006001 + 1 = 10.006001$$</p>
+<p>$$k \approx \frac{10.006001 - 10}{3.001 - 3} = \frac{0.006001}{0.001} = 6.001 \approx 6$$</p>
+<p class="answer"><strong>Svar:</strong> Tangentens lutning är cirka 6</p>
+</div>
+<div class="important-box">
+<h3>Viktig iakttagelse</h3>
+<p>Tangentens lutning i en punkt på en kurva kallas för kurvans <strong>momentana förändringshastighet</strong> i den punkten.</p>
+<p>Detta står i kontrast till sekantens lutning som visar den <strong>genomsnittliga förändringshastigheten</strong> över ett intervall.</p>
+</div>
+        </section>
+
+<div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+    <a href="kap2-01.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 2.1 Sekantens lutning</a>
+    <a href="kap2-03.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 2.3 Derivatans definition →</a>
+</div>
+
+
+
+<!-- Kommentarsfält -->
+<div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'kap2-02';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://enkel-matematik.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+</div>
+
+    </main>
+
+    <footer>
+<div class="container">
+<p>© 2024 Matematik 3c Kurshemsida</p>
+</div>
+</footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+
+</body>
+</html>

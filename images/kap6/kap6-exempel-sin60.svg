@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="400" height="400" fill="#F9FAFB"/>
+
+  <!-- Koordinataxlar -->
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#4B5563" stroke-width="2"/>
+  <line x1="200" y1="350" x2="200" y2="50" stroke="#4B5563" stroke-width="2"/>
+
+  <!-- Axelmarkeringar -->
+  <line x1="280" y1="195" x2="280" y2="205" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="120" y1="195" x2="120" y2="205" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="195" y1="120" x2="205" y2="120" stroke="#4B5563" stroke-width="1.5"/>
+  <line x1="195" y1="280" x2="205" y2="280" stroke="#4B5563" stroke-width="1.5"/>
+
+  <!-- Labels -->
+  <text x="340" y="220" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="210" y="60" font-size="14" font-weight="600" fill="#4B5563">y</text>
+  <text x="285" y="220" font-size="12" fill="#6B7280">1</text>
+  <text x="105" y="220" font-size="12" fill="#6B7280">-1</text>
+  <text x="210" y="120" font-size="12" fill="#6B7280">1</text>
+  <text x="210" y="285" font-size="12" fill="#6B7280">-1</text>
+
+  <!-- Enhetscirkeln -->
+  <circle cx="200" cy="200" r="80" fill="none" stroke="#9CA3AF" stroke-width="2"/>
+
+  <!-- 60° vinkel framhävd -->
+  <!-- Vinkelbåge -->
+  <path d="M 240 200 A 40 40 0 0 0 220 172.7" fill="none" stroke="#B45309" stroke-width="2"/>
+
+  <!-- Vinkelben (radie till punkten) -->
+  <line x1="200" y1="200" x2="240" y2="130.7" stroke="#B45309" stroke-width="3"/>
+
+  <!-- Punkt på cirkeln vid 60° -->
+  <!-- cos(60°) = 0.5, sin(60°) = √3/2 ≈ 0.866 -->
+  <!-- x = 200 + 80*0.5 = 240 -->
+  <!-- y = 200 - 80*0.866 = 130.7 -->
+  <circle cx="240" cy="130.7" r="6" fill="#B45309"/>
+
+  <!-- sin(60°) - vertikal projektion (framhävd i blått) -->
+  <line x1="240" y1="130.7" x2="240" y2="200" stroke="#2563EB" stroke-width="3" stroke-dasharray="5,3"/>
+
+  <!-- cos(60°) - horisontell projektion (grå) -->
+  <line x1="200" y1="200" x2="240" y2="200" stroke="#9CA3AF" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Markeringar av längder -->
+  <!-- sin(60°) bracket -->
+  <path d="M 245 130.7 L 250 130.7 L 250 200 L 245 200" stroke="#2563EB" stroke-width="1.5" fill="none"/>
+
+  <!-- cos(60°) bracket -->
+  <path d="M 200 205 L 200 210 L 240 210 L 240 205" stroke="#9CA3AF" stroke-width="1.5" fill="none"/>
+
+  <!-- Värde-labels -->
+  <text x="255" y="165" font-size="16" font-weight="700" fill="#2563EB">sin(60°)</text>
+  <text x="255" y="182" font-size="14" fill="#2563EB">= √3/2</text>
+  <text x="255" y="197" font-size="12" fill="#6B7280">≈ 0.866</text>
+
+  <text x="205" y="230" font-size="14" fill="#9CA3AF">cos(60°) = 1/2</text>
+
+  <!-- Vinkel-label -->
+  <text x="215" y="185" font-size="16" font-weight="700" fill="#B45309">60°</text>
+
+  <!-- Koordinat-label vid punkten -->
+  <text x="245" y="120" font-size="11" fill="#6B7280">(1/2, √3/2)</text>
+
+  <!-- Titel -->
+  <text x="200" y="30" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Exempel: sin(60°)</text>
+</svg>

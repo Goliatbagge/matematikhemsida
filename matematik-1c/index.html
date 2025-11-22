@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 1c - Kurshemsida</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <div class="site-title">
+                <a href="../index.html" style="color: white; text-decoration: none;">Enkel matematik</a>
+            </div>
+            <div class="course-title">Matematik 1c</div>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../matematik-1b/index.html">Matematik 1b</a>
+                        <a href="../matematik-2b/index.html">Matematik 2b</a>
+                        <a href="../matematik-3b/index.html">Matematik 3b</a>
+                        <a href="../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../fysik-1/index.html">Fysik 1</a>
+                        <a href="../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Tal</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap1-01.html">1.1 Talmängder och negativa tal</a>
+                        <a href="sections/kap1-02.html">1.2 Bråk</a>
+                        <a href="sections/kap1-03.html">1.3 Addition och subtraktion av bråk</a>
+                        <a href="sections/kap1-04.html">1.4 Multiplikation och division av bråk</a>
+                        <a href="sections/kap1-05.html">1.5 Tal i decimalform</a>
+                        <a href="sections/kap1-06.html">1.6 Potenser med positiva heltalsexponenter</a>
+                        <a href="sections/kap1-07.html">1.7 Negativa exponenter och exponenten 0</a>
+                        <a href="sections/kap1-08.html">1.8 Rationella exponenter</a>
+                        <a href="sections/kap1-09.html">1.9 Prefix</a>
+                        <a href="sections/kap1-10.html">1.10 Prioriteringsregler</a>
+                        <a href="sections/kap1-11.html">1.11 Räknaren</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Algebra</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap2-01.html">2.1 Teckna och tolka uttryck</a>
+                        <a href="sections/kap2-02.html">2.2 Förenkla uttryck</a>
+                        <a href="sections/kap2-03.html">2.3 Multiplikation med parenteser</a>
+                        <a href="sections/kap2-04.html">2.4 Faktorisera uttryck</a>
+                        <a href="sections/kap2-05.html">2.5 Ekvationslösningens grunder</a>
+                        <a href="sections/kap2-06.html">2.6 Mer om ekvationer</a>
+                        <a href="sections/kap2-07.html">2.7 Ekvationer med nämnare</a>
+                        <a href="sections/kap2-08.html">2.8 Problemlösning med ekvationer</a>
+                        <a href="sections/kap2-09.html">2.9 Enkla andra- och tredjegradsekvationer</a>
+                        <a href="sections/kap2-10.html">2.10 Potensekvationer</a>
+                        <a href="sections/kap2-11.html">2.11 Olikheter</a>
+                        <a href="sections/kap2-12.html">2.12 Använda formler</a>
+                        <a href="sections/kap2-13.html">2.13 Mönster och formler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Procent och förändring</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap3-01.html">3.1 Procent, promille och ppm</a>
+                        <a href="sections/kap3-02.html">3.2 Förändringsfaktor</a>
+                        <a href="sections/kap3-03.html">3.3 Upprepade procentuella förändringar</a>
+                        <a href="sections/kap3-04.html">3.4 Sparande och ränteberäkningar</a>
+                        <a href="sections/kap3-05.html">3.5 Lån och ränteberäkningar</a>
+                        <a href="sections/kap3-15.html">3.15 Exponentialfunktioner</a>
+                        <a href="sections/kap3-16.html">3.16 Potensfunktioner</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap4-01.html">4.1 Koordinatsystem och linjära modeller</a>
+                        <a href="sections/kap4-02.html">4.2 Proportionalitet</a>
+                        <a href="sections/kap4-03.html">4.3 Från ekvation till graf</a>
+                        <a href="sections/kap4-04.html">4.4 Från graf till ekvation</a>
+                        <a href="sections/kap4-05.html">4.5 Räta linjens ekvation</a>
+                        <a href="sections/kap4-06.html">4.6 Parallella och lodräta linjer</a>
+                        <a href="sections/kap4-07.html">4.7 Funktion och funktionsvärde</a>
+                        <a href="sections/kap4-08.html">4.8 Ekvationslösning med grafritande hjälpmedel</a>
+                        <a href="sections/kap4-09.html">4.9 Definitionsmängd och värdemängd</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Statistik och sannolikhet</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap5-01.html">5.1 Statistiska undersökningar, urval och felkällor</a>
+                        <a href="sections/kap5-02.html">5.2 Felmarginal och signifikans</a>
+                        <a href="sections/kap5-03.html">5.3 Korrelation och kausalitet</a>
+                        <a href="sections/kap5-04.html">5.4 Den klassiska sannolikhetsdefinitionen</a>
+                        <a href="sections/kap5-05.html">5.5 Experimentella sannolikheter</a>
+                        <a href="sections/kap5-06.html">5.6 Produktregeln</a>
+                        <a href="sections/kap5-07.html">5.7 Träddiagram</a>
+                        <a href="sections/kap5-08.html">5.8 Komplementhändelse</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Geometri och trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="sections/kap6-01.html">6.1 Tangens för en vinkel</a>
+                        <a href="sections/kap6-02.html">6.2 Sinus och cosinus</a>
+                        <a href="sections/kap6-03.html">6.3 Bestämma vinklar med inversa funktioner</a>
+                        <a href="sections/kap6-04.html">6.4 Bestämma sträckor och vinklar i koordinatsystem</a>
+                        <a href="sections/kap6-05.html">6.5 Vektorer och skalärer</a>
+                        <a href="sections/kap6-06.html">6.6 Räkneoperationer med vektorer</a>
+                        <a href="sections/kap6-07.html">6.7 Subtraktion av vektorer</a>
+                        <a href="sections/kap6-08.html">6.8 Vektorer i koordinatform</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <!-- Hero Section (moved inside main) -->
+        <section class="hero-simple">
+            <h1>Bemästra Matematik 1c</h1>
+            <p>Lär dig grundläggande matematik med tydliga förklaringar och steg-för-steg genomgångar</p>
+            <a href="sections/kap1-01.html" class="cta-button">Börja lära →</a>
+        </section>
+        <section class="intro">
+            <h2>Välkommen till Matematik 1c!</h2>
+            <p>Den här hemsidan innehåller alla genomgångar från kursen Matematik 1c. Navigera genom menyerna ovan eller välj ett kapitel nedan för att börja studera.</p>
+        </section>
+
+        <!-- Chapter Overview Cards -->
+        <section class="chapter-overview">
+            <h2 style="text-align: center; margin-bottom: 2rem;">Kursinnehåll</h2>
+
+            <div class="chapter-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+
+                <!-- Kapitel 1 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 1: Tal</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Grundläggande talbegrepp, bråk, decimaltal, potenser och räkneregler.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-01.html" style="color: #4a90e2; text-decoration: none;">1.1 Talmängder och negativa tal</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-02.html" style="color: #4a90e2; text-decoration: none;">1.2 Bråk</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-03.html" style="color: #4a90e2; text-decoration: none;">1.3 Addition och subtraktion av bråk</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-04.html" style="color: #4a90e2; text-decoration: none;">1.4 Multiplikation och division av bråk</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-05.html" style="color: #4a90e2; text-decoration: none;">1.5 Tal i decimalform</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-06.html" style="color: #4a90e2; text-decoration: none;">1.6 Potenser med positiva heltalsexponenter</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-07.html" style="color: #4a90e2; text-decoration: none;">1.7 Negativa exponenter och exponenten 0</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-08.html" style="color: #4a90e2; text-decoration: none;">1.8 Rationella exponenter</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-09.html" style="color: #4a90e2; text-decoration: none;">1.9 Prefix</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-10.html" style="color: #4a90e2; text-decoration: none;">1.10 Prioriteringsregler</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap1-11.html" style="color: #4a90e2; text-decoration: none;">1.11 Räknaren</a></li>
+                    </ul>
+                    <a href="sections/kap1-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+                <!-- Kapitel 2 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 2: Algebra</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Uttryck, ekvationer, faktorisering, potensekvationer och problemlösning.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-01.html" style="color: #4a90e2; text-decoration: none;">2.1 Teckna och tolka uttryck</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-02.html" style="color: #4a90e2; text-decoration: none;">2.2 Förenkla uttryck</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-03.html" style="color: #4a90e2; text-decoration: none;">2.3 Multiplikation med parenteser</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-04.html" style="color: #4a90e2; text-decoration: none;">2.4 Faktorisera uttryck</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-05.html" style="color: #4a90e2; text-decoration: none;">2.5 Ekvationslösningens grunder</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-06.html" style="color: #4a90e2; text-decoration: none;">2.6 Mer om ekvationer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-07.html" style="color: #4a90e2; text-decoration: none;">2.7 Ekvationer med nämnare</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-08.html" style="color: #4a90e2; text-decoration: none;">2.8 Problemlösning med ekvationer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-09.html" style="color: #4a90e2; text-decoration: none;">2.9 Enkla andra- och tredjegradsekvationer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-10.html" style="color: #4a90e2; text-decoration: none;">2.10 Potensekvationer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-11.html" style="color: #4a90e2; text-decoration: none;">2.11 Olikheter</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-12.html" style="color: #4a90e2; text-decoration: none;">2.12 Använda formler</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap2-13.html" style="color: #4a90e2; text-decoration: none;">2.13 Mönster och formler</a></li>
+                    </ul>
+                    <a href="sections/kap2-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+                <!-- Kapitel 3 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 3: Procent och förändring</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Procenträkning, förändringsfaktor, ränta samt exponential- och potensfunktioner.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-01.html" style="color: #4a90e2; text-decoration: none;">3.1 Procent, promille och ppm</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-02.html" style="color: #4a90e2; text-decoration: none;">3.2 Förändringsfaktor</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-03.html" style="color: #4a90e2; text-decoration: none;">3.3 Upprepade procentuella förändringar</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-04.html" style="color: #4a90e2; text-decoration: none;">3.4 Sparande och ränteberäkningar</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-05.html" style="color: #4a90e2; text-decoration: none;">3.5 Lån och ränteberäkningar</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-15.html" style="color: #4a90e2; text-decoration: none;">3.15 Exponentialfunktioner</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap3-16.html" style="color: #4a90e2; text-decoration: none;">3.16 Potensfunktioner</a></li>
+                    </ul>
+                    <a href="sections/kap3-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+                <!-- Kapitel 4 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 4: Funktioner</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Koordinatsystem, linjära funktioner, grafer, räta linjens ekvation och proportionalitet.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-01.html" style="color: #4a90e2; text-decoration: none;">4.1 Koordinatsystem och linjära modeller</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-02.html" style="color: #4a90e2; text-decoration: none;">4.2 Proportionalitet</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-03.html" style="color: #4a90e2; text-decoration: none;">4.3 Från ekvation till graf</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-04.html" style="color: #4a90e2; text-decoration: none;">4.4 Från graf till ekvation</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-05.html" style="color: #4a90e2; text-decoration: none;">4.5 Räta linjens ekvation</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-06.html" style="color: #4a90e2; text-decoration: none;">4.6 Parallella och lodräta linjer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-07.html" style="color: #4a90e2; text-decoration: none;">4.7 Funktion och funktionsvärde</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-08.html" style="color: #4a90e2; text-decoration: none;">4.8 Ekvationslösning med grafritande hjälpmedel</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap4-09.html" style="color: #4a90e2; text-decoration: none;">4.9 Definitionsmängd och värdemängd</a></li>
+                    </ul>
+                    <a href="sections/kap4-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+                <!-- Kapitel 5 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 5: Statistik och sannolikhet</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Statistiska undersökningar, sannolikhetslära, träddiagram och produktregeln.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-01.html" style="color: #4a90e2; text-decoration: none;">5.1 Statistiska undersökningar, urval och felkällor</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-02.html" style="color: #4a90e2; text-decoration: none;">5.2 Felmarginal och signifikans</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-03.html" style="color: #4a90e2; text-decoration: none;">5.3 Korrelation och kausalitet</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-04.html" style="color: #4a90e2; text-decoration: none;">5.4 Den klassiska sannolikhetsdefinitionen</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-05.html" style="color: #4a90e2; text-decoration: none;">5.5 Experimentella sannolikheter</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-06.html" style="color: #4a90e2; text-decoration: none;">5.6 Produktregeln</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-07.html" style="color: #4a90e2; text-decoration: none;">5.7 Träddiagram</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap5-08.html" style="color: #4a90e2; text-decoration: none;">5.8 Komplementhändelse</a></li>
+                    </ul>
+                    <a href="sections/kap5-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+                <!-- Kapitel 6 -->
+                <div class="chapter-card" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                    <h3 style="color: #4a90e2; margin-bottom: 1rem;">Kapitel 6: Geometri och trigonometri</h3>
+                    <p style="color: #666; margin-bottom: 1rem;">Trigonometriska funktioner, vinklar, vektorer och deras tillämpningar.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-01.html" style="color: #4a90e2; text-decoration: none;">6.1 Tangens för en vinkel</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-02.html" style="color: #4a90e2; text-decoration: none;">6.2 Sinus och cosinus</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-03.html" style="color: #4a90e2; text-decoration: none;">6.3 Bestämma vinklar med inversa funktioner</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-04.html" style="color: #4a90e2; text-decoration: none;">6.4 Bestämma sträckor och vinklar i koordinatsystem</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-05.html" style="color: #4a90e2; text-decoration: none;">6.5 Vektorer och skalärer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-06.html" style="color: #4a90e2; text-decoration: none;">6.6 Räkneoperationer med vektorer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-07.html" style="color: #4a90e2; text-decoration: none;">6.7 Subtraktion av vektorer</a></li>
+                        <li style="margin-bottom: 0.5rem;"><a href="sections/kap6-08.html" style="color: #4a90e2; text-decoration: none;">6.8 Vektorer i koordinatform</a></li>
+                    </ul>
+                    <a href="sections/kap6-01.html" class="chapter-link" style="display: inline-block; padding: 0.5rem 1rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Börja här →</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

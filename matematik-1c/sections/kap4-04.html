@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.4 Från graf till ekvation - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap4-04" class="content-section">
+            <h2>Kapitel 4.4: Från graf till ekvation</h2>
+
+            <p>Vi kan nu konstatera att alla räta linjer kan beskrivas som en ekvation på formen $y = kx + m$ där $k$ och $m$ är konstanter (tal). Denna ekvation kallas <strong>räta linjens ekvation</strong>.</p>
+
+            <p>Vi ska nu undersöka hur vi kan hitta värdena på $k$ och $m$ utifrån en graf.</p>
+
+            <h3>Vad motsvarar m-värdet?</h3>
+            <p>Vi ritar upp graferna till $y = 2x - 1$, $y = 2x$ och $y = 2x + 1$ för att se skillnaden.</p>
+
+            <p>Vi ser att linjen</p>
+            <ul>
+                <li>$y = 2x - 1$ skär y-axeln vid $y = -1$</li>
+                <li>$y = 2x$ skär y-axeln vid $y = 0$</li>
+                <li>$y = 2x + 1$ skär y-axeln vid $y = 1$</li>
+            </ul>
+
+            <div class="definition-box">
+                <p><strong>m-värdet</strong> motsvarar linjens skärning med y-axeln! Skärningen med y-axeln kallas också <strong>y-intercept</strong> och motsvarar i linjära modeller "startvärdet".</p>
+            </div>
+
+            <h3>Vad motsvarar k-värdet?</h3>
+            <p>Vi studerar nu vad k-värdet motsvarar. Vi ritar upp graferna till $y = 2x + 1$, $y = 3x + 1$ och $y = -2x + 1$ för att se skillnaden.</p>
+
+            <p>Vi ser att linjen</p>
+            <ul>
+                <li>$y = 2x + 1$ har lutningen 2 (den går 2 steg uppåt för varje steg åt höger)</li>
+                <li>$y = 3x + 1$ har lutningen 3 (den går 3 steg uppåt för varje steg åt höger)</li>
+                <li>$y = -2x + 1$ har lutningen $-2$ (den går 2 steg nedåt för varje steg åt höger)</li>
+            </ul>
+
+            <div class="definition-box">
+                <p><strong>k-värdet</strong> motsvarar linjens lutning! Linjens lutning kallas också <strong>riktningskoefficient</strong> och motsvarar i linjära modeller förändringshastigheten.</p>
+            </div>
+
+            <div class="definition-box">
+                <h4>Räta linjens ekvation (i k-form)</h4>
+                <p>Alla räta linjer (utom lodräta) kan beskrivas med ekvationen</p>
+                <p style="text-align: center;">$$y = kx + m$$</p>
+                <p>där $k$ motsvarar linjens lutning och $m$ motsvarar linjens skärning med y-axeln.</p>
+            </div>
+
+            <p>Ett positivt k-värde gör att linjen lutar uppåt (sett från vänster till höger) och ett negativt k-värde gör att linjen lutar nedåt. k-värdet kan beräknas med "trappstegsmetoden" där man ritar ett trappsteg mellan två valfria punkter på linjen och tänker att man går åt höger. Trappstegets höjd motsvarar då förändringen i y-led, vilket skrivs $\Delta y$ och trappstegets längd motsvarar förändringen i x-led, vilket skrivs $\Delta x$.</p>
+
+            <div class="definition-box">
+                <h4>Beräkna linjens lutning (k-värde)</h4>
+                <p>$$k = \frac{\text{trappstegets höjd}}{\text{trappstegets längd}} = \frac{\text{förändring i } y\text{-led}}{\text{förändring i } x\text{-led}} = \frac{\Delta y}{\Delta x}$$</p>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Bestäm ekvationen för linjen nedan.</p>
+
+                <h5>Lösning:</h5>
+                <p>När vi ska bestämma linjens ekvation ska vi ta fram dess k- och m-värde och sedan sätta in dem i räta linjens ekvation $y = kx + m$.</p>
+
+                <p>$k = 2$ (linjen går upp två steg för varje steg vi går åt höger)<br>
+                $m = 3$ (linjens skärning med y-axeln)</p>
+
+                <p>Insättning av $k = 2$ och $m = 3$ i räta linjens ekvation ger $y = 2x + 3$.</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> $y = 2x + 3$
+                </div>
+            </div>
+
+            <div class="example-box">
+                <h4>Exempel</h4>
+                <p><strong>Uppgift:</strong> Bestäm linjens riktningskoefficient.</p>
+
+                <h5>Lösning:</h5>
+                <p>Riktningskoefficienten är detsamma som lutningen eller k-värdet. Här är det svårt att enkelt se k-värdet. Vi markerar två valfria punkter som är lätta att läsa av på linjen och ritar ett "trappsteg" mellan dessa.</p>
+
+                <p>Vi ser nu enkelt att $\Delta y = -3$ och $\Delta x = 5$.</p>
+
+                <p>$$k = \frac{\Delta y}{\Delta x} = \frac{-3}{5} = -\frac{3}{5}$$</p>
+
+                <div class="answer-box">
+                    <strong>Svar:</strong> $-\frac{3}{5}$
+                </div>
+            </div>
+
+            <div class="summary-box">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li>Räta linjens ekvation: $y = kx + m$</li>
+                    <li>$k$ = lutningen (riktningskoefficienten)</li>
+                    <li>$m$ = skärningen med y-axeln (y-intercept)</li>
+                    <li>$k = \frac{\Delta y}{\Delta x}$ (trappstegsmetoden)</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap4-03.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 4.3 Från ekvation till graf</a>
+            <a href="kap4-05.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 4.5 Räta linjens ekvation →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap4-04';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

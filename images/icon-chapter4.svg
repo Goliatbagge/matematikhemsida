@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kapitel 4: Derivatan och funktioner - Graf med max/min punkter -->
+
+  <!-- Funktion med extrempunkter -->
+  <path d="M 8 45 Q 16 20, 24 32 T 40 25 T 56 45" fill="none" stroke="#2563EB" stroke-width="2.5"/>
+
+  <!-- Maxpunkt -->
+  <circle cx="24" cy="32" r="3" fill="#F59E0B"/>
+  <circle cx="24" cy="32" r="5" fill="none" stroke="#F59E0B" stroke-width="1"/>
+
+  <!-- Minpunkt -->
+  <circle cx="40" cy="25" r="3" fill="#F59E0B"/>
+  <circle cx="40" cy="25" r="5" fill="none" stroke="#F59E0B" stroke-width="1"/>
+
+  <!-- Horisontella tangenter vid extrempunkter -->
+  <line x1="18" y1="32" x2="30" y2="32" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="34" y1="25" x2="46" y2="25" stroke="#9CA3AF" stroke-width="1" stroke-dasharray="2,2"/>
+</svg>

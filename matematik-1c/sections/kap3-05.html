@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.5 Lån och ränteberäkningar - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap3-05" class="content-section">
+            <h2>Kapitel 3.5: Lån och ränteberäkningar</h2>
+
+            <div class="definition-box">
+                <h3>Grundläggande begrepp</h3>
+                <p>Om vi inte har pengar kan vi ta ett <strong>lån</strong>. Ett lån kan ges av en bank, ett låneföretag eller en kompis. Självklart ska vi betala tillbaka lånet. Att betala tillbaka ett lån kallas <strong>amortera</strong>. Det vi får betala extra kan man säga är priset för lånet och kallas <strong>ränta</strong>. Ränta anges ofta som en viss procent av skulden och kallas då för <strong>räntesats</strong>.</p>
+                <p>(När vi sätter in pengar på ett sparkonto får vi själva tillbaka ränta på de pengar vi sätter in. Det vi gör, fast vi kanske inte tänker på det, är att vi lånar ut våra pengar till banken och då får banken betala oss ränta. Det banken gör med våra pengar är att de lånar ut dem till andra till en högre ränta och tjänar pengar på mellanskillnaden.)</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Kom ihåg</h3>
+                <p>Om det i uppgifter bara står "ränta" är det underförstått att de menar <strong>årsränta</strong>. Ibland förekommer <strong>kvartalsränta</strong> där ett kvartal är ett "kvarts år", dvs. 3 månader.</p>
+            </div>
+
+            <div class="formula-box">
+                <h3>Betala ett lån</h3>
+                <p>När vi betalar av ett lån betalar vi <strong>amortering</strong> (återbetalning) och <strong>ränta</strong> (lånekostnad).</p>
+            </div>
+
+            <div class="example-box">
+                <h3>Exempel: Billån med rak amortering</h3>
+                <p><strong>Uppgift:</strong> Ellen tar ett lån på 150 000 kr för att köpa en bil. Amorteringstiden är 5 år och hon amorterar lika stora belopp varje månad ("rak amortering"). Årsräntan på lånet är 4,8 %. Hur</p>
+                <p>a) stor blir amorteringen varje månad?</p>
+                <p>b) mycket ska hon betala totalt vid första inbetalningen?</p>
+                <p>c) mycket kommer hon att betala totalt för lånet?</p>
+
+                <p><strong>Lösning a):</strong></p>
+                <p>Om hon ska amortera varje månad i 5 år, så kommer hon att göra $$5 \cdot 12 = 60$$ stycken inbetalningar. Om hon ska amortera samma belopp vid varje inbetalning blir amorteringen varje månad</p>
+
+                <p>$$\frac{150\,000\text{ kr}}{60} = 2\,500\text{ kr}$$</p>
+
+                <p><strong>Svar a):</strong> 2 500 kr</p>
+
+                <p><strong>Lösning b):</strong></p>
+                <p>Vid den första inbetalningen är hennes skuld 150 000 kr. Årsräntan är 4,8 % av den, så</p>
+                <p>årsränta = $$0{,}048 \cdot 150\,000\text{ kr} = 7\,200\text{ kr}$$</p>
+
+                <p>Eftersom hon betalar månadsvis, ska hon betala av detta belopp i ränta varje månad $$\frac{1}{12}$$ (det går 12 månader på ett år), så</p>
+
+                <p>Ränta = $$\frac{7\,200\text{ kr}}{12} = 600\text{ kr}$$</p>
+
+                <p>Amorteringen varje månad har vi i a-uppgiften fått till 2 500 kr.</p>
+
+                <p>Vid den första inbetalningen ska hon alltså betala</p>
+                <p>ränta + amortering = 600 kr + 2 500 kr = 3 100 kr</p>
+
+                <p><strong>Svar b):</strong> 3 100 kr</p>
+
+                <p><strong>Lösning c):</strong></p>
+                <p>Vi skapar ett kalkylark med kolumnerna: Månad, Aktuell skuld, Ränta per månad och Inbetalning.</p>
+
+                <p>För att beräkna det totala inbetalda beloppet summerar vi alla värden i kolumn "Inbetalning" med formeln =SUM(D2:D61).</p>
+
+                <p>Den totala summan av alla inbetalningar blir 168 300 kr.</p>
+
+                <p><strong>Svar c):</strong> 168 300 kr</p>
+            </div>
+
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap3-04.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 3.4 Sparande och ränteberäkningar</a>
+            <a href="kap3-15.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 3.15 Exponentialfunktioner →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap3-05';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

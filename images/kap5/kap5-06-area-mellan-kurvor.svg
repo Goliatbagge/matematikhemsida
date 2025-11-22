@@ -1,0 +1,96 @@
+<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Bakgrund -->
+  <rect width="500" height="400" fill="#F9FAFB"/>
+
+  <!-- Titel -->
+  <text x="250" y="25" font-size="18" font-weight="700" fill="#111827" text-anchor="middle">Area mellan två kurvor</text>
+  <text x="250" y="42" font-size="13" fill="#6B7280" text-anchor="middle">A = ∫ₐᵇ [f(x) - g(x)] dx</text>
+
+  <defs>
+    <marker id="arrow7" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4B5563"/>
+    </marker>
+  </defs>
+
+  <!-- Koordinatsystem -->
+  <line x1="50" y1="320" x2="450" y2="320" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow7)"/>
+  <line x1="50" y1="320" x2="50" y2="70" stroke="#4B5563" stroke-width="2" marker-end="url(#arrow7)"/>
+
+  <!-- Axellabels -->
+  <text x="445" y="335" font-size="14" font-weight="600" fill="#4B5563">x</text>
+  <text x="35" y="75" font-size="14" font-weight="600" fill="#4B5563">y</text>
+
+  <!-- Gränser a och b -->
+  <line x1="120" y1="75" x2="120" y2="320" stroke="#B45309" stroke-width="2" stroke-dasharray="5,3"/>
+  <line x1="380" y1="75" x2="380" y2="320" stroke="#B45309" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- Markeringar på x-axeln -->
+  <line x1="120" y1="315" x2="120" y2="325" stroke="#B45309" stroke-width="2"/>
+  <line x1="380" y1="315" x2="380" y2="325" stroke="#B45309" stroke-width="2"/>
+  <text x="120" y="345" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">a</text>
+  <text x="380" y="345" font-size="16" font-weight="700" fill="#B45309" text-anchor="middle">b</text>
+
+  <!-- Övre kurva f(x) (blå) -->
+  <path d="M 120 180 Q 250 120 380 200" fill="none" stroke="#2563EB" stroke-width="3"/>
+
+  <!-- Nedre kurva g(x) (grön) -->
+  <path d="M 120 260 Q 250 240 380 270" fill="none" stroke="#10B981" stroke-width="3"/>
+
+  <!-- Area mellan kurvorna (fylld polygon) -->
+  <path d="M 120 180 Q 250 120 380 200 L 380 270 Q 250 240 120 260 Z"
+        fill="#F59E0B" opacity="0.3" stroke="none"/>
+
+  <!-- Funktionsetiketter -->
+  <text x="320" y="110" font-size="14" fill="#2563EB" font-weight="700">f(x)</text>
+  <text x="320" y="280" font-size="14" fill="#10B981" font-weight="700">g(x)</text>
+
+  <!-- Area-label i mitten -->
+  <text x="250" y="210" font-size="20" font-weight="700" fill="#B45309" text-anchor="middle">A</text>
+
+  <!-- Vertikal linje som visar differensen f(x) - g(x) -->
+  <line x1="250" y1="130" x2="250" y2="240" stroke="#F59E0B" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+  <!-- Måttpilar -->
+  <path d="M 255 130 L 260 135 M 255 130 L 250 135" stroke="#F59E0B" stroke-width="1.5"/>
+  <path d="M 255 240 L 260 235 M 255 240 L 250 235" stroke="#F59E0B" stroke-width="1.5"/>
+
+  <!-- Label för differensen -->
+  <text x="268" y="190" font-size="12" fill="#92400E" font-weight="600">f(x) - g(x)</text>
+
+  <!-- Formel-box -->
+  <rect x="60" y="355" width="380" height="35" fill="#FFF7ED" stroke="#B45309" stroke-width="2" rx="5"/>
+  <text x="250" y="375" font-size="14" fill="#92400E" text-anchor="middle" font-weight="600">
+    A = ∫ₐᵇ [f(x) - g(x)] dx
+  </text>
+  <text x="250" y="388" font-size="10" fill="#6B7280" text-anchor="middle">
+    (där f(x) ≥ g(x) i intervallet)
+  </text>
+
+  <!-- Förklarings-box -->
+  <rect x="10" y="85" width="195" height="120" fill="#EFF6FF" stroke="#2563EB" stroke-width="1.5" rx="6"/>
+  <text x="107" y="103" font-size="12" font-weight="700" fill="#1E40AF" text-anchor="middle">Beräkning steg för steg:</text>
+
+  <text x="20" y="123" font-size="10" fill="#4B5563">1. Identifiera övre kurva f(x)</text>
+  <circle cx="180" cy="121" r="3" fill="#2563EB"/>
+
+  <text x="20" y="139" font-size="10" fill="#4B5563">2. Identifiera nedre kurva g(x)</text>
+  <circle cx="180" cy="137" r="3" fill="#10B981"/>
+
+  <text x="20" y="155" font-size="10" fill="#4B5563">3. Hitta skärningspunkter</text>
+  <text x="25" y="168" font-size="9" fill="#6B7280">(ger gränser a och b)</text>
+
+  <text x="20" y="184" font-size="10" fill="#4B5563">4. Beräkna differensen:</text>
+  <text x="25" y="197" font-size="9" fill="#92400E" font-weight="600">∫ₐᵇ [f(x) - g(x)] dx</text>
+
+  <!-- Exempel-box -->
+  <rect x="295" y="85" width="195" height="75" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" rx="5"/>
+  <text x="392" y="103" font-size="11" font-weight="700" fill="#065F46" text-anchor="middle">Exempel:</text>
+
+  <text x="305" y="120" font-size="10" fill="#4B5563">f(x) = -x² + 4</text>
+  <text x="305" y="134" font-size="10" fill="#4B5563">g(x) = x² - 2</text>
+  <text x="305" y="150" font-size="10" fill="#4B5563" font-weight="600">A = ∫₋√₃^√₃ [(−x²+4)−(x²−2)]dx</text>
+
+  <!-- Notering om tecken -->
+  <rect x="215" y="240" width="70" height="25" fill="#FEE2E2" stroke="#EF4444" stroke-width="1" rx="3"/>
+  <text x="250" y="257" font-size="8" fill="#991B1B" text-anchor="middle" font-weight="600">Viktigt: f(x) ≥ g(x)!</text>
+</svg>

@@ -1,0 +1,2799 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="#kap1-01">1.1 Förkortning och förlängning</a>
+                        <a href="#kap1-02">1.2 Addition och subtraktion</a>
+                        <a href="#kap1-03">1.3 Multiplikation och division</a>
+                        <a href="#kap1-04">1.4 Gränsvärden</a>
+                        <a href="#kap1-05">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="#kap2-01">2.1 Sekantens lutning</a>
+                        <a href="#kap2-02">2.2 Tangentens lutning</a>
+                        <a href="#kap2-03">2.3 Derivatans definition</a>
+                        <a href="#kap2-04">2.4 Använda derivata</a>
+                        <a href="#kap2-05">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="#kap3-01">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="#kap3-02">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="#kap3-03">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="#kap3-04">3.4 Derivatan av e^x</a>
+                        <a href="#kap3-05">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="#kap3-06">3.6 Tillämpningar av derivata</a>
+                        <a href="#kap3-07">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="#kap4-01">4.1 Växande och avtagande funktioner</a>
+                        <a href="#kap4-02">4.2 Derivatans nollställen</a>
+                        <a href="#kap4-03">4.3 Största och minsta värde</a>
+                        <a href="#kap4-04">4.4 Andraderivatan och funktioner</a>
+                        <a href="#kap4-05">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="#kap4-06">4.6 Extremvärdesproblem</a>
+                        <a href="#kap4-07">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="#kap5-01">5.1 Primitiva funktioner</a>
+                        <a href="#kap5-02">5.2 Primitiva funktioner med villkor</a>
+                        <a href="#kap5-03">5.3 Arean under en kurva</a>
+                        <a href="#kap5-04">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="#kap5-05">5.5 Beräkna integraler digitalt</a>
+                        <a href="#kap5-06">5.6 Area mellan kurvor</a>
+                        <a href="#kap5-07">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="#kap6-01">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="#kap6-02">6.2 Enhetscirkeln</a>
+                        <a href="#kap6-03">6.3 Trigonometriska ekvationer</a>
+                        <a href="#kap6-04">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="#kap6-05">6.5 Areasatsen</a>
+                        <a href="#kap6-06">6.6 Sinussatsen</a>
+                        <a href="#kap6-07">6.7 Cosinussatsen</a>
+                        <a href="#kap6-08">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bemästra Matematik 3c</h1>
+            <p>Lär dig derivata, integraler och trigonometri med interaktiva grafer och tydliga förklaringar</p>
+            <a href="#kap1-01" class="cta-button">Börja lära →</a>
+        </div>
+        <div class="hero-graphic">
+            <img src="hero-graphics.svg" alt="" aria-hidden="true" width="400" height="400">
+        </div>
+    </section>
+
+    <main class="container" role="main" id="main-content">
+        <section class="intro">
+            <h2>Välkommen till Matematik 3c!</h2>
+            <p>Den här hemsidan innehåller alla genomgångar från kursen Matematik 3c. Navigera genom menyerna ovan för att hitta det område du vill studera.</p>
+        </section>
+
+        <!-- Kapitel 1 -->
+        <section id="kap1-01" class="content-section">
+            <h2>Kapitel 1.1: Förkortning och förlängning av rationella uttryck</h2>
+
+            <div class="definition-box">
+                <h3>Grundläggande begrepp</h3>
+                <p><strong>Polynom:</strong> Ett uttryck där alla variabeltermer har positiva heltalsexponenter.</p>
+                <p><strong>Rationellt uttryck:</strong> Ett uttryck med ett polynom i täljare och nämnare.</p>
+                <p>Exempel på rationella uttryck: $\frac{5x^2 - 5x}{3x - 3}$ och $\frac{x + 3}{8}$</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Viktigt att komma ihåg</h3>
+                <p>Vid förkortning och förlängning av bråk eller rationella uttryck ändras <strong>inte</strong> storleken på uttrycket.</p>
+            </div>
+
+            <h3>Metoder för att faktorisera</h3>
+            <div class="method-box">
+                <h4>Tre metoder för faktorisering</h4>
+                <ol>
+                    <li><strong>Bryta ut gemensam faktor</strong></li>
+                    <li><strong>Kvadreringsreglerna eller konjugatregeln baklänges</strong></li>
+                    <li><strong>Med hjälp av nollställen</strong></li>
+                </ol>
+            </div>
+
+            <div class="formula-box">
+                <h3>Faktorisera med nollställen</h3>
+                <p>Ett polynom $p(x)$ av grad $n$ med nollställena $x_1, x_2, \ldots, x_n$ kan faktoriseras enligt:</p>
+                <p class="formula">$$p(x) = k(x - x_1)(x - x_2)\cdots(x - x_n)$$</p>
+                <p>där $k$ är koefficienten framför x-termen med högst grad (exponent).</p>
+            </div>
+
+            <h3>Exempel 1: Förläng $\frac{3}{4}$ med 5</h3>
+            <div class="example-box">
+                <p>Vi multiplicerar både täljare och nämnare med 5:</p>
+                <p>$$\frac{3}{4} = \frac{3 \cdot 5}{4 \cdot 5} = \frac{15}{20}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{15}{20}$</p>
+            </div>
+
+            <h3>Exempel 2: Förkorta $\frac{14}{21}$</h3>
+            <div class="example-box">
+                <p><strong>Alternativ 1:</strong> Vi "ser" största gemensamma delaren.</p>
+                <p>Vi ser att största gemensamma delaren till 14 och 21 är 7 och förkortar med den:</p>
+                <p>$$\frac{14}{21} = \frac{14/7}{21/7} = \frac{2}{3}$$</p>
+
+                <p><strong>Alternativ 2:</strong> Med primtalsfaktorisering</p>
+                <p>$$\frac{14}{21} = \frac{2 \cdot 7}{3 \cdot 7} = \frac{2}{3}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{2}{3}$</p>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap1/kap1-01-brakforkortning.png" alt="Pedagogisk illustration av bråkförkortning med visuell pizzaanalogi">
+                <p class="figure-caption">Figur 1.1: Visualisering av bråkförkortning - samma storlek men enklare form</p>
+            </div>
+
+            <h3>Exempel 3: Förläng $\frac{x + 3}{8}$ med $(x - 2)$</h3>
+            <div class="example-box">
+                <p>$$\frac{x + 3}{8} = \frac{(x + 3)(x - 2)}{8(x - 2)} = \frac{x^2 - 2x + 3x - 6}{8x - 16} = \frac{x^2 + x - 6}{8x - 16}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{(x + 3)(x - 2)}{8(x - 2)}$ (faktoriserad form) eller $\frac{x^2 + x - 6}{8x - 16}$ (utvecklad form)</p>
+            </div>
+
+            <h3>Exempel 4a: Förkorta $\frac{35x^3}{30x^5}$</h3>
+            <div class="example-box">
+                <p>Detta uttryck har en enda term i både täljare och nämnare så vi skriver ut samtliga faktorer:</p>
+                <p>$$\frac{35x^3}{30x^5} = \frac{7 \cdot 5 \cdot x \cdot x \cdot x}{5 \cdot 3 \cdot 2 \cdot x \cdot x \cdot x \cdot x \cdot x} = \frac{7}{3 \cdot 2 \cdot x \cdot x} = \frac{7}{6x^2}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{7}{6x^2}$</p>
+            </div>
+
+            <h3>Exempel 4b: Förkorta $\frac{5x^2 - 5x}{3x - 3}$</h3>
+            <div class="example-box">
+                <p>Detta uttryck har flera termer i täljare och nämnare. Vi faktoriserar dem!</p>
+                <p>Vi bryter ut största gemensamma faktorn i täljaren respektive nämnaren och förkortar sedan:</p>
+                <p>$$\frac{5x^2 - 5x}{3x - 3} = \frac{5x(x - 1)}{3(x - 1)} = \frac{5x}{3}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{5x}{3}$</p>
+            </div>
+
+            <h3>Exempel 4c: Förkorta $\frac{x^2 - 8x + 7}{x + 1}$</h3>
+            <div class="example-box">
+                <p>Nämnaren kan inte faktoriseras. Täljaren kan inte faktoriseras med metod 1 eller 2, så vi undersöker dess nollställen:</p>
+                <p>$$x^2 - 8x + 7 = 0$$</p>
+                <p>Vi använder pq-formeln:</p>
+                <p>$$x = 4 \pm \sqrt{16 + 7} = 4 \pm \sqrt{9} = 4 \pm 3$$</p>
+                <p>$$x_1 = 4 - 3 = 1 \quad \text{och} \quad x_2 = 4 + 3 = 7$$</p>
+                <p>Täljaren har nollställena 1 och 7 och kan faktoriseras som $(x - 1)(x - 7)$:</p>
+                <p>$$\frac{x^2 - 8x + 7}{x + 1} = \frac{(x - 1)(x - 7)}{x + 1}$$</p>
+                <p>Inga ytterligare förkortningar är möjliga.</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{(x - 1)(x - 7)}{x + 1}$ eller i utvecklad form $\frac{x^2 - 8x + 7}{x + 1}$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 1.2 -->
+        <section id="kap1-02" class="content-section">
+            <h2>Kapitel 1.2: Addition och subtraktion av rationella uttryck</h2>
+
+            <p>För att addera och subtrahera rationella uttryck krävs (precis som för bråk) att de har samma nämnare. Nu kommer vi också att lösa ekvationer med rationella uttryck.</p>
+
+            <div class="method-box">
+                <h3>Lösa ekvationer med rationella uttryck</h3>
+                <p>Kontrollera först för vilka värden på $x$ som nämnaren/nämnarna blir lika med 0. För dessa värden är ekvationen inte definierad. Dessa värden är alltså inte tillåtna som lösningar till ekvationen! Lös sedan med någon av nedanstående metoder.</p>
+
+                <h4>Metod 1: Multiplicera med minsta gemensamma nämnaren (MGN)</h4>
+                <p>Multiplicera båda led med MGN (eller med en annan gemensam nämnare). Förkorta sedan och lös som vanligt.</p>
+
+                <h4>Metod 2: Göra liknämnigt</h4>
+                <p>Förläng termerna så att de får samma nämnare. Slå sedan ihop termerna på ett enda divisionstecken och utnyttjar därefter att täljaren = kvoten · nämnaren eller motsvarande.</p>
+            </div>
+
+            <h3>Exempel 1: Förenkla</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\frac{5x}{2}$ + $\frac{x-2}{7}$</p>
+                <p>Här har båda termerna olika nämnare. För att få samma nämnare förlänger vi den första termen med 7 och den andra med 2. MGN = 14.</p>
+                <p>$$\frac{5x}{2} + \frac{x-2}{7} = \frac{5x \cdot 7}{2 \cdot 7} + \frac{(x-2) \cdot 2}{7 \cdot 2} = \frac{35x}{14} + \frac{2x-4}{14} = \frac{35x + 2x - 4}{14} = \frac{37x - 4}{14}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{37x - 4}{14}$</p>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap1/kap1-02-brakaddition.png" alt="Pedagogisk illustration av bråkaddition med visuell representation">
+                <p class="figure-caption">Figur 1.2: Visualisering av bråkaddition - hitta gemensam nämnare</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $\frac{8x}{x+3} - \frac{5x-9}{x}$</p>
+                <p>För att få samma nämnare i båda termer förlänger vi den första termen med $x$ och den andra med $(x+3)$:</p>
+                <p>$$\frac{8x}{x+3} - \frac{5x-9}{x} = \frac{8x \cdot x}{(x+3) \cdot x} - \frac{(5x-9)(x+3)}{x(x+3)} = \frac{8x^2 - (5x-9)(x+3)}{x(x+3)}$$</p>
+                <p>$$= \frac{8x^2 - (5x^2 + 15x - 9x - 27)}{x(x+3)} = \frac{8x^2 - 5x^2 - 6x + 27}{x(x+3)} = \frac{3x^2 - 6x + 27}{x(x+3)}$$</p>
+                <p>Vi kan faktorisera täljaren:</p>
+                <p>$$= \frac{3(x^2 - 2x + 9)}{x(x+3)}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{3(x^2 - 2x + 9)}{x(x+3)}$</p>
+            </div>
+
+            <h3>Exempel 2: Lös ekvationerna</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\frac{x}{2} - \frac{x}{8} = 24$</p>
+                <p>Inga nämnare innehåller $x$ och ekvationen är därför definierad för alla $x$.</p>
+                <p>Vi multiplicerar båda led med MGN = 8:</p>
+                <p>$$8 \cdot \frac{x}{2} - 8 \cdot \frac{x}{8} = 24 \cdot 8$$</p>
+                <p>$$4x - x = 192$$</p>
+                <p>$$3x = 192$$</p>
+                <p>$$x = 64$$</p>
+                <p class="answer"><strong>Svar:</strong> $x = 64$</p>
+
+                <p><strong>b)</strong> $\frac{1}{3} + \frac{2}{x-3} = 1$</p>
+                <p>Här är nämnaren $(x-3)$, så ekvationen är inte definierad för $x = 3$, dvs. $x \neq 3$.</p>
+                <p>Vi multiplicerar båda led med MGN = $3(x-3)$:</p>
+                <p>$$3(x-3) \cdot \frac{1}{3} + 3(x-3) \cdot \frac{2}{x-3} = 1 \cdot 3(x-3)$$</p>
+                <p>$$(x-3) + 6 = 3(x-3)$$</p>
+                <p>$$x - 3 + 6 = 3x - 9$$</p>
+                <p>$$x + 3 = 3x - 9$$</p>
+                <p>$$12 = 2x$$</p>
+                <p>$$x = 6$$</p>
+                <p class="answer"><strong>Svar:</strong> $x = 6$</p>
+
+                <p><strong>c)</strong> $\frac{x}{x-1} = \frac{2x}{x^2-1}$</p>
+                <p>Vi undersöker för vilka $x$ nämnarna är lika med 0:</p>
+                <p>$x - 1 = 0$ ⇒ $x = 1$</p>
+                <p>$x^2 - 1 = 0$ ⇒ $x = \pm 1$</p>
+                <p>Så $x \neq 1$ och $x \neq -1$.</p>
+                <p>Vi faktoriserar $(x^2-1) = (x+1)(x-1)$ och multiplicerar båda led med MGN = $(x+1)(x-1)$:</p>
+                <p>$$\frac{x(x+1)(x-1)}{x-1} = \frac{2x(x+1)(x-1)}{(x+1)(x-1)}$$</p>
+                <p>$$x(x+1) = 2x$$</p>
+                <p>$$x^2 + x = 2x$$</p>
+                <p>$$x^2 - x = 0$$</p>
+                <p>$$x(x-1) = 0$$</p>
+                <p>Nollproduktmetoden ger $x_1 = 0$ eller $x_2 = 1$.</p>
+                <p>Eftersom $x \neq 1$ förkastar vi den lösningen.</p>
+                <p class="answer"><strong>Svar:</strong> $x = 0$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 1.3 -->
+        <section id="kap1-03" class="content-section">
+            <h2>Kapitel 1.3: Multiplikation och division av rationella uttryck</h2>
+
+            <p>För multiplikation och division av rationella uttryck gäller samma regler som för multiplikation och division av bråk.</p>
+
+            <ul>
+                <li><strong>Multiplikation:</strong> täljarna multipliceras med varandra och nämnarna med varandra.</li>
+                <li><strong>Division:</strong> byt ut "stora" divisionstecknet mot multiplikation och invertera (byt plats på täljaren och nämnaren i uttrycket i nämnaren). Förenkla sedan som vanligt.</li>
+            </ul>
+
+            <div class="math-figure">
+                <img src="images/kap1/kap1-03-brak-multiplikation.png" alt="Pedagogisk illustration av bråkmultiplikation">
+                <p class="figure-caption">Figur 1.3: Visualisering av bråkmultiplikation och division</p>
+            </div>
+
+            <h3>Exempel 1: Förenkla</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\frac{3}{8-x} \cdot \frac{x^2+5}{6}$</p>
+                <p>$$\frac{3}{8-x} \cdot \frac{x^2+5}{6} = \frac{3(x^2+5)}{6(8-x)}$$</p>
+                <p>Förkortar med 3:</p>
+                <p>$$= \frac{x^2+5}{2(8-x)} = \frac{x^2+5}{16-2x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{x^2+5}{2(8-x)}$ eller $\frac{x^2+5}{16-2x}$</p>
+
+                <p><strong>b)</strong> $\frac{3x+6}{x-2} \cdot \frac{x^2-4}{3}$</p>
+                <p>Vi faktoriserar täljare och nämnare:</p>
+                <p>$$\frac{3(x+2)}{x-2} \cdot \frac{(x+2)(x-2)}{3} = \frac{3(x+2)(x+2)(x-2)}{3(x-2)}$$</p>
+                <p>Förkortar med $3(x-2)$:</p>
+                <p>$$= (x+2)^2 = x^2 + 4x + 4$$</p>
+                <p class="answer"><strong>Svar:</strong> $(x+2)^2$ eller $x^2 + 4x + 4$</p>
+
+                <p><strong>c)</strong> $\frac{3x}{x+7} / \frac{5x}{x-2}$</p>
+                <p>Byter ut divisionstecknet mot multiplikation och inverterar:</p>
+                <p>$$\frac{3x}{x+7} \cdot \frac{x-2}{5x} = \frac{3x(x-2)}{5x(x+7)}$$</p>
+                <p>Förkortar med $x$:</p>
+                <p>$$= \frac{3(x-2)}{5(x+7)} = \frac{3x-6}{5x+35}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{3(x-2)}{5(x+7)}$ eller $\frac{3x-6}{5x+35}$</p>
+            </div>
+
+            <h3>Exempel 2: Lös ekvationen</h3>
+            <div class="example-box">
+                <p>$\frac{x-2}{x-3} = \frac{x+7}{x}$</p>
+                <p>$x \neq 3$ och $x \neq 0$</p>
+                <p>Vi använder korsvis multiplikation (eller multiplicerar med MGN):</p>
+                <p>$$x(x-2) = (x-3)(x+7)$$</p>
+                <p>$$x^2 - 2x = x^2 + 7x - 3x - 21$$</p>
+                <p>$$x^2 - 2x = x^2 + 4x - 21$$</p>
+                <p>$$-2x = 4x - 21$$</p>
+                <p>$$-6x = -21$$</p>
+                <p>$$x = \frac{21}{6} = \frac{7}{2}$$</p>
+                <p class="answer"><strong>Svar:</strong> $x = \frac{7}{2}$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 1.4 -->
+        <section id="kap1-04" class="content-section">
+            <h2>Kapitel 1.4: Gränsvärden</h2>
+
+            <div class="info-box">
+                <h3>Introduktion - Gränsvärde</h3>
+                <p>Vi undersöker värdet hos uttrycket $\frac{1}{x}$ när $x$ blir större och större.</p>
+                <p>$\frac{1}{10} = 0{,}1$, $\frac{1}{100} = 0{,}01$, $\frac{1}{1000} = 0{,}001$, $\frac{1}{10000} = 0{,}0001$</p>
+                <p>Vi ser att när $x$ ökar, så kommer värdet av $\frac{1}{x}$ närmare och närmare 0. 0 är den gräns som värdet går mot (men aldrig kommer att nå). Vi säger att gränsvärdet är 0.</p>
+            </div>
+
+            <p>Ett värde som ett uttryck närmar sig kallas <strong>gränsvärde</strong>. Gränsvärdet när $x$ går mot oändligheten ($\infty$) för $\frac{1}{x}$ är lika med 0.</p>
+
+            <p>Detta skrivs: $$\lim_{x \to \infty} \frac{1}{x} = 0$$</p>
+
+            <p>$\lim_{x \to \infty}$ utläses "limes då $x$ går mot oändligheten" eller "gränsvärdet då $x$ går mot oändligheten".</p>
+
+            <div class="method-box">
+                <h3>Bestämma gränsvärde då variabeln går mot ett tal</h3>
+                <p><strong>Metod 1:</strong> Sätt in det värde som $x$ går mot direkt och beräkna.</p>
+                <p><strong>Metod 2:</strong> Förkorta uttrycket och sätt sedan in det värde som $x$ går mot och beräkna.</p>
+                <p><strong>Metod 3:</strong> Gör två tabeller och närma dig det värde som $x$ går mot underifrån ("från vänster") respektive ovanifrån ("från höger"). Om de går mot samma gränsvärde, så är detta uttryckets gränsvärde. Om de går mot olika gränsvärden, så saknas gränsvärde.</p>
+                <p>Metoderna är sorterade efter hur effektiva de är att använda. Om metod 1 inte fungerar, gå vidare till metod 2. Om metod 2 inte fungerar, gå vidare till metod 3.</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Bestämma gränsvärde då variabeln går mot en oändlighet</h3>
+                <p>Om en variabel $x$ går mot:</p>
+                <ul>
+                    <li>positiva oändligheten skrivs det $x \rightarrow \infty$ eller $x \rightarrow +\infty$</li>
+                    <li>negativa oändligheten skrivs det $x \rightarrow -\infty$</li>
+                </ul>
+                <p>Ett uttryck med en oändlighet</p>
+                <ul>
+                    <li>enbart i täljare ger en oändlighet som gränsvärde.</li>
+                    <li>enbart i nämnare ger 0 som gränsvärde.</li>
+                    <li>både i täljare och nämnare förenklas genom att konstanttermer stryks. Därefter görs en förkortning och gränsvärdet kan bestämmas.</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm $\lim_{x \to 2} (x + 5)$</h3>
+            <div class="example-box">
+                <p>Vi sätter $x = 2$ och beräknar:</p>
+                <p>$$\lim_{x \to 2} (x + 5) = 2 + 5 = 7$$</p>
+                <p class="answer"><strong>Svar:</strong> 7</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm $\lim_{x \to 1} \frac{x^2-1}{x-1}$</h3>
+            <div class="example-box">
+                <p>Gränsvärdet kan inte bestämmas genom att sätta $x = 1$ eftersom vi får en division med 0.</p>
+                <p><strong>a)</strong> Med tabeller:</p>
+                <p>Vi närmar oss värdet 1 underifrån och ovanifrån:</p>
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Underifrån</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Ovanifrån</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">
+                            $x = 0{,}9$ ger $1{,}9$<br>
+                            $x = 0{,}99$ ger $1{,}99$<br>
+                            $x = 0{,}999$ ger $1{,}999$
+                        </td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">
+                            $x = 1{,}1$ ger $2{,}1$<br>
+                            $x = 1{,}01$ ger $2{,}01$<br>
+                            $x = 1{,}001$ ger $2{,}001$
+                        </td>
+                    </tr>
+                </table>
+                <p>Vi ser att gränsvärdet är 2.</p>
+                <p class="answer"><strong>Svar:</strong> 2</p>
+
+                <p><strong>b)</strong> Genom att förkorta:</p>
+                <p>Vi faktoriserar täljaren:</p>
+                <p>$$\lim_{x \to 1} \frac{x^2-1}{x-1} = \lim_{x \to 1} \frac{(x+1)(x-1)}{x-1} = \lim_{x \to 1} (x+1) = 1 + 1 = 2$$</p>
+                <p class="answer"><strong>Svar:</strong> 2</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap1/kap1-04-gransvarde.svg"
+                     alt="Gränsvärde vid diskontinuitet: Graf som visar att lim[x→2] f(x) = 3 (öppen cirkel), men f(2) = 5 (fylld cirkel). Pilar från vänster och höger visar att funktionen närmar sig värdet 3, men funktionsvärdet vid x=2 är 5."
+                     width="500" height="400">
+                <p class="caption">Diskontinuitet: Gränsvärdet kan existera även när funktionen har ett "hopp"</p>
+            </div>
+
+            <h3>Exempel 3: Bestäm $\lim_{x \to \infty} \frac{5}{x}$</h3>
+            <div class="example-box">
+                <p>Vi har ett gränsvärde där vi får en oändlighet i nämnaren. Gränsvärdet blir då 0.</p>
+                <p class="answer"><strong>Svar:</strong> 0</p>
+            </div>
+
+            <h3>Exempel 4: Bestäm $\lim_{x \to \infty} \frac{3x+2}{x-1}$</h3>
+            <div class="example-box">
+                <p>Vi har oändligheter i både täljare och nämnare. Vi stryker konstanttermerna, förkortar och beräknar:</p>
+                <p>$$\lim_{x \to \infty} \frac{3x+2}{x-1} = \lim_{x \to \infty} \frac{3x}{x} = 3$$</p>
+                <p class="answer"><strong>Svar:</strong> 3</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 1.5 -->
+        <section id="kap1-05" class="content-section">
+            <h2>Kapitel 1.5: Symbolhanterande hjälpmedel</h2>
+
+            <p>En räknare som inte bara kan hantera numeriska beräkningar (beräkningar med siffror), utan också kan hantera algebraiska uttryck kallas <strong>symbolhanterande hjälpmedel</strong>. Geogebra är ett exempel på ett sådant hjälpmedel.</p>
+
+            <p>Symbolhanterande hjälpmedel kan t.ex. användas för att förenkla uttryck, faktorisera uttryck, lösa ekvationer och bestämma gränsvärden.</p>
+
+            <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                <tr>
+                    <th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Uppgift</th>
+                    <th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Kommando i Geogebra</th>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Förenkla uttryck</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Utveckla( Uttryck )</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Faktorisera uttryck</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Faktorisera( Polynom )</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Lösa ekvationer numeriskt</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">NLös( Ekvation )</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Lösa ekvationer exakt</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Lös( Ekvation )</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Bestämma funktionsvärde</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">f(x) = ... och sedan t.ex. f(3)</td>
+                </tr>
+                <tr>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Beräkna gränsvärde</td>
+                    <td style="padding: 0.5rem; border: 1px solid #ddd;">Gränsvärde( Funktion, Värde )</td>
+                </tr>
+            </table>
+
+            <h3>Exempel 1: Förenkla $(x+3)(x-1)(x+5)$</h3>
+            <div class="example-box">
+                <p>I Geogebras inmatningsfält skriver vi "utv" och väljer <strong>Utveckla( Uttryck )</strong>.</p>
+                <p>Vi skriver in uttrycket och slår Enter.</p>
+                <p class="answer"><strong>Svar:</strong> $x^3 + 7x^2 + 7x - 15$</p>
+            </div>
+
+            <h3>Exempel 2: Faktorisera $x^3 + 7x^2 + 7x - 15$</h3>
+            <div class="example-box">
+                <p>I Geogebras inmatningsfält skriver vi "fakt" och väljer <strong>Faktorisera( Polynom )</strong>.</p>
+                <p>Vi skriver in uttrycket och slår Enter.</p>
+                <p class="answer"><strong>Svar:</strong> $(x-1)(x+3)(x+5)$</p>
+            </div>
+
+            <h3>Exempel 3: Lös $x^3 - x^2 - 3x + 3 = 0$</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> Med två decimaler:</p>
+                <p>Använd <strong>NLös( Ekvation )</strong> i Geogebra.</p>
+                <p class="answer"><strong>Svar:</strong> $x_1 \approx -1{,}73$, $x_2 = 1$ och $x_3 \approx 1{,}73$</p>
+
+                <p><strong>b)</strong> Exakt:</p>
+                <p>Använd <strong>Lös( Ekvation )</strong> i Geogebra.</p>
+                <p class="answer"><strong>Svar:</strong> $x_1 = -\sqrt{3}$, $x_2 = 1$ och $x_3 = \sqrt{3}$</p>
+            </div>
+
+            <h3>Exempel 4: Funktionen $f(x) = x^3 - 4x^2$</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> Bestäm $f(7)$</p>
+                <p>Definiera funktionen genom att skriva f(x) = x^3 - 4x^2 i inmatningsfältet. Därefter skriver vi f(7) på raden under.</p>
+                <p class="answer"><strong>Svar:</strong> 147</p>
+
+                <p><strong>b)</strong> Lös $f(x) = 7$</p>
+                <p>Använd kommandot Lös( f(x) = 7 ) eller Lös( f = 7 ).</p>
+                <p class="answer"><strong>Svar:</strong> $x \approx 4{,}37$</p>
+            </div>
+
+            <h3>Exempel 5: Bestäm $\lim_{x \to \infty} \frac{3x+2}{x-1}$</h3>
+            <div class="example-box">
+                <p>I Geogebras inmatningsfält skriver vi "grän" och väljer <strong>Gränsvärde( Funktion, Värde )</strong>.</p>
+                <p>Vi skriver in uttrycket och värdet som variabeln går mot (infinity för $\infty$).</p>
+                <p class="answer"><strong>Svar:</strong> 3</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 2.1 -->
+        <section id="kap2-01" class="content-section">
+            <h2>Kapitel 2.1: Sekantens lutning</h2>
+
+            <div class="info-box">
+                <p>En rät linje har samma lutning överallt. En kurvas lutning kan däremot variera.</p>
+                <p>En kurvas <strong>medellutning</strong> i ett visst intervall kan beräknas genom att dra en rät linje mellan punkterna i intervallets ändpunkter.</p>
+                <p><strong>Sekant:</strong> En linje mellan två punkter på en kurva.</p>
+            </div>
+
+            <div class="graph-container">
+                <h4>Illustration: Sekant på en kurva</h4>
+                <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 1rem;">
+                    🎮 Interaktiv! Använd reglagen för att flytta punkterna och se hur sekantens lutning ändras.
+                </p>
+                <div class="slider-controls">
+                    <div class="slider-row">
+                        <label for="sekant-x1">x₁: <span id="sekant-x1-value">-4.0</span></label>
+                        <input type="range" id="sekant-x1" min="-5" max="4" step="0.5" value="-4">
+                    </div>
+                    <div class="slider-row">
+                        <label for="sekant-x2">x₂: <span id="sekant-x2-value">3.0</span></label>
+                        <input type="range" id="sekant-x2" min="-4" max="5" step="0.5" value="3">
+                    </div>
+                </div>
+                <div id="graph-sekant-intro"></div>
+            </div>
+
+            <div class="formula-box">
+                <h3>Riktningskoefficienten (sekantens lutning)</h3>
+                <p>Sekantens lutning (k-värde, ändringskvot) beräknas genom:</p>
+                <p class="formula">$$k = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1} = \frac{f(x_2) - f(x_1)}{x_2 - x_1}$$</p>
+            </div>
+
+            <div class="important-box">
+                <h3>Tolka sekantens lutning vid tillämpningar</h3>
+                <p>Vid tillämpningar står sekantens lutning för en <strong>genomsnittlig förändringshastighet</strong>.</p>
+                <p>Eftersom $k = \frac{\Delta y}{\Delta x}$ blir enheten på sekantens lutning: <strong>"enheten på y-axeln" per "enheten på x-axeln"</strong>.</p>
+            </div>
+
+            <h3>Exempel 1: Granplanta</h3>
+            <div class="example-box">
+                <p>En granplanta har höjden $y$ dm efter $x$ år.</p>
+
+                <div class="graph-container">
+                    <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 1rem;">
+                        🎮 Interaktiv! Flytta reglaget för att ändra mättidpunkten och se hur medellutningen förändras.
+                    </p>
+                    <div class="slider-controls">
+                        <div class="slider-row">
+                            <label for="gran-x2">Mät till år: <span id="gran-x2-value">2.00</span></label>
+                            <input type="range" id="gran-x2" min="0.5" max="3.5" step="0.25" value="2">
+                        </div>
+                    </div>
+                    <div id="graph-granplanta"></div>
+                </div>
+
+                <p><strong>a)</strong> Beräkna sekantens lutning mellan $x = 0$ och $x = 2$.</p>
+                <p>Vi drar en sekant mellan punkterna på grafen där $x = 0$ och $x = 2$.</p>
+                <p>Vi läser av två punkter på sekanten: $(0, 0)$ och $(2, 1.4)$</p>
+                <p>$$k = \frac{y_2 - y_1}{x_2 - x_1} = \frac{1.4 - 0}{2 - 0} = \frac{1.4}{2} = 0.7$$</p>
+                <p class="answer"><strong>Svar:</strong> 0.7</p>
+
+                <p><strong>b)</strong> Tolka svaret i a) med ord.</p>
+                <p>Sekantens lutning står för hur mycket granen har vuxit i genomsnitt de två första åren.</p>
+                <p>Enheten på y-axeln är "dm" och enheten på x-axeln är "år". Enheten för värdet blir alltså "dm/år".</p>
+                <p class="answer"><strong>Svar:</strong> Granen har vuxit med i genomsnitt 0.7 dm/år de två första åren.</p>
+            </div>
+
+            <h3>Exempel 2: Ändringskvot</h3>
+            <div class="example-box">
+                <p>Beräkna ändringskvoten mellan $x = 3$ och $x = 5$ för $f(x) = x^2$.</p>
+
+                <div class="graph-container">
+                    <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 1rem;">
+                        🎮 Interaktiv! Flytta de två reglagen för att välja olika x-värden och se hur ändringskvoten (k) ändras.
+                    </p>
+                    <div class="slider-controls">
+                        <div class="slider-row">
+                            <label for="andring-x1">x₁: <span id="andring-x1-value">3.0</span></label>
+                            <input type="range" id="andring-x1" min="0" max="6" step="0.5" value="3">
+                        </div>
+                        <div class="slider-row">
+                            <label for="andring-x2">x₂: <span id="andring-x2-value">5.0</span></label>
+                            <input type="range" id="andring-x2" min="1" max="7" step="0.5" value="5">
+                        </div>
+                    </div>
+                    <div id="graph-andringsk"></div>
+                </div>
+
+                <p>Ändringskvoten är detsamma som sekantens lutning:</p>
+                <p>$$k = \frac{y_2 - y_1}{x_2 - x_1} = \frac{f(5) - f(3)}{5 - 3} = \frac{5^2 - 3^2}{5 - 3} = \frac{25 - 9}{2} = \frac{16}{2} = 8$$</p>
+                <p class="answer"><strong>Svar:</strong> 8</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 2.2 -->
+        <section id="kap2-02" class="content-section">
+            <h2>Kapitel 2.2: Tangentens lutning</h2>
+
+            <div class="info-box">
+                <h3>Från sekant till tangent</h3>
+                <p>En <strong>tangent</strong> är en linje som "vidrör" kurvan i en punkt. Tangenten visar kurvans <strong>momentana lutning</strong> i just den punkten.</p>
+                <p>För att bestämma tangentens lutning kan vi låta sekantens två punkter komma närmare och närmare varandra tills de "smälter samman" till en enda punkt.</p>
+            </div>
+
+            <div class="graph-container">
+                <h4>Illustration: Från sekant till tangent</h4>
+                <p style="text-align: center; color: #666; font-style: italic; margin-bottom: 1rem;">
+                    🎮 Interaktiv! Använd reglaget för att flytta den andra punkten närmare den första och se hur sekanten övergår till en tangent.
+                </p>
+                <div class="slider-controls">
+                    <div class="slider-row">
+                        <label for="tangent-h">Avstånd h: <span id="tangent-h-value">2.00</span></label>
+                        <input type="range" id="tangent-h" min="0.1" max="3" step="0.1" value="2">
+                    </div>
+                </div>
+                <div id="graph-tangent-intro"></div>
+            </div>
+
+            <div class="formula-box">
+                <h3>Tangentens lutning</h3>
+                <p>Om vi har en funktion $f(x)$ och vill bestämma tangentens lutning i punkten $(x, f(x))$, kan vi använda en punkt nära den första punkten, $(x+h, f(x+h))$.</p>
+                <p>Sekantens lutning mellan dessa punkter är:</p>
+                <p class="formula">$$k = \frac{f(x+h) - f(x)}{(x+h) - x} = \frac{f(x+h) - f(x)}{h}$$</p>
+                <p>När $h$ går mot 0 (dvs. punkterna kommer närmare varandra) får vi tangentens lutning.</p>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap2/kap2-02-tangent-lutning.png" alt="Illustration av tangentens lutning med gränsvärde">
+                <p class="figure-caption">Figur 2.2: Tangentens lutning som gränsvärde av sekantens lutning</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna tangentens lutning för $f(x) = x^2$ i punkten $(2, 4)$</h3>
+            <div class="example-box">
+                <p>Vi använder formeln för sekantens lutning med en punkt nära $(2, 4)$.</p>
+                <p>Låt $h = 0.1$. Den andra punkten blir då $(2.1, f(2.1)) = (2.1, 4.41)$</p>
+                <p>$$k = \frac{f(2.1) - f(2)}{2.1 - 2} = \frac{4.41 - 4}{0.1} = \frac{0.41}{0.1} = 4.1$$</p>
+
+                <p>Låt $h = 0.01$. Den andra punkten blir då $(2.01, f(2.01)) = (2.01, 4.0401)$</p>
+                <p>$$k = \frac{f(2.01) - f(2)}{2.01 - 2} = \frac{4.0401 - 4}{0.01} = \frac{0.0401}{0.01} = 4.01$$</p>
+
+                <p>Vi ser att när $h$ blir mindre, närmar sig lutningen värdet 4.</p>
+                <p class="answer"><strong>Svar:</strong> Tangentens lutning i punkten $(2, 4)$ är $k = 4$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm tangentens lutning</h3>
+            <div class="example-box">
+                <p>Bestäm tangentens lutning för $f(x) = x^2 + 1$ i punkten där $x = 3$.</p>
+                <p>Vi använder en punkt nära $x = 3$, säg $x = 3.001$</p>
+                <p>$$f(3) = 3^2 + 1 = 10$$</p>
+                <p>$$f(3.001) = (3.001)^2 + 1 = 9.006001 + 1 = 10.006001$$</p>
+                <p>$$k \approx \frac{10.006001 - 10}{3.001 - 3} = \frac{0.006001}{0.001} = 6.001 \approx 6$$</p>
+                <p class="answer"><strong>Svar:</strong> Tangentens lutning är cirka 6</p>
+            </div>
+
+            <div class="important-box">
+                <h3>Viktig iakttagelse</h3>
+                <p>Tangentens lutning i en punkt på en kurva kallas för kurvans <strong>momentana förändringshastighet</strong> i den punkten.</p>
+                <p>Detta står i kontrast till sekantens lutning som visar den <strong>genomsnittliga förändringshastigheten</strong> över ett intervall.</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 2.3 -->
+        <section id="kap2-03" class="content-section">
+            <h2>Kapitel 2.3: Derivatans definition</h2>
+
+            <div class="definition-box">
+                <h3>Derivata</h3>
+                <p>En funktions <strong>derivata</strong> i en punkt är tangentens lutning i den punkten.</p>
+                <p>Derivatan betecknas med $f'(x)$ (utläses "f prim av x") eller $\frac{dy}{dx}$.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatans definition</h3>
+                <p>Derivatan av funktionen $f(x)$ definieras som:</p>
+                <p class="formula">$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$</p>
+                <p>Detta är gränsvärdet av sekantens lutning när $h$ går mot 0.</p>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap2/kap2-03-derivata-definition.png" alt="Formell definition av derivata med gränsvärde">
+                <p class="figure-caption">Figur 2.3: Derivatans definition - gränsvärdet när h → 0</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Beräkna derivata med definitionen</h3>
+                <ol>
+                    <li>Skriv upp $f(x+h)$ genom att byta ut varje $x$ mot $(x+h)$ i funktionen</li>
+                    <li>Beräkna $f(x+h) - f(x)$</li>
+                    <li>Dividera med $h$: $\frac{f(x+h) - f(x)}{h}$</li>
+                    <li>Förenkla uttrycket så att $h$ kan förkortas bort</li>
+                    <li>Låt $h \to 0$ och bestäm gränsvärdet</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Bestäm $f'(x)$ för $f(x) = x^2$ med derivatans definition</h3>
+            <div class="example-box">
+                <p><strong>Steg 1:</strong> Bestäm $f(x+h)$</p>
+                <p>$$f(x+h) = (x+h)^2 = x^2 + 2xh + h^2$$</p>
+
+                <p><strong>Steg 2:</strong> Beräkna $f(x+h) - f(x)$</p>
+                <p>$$f(x+h) - f(x) = (x^2 + 2xh + h^2) - x^2 = 2xh + h^2$$</p>
+
+                <p><strong>Steg 3-4:</strong> Dividera med $h$ och förenkla</p>
+                <p>$$\frac{f(x+h) - f(x)}{h} = \frac{2xh + h^2}{h} = \frac{h(2x + h)}{h} = 2x + h$$</p>
+
+                <p><strong>Steg 5:</strong> Låt $h \to 0$</p>
+                <p>$$f'(x) = \lim_{h \to 0} (2x + h) = 2x$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 2x$</p>
+            </div>
+
+            <h3>Exempel 2: Derivera $f(x) = x^2 + 3x$</h3>
+            <div class="example-box">
+                <p><strong>Steg 1:</strong> $f(x+h) = (x+h)^2 + 3(x+h) = x^2 + 2xh + h^2 + 3x + 3h$</p>
+                <p><strong>Steg 2:</strong> $f(x+h) - f(x) = (x^2 + 2xh + h^2 + 3x + 3h) - (x^2 + 3x) = 2xh + h^2 + 3h$</p>
+                <p><strong>Steg 3-4:</strong> $\frac{f(x+h) - f(x)}{h} = \frac{2xh + h^2 + 3h}{h} = \frac{h(2x + h + 3)}{h} = 2x + h + 3$</p>
+                <p><strong>Steg 5:</strong> $f'(x) = \lim_{h \to 0} (2x + h + 3) = 2x + 3$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 2x + 3$</p>
+            </div>
+
+            <h3>Exempel 3: Derivera $f(x) = \frac{1}{x}$</h3>
+            <div class="example-box">
+                <p><strong>Steg 1:</strong> $f(x+h) = \frac{1}{x+h}$</p>
+                <p><strong>Steg 2:</strong> $f(x+h) - f(x) = \frac{1}{x+h} - \frac{1}{x} = \frac{x - (x+h)}{x(x+h)} = \frac{-h}{x(x+h)}$</p>
+                <p><strong>Steg 3-4:</strong> $\frac{f(x+h) - f(x)}{h} = \frac{-h}{h \cdot x(x+h)} = \frac{-1}{x(x+h)}$</p>
+                <p><strong>Steg 5:</strong> $f'(x) = \lim_{h \to 0} \frac{-1}{x(x+h)} = \frac{-1}{x^2} = -\frac{1}{x^2}$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = -\frac{1}{x^2}$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 2.4 -->
+        <section id="kap2-04" class="content-section">
+            <h2>Kapitel 2.4: Använda derivata</h2>
+
+            <div class="info-box">
+                <h3>Vad berättar derivatan?</h3>
+                <p>Derivatan $f'(x)$ ger oss tangentens lutning i punkten $(x, f(x))$.</p>
+                <p>Med hjälp av derivatan kan vi:</p>
+                <ul>
+                    <li>Bestämma tangentens ekvation</li>
+                    <li>Bestämma normalens ekvation (linjen vinkelrät mot tangenten)</li>
+                    <li>Undersöka hur funktionen förändras</li>
+                </ul>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap2/kap2-04-derivering-exempel.png" alt="Exempel på derivering och tangentbestämning">
+                <p class="figure-caption">Figur 2.4: Användning av derivata - tangent och normal</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Bestäm tangentens ekvation</h3>
+                <p>För att bestämma tangentens ekvation i punkten $(x_0, f(x_0))$:</p>
+                <ol>
+                    <li>Beräkna $f'(x_0)$ - detta är tangentens lutning $k$</li>
+                    <li>Använd linjens ekvation: $y - y_0 = k(x - x_0)$ där $(x_0, y_0) = (x_0, f(x_0))$</li>
+                    <li>Förenkla till formen $y = kx + m$</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Tangentens ekvation</h3>
+            <div class="example-box">
+                <p>Bestäm tangentens ekvation till kurvan $f(x) = x^2$ i punkten där $x = 3$.</p>
+
+                <p><strong>Steg 1:</strong> Beräkna $f(3)$ och $f'(3)$</p>
+                <p>$f(3) = 3^2 = 9$, så punkten är $(3, 9)$</p>
+                <p>Vi vet från tidigare att $f'(x) = 2x$ (för $f(x) = x^2$)</p>
+                <p>$f'(3) = 2 \cdot 3 = 6$</p>
+
+                <p><strong>Steg 2:</strong> Använd linjens ekvation</p>
+                <p>$$y - 9 = 6(x - 3)$$</p>
+
+                <p><strong>Steg 3:</strong> Förenkla</p>
+                <p>$$y - 9 = 6x - 18$$</p>
+                <p>$$y = 6x - 9$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Tangentens ekvation är $y = 6x - 9$</p>
+            </div>
+
+            <h3>Exempel 2: Normal till kurva</h3>
+            <div class="example-box">
+                <p>Bestäm normalens ekvation till kurvan $f(x) = x^2 + 1$ i punkten där $x = 2$.</p>
+                <p><em>Normalen är den linje som är vinkelrät mot tangenten.</em></p>
+
+                <p><strong>Steg 1:</strong> Beräkna punkten och tangentens lutning</p>
+                <p>$f(2) = 2^2 + 1 = 5$, punkten är $(2, 5)$</p>
+                <p>$f'(x) = 2x$ så $f'(2) = 4$</p>
+
+                <p><strong>Steg 2:</strong> Normalens lutning</p>
+                <p>Om tangentens lutning är $k$, så är normalens lutning $-\frac{1}{k}$</p>
+                <p>Normalens lutning: $k_n = -\frac{1}{4}$</p>
+
+                <p><strong>Steg 3:</strong> Normalens ekvation</p>
+                <p>$$y - 5 = -\frac{1}{4}(x - 2)$$</p>
+                <p>$$y = -\frac{1}{4}x + \frac{1}{2} + 5 = -\frac{1}{4}x + \frac{11}{2}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $y = -\frac{1}{4}x + \frac{11}{2}$ eller $y = -0.25x + 5.5$</p>
+            </div>
+
+            <h3>Exempel 3: Tillämpning - Hastighet</h3>
+            <div class="example-box">
+                <p>En boll kastas rakt upp. Dess höjd över marken efter $t$ sekunder ges av $h(t) = 20t - 5t^2$ (höjd i meter).</p>
+
+                <p><strong>a)</strong> Bestäm bollens hastighet efter 1 sekund.</p>
+                <p>Hastigheten är höjdens derivata: $h'(t)$</p>
+                <p>Med derivatans definition eller deriveringsregler får vi:</p>
+                <p>$$h'(t) = 20 - 10t$$</p>
+                <p>$$h'(1) = 20 - 10 \cdot 1 = 10 \text{ m/s}$$</p>
+                <p class="answer"><strong>Svar a):</strong> 10 m/s</p>
+
+                <p><strong>b)</strong> När vänder bollen?</p>
+                <p>Bollen vänder när hastigheten är 0:</p>
+                <p>$$h'(t) = 0$$</p>
+                <p>$$20 - 10t = 0$$</p>
+                <p>$$t = 2$$</p>
+                <p class="answer"><strong>Svar b):</strong> Efter 2 sekunder</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 2.5 -->
+        <section id="kap2-05" class="content-section">
+            <h2>Kapitel 2.5: Deriverbarhet och absolutbelopp</h2>
+
+            <div class="definition-box">
+                <h3>Deriverbar funktion</h3>
+                <p>En funktion är <strong>deriverbar</strong> i en punkt om derivatan existerar i den punkten.</p>
+                <p>En funktion är deriverbar i en punkt om kurvan är "slät" (inga hörn eller hopp) i den punkten.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>När är en funktion INTE deriverbar?</h3>
+                <p>En funktion är inte deriverbar i en punkt om:</p>
+                <ul>
+                    <li>Funktionen har ett <strong>hörn</strong> i punkten (kurvan "knäcker")</li>
+                    <li>Funktionen är <strong>diskontinuerlig</strong> i punkten (har ett hopp)</li>
+                    <li>Tangenten är <strong>vertikal</strong> i punkten (oändlig lutning)</li>
+                </ul>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap2/kap2-05-deriverbarhet-absolutbelopp.png" alt="Visualisering av deriverbarhet och absolutbeloppsfunktionen">
+                <p class="figure-caption">Figur 2.5: Deriverbarhet - funktionen |x| har ett hörn vid x=0</p>
+            </div>
+
+            <h3>Absolutbeloppsfunktionen</h3>
+            <div class="example-box">
+                <p>Funktionen $f(x) = |x|$ (absolutbelopp av $x$) är definierad som:</p>
+                <p>$$f(x) = \begin{cases} x & \text{om } x \geq 0 \\ -x & \text{om } x < 0 \end{cases}$$</p>
+
+                <div class="graph-container">
+                    <h4>Graf: $f(x) = |x|$</h4>
+                    <div id="graph-absolutbelopp"></div>
+                </div>
+
+                <p>Funktionen har ett <strong>hörn</strong> vid $x = 0$, vilket betyder att den inte är deriverbar där.</p>
+                <p>Vi kan kontrollera detta genom att undersöka derivatan från vänster och höger:</p>
+
+                <p><strong>Från höger ($x > 0$):</strong></p>
+                <p>$f(x) = x$ så $f'(x) = 1$</p>
+
+                <p><strong>Från vänster ($x < 0$):</strong></p>
+                <p>$f(x) = -x$ så $f'(x) = -1$</p>
+
+                <p>Eftersom derivatan från vänster ($-1$) inte är lika med derivatan från höger ($1$), existerar inte derivatan i $x = 0$.</p>
+            </div>
+
+            <h3>Exempel 1: Undersök deriverbarhet</h3>
+            <div class="example-box">
+                <p>Undersök om funktionen $f(x) = |x - 2|$ är deriverbar i $x = 2$.</p>
+
+                <p>Funktionen kan skrivas som:</p>
+                <p>$$f(x) = \begin{cases} x - 2 & \text{om } x \geq 2 \\ -(x - 2) = 2 - x & \text{om } x < 2 \end{cases}$$</p>
+
+                <p><strong>Från höger ($x > 2$):</strong></p>
+                <p>$f(x) = x - 2$ så $f'(x) = 1$</p>
+
+                <p><strong>Från vänster ($x < 2$):</strong></p>
+                <p>$f(x) = 2 - x$ så $f'(x) = -1$</p>
+
+                <p>Eftersom $1 \neq -1$ är funktionen inte deriverbar i $x = 2$.</p>
+                <p class="answer"><strong>Svar:</strong> Nej, funktionen är inte deriverbar i $x = 2$</p>
+            </div>
+
+            <h3>Exempel 2: Deriverbar funktion med villkor</h3>
+            <div class="example-box">
+                <p>För vilket värde på $a$ är funktionen</p>
+                <p>$$f(x) = \begin{cases} x^2 & \text{om } x \leq 1 \\ ax + 3 & \text{om } x > 1 \end{cases}$$</p>
+                <p>deriverbar i $x = 1$?</p>
+
+                <p><strong>Kontinuitet (nödvändigt villkor):</strong></p>
+                <p>För att funktionen ska vara deriverbar måste den först vara kontinuerlig:</p>
+                <p>$$\lim_{x \to 1^-} f(x) = 1^2 = 1$$</p>
+                <p>$$\lim_{x \to 1^+} f(x) = a \cdot 1 + 3 = a + 3$$</p>
+                <p>För kontinuitet: $1 = a + 3$, alltså $a = -2$</p>
+
+                <p><strong>Deriverbarhet:</strong></p>
+                <p>Derivatan från vänster: $f'(x) = 2x$ ger $f'(1^-) = 2$</p>
+                <p>Derivatan från höger: $f'(x) = a$ ger $f'(1^+) = a$</p>
+                <p>För deriverbarhet: $2 = a$</p>
+
+                <p><strong>Konflikt!</strong> Vi får $a = -2$ från kontinuitet men $a = 2$ från deriverbarhet.</p>
+                <p>Detta innebär att funktionen inte kan vara deriverbar i $x = 1$ för något värde på $a$ som gör den kontinuerlig.</p>
+
+                <p class="answer"><strong>Svar:</strong> Det finns inget värde på $a$ som gör funktionen både kontinuerlig och deriverbar i $x = 1$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.1 -->
+        <section id="kap3-01" class="content-section">
+            <h2>Kapitel 3.1: Derivatan av enkla potensfunktioner</h2>
+
+            <div class="info-box">
+                <p>För att slippa använda oss av derivatans definition när derivatan ska beräknas söker vi enkla deriveringsregler.</p>
+            </div>
+
+            <div class="formula-box reminder">
+                <h3>Kom ihåg: Derivatans definition</h3>
+                <p class="formula">$$f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$$</p>
+            </div>
+
+            <h3>Härledning av deriveringsregler</h3>
+
+            <div class="derivation-box">
+                <h4>Derivatan för $f(x) = x$</h4>
+                <p>$$f'(x) = \lim_{h \to 0} \frac{(x + h) - x}{h} = \lim_{h \to 0} \frac{h}{h} = \lim_{h \to 0} 1 = 1$$</p>
+                <p>Så $f(x) = x$ har derivatan $f'(x) = 1$</p>
+            </div>
+
+            <div class="derivation-box">
+                <h4>Derivatan för $f(x) = x^2$</h4>
+                <p>$$f'(x) = \lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}$$</p>
+                <p>$$= \lim_{h \to 0} \frac{2xh + h^2}{h} = \lim_{h \to 0} \frac{h(2x + h)}{h} = \lim_{h \to 0} (2x + h) = 2x$$</p>
+                <p>Så $f(x) = x^2$ har derivatan $f'(x) = 2x$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap3/kap3-01-potensfunktioner.svg" alt="Jämförelse av potensfunktioner och deras derivator. Vänster: f(x)=x² (parabel) och f'(x)=2x (rät linje). Höger: f(x)=x³ (kubisk) och f'(x)=3x² (parabel). Visar att derivatan har en grad lägre." width="600" height="400">
+                <p class="caption">Potensfunktioner och deras derivator: Derivatan har alltid en grad lägre</p>
+            </div>
+
+            <div class="pattern-box">
+                <h4>Mönster för derivatan</h4>
+                <table class="pattern-table">
+                    <tr>
+                        <th>$f(x)$</th>
+                        <td>$x$</td>
+                        <td>$x^2$</td>
+                        <td>$x^3$</td>
+                        <td>$x^4$</td>
+                        <td>$x^5$</td>
+                    </tr>
+                    <tr>
+                        <th>$f'(x)$</th>
+                        <td>$1$</td>
+                        <td>$2x$</td>
+                        <td>$3x^2$</td>
+                        <td>$4x^3$</td>
+                        <td>$5x^4$</td>
+                    </tr>
+                </table>
+                <p>Vi ser att derivatan följer ett mönster: När vi deriverar en potensfunktion <strong>"multipliceras exponenten ned och minskar sedan med 1"</strong>.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av $f(x) = x^n$</h3>
+                <p class="formula">$$f(x) = x^n \quad \Rightarrow \quad f'(x) = nx^{n-1}$$</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av $f(x) = kx^n$</h3>
+                <p class="formula">$$f(x) = kx^n \quad \Rightarrow \quad f'(x) = nkx^{n-1}$$</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av $f(x) = kx$</h3>
+                <p class="formula">$$f(x) = kx \quad \Rightarrow \quad f'(x) = k$$</p>
+                <p>En följd av regeln är att när x-termer (av grad 1) deriveras, så "försvinner" x:et.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av $f(x) = \frac{g(x)}{a}$</h3>
+                <p class="formula">$$f(x) = \frac{g(x)}{a} \quad \Rightarrow \quad f'(x) = \frac{g'(x)}{a}$$</p>
+                <p>När vi deriverar funktioner med konstanter i nämnaren, deriveras täljaren medan nämnaren behålls.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av $f(x) = a$ (konstant)</h3>
+                <p class="formula">$$f(x) = a \quad \Rightarrow \quad f'(x) = 0$$</p>
+                <p>Derivatan av en konstant funktion är 0 (lutningen är 0 för alla konstanta funktioner).</p>
+            </div>
+
+            <div class="summary-box">
+                <h3>Sammanfattning - Deriveringsregler</h3>
+                <table class="rules-table">
+                    <tr>
+                        <td>$f(x) = x^n$</td>
+                        <td>$\Rightarrow$</td>
+                        <td>$f'(x) = nx^{n-1}$</td>
+                    </tr>
+                    <tr>
+                        <td>$f(x) = kx^n$</td>
+                        <td>$\Rightarrow$</td>
+                        <td>$f'(x) = nkx^{n-1}$</td>
+                    </tr>
+                    <tr>
+                        <td>$f(x) = a$ (konstant)</td>
+                        <td>$\Rightarrow$</td>
+                        <td>$f'(x) = 0$</td>
+                    </tr>
+                    <tr>
+                        <td>$f(x) = kx$</td>
+                        <td>$\Rightarrow$</td>
+                        <td>$f'(x) = k$</td>
+                    </tr>
+                    <tr>
+                        <td>$f(x) = \frac{g(x)}{a}$</td>
+                        <td>$\Rightarrow$</td>
+                        <td>$f'(x) = \frac{g'(x)}{a}$</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="method-box">
+                <h3>Derivera och bestämma derivatans värde</h3>
+                <p>Utifrån en funktion $f(x)$ bestämma derivatans värde i en bestämd punkt $f'(a)$:</p>
+                <ol>
+                    <li>Bestäm $f'(x)$ med deriveringsregler.</li>
+                    <li>Sätt sedan in $x = a$ i derivatafunktionen och bestäm $f'(a)$.</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Derivera</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = x^7$</p>
+                <p>Vi multiplicerar ner exponenten 7 och minskar den sedan med 1:</p>
+                <p>$$f'(x) = 7x^6$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 7x^6$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $y = 3x^5$</p>
+                <p>Vi multiplicerar ner exponenten 5 och minskar den sedan med 1:</p>
+                <p>$$y' = 5 \cdot 3x^4 = 15x^4$$</p>
+                <p class="answer"><strong>Svar:</strong> $y' = 15x^4$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>c)</strong> $f(x) = 27$</p>
+                <p>Derivatan till konstanta funktioner är 0:</p>
+                <p>$$f'(x) = 0$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 0$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>d)</strong> $g(x) = 12x$</p>
+                <p>När vi deriverar x-termer "försvinner" x:et:</p>
+                <p>$$g'(x) = 12$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = 12$</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>e)</strong> $f(x) = \frac{x^4}{5}$</p>
+                <p>Vi deriverar täljaren och behåller nämnaren:</p>
+                <p>$$f'(x) = \frac{4x^3}{5}$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = \frac{4x^3}{5}$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm $f'(3)$ för $f(x) = 4x^2$</h3>
+            <div class="example-box">
+                <p>Vi bestämmer först $f'(x)$ med deriveringsreglerna och sedan sätter vi in $x = 3$:</p>
+                <p>$$f'(x) = 8x$$</p>
+                <p>$$f'(3) = 8 \cdot 3 = 24$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(3) = 24$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.2 -->
+        <section id="kap3-02" class="content-section">
+            <h2>Kapitel 3.2: Derivatan av polynomfunktioner</h2>
+
+            <div class="info-box">
+                <p>Ett polynom består av flera termer som är potensfunktioner. För att derivera ett polynom deriverar vi varje term för sig.</p>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap3/kap3-02-produktregeln.png" alt="Illustration av produktregeln för derivering">
+                <p class="figure-caption">Figur 3.2: Produktregeln - geometrisk tolkning</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Summa- och differensregel för derivering</h3>
+                <p>Om $f(x) = g(x) + h(x)$ eller $f(x) = g(x) - h(x)$, så är:</p>
+                <p class="formula">$$f'(x) = g'(x) + h'(x) \quad \text{resp.} \quad f'(x) = g'(x) - h'(x)$$</p>
+                <p>Med andra ord: <strong>derivatan av en summa är summan av derivatorna</strong>.</p>
+            </div>
+
+            <h3>Exempel 1: Derivera polynomfunktioner</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = x^3 + 2x^2 - 5x + 7$</p>
+                <p>Vi deriverar varje term för sig:</p>
+                <p>$$f'(x) = 3x^2 + 4x - 5 + 0 = 3x^2 + 4x - 5$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 3x^2 + 4x - 5$</p>
+
+                <p><strong>b)</strong> $y = 5x^4 - 3x^3 + 2x - 8$</p>
+                <p>$$y' = 20x^3 - 9x^2 + 2$$</p>
+                <p class="answer"><strong>Svar:</strong> $y' = 20x^3 - 9x^2 + 2$</p>
+
+                <p><strong>c)</strong> $g(x) = -x^5 + 6x^2 - 11$</p>
+                <p>$$g'(x) = -5x^4 + 12x$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = -5x^4 + 12x$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm derivatans värde</h3>
+            <div class="example-box">
+                <p>För funktionen $f(x) = x^3 - 6x^2 + 9x + 1$, bestäm $f'(2)$.</p>
+                <p>Vi deriverar först:</p>
+                <p>$$f'(x) = 3x^2 - 12x + 9$$</p>
+                <p>Sedan sätter vi in $x = 2$:</p>
+                <p>$$f'(2) = 3 \cdot 2^2 - 12 \cdot 2 + 9 = 12 - 24 + 9 = -3$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(2) = -3$</p>
+            </div>
+
+            <h3>Exempel 3: Tangentens ekvation till polynom</h3>
+            <div class="example-box">
+                <p>Bestäm ekvationen för tangenten till kurvan $f(x) = x^3 - 3x + 1$ i punkten där $x = 2$.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm punkten</p>
+                <p>$$f(2) = 2^3 - 3 \cdot 2 + 1 = 8 - 6 + 1 = 3$$</p>
+                <p>Punkten är $(2, 3)$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm lutningen</p>
+                <p>$$f'(x) = 3x^2 - 3$$</p>
+                <p>$$f'(2) = 3 \cdot 4 - 3 = 9$$</p>
+
+                <p><strong>Steg 3:</strong> Tangentens ekvation</p>
+                <p>$$y - 3 = 9(x - 2)$$</p>
+                <p>$$y = 9x - 18 + 3 = 9x - 15$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $y = 9x - 15$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.3 -->
+        <section id="kap3-03" class="content-section">
+            <h2>Kapitel 3.3: Mer om derivatan av potensfunktioner</h2>
+
+            <div class="info-box">
+                <p>Deriveringsregeln $f(x) = x^n \Rightarrow f'(x) = nx^{n-1}$ gäller även för negativa och rationella exponenter!</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Deriveringsregeln för alla exponenter</h3>
+                <p class="formula">$$f(x) = x^n \quad \Rightarrow \quad f'(x) = nx^{n-1}$$</p>
+                <p>där $n$ kan vara:</p>
+                <ul>
+                    <li>Positiva heltal: $x^2, x^5, x^{10}$</li>
+                    <li>Negativa heltal: $x^{-1}, x^{-3}$</li>
+                    <li>Rationella tal: $x^{1/2}, x^{2/3}, x^{-3/4}$</li>
+                </ul>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap3/kap3-03-potensfunktioner.png" alt="Illustration av derivering av olika potensfunktioner">
+                <p class="figure-caption">Figur 3.3: Potensfunktioner med olika exponenter</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Omskrivning inför derivering</h3>
+                <p>Innan vi deriverar kan det vara praktiskt att skriva om uttrycket:</p>
+                <ul>
+                    <li>$\frac{1}{x^n} = x^{-n}$</li>
+                    <li>$\sqrt{x} = x^{1/2}$</li>
+                    <li>$\sqrt[n]{x} = x^{1/n}$</li>
+                    <li>$\sqrt[n]{x^m} = x^{m/n}$</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Derivera med negativa exponenter</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = \frac{1}{x^3}$</p>
+                <p>Skriver om: $f(x) = x^{-3}$</p>
+                <p>$$f'(x) = -3x^{-4} = -\frac{3}{x^4}$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = -\frac{3}{x^4}$</p>
+
+                <p><strong>b)</strong> $g(x) = \frac{5}{x^2}$</p>
+                <p>Skriver om: $g(x) = 5x^{-2}$</p>
+                <p>$$g'(x) = 5 \cdot (-2)x^{-3} = -10x^{-3} = -\frac{10}{x^3}$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = -\frac{10}{x^3}$</p>
+            </div>
+
+            <h3>Exempel 2: Derivera med rottecken</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = \sqrt{x}$</p>
+                <p>Skriver om: $f(x) = x^{1/2}$</p>
+                <p>$$f'(x) = \frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = \frac{1}{2\sqrt{x}}$</p>
+
+                <p><strong>b)</strong> $h(x) = 3\sqrt[3]{x}$</p>
+                <p>Skriver om: $h(x) = 3x^{1/3}$</p>
+                <p>$$h'(x) = 3 \cdot \frac{1}{3}x^{-2/3} = x^{-2/3} = \frac{1}{\sqrt[3]{x^2}}$$</p>
+                <p class="answer"><strong>Svar:</strong> $h'(x) = \frac{1}{\sqrt[3]{x^2}}$</p>
+
+                <p><strong>c)</strong> $y = \sqrt{x^3} = x^{3/2}$</p>
+                <p>$$y' = \frac{3}{2}x^{1/2} = \frac{3\sqrt{x}}{2}$$</p>
+                <p class="answer"><strong>Svar:</strong> $y' = \frac{3\sqrt{x}}{2}$</p>
+            </div>
+
+            <h3>Exempel 3: Blandade uttryck</h3>
+            <div class="example-box">
+                <p>$f(x) = 2x^3 - \frac{4}{x} + 3\sqrt{x} - 5$</p>
+                <p>Skriver om: $f(x) = 2x^3 - 4x^{-1} + 3x^{1/2} - 5$</p>
+                <p>Deriverar:</p>
+                <p>$$f'(x) = 6x^2 - 4(-1)x^{-2} + 3 \cdot \frac{1}{2}x^{-1/2} - 0$$</p>
+                <p>$$= 6x^2 + 4x^{-2} + \frac{3}{2}x^{-1/2}$$</p>
+                <p>$$= 6x^2 + \frac{4}{x^2} + \frac{3}{2\sqrt{x}}$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 6x^2 + \frac{4}{x^2} + \frac{3}{2\sqrt{x}}$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.4 -->
+        <section id="kap3-04" class="content-section">
+            <h2>Kapitel 3.4: Derivatan av e^x</h2>
+
+            <div class="definition-box">
+                <h3>Talet e</h3>
+                <p>Talet $e$ (Eulers tal) är en matematisk konstant med värdet $e \approx 2{,}71828...$</p>
+                <p>Talet $e$ är basen för den naturliga logaritmen och har många viktiga egenskaper i matematik.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av e^x</h3>
+                <p>Funktionen $f(x) = e^x$ har den unika egenskapen att den är sin egen derivata:</p>
+                <p class="formula">$$f(x) = e^x \quad \Rightarrow \quad f'(x) = e^x$$</p>
+                <p>Detta betyder att lutningen på kurvan $y = e^x$ i punkten $(x, e^x)$ är just $e^x$.</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap3/kap3-04-e-upphojt-x.svg" alt="Graf som visar att e^x och dess derivata är identiska. Funktionen och dess derivata överlappar helt, vilket visar den unika egenskapen att f(x) = f'(x) = e^x" width="500" height="400">
+                <p class="caption">Den fantastiska egenskapen hos e^x: Funktionen är sin egen derivata!</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Varför är e^x speciell?</h3>
+                <p>Funktionen $e^x$ är den enda exponentialfunktionen vars derivata är lika med sig själv. Detta gör den extremt användbar inom matematik, fysik och ekonomi.</p>
+                <p>Exempel på tillämpningar:</p>
+                <ul>
+                    <li>Exponentiell tillväxt och avtagande (t.ex. befolkningstillväxt)</li>
+                    <li>Radioaktivt sönderfall</li>
+                    <li>Ränta-på-ränta beräkningar</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Derivera funktioner med e^x</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = 3e^x$</p>
+                <p>$$f'(x) = 3e^x$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 3e^x$</p>
+
+                <p><strong>b)</strong> $g(x) = e^x + x^2$</p>
+                <p>$$g'(x) = e^x + 2x$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = e^x + 2x$</p>
+
+                <p><strong>c)</strong> $h(x) = 5e^x - 2x^3 + 7$</p>
+                <p>$$h'(x) = 5e^x - 6x^2$$</p>
+                <p class="answer"><strong>Svar:</strong> $h'(x) = 5e^x - 6x^2$</p>
+            </div>
+
+            <h3>Exempel 2: Tangent till e^x</h3>
+            <div class="example-box">
+                <p>Bestäm tangentens ekvation till kurvan $f(x) = e^x$ i punkten där $x = 0$.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm punkten</p>
+                <p>$$f(0) = e^0 = 1$$</p>
+                <p>Punkten är $(0, 1)$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm lutningen</p>
+                <p>$$f'(x) = e^x$$</p>
+                <p>$$f'(0) = e^0 = 1$$</p>
+
+                <p><strong>Steg 3:</strong> Tangentens ekvation</p>
+                <p>$$y - 1 = 1(x - 0)$$</p>
+                <p>$$y = x + 1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $y = x + 1$</p>
+            </div>
+
+            <h3>Exempel 3: Bestäm derivatans värde</h3>
+            <div class="example-box">
+                <p>För funktionen $f(x) = 2e^x + x^3 - 5x$, bestäm $f'(1)$.</p>
+                <p>$$f'(x) = 2e^x + 3x^2 - 5$$</p>
+                <p>$$f'(1) = 2e^1 + 3 \cdot 1^2 - 5 = 2e + 3 - 5 = 2e - 2$$</p>
+                <p>$$\approx 2 \cdot 2{,}718 - 2 = 5{,}436 - 2 = 3{,}436$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(1) = 2e - 2 \approx 3{,}44$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.5 -->
+        <section id="kap3-05" class="content-section">
+            <h2>Kapitel 3.5: Derivatan av e^(kx) och a^x</h2>
+
+            <div class="math-figure">
+                <img src="images/kap3/kap3-05-kedjeregeln.png" alt="Illustration av kedjeregeln för sammansatta funktioner">
+                <p class="figure-caption">Figur 3.5: Kedjeregeln - derivering av sammansatta funktioner</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av e^(kx)</h3>
+                <p>Om exponenten innehåller en konstant $k$, så gäller:</p>
+                <p class="formula">$$f(x) = e^{kx} \quad \Rightarrow \quad f'(x) = k \cdot e^{kx}$$</p>
+                <p>Exponenten "multipliceras fram" när vi deriverar.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan av a^x</h3>
+                <p>För en exponentialfunktion med basen $a$ gäller:</p>
+                <p class="formula">$$f(x) = a^x \quad \Rightarrow \quad f'(x) = a^x \cdot \ln a$$</p>
+                <p>där $\ln a$ är den naturliga logaritmen av $a$.</p>
+            </div>
+
+            <h3>Exempel 1: Derivera e^(kx)</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = e^{2x}$</p>
+                <p>$$f'(x) = 2e^{2x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 2e^{2x}$</p>
+
+                <p><strong>b)</strong> $g(x) = 5e^{-3x}$</p>
+                <p>$$g'(x) = 5 \cdot (-3)e^{-3x} = -15e^{-3x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = -15e^{-3x}$</p>
+
+                <p><strong>c)</strong> $h(x) = e^{0{,}5x} + 2x$</p>
+                <p>$$h'(x) = 0{,}5e^{0{,}5x} + 2$$</p>
+                <p class="answer"><strong>Svar:</strong> $h'(x) = 0{,}5e^{0{,}5x} + 2$</p>
+            </div>
+
+            <h3>Exempel 2: Derivera a^x</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = 2^x$</p>
+                <p>$$f'(x) = 2^x \cdot \ln 2 \approx 2^x \cdot 0{,}693$$</p>
+                <p class="answer"><strong>Svar:</strong> $f'(x) = 2^x \ln 2$</p>
+
+                <p><strong>b)</strong> $g(x) = 10^x$</p>
+                <p>$$g'(x) = 10^x \cdot \ln 10 \approx 10^x \cdot 2{,}303$$</p>
+                <p class="answer"><strong>Svar:</strong> $g'(x) = 10^x \ln 10$</p>
+
+                <p><strong>c)</strong> $h(x) = 3 \cdot 5^x - x^2$</p>
+                <p>$$h'(x) = 3 \cdot 5^x \cdot \ln 5 - 2x$$</p>
+                <p class="answer"><strong>Svar:</strong> $h'(x) = 3 \cdot 5^x \ln 5 - 2x$</p>
+            </div>
+
+            <h3>Exempel 3: Exponentiell tillväxt</h3>
+            <div class="example-box">
+                <p>En bakteriekultur växer enligt funktionen $N(t) = 100e^{0{,}3t}$ där $N$ är antalet bakterier och $t$ är tiden i timmar.</p>
+
+                <p><strong>a)</strong> Hur många bakterier finns det från början?</p>
+                <p>$$N(0) = 100e^0 = 100$$</p>
+                <p class="answer"><strong>Svar a):</strong> 100 bakterier</p>
+
+                <p><strong>b)</strong> Hur snabbt växer kulturen efter 2 timmar?</p>
+                <p>Tillväxthastigheten är $N'(t)$:</p>
+                <p>$$N'(t) = 100 \cdot 0{,}3 \cdot e^{0{,}3t} = 30e^{0{,}3t}$$</p>
+                <p>$$N'(2) = 30e^{0{,}6} \approx 30 \cdot 1{,}822 = 54{,}66$$</p>
+                <p class="answer"><strong>Svar b):</strong> Cirka 55 bakterier per timme</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.6 -->
+        <section id="kap3-06" class="content-section">
+            <h2>Kapitel 3.6: Tillämpningar av derivata</h2>
+
+            <div class="info-box">
+                <h3>Derivatan i verkligheten</h3>
+                <p>Derivatan används för att beskriva <strong>förändringshastigheter</strong> i många olika sammanhang:</p>
+                <ul>
+                    <li><strong>Fysik:</strong> Hastighet (derivatan av sträcka), acceleration (derivatan av hastighet)</li>
+                    <li><strong>Ekonomi:</strong> Marginalkostnad, marginalvinst, tillväxttakt</li>
+                    <li><strong>Biologi:</strong> Befolkningstillväxt, enzymkinetik</li>
+                    <li><strong>Kemi:</strong> Reaktionshastighet</li>
+                </ul>
+            </div>
+
+            <div class="math-figure">
+                <img src="images/kap3/kap3-06-tillampningar-derivata.png" alt="Tillämpningar av derivata - hastighet och acceleration">
+                <p class="figure-caption">Figur 3.6: Tillämpning - derivatan i rörelseanalys</p>
+            </div>
+
+            <h3>Exempel 1: Rörelse - Sträcka, hastighet och acceleration</h3>
+            <div class="example-box">
+                <p>En bil rör sig längs en väg. Dess position efter $t$ sekunder ges av $s(t) = 2t^3 - 15t^2 + 36t$ (sträcka i meter).</p>
+
+                <p><strong>a)</strong> Bestäm bilens hastighet efter 3 sekunder.</p>
+                <p>Hastigheten är derivatan av sträckan: $v(t) = s'(t)$</p>
+                <p>$$v(t) = 6t^2 - 30t + 36$$</p>
+                <p>$$v(3) = 6 \cdot 9 - 30 \cdot 3 + 36 = 54 - 90 + 36 = 0$$</p>
+                <p class="answer"><strong>Svar a):</strong> 0 m/s (bilen står still)</p>
+
+                <p><strong>b)</strong> Bestäm bilens acceleration efter 3 sekunder.</p>
+                <p>Accelerationen är derivatan av hastigheten: $a(t) = v'(t) = s''(t)$</p>
+                <p>$$a(t) = 12t - 30$$</p>
+                <p>$$a(3) = 36 - 30 = 6$$</p>
+                <p class="answer"><strong>Svar b):</strong> 6 m/s²</p>
+
+                <p><strong>c)</strong> När vänder bilen?</p>
+                <p>Bilen vänder när hastigheten byter tecken, dvs. när $v(t) = 0$:</p>
+                <p>$$6t^2 - 30t + 36 = 0$$</p>
+                <p>$$t^2 - 5t + 6 = 0$$</p>
+                <p>$$(t - 2)(t - 3) = 0$$</p>
+                <p>$t = 2$ eller $t = 3$</p>
+                <p class="answer"><strong>Svar c):</strong> Efter 2 och 3 sekunder</p>
+            </div>
+
+            <h3>Exempel 2: Ekonomi - Marginalkostnad</h3>
+            <div class="example-box">
+                <p>Ett företag tillverkar produkter. Kostnaden för att tillverka $x$ produkter ges av $C(x) = 0{,}1x^2 + 50x + 1000$ (kostnad i kr).</p>
+
+                <p><strong>a)</strong> Vad är marginalkostnaden (kostnaden för att tillverka en extra produkt) när $x = 100$?</p>
+                <p>Marginalkostnaden är $C'(x)$:</p>
+                <p>$$C'(x) = 0{,}2x + 50$$</p>
+                <p>$$C'(100) = 0{,}2 \cdot 100 + 50 = 70$$</p>
+                <p class="answer"><strong>Svar a):</strong> 70 kr</p>
+
+                <p><strong>b)</strong> För vilket antal produkter är marginalkostnaden 90 kr?</p>
+                <p>$$C'(x) = 90$$</p>
+                <p>$$0{,}2x + 50 = 90$$</p>
+                <p>$$0{,}2x = 40$$</p>
+                <p>$$x = 200$$</p>
+                <p class="answer"><strong>Svar b):</strong> 200 produkter</p>
+            </div>
+
+            <h3>Exempel 3: Biologi - Bakterietillväxt</h3>
+            <div class="example-box">
+                <p>En bakteriepopulation växer enligt $P(t) = 500e^{0{,}2t}$ där $t$ är tiden i timmar.</p>
+
+                <p><strong>a)</strong> Hur stor är populationen efter 5 timmar?</p>
+                <p>$$P(5) = 500e^{1} = 500e \approx 1359$$</p>
+                <p class="answer"><strong>Svar a):</strong> Cirka 1359 bakterier</p>
+
+                <p><strong>b)</strong> Hur snabbt växer populationen efter 5 timmar?</p>
+                <p>$$P'(t) = 500 \cdot 0{,}2 \cdot e^{0{,}2t} = 100e^{0{,}2t}$$</p>
+                <p>$$P'(5) = 100e^{1} = 100e \approx 272$$</p>
+                <p class="answer"><strong>Svar b):</strong> Cirka 272 bakterier per timme</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 3.7 -->
+        <section id="kap3-07" class="content-section">
+            <h2>Kapitel 3.7: Tillämpningar med digitala verktyg</h2>
+
+            <div class="info-box">
+                <p>Digitala verktyg som GeoGebra kan användas för att derivera funktioner, rita grafer och analysera funktioners beteende.</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Kommandon i GeoGebra för derivering</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Uppgift</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd; background: #f0f0f0;">Kommando</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Derivera en funktion</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Derivera( f(x) ) eller f'(x)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Andraderivatan</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Derivera( f'(x) ) eller f''(x)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Tangent i en punkt</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Tangent( punkt, funktion )</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Normal i en punkt</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Normal( punkt, funktion )</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Bestäm extrempunkt</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Extrempunkt( funktion )</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Derivera med GeoGebra</h3>
+            <div class="example-box">
+                <p>Derivera funktionen $f(x) = x^3 - 6x^2 + 9x + 1$ med GeoGebra.</p>
+                <p><strong>Steg 1:</strong> Definiera funktionen: <code>f(x) = x^3 - 6*x^2 + 9*x + 1</code></p>
+                <p><strong>Steg 2:</strong> Skriv <code>f'(x)</code> eller <code>Derivera(f)</code></p>
+                <p class="answer"><strong>Svar från GeoGebra:</strong> $f'(x) = 3x^2 - 12x + 9$</p>
+            </div>
+
+            <h3>Exempel 2: Rita tangent med GeoGebra</h3>
+            <div class="example-box">
+                <p>Rita tangenten till $f(x) = x^2$ i punkten där $x = 2$.</p>
+                <p><strong>Steg 1:</strong> Definiera funktionen: <code>f(x) = x^2</code></p>
+                <p><strong>Steg 2:</strong> Skapa punkten: <code>A = (2, f(2))</code></p>
+                <p><strong>Steg 3:</strong> Rita tangenten: <code>Tangent(A, f)</code></p>
+                <p>GeoGebra ritar nu tangenten med ekvationen $y = 4x - 4$</p>
+            </div>
+
+            <h3>Exempel 3: Undersök funktion och derivata grafiskt</h3>
+            <div class="example-box">
+                <p>För funktionen $f(x) = x^3 - 3x + 1$:</p>
+                <p><strong>a)</strong> Rita $f(x)$ och $f'(x)$ i samma koordinatsystem.</p>
+                <p>I GeoGebra:</p>
+                <ol>
+                    <li><code>f(x) = x^3 - 3*x + 1</code></li>
+                    <li><code>g(x) = f'(x)</code> (detta ger $g(x) = 3x^2 - 3$)</li>
+                </ol>
+
+                <p><strong>b)</strong> Observera: När $f'(x) = 0$ har $f(x)$ en extrempunkt!</p>
+                <p>Använd: <code>Lös(f'(x) = 0)</code> för att hitta $x = \pm 1$</p>
+                <p>Använd: <code>Extrempunkt(f)</code> för att se extrempunkterna grafiskt</p>
+            </div>
+
+            <div class="important-box">
+                <h3>Viktiga observationer</h3>
+                <ul>
+                    <li>När $f'(x) > 0$ växer funktionen $f(x)$</li>
+                    <li>När $f'(x) < 0$ avtar funktionen $f(x)$</li>
+                    <li>När $f'(x) = 0$ har funktionen $f(x)$ en horisontell tangent (potentiell extrempunkt)</li>
+                </ul>
+                <p>Detta kommer vi att studera mer i Kapitel 4!</p>
+            </div>
+        </section>
+
+<!-- KOPIERA DETTA INNEHÅLL OCH KLISTRA IN I index.html PRECIS FÖRE </main>-taggen -->
+
+        <!-- KAPITEL 4: DERIVATAN OCH FUNKTIONER -->
+
+        <!-- Kapitel 4.1 -->
+        <section id="kap4-01" class="content-section">
+            <h2>Kapitel 4.1: Växande och avtagande funktioner</h2>
+
+            <div class="definition-box">
+                <h3>Växande och avtagande funktioner</h3>
+                <p>En funktion $f$ är:</p>
+                <ul>
+                    <li><strong>Växande</strong> i ett intervall om $f(x_2) > f(x_1)$ när $x_2 > x_1$</li>
+                    <li><strong>Avtagande</strong> i ett intervall om $f(x_2) < f(x_1)$ när $x_2 > x_1$</li>
+                </ul>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Derivatan och monotonitet</h3>
+                <p>Sambandet mellan derivatan och funktionens förändring:</p>
+                <ul>
+                    <li>Om $f'(x) > 0$ i ett intervall, så är $f$ <strong>växande</strong> i intervallet</li>
+                    <li>Om $f'(x) < 0$ i ett intervall, så är $f$ <strong>avtagande</strong> i intervallet</li>
+                    <li>Om $f'(x) = 0$ i ett intervall, så är $f$ <strong>konstant</strong> i intervallet</li>
+                </ul>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap4/kap4-01-vaxande-avtagande.svg" alt="Graf av f(x)=x³-3x som visar växande och avtagande intervall färgkodade (grönt för växande där f'>0, rött för avtagande där f'<0). Extrempunkter vid x=-1 och x=1 markerade." width="500" height="400">
+                <p class="caption">Växande och avtagande funktioner: f'(x) bestämmer monotonitet</p>
+            </div>
+
+            <h3>Exempel 1: Bestäm när funktionen växer och avtar</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^2 - 4x + 3$, bestäm när funktionen växer och när den avtar.</p>
+
+                <p><strong>Steg 1:</strong> Derivera funktionen</p>
+                <p>$$f'(x) = 2x - 4$$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm när $f'(x) = 0$</p>
+                <p>$$2x - 4 = 0 \Rightarrow x = 2$$</p>
+
+                <p><strong>Steg 3:</strong> Undersök tecknet på $f'(x)$ i olika intervall</p>
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Intervall</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Testvärde</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$f'(x)$</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Växer/Avtar</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x < 2$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x = 0$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-4$ (negativ)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Avtagande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x > 2$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x = 3$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$2$ (positiv)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                </table>
+
+                <p class="answer"><strong>Svar:</strong> Funktionen avtar för $x < 2$ och växer för $x > 2$</p>
+            </div>
+
+            <h3>Exempel 2: Undersök monotonitet</h3>
+            <div class="example-box">
+                <p>Bestäm i vilka intervall $f(x) = x^3 - 3x$ växer respektive avtar.</p>
+
+                <p>$$f'(x) = 3x^2 - 3 = 3(x^2 - 1) = 3(x-1)(x+1)$$</p>
+                <p>$f'(x) = 0$ när $x = -1$ eller $x = 1$</p>
+
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Intervall</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">$f'(x)$</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Växer/Avtar</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x < -1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$+$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-1 < x < 1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$-$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Avtagande</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$x > 1$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">$+$</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Växande</td>
+                    </tr>
+                </table>
+
+                <p class="answer"><strong>Svar:</strong> Växande för $x < -1$ och $x > 1$; Avtagande för $-1 < x < 1$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.2 -->
+        <section id="kap4-02" class="content-section">
+            <h2>Kapitel 4.2: Derivatans nollställen</h2>
+
+            <div class="math-figure">
+                <img src="images/kap4/kap4-02-derivata-nollstallen.png" alt="Illustration av derivatans nollställen och stationära punkter">
+                <p class="figure-caption">Figur 4.2: Stationära punkter där derivatan är noll</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Stationär punkt</h3>
+                <p>En punkt där $f'(x) = 0$ kallas en <strong>stationär punkt</strong> eller <strong>kritisk punkt</strong>.</p>
+                <p>I en stationär punkt har funktionen en horisontell tangent.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Typer av stationära punkter</h3>
+                <p>En stationär punkt kan vara:</p>
+                <ul>
+                    <li><strong>Lokalt maximum</strong> - funktionen har ett "berg"</li>
+                    <li><strong>Lokalt minimum</strong> - funktionen har en "dal"</li>
+                    <li><strong>Terrasspunkt</strong> - funktionen fortsätter åt samma håll</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm stationära punkter</h3>
+            <div class="example-box">
+                <p>Bestäm de stationära punkterna för $f(x) = x^3 - 6x^2 + 9x + 1$.</p>
+
+                <p><strong>Steg 1:</strong> Derivera</p>
+                <p>$$f'(x) = 3x^2 - 12x + 9$$</p>
+
+                <p><strong>Steg 2:</strong> Lös $f'(x) = 0$</p>
+                <p>$$3x^2 - 12x + 9 = 0$$</p>
+                <p>$$x^2 - 4x + 3 = 0$$</p>
+                <p>$$(x-1)(x-3) = 0$$</p>
+                <p>$x = 1$ eller $x = 3$</p>
+
+                <p><strong>Steg 3:</strong> Bestäm y-koordinaterna</p>
+                <p>$$f(1) = 1 - 6 + 9 + 1 = 5$$</p>
+                <p>$$f(3) = 27 - 54 + 27 + 1 = 1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Stationära punkter: $(1, 5)$ och $(3, 1)$</p>
+            </div>
+
+            <h3>Exempel 2: Klassificera stationära punkter</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^3 - 3x + 1$, bestäm och klassificera de stationära punkterna.</p>
+
+                <p>$$f'(x) = 3x^2 - 3 = 0 \Rightarrow x^2 = 1 \Rightarrow x = \pm 1$$</p>
+
+                <p>Testar tecknet på $f'(x)$ runt de stationära punkterna:</p>
+                <ul>
+                    <li>För $x = -1$: $f'$ byter från $+$ till $-$ → <strong>Lokalt maximum</strong></li>
+                    <li>För $x = 1$: $f'$ byter från $-$ till $+$ → <strong>Lokalt minimum</strong></li>
+                </ul>
+
+                <p>$$f(-1) = -1 + 3 + 1 = 3$$</p>
+                <p>$$f(1) = 1 - 3 + 1 = -1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Lokalt maximum i $(-1, 3)$ och lokalt minimum i $(1, -1)$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.3 -->
+        <section id="kap4-03" class="content-section">
+            <h2>Kapitel 4.3: Största och minsta värde</h2>
+
+            <div class="graph-container">
+                <img src="images/kap4/kap4-03-extrempunkter.svg" alt="Graf av f(x) = x² - 4x + 3 som visar minimumpunkt vid x=2, där f'(x) = 0 och tangenten är horisontell. Intervall där funktionen växer och avtar är färgkodade." width="500" height="400">
+                <p class="caption">Extrempunkt: Minimumpunkt där derivatan är noll och tangenten horisontell</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Hitta största och minsta värde på ett slutet intervall</h3>
+                <ol>
+                    <li>Hitta alla stationära punkter (där $f'(x) = 0$) i intervallet</li>
+                    <li>Beräkna funktionsvärdet i de stationära punkterna</li>
+                    <li>Beräkna funktionsvärdet i intervallets ändpunkter</li>
+                    <li>Det största värdet är det globala max, det minsta är det globala min</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Största och minsta värde på intervall</h3>
+            <div class="example-box">
+                <p>Bestäm största och minsta värdet för $f(x) = x^3 - 3x + 2$ på intervallet $[-2, 2]$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta stationära punkter</p>
+                <p>$$f'(x) = 3x^2 - 3 = 0 \Rightarrow x = \pm 1$$</p>
+                <p>Båda ligger i intervallet $[-2, 2]$</p>
+
+                <p><strong>Steg 2-3:</strong> Beräkna funktionsvärden</p>
+                <ul>
+                    <li>$f(-2) = -8 + 6 + 2 = 0$</li>
+                    <li>$f(-1) = -1 + 3 + 2 = 4$</li>
+                    <li>$f(1) = 1 - 3 + 2 = 0$</li>
+                    <li>$f(2) = 8 - 6 + 2 = 4$</li>
+                </ul>
+
+                <p class="answer"><strong>Svar:</strong> Största värdet är 4 (vid $x = -1$ och $x = 2$), minsta värdet är 0 (vid $x = -2$ och $x = 1$)</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.4 -->
+        <section id="kap4-04" class="content-section">
+            <h2>Kapitel 4.4: Andraderivatan och funktioner</h2>
+
+            <div class="definition-box">
+                <h3>Andraderivatan</h3>
+                <p><strong>Andraderivatan</strong> $f''(x)$ är derivatan av derivatan.</p>
+                <p>Om $f'(x)$ beskriver förändringshastigheten, så beskriver $f''(x)$ hur förändringshastigheten förändras.</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap4/kap4-04-konkavitet.svg" alt="Visualisering av konkavitet: Vänster sida visar konvex kurva (f'' > 0) där lutningen ökar, höger sida visar konkav kurva (f'' < 0) där lutningen minskar" width="550" height="400">
+                <p class="caption">Andraderivata och konkavitet: Konvex vs Konkav kurva</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Andraderivatan och kurvighet</h3>
+                <ul>
+                    <li>Om $f''(x) > 0$ är funktionen <strong>konvex</strong> (kupig nedåt, som en U)</li>
+                    <li>Om $f''(x) < 0$ är funktionen <strong>konkav</strong> (kupig uppåt, som ett ∩)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna andraderivatan</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $f(x) = x^4 - 2x^3 + 5x$</p>
+                <p>$$f'(x) = 4x^3 - 6x^2 + 5$$</p>
+                <p>$$f''(x) = 12x^2 - 12x$$</p>
+                <p class="answer"><strong>Svar:</strong> $f''(x) = 12x^2 - 12x$</p>
+
+                <p><strong>b)</strong> $g(x) = e^{2x}$</p>
+                <p>$$g'(x) = 2e^{2x}$$</p>
+                <p>$$g''(x) = 4e^{2x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $g''(x) = 4e^{2x}$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm kurvighet</h3>
+            <div class="example-box">
+                <p>För $f(x) = x^3 - 3x^2$, bestäm i vilka intervall funktionen är konvex resp. konkav.</p>
+
+                <p>$$f'(x) = 3x^2 - 6x$$</p>
+                <p>$$f''(x) = 6x - 6 = 6(x - 1)$$</p>
+
+                <p>$f''(x) = 0$ när $x = 1$</p>
+
+                <ul>
+                    <li>För $x < 1$: $f''(x) < 0$ → konkav</li>
+                    <li>För $x > 1$: $f''(x) > 0$ → konvex</li>
+                </ul>
+
+                <p class="answer"><strong>Svar:</strong> Konkav för $x < 1$, konvex för $x > 1$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.5 -->
+        <section id="kap4-05" class="content-section">
+            <h2>Kapitel 4.5: Andraderivatan och lokala extrempunkter</h2>
+
+            <div class="math-figure">
+                <img src="images/kap4/kap4-05-andraderivata.png" alt="Andraderivatan och extrempunkter">
+                <p class="figure-caption">Figur 4.5: Andraderivattestet för extrempunkter</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Andraderivattestet för extrempunkter</h3>
+                <p>Om $f'(a) = 0$ och:</p>
+                <ul>
+                    <li>$f''(a) > 0$, så har $f$ ett <strong>lokalt minimum</strong> i $x = a$</li>
+                    <li>$f''(a) < 0$, så har $f$ ett <strong>lokalt maximum</strong> i $x = a$</li>
+                    <li>$f''(a) = 0$, så ger testet ingen information</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Bestäm extrempunkter med andraderivatan</h3>
+            <div class="example-box">
+                <p>Bestäm och klassificera extrempunkterna för $f(x) = x^3 - 6x^2 + 9x + 1$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta stationära punkter</p>
+                <p>$$f'(x) = 3x^2 - 12x + 9 = 0$$</p>
+                <p>$$x = 1 \text{ eller } x = 3$$</p>
+
+                <p><strong>Steg 2:</strong> Beräkna andraderivatan</p>
+                <p>$$f''(x) = 6x - 12$$</p>
+
+                <p><strong>Steg 3:</strong> Använd andraderivattestet</p>
+                <ul>
+                    <li>$f''(1) = 6 - 12 = -6 < 0$ → Lokalt maximum vid $x = 1$</li>
+                    <li>$f''(3) = 18 - 12 = 6 > 0$ → Lokalt minimum vid $x = 3$</li>
+                </ul>
+
+                <p>$$f(1) = 1 - 6 + 9 + 1 = 5$$</p>
+                <p>$$f(3) = 27 - 54 + 27 + 1 = 1$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Lokalt maximum i $(1, 5)$, lokalt minimum i $(3, 1)$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.6 -->
+        <section id="kap4-06" class="content-section">
+            <h2>Kapitel 4.6: Extremvärdesproblem</h2>
+
+            <div class="math-figure">
+                <img src="images/kap4/kap4-06-extremvardesproblem.png" alt="Praktiskt extremvärdesproblem">
+                <p class="figure-caption">Figur 4.6: Extremvärdesproblem - optimering i praktiken</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Extremvärdesproblem i verkligheten</h3>
+                <p>Extremvärdesproblem handlar om att hitta det bästa (största eller minsta) värdet av en storhet, t.ex.:</p>
+                <ul>
+                    <li>Maximera vinst eller intäkt</li>
+                    <li>Minimera kostnad eller materialåtgång</li>
+                    <li>Maximera volym eller area</li>
+                </ul>
+            </div>
+
+            <div class="method-box">
+                <h3>Lös extremvärdesproblem</h3>
+                <ol>
+                    <li>Läs uppgiften noggrant och identifiera vad som ska maximeras/minimeras</li>
+                    <li>Rita en figur om möjligt</li>
+                    <li>Sätt upp en funktion för storheten som ska optimeras</li>
+                    <li>Om funktionen har flera variabler, använd bivillkor för att uttrycka funktionen i en variabel</li>
+                    <li>Derivera och hitta stationära punkter</li>
+                    <li>Kontrollera att det verkligen är ett maximum/minimum</li>
+                    <li>Svara på frågan</li>
+                </ol>
+            </div>
+
+            <h3>Exempel 1: Maximera area</h3>
+            <div class="example-box">
+                <p>Du har 40 meter stängsel och ska bygga en rektangulär hage med en sida mot en vägg. Vilka dimensioner ger största möjliga area?</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Låt $x$ = bredden och $y$ = längden (parallellt med väggen)</p>
+                <p>Stängsel behövs för tre sidor: $2x + y = 40$, alltså $y = 40 - 2x$</p>
+
+                <p>Area: $A(x) = x \cdot y = x(40 - 2x) = 40x - 2x^2$</p>
+
+                <p>$$A'(x) = 40 - 4x = 0 \Rightarrow x = 10$$</p>
+                <p>$$A''(x) = -4 < 0$$ → Maximum!</p>
+
+                <p>$y = 40 - 2 \cdot 10 = 20$</p>
+
+                <p class="answer"><strong>Svar:</strong> Bredden 10 m och längden 20 m ger maximal area 200 m²</p>
+            </div>
+
+            <h3>Exempel 2: Minimera kostnad</h3>
+            <div class="example-box">
+                <p>En låda utan lock ska ha volymen 500 cm³. Basen är kvadratisk. Vilket sidmått på basen ger minsta material?</p>
+
+                <p>Låt $x$ = sidlängd på basen, $h$ = höjden</p>
+                <p>Volym: $x^2 h = 500 \Rightarrow h = \frac{500}{x^2}$</p>
+
+                <p>Material (area): $A = x^2 + 4xh = x^2 + 4x \cdot \frac{500}{x^2} = x^2 + \frac{2000}{x}$</p>
+
+                <p>$$A'(x) = 2x - \frac{2000}{x^2} = 0$$</p>
+                <p>$$2x = \frac{2000}{x^2}$$</p>
+                <p>$$x^3 = 1000$$</p>
+                <p>$$x = 10$$</p>
+
+                <p>$h = \frac{500}{100} = 5$ cm</p>
+
+                <p class="answer"><strong>Svar:</strong> Bas 10×10 cm och höjd 5 cm</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 4.7 -->
+        <section id="kap4-07" class="content-section">
+            <h2>Kapitel 4.7: Extremvärdesproblem med digitala verktyg</h2>
+
+            <div class="info-box">
+                <p>GeoGebra kan användas för att:</p>
+                <ul>
+                    <li>Rita funktioner och deras derivator</li>
+                    <li>Hitta extrempunkter grafiskt</li>
+                    <li>Verifiera analytiska lösningar</li>
+                </ul>
+            </div>
+
+            <div class="method-box">
+                <h3>Användbara GeoGebra-kommandon</h3>
+                <ul>
+                    <li><code>Extrempunkt(f)</code> - Hittar alla extrempunkter</li>
+                    <li><code>Minimum(f, a, b)</code> - Minsta värde på intervall [a,b]</li>
+                    <li><code>Maximum(f, a, b)</code> - Största värde på intervall [a,b]</li>
+                    <li><code>Lös(f'(x) = 0)</code> - Hittar stationära punkter</li>
+                </ul>
+            </div>
+
+            <h3>Exempel: Optimering med GeoGebra</h3>
+            <div class="example-box">
+                <p>Optimera funktionen $A(x) = 40x - 2x^2$ (från hageexemplet).</p>
+
+                <p><strong>I GeoGebra:</strong></p>
+                <ol>
+                    <li><code>A(x) = 40*x - 2*x^2</code></li>
+                    <li><code>Extrempunkt(A)</code> → visar punkt $(10, 200)$</li>
+                    <li><code>A'(x)</code> → visar $40 - 4x$</li>
+                    <li><code>Lös(A'(x) = 0)</code> → visar $x = 10$</li>
+                </ol>
+
+                <p>Detta bekräftar vår analytiska lösning!</p>
+            </div>
+        </section>
+
+        <!-- KAPITEL 5: INTEGRALER -->
+
+        <!-- Kapitel 5.1 -->
+        <section id="kap5-01" class="content-section">
+            <h2>Kapitel 5.1: Primitiva funktioner</h2>
+
+            <div class="math-figure">
+                <img src="images/kap5/kap5-01-primitiv-funktion.png" alt="Illustration av primitiva funktioner">
+                <p class="figure-caption">Figur 5.1: Primitiv funktion - inversen till derivering</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Primitiv funktion</h3>
+                <p>En funktion $F(x)$ är en <strong>primitiv funktion</strong> till $f(x)$ om $F'(x) = f(x)$.</p>
+                <p>Primitiv funktion kallas också <strong>antiderivata</strong>.</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Obestämd integral</h3>
+                <p>Alla primitiva funktioner till $f(x)$ skrivs:</p>
+                <p class="formula">$$\int f(x) \, dx = F(x) + C$$</p>
+                <p>där $C$ är en godtycklig konstant (integrationskonstanten).</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Grundläggande integrationsregler</h3>
+                <table class="rules-table">
+                    <tr>
+                        <td>$\int x^n \, dx$</td>
+                        <td>$=$</td>
+                        <td>$\frac{x^{n+1}}{n+1} + C$ (för $n \neq -1$)</td>
+                    </tr>
+                    <tr>
+                        <td>$\int k \, dx$</td>
+                        <td>$=$</td>
+                        <td>$kx + C$</td>
+                    </tr>
+                    <tr>
+                        <td>$\int e^x \, dx$</td>
+                        <td>$=$</td>
+                        <td>$e^x + C$</td>
+                    </tr>
+                    <tr>
+                        <td>$\int e^{kx} \, dx$</td>
+                        <td>$=$</td>
+                        <td>$\frac{1}{k}e^{kx} + C$</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Bestäm primitiva funktioner</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\int x^5 \, dx$</p>
+                <p>$$= \frac{x^6}{6} + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{x^6}{6} + C$</p>
+
+                <p><strong>b)</strong> $\int (3x^2 - 4x + 5) \, dx$</p>
+                <p>$$= x^3 - 2x^2 + 5x + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $x^3 - 2x^2 + 5x + C$</p>
+
+                <p><strong>c)</strong> $\int e^{3x} \, dx$</p>
+                <p>$$= \frac{1}{3}e^{3x} + C$$</p>
+                <p class="answer"><strong>Svar:</strong> $\frac{1}{3}e^{3x} + C$</p>
+            </div>
+
+            <h3>Exempel 2: Kontrollera genom derivering</h3>
+            <div class="example-box">
+                <p>Kontrollera att $F(x) = x^3 - 2x$ är en primitiv funktion till $f(x) = 3x^2 - 2$.</p>
+                <p>$$F'(x) = 3x^2 - 2 = f(x)$$ ✓</p>
+                <p class="answer"><strong>Svar:</strong> Ja, det stämmer!</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.2 -->
+        <section id="kap5-02" class="content-section">
+            <h2>Kapitel 5.2: Primitiva funktioner med villkor</h2>
+
+            <div class="math-figure">
+                <img src="images/kap5/kap5-02-primitiva-villkor.png" alt="Primitiva funktioner med villkor">
+                <p class="figure-caption">Figur 5.2: Bestämning av integrationskonstanten C med villkor</p>
+            </div>
+
+            <div class="info-box">
+                <p>När vi vet funktionsvärdet i en viss punkt kan vi bestämma integrationskonstanten $C$.</p>
+            </div>
+
+            <h3>Exempel 1: Bestäm C med villkor</h3>
+            <div class="example-box">
+                <p>Bestäm den primitiva funktionen till $f(x) = 2x + 3$ som går genom punkten $(1, 7)$.</p>
+
+                <p><strong>Steg 1:</strong> Integrera</p>
+                <p>$$F(x) = \int (2x + 3) \, dx = x^2 + 3x + C$$</p>
+
+                <p><strong>Steg 2:</strong> Använd villkoret $F(1) = 7$</p>
+                <p>$$1^2 + 3 \cdot 1 + C = 7$$</p>
+                <p>$$1 + 3 + C = 7$$</p>
+                <p>$$C = 3$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $F(x) = x^2 + 3x + 3$</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm funktion från derivata</h3>
+            <div class="example-box">
+                <p>En funktion $f$ har derivatan $f'(x) = 6x - 4$ och $f(2) = 10$. Bestäm $f(x)$.</p>
+
+                <p>$$f(x) = \int (6x - 4) \, dx = 3x^2 - 4x + C$$</p>
+                <p>$$f(2) = 3 \cdot 4 - 8 + C = 10$$</p>
+                <p>$$12 - 8 + C = 10$$</p>
+                <p>$$C = 6$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $f(x) = 3x^2 - 4x + 6$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.3 -->
+        <section id="kap5-03" class="content-section">
+            <h2>Kapitel 5.3: Arean under en kurva</h2>
+
+            <div class="definition-box">
+                <h3>Bestämd integral</h3>
+                <p>Arean mellan kurvan $y = f(x)$, x-axeln och linjerna $x = a$ och $x = b$ ges av den <strong>bestämda integralen</strong>:</p>
+                <p class="formula">$$A = \int_a^b f(x) \, dx$$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap5/kap5-03-area-under-kurva.svg" alt="Bestämd integral visualiserad: Area under kurvan f(x) mellan gränserna x=a och x=b, färglagd i blått" width="450" height="350">
+                <p class="caption">Bestämd integral: Arean under kurvan mellan x = a och x = b</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap5/kap5-03-riemann-summa.svg" alt="Riemann-summa: Approximation av area under kurva med 8 rektanglar. Visar hur summan av rektanglarna approximerar den exakta arean" width="500" height="400">
+                <p class="caption">Riemann-summa: Area approximeras med rektanglar. När antalet ökar (Δx → 0) får vi exakt area.</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Analysens fundamentalsats</h3>
+                <p>Om $F(x)$ är en primitiv funktion till $f(x)$, så gäller:</p>
+                <p class="formula">$$\int_a^b f(x) \, dx = F(b) - F(a) = [F(x)]_a^b$$</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna bestämd integral</h3>
+            <div class="example-box">
+                <p>$\int_1^3 x^2 \, dx$</p>
+
+                <p><strong>Steg 1:</strong> Hitta primitiv funktion</p>
+                <p>$$F(x) = \frac{x^3}{3}$$</p>
+
+                <p><strong>Steg 2:</strong> Använd fundamentalsatsen</p>
+                <p>$$\int_1^3 x^2 \, dx = \left[\frac{x^3}{3}\right]_1^3 = \frac{27}{3} - \frac{1}{3} = 9 - \frac{1}{3} = \frac{26}{3}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{26}{3} \approx 8{,}67$ ae</p>
+            </div>
+
+            <h3>Exempel 2: Area under kurva</h3>
+            <div class="example-box">
+                <p>Beräkna arean under kurvan $y = x^2 + 1$ mellan $x = 0$ och $x = 2$.</p>
+
+                <p>$$A = \int_0^2 (x^2 + 1) \, dx = \left[\frac{x^3}{3} + x\right]_0^2$$</p>
+                <p>$$= \left(\frac{8}{3} + 2\right) - (0 + 0) = \frac{8}{3} + \frac{6}{3} = \frac{14}{3}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{14}{3} \approx 4{,}67$ ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.4 -->
+        <section id="kap5-04" class="content-section">
+            <h2>Kapitel 5.4: Integralkalkylens fundamentalsats</h2>
+
+            <div class="math-figure">
+                <img src="images/kap5/kap5-04-fundamentalsats.png" alt="Integralkalkylens fundamentalsats">
+                <p class="figure-caption">Figur 5.4: Fundamentalsatsen - kopplingen mellan derivering och integration</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Integralkalkylens fundamentalsats (detaljerad)</h3>
+                <p>Fundamentalsatsen kopplar samman derivering och integration:</p>
+                <p><strong>Del 1:</strong> Om $F(x) = \int_a^x f(t) \, dt$, så är $F'(x) = f(x)$</p>
+                <p><strong>Del 2:</strong> Om $F'(x) = f(x)$, så är $\int_a^b f(x) \, dx = F(b) - F(a)$</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Vad betyder detta?</h3>
+                <p>Fundamentalsatsen säger att:</p>
+                <ul>
+                    <li>Integration och derivering är <strong>motsatta operationer</strong></li>
+                    <li>För att beräkna en area (integral) behöver vi bara hitta en primitiv funktion och sätta in gränsvärdena</li>
+                </ul>
+            </div>
+
+            <h3>Exempel: Använd fundamentalsatsen</h3>
+            <div class="example-box">
+                <p>$\int_0^4 (3x^2 - 2x + 1) \, dx$</p>
+
+                <p>Primitiv funktion: $F(x) = x^3 - x^2 + x$</p>
+                <p>$$\int_0^4 (3x^2 - 2x + 1) \, dx = [x^3 - x^2 + x]_0^4$$</p>
+                <p>$$= (64 - 16 + 4) - (0) = 52$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 52 ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.5 -->
+        <section id="kap5-05" class="content-section">
+            <h2>Kapitel 5.5: Beräkna integraler digitalt</h2>
+
+            <div class="method-box">
+                <h3>GeoGebra-kommandon för integraler</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Kommando</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Beskrivning</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>Integral(f, a, b)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Beräknar bestämd integral</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>Integral(f)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Hittar primitiv funktion</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;"><code>IntegralMellan(f, g, a, b)</code></td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Area mellan två kurvor</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel: Beräkna med GeoGebra</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> Beräkna $\int_1^4 (x^2 + 2) \, dx$</p>
+                <p>I GeoGebra: <code>Integral(x^2 + 2, 1, 4)</code></p>
+                <p class="answer"><strong>Svar från GeoGebra:</strong> 27</p>
+
+                <p><strong>b)</strong> Hitta primitiv funktion till $f(x) = 3x^2 - 5x$</p>
+                <p>I GeoGebra: <code>Integral(3x^2 - 5x)</code></p>
+                <p class="answer"><strong>Svar från GeoGebra:</strong> $x^3 - 2{,}5x^2$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.6 -->
+        <section id="kap5-06" class="content-section">
+            <h2>Kapitel 5.6: Area mellan kurvor</h2>
+
+            <div class="formula-box">
+                <h3>Area mellan två kurvor</h3>
+                <p>Arean mellan $y = f(x)$ och $y = g(x)$ från $x = a$ till $x = b$ (där $f(x) \geq g(x)$):</p>
+                <p class="formula">$$A = \int_a^b [f(x) - g(x)] \, dx$$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap5/kap5-06-area-mellan-kurvor.svg" alt="Area mellan två kurvor f(x) och g(x) färglagd i orange. Visar gränser a och b, differensen f(x)-g(x), och formeln för beräkning. Övre kurva (blå) och nedre kurva (grön) tydligt markerade." width="500" height="400">
+                <p class="caption">Area mellan två kurvor: A = ∫ₐᵇ [f(x) - g(x)] dx</p>
+            </div>
+
+            <h3>Exempel 1: Area mellan två kurvor</h3>
+            <div class="example-box">
+                <p>Beräkna arean mellan kurvorna $y = x^2$ och $y = x$ från $x = 0$ till $x = 1$.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm vilken kurva som ligger högst</p>
+                <p>För $0 \leq x \leq 1$ gäller $x \geq x^2$ (testa t.ex. $x = 0{,}5$)</p>
+
+                <p><strong>Steg 2:</strong> Beräkna integralen</p>
+                <p>$$A = \int_0^1 (x - x^2) \, dx = \left[\frac{x^2}{2} - \frac{x^3}{3}\right]_0^1$$</p>
+                <p>$$= \frac{1}{2} - \frac{1}{3} = \frac{3-2}{6} = \frac{1}{6}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{1}{6}$ ae</p>
+            </div>
+
+            <h3>Exempel 2: Hitta skärningspunkter först</h3>
+            <div class="example-box">
+                <p>Beräkna arean mellan $f(x) = x^2 - 4$ och $g(x) = -x^2 + 2x + 4$.</p>
+
+                <p><strong>Steg 1:</strong> Hitta skärningspunkter</p>
+                <p>$$x^2 - 4 = -x^2 + 2x + 4$$</p>
+                <p>$$2x^2 - 2x - 8 = 0$$</p>
+                <p>$$x^2 - x - 4 = 0$$</p>
+                <p>$$x = -2 \text{ eller } x = 4$$</p>
+
+                <p><strong>Steg 2:</strong> Bestäm vilken kurva som ligger högst</p>
+                <p>$g(x) \geq f(x)$ mellan skärningspunkterna</p>
+
+                <p><strong>Steg 3:</strong> Beräkna arean</p>
+                <p>$$A = \int_{-2}^4 [(-x^2 + 2x + 4) - (x^2 - 4)] \, dx$$</p>
+                <p>$$= \int_{-2}^4 (-2x^2 + 2x + 8) \, dx = \left[-\frac{2x^3}{3} + x^2 + 8x\right]_{-2}^4$$</p>
+                <p>$$= \left(-\frac{128}{3} + 16 + 32\right) - \left(\frac{16}{3} + 4 - 16\right) = 36$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 36 ae</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 5.7 -->
+        <section id="kap5-07" class="content-section">
+            <h2>Kapitel 5.7: Tillämpningar av integraler</h2>
+
+            <div class="math-figure">
+                <img src="images/kap5/kap5-07-tillampningar-integral.png" alt="Tillämpningar av integraler">
+                <p class="figure-caption">Figur 5.7: Praktiska tillämpningar av integraler</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Integraler i verkligheten</h3>
+                <p>Integraler används för att beräkna:</p>
+                <ul>
+                    <li><strong>Sträcka</strong> från hastighet: $s = \int v(t) \, dt$</li>
+                    <li><strong>Totalt ackumulerad förändring</strong></li>
+                    <li><strong>Volym</strong> av rotationskroppar</li>
+                    <li><strong>Totalkostnad</strong> från marginalkostnad</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Sträcka från hastighet</h3>
+            <div class="example-box">
+                <p>En bil har hastigheten $v(t) = 20 + 2t$ m/s. Hur lång sträcka färdas bilen under de första 10 sekunderna?</p>
+
+                <p>$$s = \int_0^{10} (20 + 2t) \, dt = [20t + t^2]_0^{10}$$</p>
+                <p>$$= (200 + 100) - 0 = 300$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 300 meter</p>
+            </div>
+
+            <h3>Exempel 2: Totalkostnad från marginalkostnad</h3>
+            <div class="example-box">
+                <p>Ett företags marginalkostnad är $C'(x) = 0{,}3x + 20$ kr/enhet. Fasta kostnaden är 5000 kr. Vad är totalkostnaden för att producera 100 enheter?</p>
+
+                <p>Variabel kostnad: $\int_0^{100} (0{,}3x + 20) \, dx = [0{,}15x^2 + 20x]_0^{100}$</p>
+                <p>$= 1500 + 2000 = 3500$ kr</p>
+
+                <p>Totalkostnad = Fast kostnad + Variabel kostnad = 5000 + 3500 = 8500 kr</p>
+
+                <p class="answer"><strong>Svar:</strong> 8500 kr</p>
+            </div>
+
+            <h3>Exempel 3: Vattenflöde</h3>
+            <div class="example-box">
+                <p>Vatten rinner in i en tank med hastigheten $r(t) = 50 - 2t$ liter/minut. Hur mycket vatten har runnit in under de första 10 minuterna?</p>
+
+                <p>$$V = \int_0^{10} (50 - 2t) \, dt = [50t - t^2]_0^{10}$$</p>
+                <p>$$= (500 - 100) - 0 = 400$$</p>
+
+                <p class="answer"><strong>Svar:</strong> 400 liter</p>
+            </div>
+        </section>
+
+        <!-- KAPITEL 6: TRIGONOMETRI -->
+
+        <!-- Kapitel 6.1 -->
+        <section id="kap6-01" class="content-section">
+            <h2>Kapitel 6.1: Trigonometri i rätvinkliga trianglar</h2>
+
+            <div class="math-figure">
+                <img src="images/kap6/kap6-01-trigonometri-triangel.png" alt="Trigonometri i rätvinkliga trianglar">
+                <p class="figure-caption">Figur 6.1: Trigonometriska funktioner i rätvinkliga trianglar</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>De trigonometriska funktionerna</h3>
+                <p>I en rätvinklig triangel med vinkeln $v$ definieras:</p>
+                <p class="formula">$$\sin v = \frac{\text{motstående katet}}{\text{hypotenusa}}$$</p>
+                <p class="formula">$$\cos v = \frac{\text{närliggande katet}}{\text{hypotenusa}}$$</p>
+                <p class="formula">$$\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}} = \frac{\sin v}{\cos v}$$</p>
+            </div>
+
+            <div class="formula-box important">
+                <h3>Trigonometriska ettan</h3>
+                <p class="formula">$$\sin^2 v + \cos^2 v = 1$$</p>
+                <p>Denna formel gäller för alla vinklar!</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna sidlängder</h3>
+            <div class="example-box">
+                <p>I en rätvinklig triangel är hypotenusan 10 cm och en vinkel är 30°. Beräkna kateternas längder.</p>
+
+                <p>Motstående katet: $a = 10 \cdot \sin 30° = 10 \cdot 0{,}5 = 5$ cm</p>
+                <p>Närliggande katet: $b = 10 \cdot \cos 30° = 10 \cdot \frac{\sqrt{3}}{2} \approx 8{,}66$ cm</p>
+
+                <p class="answer"><strong>Svar:</strong> 5 cm och cirka 8,66 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel</h3>
+            <div class="example-box">
+                <p>I en rätvinklig triangel är den motstående kateten 7 cm och hypotenusan 15 cm. Beräkna vinkeln.</p>
+
+                <p>$$\sin v = \frac{7}{15}$$</p>
+                <p>$$v = \arcsin\left(\frac{7}{15}\right) \approx 27{,}8°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 27,8°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.2 -->
+        <section id="kap6-02" class="content-section">
+            <h2>Kapitel 6.2: Enhetscirkeln</h2>
+
+            <div class="definition-box">
+                <h3>Enhetscirkeln</h3>
+                <p><strong>Enhetscirkeln</strong> är en cirkel med radie 1 och centrum i origo.</p>
+                <p>En punkt på enhetscirkeln har koordinaterna $(\cos v, \sin v)$ där $v$ är vinkeln från positiva x-axeln.</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap6/kap6-enhetscirkel-master.svg" alt="Enhetscirkeln med alla standardvinklar (0°, 30°, 45°, 60°, 90°, 120°, 135°, 150°, 180°, 210°, 225°, 240°, 270°, 300°, 315°, 330°) och deras koordinater markerade" width="500" height="500">
+                <p class="caption">Enhetscirkeln: Alla standardvinklar och koordinater</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Viktiga vinklar på enhetscirkeln</h3>
+                <table style="margin: 1rem auto; border-collapse: collapse;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Vinkel</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Grader</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Radianer</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">sin v</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">cos v</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/6</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">30°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/6</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√3/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/4</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">45°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/4</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√2/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√2/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/3</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">60°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/3</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">√3/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1/2</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">90°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π/2</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">1</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">180°</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">π</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">0</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">-1</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel: Bestäm exakta värden</h3>
+            <div class="example-box">
+                <p><strong>a)</strong> $\sin 60°$</p>
+
+                <div class="graph-container">
+                    <img src="images/kap6/kap6-exempel-sin60.svg" alt="Enhetscirkel som visar 60° vinkel med sin(60°) = √3/2 markerat som vertikal projektion" width="400" height="400">
+                </div>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{\sqrt{3}}{2}$</p>
+
+                <p><strong>b)</strong> $\cos \frac{\pi}{4}$</p>
+
+                <div class="graph-container">
+                    <img src="images/kap6/kap6-exempel-cos45.svg" alt="Enhetscirkel som visar 45° (π/4) vinkel med cos(π/4) = √2/2 markerat som horisontell projektion" width="400" height="400">
+                </div>
+
+                <p class="answer"><strong>Svar:</strong> $\frac{\sqrt{2}}{2}$ eller $\frac{1}{\sqrt{2}}$</p>
+
+                <p><strong>c)</strong> $\tan 45°$</p>
+                <p>$$\tan 45° = \frac{\sin 45°}{\cos 45°} = \frac{\sqrt{2}/2}{\sqrt{2}/2} = 1$$</p>
+                <p class="answer"><strong>Svar:</strong> 1</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.3 -->
+        <section id="kap6-03" class="content-section">
+            <h2>Kapitel 6.3: Trigonometriska ekvationer</h2>
+
+            <div class="math-figure">
+                <img src="images/kap6/kap6-03-enhetscirkel.png" alt="Enhetscirkeln för lösning av trigonometriska ekvationer">
+                <p class="figure-caption">Figur 6.3: Enhetscirkeln och trigonometriska ekvationer</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Lös trigonometriska ekvationer</h3>
+                <ol>
+                    <li>Isolera den trigonometriska funktionen (sin, cos eller tan)</li>
+                    <li>Hitta en lösning med arcsin, arccos eller arctan</li>
+                    <li>Hitta alla lösningar i det angivna intervallet med hjälp av enhetscirkeln eller symmetri</li>
+                </ol>
+            </div>
+
+            <div class="formula-box">
+                <h3>Periodiska egenskaper</h3>
+                <p>Om $\sin v = a$ har lösningen $v_0$, så är alla lösningar:</p>
+                <ul>
+                    <li>$v = v_0 + n \cdot 360°$ eller $v = (180° - v_0) + n \cdot 360°$ (i grader)</li>
+                    <li>$v = v_0 + 2n\pi$ eller $v = (\pi - v_0) + 2n\pi$ (i radianer)</li>
+                </ul>
+                <p>där $n$ är ett heltal.</p>
+            </div>
+
+            <h3>Exempel 1: Grundläggande trigonometrisk ekvation</h3>
+            <div class="example-box">
+                <p>Lös $\sin v = 0{,}5$ för $0° \leq v \leq 360°$</p>
+
+                <p>En lösning: $v_1 = \arcsin(0{,}5) = 30°$</p>
+                <p>Andra lösningen (symmetri): $v_2 = 180° - 30° = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 30°$ eller $v = 150°$</p>
+            </div>
+
+            <h3>Exempel 2: Cosinus-ekvation</h3>
+            <div class="example-box">
+                <p>Lös $\cos v = -0{,}6$ för $0 \leq v < 2\pi$</p>
+
+                <p>En lösning: $v_1 = \arccos(-0{,}6) \approx 2{,}21$ rad</p>
+                <p>Symmetri ger: $v_2 = 2\pi - 2{,}21 \approx 4{,}07$ rad</p>
+
+                <p class="answer"><strong>Svar:</strong> $v \approx 2{,}21$ eller $v \approx 4{,}07$ radianer</p>
+            </div>
+
+            <h3>Exempel 3: Ekvation med algebra</h3>
+            <div class="example-box">
+                <p>Lös $2\sin v - 1 = 0$ för $0° \leq v < 360°$</p>
+
+                <p>$$2\sin v = 1$$</p>
+                <p>$$\sin v = 0{,}5$$</p>
+                <p>$v = 30°$ eller $v = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 30°$ eller $v = 150°$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.4 -->
+        <section id="kap6-04" class="content-section">
+            <h2>Kapitel 6.4: Trigonometriska ekvationer (forts.)</h2>
+
+            <div class="math-figure">
+                <img src="images/kap6/kap6-04-trigonometriska-formler.png" alt="Trigonometriska formler och identiteter">
+                <p class="figure-caption">Figur 6.4: Viktiga trigonometriska formler</p>
+            </div>
+
+            <h3>Exempel 1: Kvadratisk trigonometrisk ekvation</h3>
+            <div class="example-box">
+                <p>Lös $2\sin^2 v - \sin v = 0$ för $0° \leq v < 360°$</p>
+
+                <p>Faktorisera: $\sin v(2\sin v - 1) = 0$</p>
+
+                <p><strong>Fall 1:</strong> $\sin v = 0$</p>
+                <p>$v = 0°$ eller $v = 180°$</p>
+
+                <p><strong>Fall 2:</strong> $2\sin v - 1 = 0$</p>
+                <p>$\sin v = 0{,}5$</p>
+                <p>$v = 30°$ eller $v = 150°$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 0°, 30°, 150°$ eller $180°$</p>
+            </div>
+
+            <h3>Exempel 2: Använd trigonometriska ettan</h3>
+            <div class="example-box">
+                <p>Lös $\cos^2 v + \sin v = 1$ för $0 \leq v < 2\pi$</p>
+
+                <p>Använd $\cos^2 v = 1 - \sin^2 v$:</p>
+                <p>$$1 - \sin^2 v + \sin v = 1$$</p>
+                <p>$$-\sin^2 v + \sin v = 0$$</p>
+                <p>$$\sin v(1 - \sin v) = 0$$</p>
+
+                <p>$\sin v = 0$ ger $v = 0$ eller $v = \pi$</p>
+                <p>$\sin v = 1$ ger $v = \frac{\pi}{2}$</p>
+
+                <p class="answer"><strong>Svar:</strong> $v = 0, \frac{\pi}{2}$ eller $\pi$</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.5 -->
+        <section id="kap6-05" class="content-section">
+            <h2>Kapitel 6.5: Areasatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Areasatsen</h3>
+                <p>Arean av en triangel med sidorna $a$ och $b$ och mellanliggande vinkel $C$ är:</p>
+                <p class="formula">$$A = \frac{1}{2}ab\sin C$$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap6/kap6-05-areasatsen.png"
+                     alt="Areasatsen illustrerad: Triangel ABC med sidorna a och b markerade i blått, mellanliggande vinkeln C markerad i rött mellan sidorna. Area färglagd i grönt. Formeln A = ½·a·b·sin(C) visas."
+                     width="500" height="400">
+                <p class="caption">Areasatsen: Area beräknas med två sidor och mellanliggande vinkel</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna triangelarea</h3>
+            <div class="example-box">
+                <p>En triangel har sidorna $a = 8$ cm och $b = 12$ cm med mellanliggande vinkel $C = 45°$. Beräkna arean.</p>
+
+                <p>$$A = \frac{1}{2} \cdot 8 \cdot 12 \cdot \sin 45° = 48 \cdot \frac{\sqrt{2}}{2} = 24\sqrt{2} \approx 33{,}9 \text{ cm}^2$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 33,9 cm²</p>
+            </div>
+
+            <h3>Exempel 2: Bestäm vinkel från area</h3>
+            <div class="example-box">
+                <p>En triangel har sidorna 10 cm och 15 cm och arean 60 cm². Bestäm mellanliggande vinkel.</p>
+
+                <p>$$60 = \frac{1}{2} \cdot 10 \cdot 15 \cdot \sin C$$</p>
+                <p>$$60 = 75\sin C$$</p>
+                <p>$$\sin C = \frac{60}{75} = 0{,}8$$</p>
+                <p>$$C = \arcsin(0{,}8) \approx 53{,}1°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 53,1°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.6 -->
+        <section id="kap6-06" class="content-section">
+            <h2>Kapitel 6.6: Sinussatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Sinussatsen</h3>
+                <p>I en triangel med sidor $a$, $b$, $c$ och motstående vinklar $A$, $B$, $C$ gäller:</p>
+                <p class="formula">$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C}$$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap6/kap6-06-sinussatsen.png"
+                     alt="Sinussatsen illustrerad: Triangel ABC med alla tre sidorna (a, b, c) markerade i blått och alla tre vinklarna (A, B, C) markerade i orange. Streckade linjer visar kopplingen mellan varje vinkel och dess motstående sida. Formeln a/sin(A) = b/sin(B) = c/sin(C) visas."
+                     width="550" height="400">
+                <p class="caption">Sinussatsen: Förhållandet mellan varje sida och sinus av motstående vinkel är konstant</p>
+            </div>
+
+            <div class="info-box">
+                <h3>När använder vi sinussatsen?</h3>
+                <p>Sinussatsen används när vi vet:</p>
+                <ul>
+                    <li>Två vinklar och en sida (VSV eller VVS)</li>
+                    <li>Två sidor och en vinkel motstående en av sidorna (SVV)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna sida med sinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $A = 30°$, $B = 45°$ och $a = 10$ cm. Bestäm $b$.</p>
+
+                <p>$$\frac{a}{\sin A} = \frac{b}{\sin B}$$</p>
+                <p>$$\frac{10}{\sin 30°} = \frac{b}{\sin 45°}$$</p>
+                <p>$$\frac{10}{0{,}5} = \frac{b}{\sqrt{2}/2}$$</p>
+                <p>$$20 = \frac{b}{\sqrt{2}/2}$$</p>
+                <p>$$b = 20 \cdot \frac{\sqrt{2}}{2} = 10\sqrt{2} \approx 14{,}1 \text{ cm}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 14,1 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel med sinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $a = 12$ cm, $b = 15$ cm och $A = 50°$. Bestäm $B$.</p>
+
+                <p>$$\frac{a}{\sin A} = \frac{b}{\sin B}$$</p>
+                <p>$$\frac{12}{\sin 50°} = \frac{15}{\sin B}$$</p>
+                <p>$$\sin B = \frac{15 \cdot \sin 50°}{12} = \frac{15 \cdot 0{,}766}{12} \approx 0{,}958$$</p>
+                <p>$$B = \arcsin(0{,}958) \approx 73{,}2°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 73,2°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.7 -->
+        <section id="kap6-07" class="content-section">
+            <h2>Kapitel 6.7: Cosinussatsen</h2>
+
+            <div class="formula-box important">
+                <h3>Cosinussatsen</h3>
+                <p>I en triangel med sidor $a$, $b$, $c$ och motstående vinklar $A$, $B$, $C$ gäller:</p>
+                <p class="formula">$$a^2 = b^2 + c^2 - 2bc\cos A$$</p>
+                <p class="formula">$$b^2 = a^2 + c^2 - 2ac\cos B$$</p>
+                <p class="formula">$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+            </div>
+
+            <div class="graph-container">
+                <img src="images/kap6/kap6-07-cosinussatsen.png"
+                     alt="Cosinussatsen illustrerad: Triangel ABC med alla tre sidorna (a, b, c) markerade, vinkel A framhävd i rött. Streckade linjer visar sambandet mellan vinkel A och de två sidorna b och c. Formeln a² = b² + c² - 2bc·cos(A) visas, med jämförelse till Pythagoras sats."
+                     width="550" height="400">
+                <p class="caption">Cosinussatsen: Generalisering av Pythagoras sats för alla trianglar</p>
+            </div>
+
+            <div class="info-box">
+                <h3>När använder vi cosinussatsen?</h3>
+                <p>Cosinussatsen används när vi vet:</p>
+                <ul>
+                    <li>Två sidor och mellanliggande vinkel (SVS)</li>
+                    <li>Alla tre sidor (SSS)</li>
+                </ul>
+            </div>
+
+            <h3>Exempel 1: Beräkna sida med cosinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $b = 8$ cm, $c = 10$ cm och $A = 60°$. Bestäm $a$.</p>
+
+                <p>$$a^2 = b^2 + c^2 - 2bc\cos A$$</p>
+                <p>$$a^2 = 64 + 100 - 2 \cdot 8 \cdot 10 \cdot \cos 60°$$</p>
+                <p>$$a^2 = 164 - 160 \cdot 0{,}5 = 164 - 80 = 84$$</p>
+                <p>$$a = \sqrt{84} \approx 9{,}17 \text{ cm}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 9,17 cm</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna vinkel med cosinussatsen</h3>
+            <div class="example-box">
+                <p>I en triangel är $a = 7$ cm, $b = 9$ cm och $c = 12$ cm. Bestäm vinkel $C$.</p>
+
+                <p>$$c^2 = a^2 + b^2 - 2ab\cos C$$</p>
+                <p>$$144 = 49 + 81 - 2 \cdot 7 \cdot 9 \cdot \cos C$$</p>
+                <p>$$144 = 130 - 126\cos C$$</p>
+                <p>$$14 = -126\cos C$$</p>
+                <p>$$\cos C = -\frac{14}{126} \approx -0{,}111$$</p>
+                <p>$$C = \arccos(-0{,}111) \approx 96{,}4°$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 96,4°</p>
+            </div>
+        </section>
+
+        <!-- Kapitel 6.8 -->
+        <section id="kap6-08" class="content-section">
+            <h2>Kapitel 6.8: Tillämpningar av triangelsatser</h2>
+
+            <div class="math-figure">
+                <img src="images/kap6/kap6-08-triangelsatser.png" alt="Tillämpningar av triangelsatser">
+                <p class="figure-caption">Figur 6.8: Praktiska tillämpningar av triangelsatserna</p>
+            </div>
+
+            <div class="method-box">
+                <h3>Välj rätt metod</h3>
+                <table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+                    <tr>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Givet</th>
+                        <th style="padding: 0.5rem; border: 1px solid #ddd;">Metod</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Rätvinklig triangel</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Pythagoras, sin, cos, tan</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två sidor + mellanliggande vinkel (SVS)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Cosinussatsen (eller Areasatsen för area)</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Alla tre sidor (SSS)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Cosinussatsen</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två vinklar + en sida (VVS eller VSV)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Sinussatsen</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Två sidor + vinkel motstående en sida (SVV)</td>
+                        <td style="padding: 0.5rem; border: 1px solid #ddd;">Sinussatsen</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Navigering</h3>
+            <div class="example-box">
+                <p>Ett fartyg seglar 20 km österut, sedan 30 km i riktning 60° norr om öster. Hur långt är fartyget från startpunkten?</p>
+
+                <p>Vi har en triangel med två sidor (20 km och 30 km) och mellanliggande vinkel (180° - 60° = 120°)</p>
+
+                <p>Använd cosinussatsen:</p>
+                <p>$$d^2 = 20^2 + 30^2 - 2 \cdot 20 \cdot 30 \cdot \cos 120°$$</p>
+                <p>$$d^2 = 400 + 900 - 1200 \cdot (-0{,}5) = 1300 + 600 = 1900$$</p>
+                <p>$$d = \sqrt{1900} \approx 43{,}6 \text{ km}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 43,6 km</p>
+            </div>
+
+            <h3>Exempel 2: Höjdbestämning</h3>
+            <div class="example-box">
+                <p>Från två punkter A och B, 100 m från varandra, observeras toppen av ett torn. Från A är elevationsvinkeln 35° och från B är den 45°. Hur högt är tornet?</p>
+
+                <p>Låt $h$ = tornets höjd</p>
+                <p>Från punkt B: $\tan 45° = \frac{h}{x}$ där $x$ är avståndet från B till tornet</p>
+                <p>$1 = \frac{h}{x}$, alltså $x = h$</p>
+
+                <p>Från punkt A: $\tan 35° = \frac{h}{x + 100}$</p>
+                <p>$$0{,}700 = \frac{h}{h + 100}$$</p>
+                <p>$$0{,}700h + 70 = h$$</p>
+                <p>$$70 = 0{,}3h$$</p>
+                <p>$$h \approx 233 \text{ m}$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 233 m</p>
+            </div>
+
+            <h3>Exempel 3: Landmätning</h3>
+            <div class="example-box">
+                <p>En tomt har formen av en triangel med sidorna 40 m, 50 m och 60 m. Beräkna tomtens area.</p>
+
+                <p><strong>Steg 1:</strong> Bestäm en vinkel med cosinussatsen</p>
+                <p>$$60^2 = 40^2 + 50^2 - 2 \cdot 40 \cdot 50 \cdot \cos C$$</p>
+                <p>$$3600 = 1600 + 2500 - 4000\cos C$$</p>
+                <p>$$3600 = 4100 - 4000\cos C$$</p>
+                <p>$$\cos C = \frac{500}{4000} = 0{,}125$$</p>
+                <p>$$C = \arccos(0{,}125) \approx 82{,}8°$$</p>
+
+                <p><strong>Steg 2:</strong> Använd areasatsen</p>
+                <p>$$A = \frac{1}{2} \cdot 40 \cdot 50 \cdot \sin 82{,}8° \approx 1000 \cdot 0{,}992 \approx 992 \text{ m}^2$$</p>
+
+                <p class="answer"><strong>Svar:</strong> Cirka 992 m²</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 3c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="graphs.js"></script>
+</body>
+</html>

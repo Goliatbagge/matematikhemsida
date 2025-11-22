@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.09 Enkla andra- och tredjegradsekvationer - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.09 Enkla andra- och tredjegradsekvationer</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>I en ekvation avgör variabeltermen med högst exponent ekvationens <strong>grad</strong>. En ekvation som innehåller en variabel där högsta exponenten är 2, t.ex. \(x^2 + 7 = 11\), kallas <strong>andragradsekvation</strong>. En ekvation som innehåller en variabel med högsta graden 3, t.ex. \(x^3 - 8 = 1\), kallas <strong>tredjegradsekvation</strong>. Andra- och tredjegradsekvationer som innehåller en enda variabelterm kallas <strong>enkla andra- och tredjegradsekvationer</strong>.</p>
+
+            <div class="definition-box">
+                <h3>Lösa enkla andragradsekvationer</h3>
+                <p>\(x^2 = a\), där \(a \geq 0\), har lösningarna</p>
+                <p class="formula">\(x = \pm\sqrt{a}\)</p>
+                <p>Om \(a < 0\) saknas (reella) lösningar.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Lösa enkla tredjegradsekvationer</h3>
+                <p>\(x^3 = a\), för alla \(a\), har lösningen</p>
+                <p class="formula">\(x = \sqrt[3]{a}\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös</strong></p>
+            <p><strong>a)</strong> \(x^2 = 64\)<br>
+            <strong>b)</strong> \(x^2 = 10\)<br>
+            <strong>c)</strong> \(x^2 = -9\)<br>
+            <strong>d)</strong> \(x^3 = 343\)<br>
+            <strong>e)</strong> \(x^3 = -27\)<br>
+            <strong>f)</strong> \(3x^2 - 2{,}31 = 17{,}97\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^2 &= 64 \\
+                    x &= \pm\sqrt{64} = \pm 8
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(x = \pm 8\) alternativt \(x_1 = 8\) och \(x_2 = -8\)</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^2 &= 10 \\
+                    x &= \pm\sqrt{10}
+                    \end{align}
+                </div>
+                <p>\(\sqrt{10}\) är svår att beräkna med huvudräkning. Vi slår det på räknaren.</p>
+                <p>\(x = \pm 3{,}162\ldots \approx \pm 3{,}16\)</p>
+                <p class="answer">Svar: \(x = \pm\sqrt{10}\) eller \(x \approx \pm 3{,}16\)</p>
+
+                <p><strong>c)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^2 &= -9 \\
+                    x &= \pm\sqrt{-9}
+                    \end{align}
+                </div>
+                <p>Roten ur negativa tal saknar reella lösningar.</p>
+                <p class="answer">Svar: Saknar reella lösningar.</p>
+
+                <p><strong>d)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^3 &= 343 \\
+                    x &= \sqrt[3]{343} = 7
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(x = 7\)</p>
+
+                <p><strong>e)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x^3 &= -27 \\
+                    x &= \sqrt[3]{-27} = -3
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(x = -3\)</p>
+
+                <p><strong>f)</strong> Vi börjar med att lösa ut \(x^2\). Därefter gör vi som vanligt.</p>
+                <div class="calculation">
+                    \begin{align}
+                    3x^2 - 2{,}31 + 2{,}31 &= 17{,}97 + 2{,}31 \\
+                    3x^2 &= 20{,}28 \\
+                    \frac{3x^2}{3} &= \frac{20{,}28}{3} \\
+                    x^2 &= 6{,}76 \\
+                    x &= \pm\sqrt{6{,}76} = \pm 2{,}6
+                    \end{align}
+                </div>
+                <p class="answer">Svar: \(x = \pm 2{,}6\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Bestäm sidan hos en</strong></p>
+            <p><strong>a)</strong> kvadrat med arean 4 096 cm²<br>
+            <strong>b)</strong> kub med volymen 4 096 cm³</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Kvadratens area \(A\) ges av sidan · sidan. Vi kallar sidan \(x\). Detta ger \(A = x \cdot x = x^2\).</p>
+
+                <p>Vi vet att arean är 4 096 cm², vilket ger</p>
+                <div class="calculation">
+                    \begin{align}
+                    x^2 &= 4\,096 \\
+                    x &= \pm\sqrt{4\,096} = \pm 64 \text{ cm}
+                    \end{align}
+                </div>
+
+                <p>Eftersom en sida inte kan vara negativ, så bortser vi från den negativa lösningen.</p>
+
+                <p class="answer">Svar: 64 cm</p>
+
+                <p><strong>b)</strong> Kubens volym \(V\) ges av sidan · sidan · sidan. Vi kallar sidan \(x\). Detta ger \(V = x \cdot x \cdot x = x^3\).</p>
+
+                <p>Vi vet att volymen är 4 096 cm³, vilket ger</p>
+                <div class="calculation">
+                    \begin{align}
+                    x^3 &= 4\,096 \\
+                    x &= \sqrt[3]{4\,096} = 16 \text{ cm}
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: 16 cm</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

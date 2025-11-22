@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik 3c - Kurshemsida</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <!-- Animation and interaction script -->
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 3c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 1: Rationella uttryck</a>
+                    <div class="dropdown-content">
+                        <a href="kap1-01.html">1.1 Förkortning och förlängning</a>
+                        <a href="kap1-02.html">1.2 Addition och subtraktion</a>
+                        <a href="kap1-03.html">1.3 Multiplikation och division</a>
+                        <a href="kap1-04.html">1.4 Gränsvärden</a>
+                        <a href="kap1-05.html">1.5 Symbolhanterande hjälpmedel</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 2: Derivatans definition</a>
+                    <div class="dropdown-content">
+                        <a href="kap2-01.html">2.1 Sekantens lutning</a>
+                        <a href="kap2-02.html">2.2 Tangentens lutning</a>
+                        <a href="kap2-03.html">2.3 Derivatans definition</a>
+                        <a href="kap2-04.html">2.4 Använda derivata</a>
+                        <a href="kap2-05.html">2.5 Deriverbarhet och absolutbelopp</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 3: Derivatan</a>
+                    <div class="dropdown-content">
+                        <a href="kap3-01.html">3.1 Derivatan av enkla potensfunktioner</a>
+                        <a href="kap3-02.html">3.2 Derivatan av polynomfunktioner</a>
+                        <a href="kap3-03.html">3.3 Mer om derivatan av potensfunktioner</a>
+                        <a href="kap3-04.html">3.4 Derivatan av e^x</a>
+                        <a href="kap3-05.html">3.5 Derivatan av e^kx och a^x</a>
+                        <a href="kap3-06.html">3.6 Tillämpningar av derivata</a>
+                        <a href="kap3-07.html">3.7 Tillämpningar med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 4: Derivatan och funktioner</a>
+                    <div class="dropdown-content">
+                        <a href="kap4-01.html">4.1 Växande och avtagande funktioner</a>
+                        <a href="kap4-02.html">4.2 Derivatans nollställen</a>
+                        <a href="kap4-03.html">4.3 Största och minsta värde</a>
+                        <a href="kap4-04.html">4.4 Andraderivatan och funktioner</a>
+                        <a href="kap4-05.html">4.5 Andraderivatan och lokala extrempunkter</a>
+                        <a href="kap4-06.html">4.6 Extremvärdesproblem</a>
+                        <a href="kap4-07.html">4.7 Extremvärdesproblem med digitala verktyg</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 5: Integraler</a>
+                    <div class="dropdown-content">
+                        <a href="kap5-01.html">5.1 Primitiva funktioner</a>
+                        <a href="kap5-02.html">5.2 Primitiva funktioner med villkor</a>
+                        <a href="kap5-03.html">5.3 Arean under en kurva</a>
+                        <a href="kap5-04.html">5.4 Integralkalkylens fundamentalsats</a>
+                        <a href="kap5-05.html">5.5 Beräkna integraler digitalt</a>
+                        <a href="kap5-06.html">5.6 Area mellan kurvor</a>
+                        <a href="kap5-07.html">5.7 Tillämpningar av integraler</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Kapitel 6: Trigonometri</a>
+                    <div class="dropdown-content">
+                        <a href="kap6-01.html">6.1 Trigonometri i rätvinkliga trianglar</a>
+                        <a href="kap6-02.html">6.2 Enhetscirkeln</a>
+                        <a href="kap6-03.html">6.3 Trigonometriska ekvationer</a>
+                        <a href="kap6-04.html">6.4 Trigonometriska ekvationer (forts.)</a>
+                        <a href="kap6-05.html">6.5 Areasatsen</a>
+                        <a href="kap6-06.html">6.6 Sinussatsen</a>
+                        <a href="kap6-07.html">6.7 Cosinussatsen</a>
+                        <a href="kap6-08.html">6.8 Tillämpningar av triangelsatser</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav><main class="container" role="main" id="main-content">
+        <section id="kap4-06" class="content-section">
+<h2>Kapitel 4.6: Extremvärdesproblem</h2>
+<div class="math-figure">
+<img alt="Praktiskt extremvärdesproblem" src="../../images/kap4/kap4-06-extremvardesproblem.png"/>
+<p class="figure-caption">Figur 4.6: Extremvärdesproblem - optimering i praktiken</p>
+</div>
+<div class="info-box">
+<h3>Extremvärdesproblem i verkligheten</h3>
+<p>Extremvärdesproblem handlar om att hitta det bästa (största eller minsta) värdet av en storhet, t.ex.:</p>
+<ul>
+<li>Maximera vinst eller intäkt</li>
+<li>Minimera kostnad eller materialåtgång</li>
+<li>Maximera volym eller area</li>
+</ul>
+</div>
+<div class="method-box">
+<h3>Lös extremvärdesproblem</h3>
+<ol>
+<li>Läs uppgiften noggrant och identifiera vad som ska maximeras/minimeras</li>
+<li>Rita en figur om möjligt</li>
+<li>Sätt upp en funktion för storheten som ska optimeras</li>
+<li>Om funktionen har flera variabler, använd bivillkor för att uttrycka funktionen i en variabel</li>
+<li>Derivera och hitta stationära punkter</li>
+<li>Kontrollera att det verkligen är ett maximum/minimum</li>
+<li>Svara på frågan</li>
+</ol>
+</div>
+<h3>Exempel 1: Maximera area</h3>
+<div class="example-box">
+<p>Du har 40 meter stängsel och ska bygga en rektangulär hage med en sida mot en vägg. Vilka dimensioner ger största möjliga area?</p>
+<p><strong>Lösning:</strong></p>
+<p>Låt $x$ = bredden och $y$ = längden (parallellt med väggen)</p>
+<p>Stängsel behövs för tre sidor: $2x + y = 40$, alltså $y = 40 - 2x$</p>
+<p>Area: $A(x) = x \cdot y = x(40 - 2x) = 40x - 2x^2$</p>
+<p>$$A'(x) = 40 - 4x = 0 \Rightarrow x = 10$$</p>
+<p>$$A''(x) = -4 &lt; 0$$ → Maximum!</p>
+<p>$y = 40 - 2 \cdot 10 = 20$</p>
+<p class="answer"><strong>Svar:</strong> Bredden 10 m och längden 20 m ger maximal area 200 m²</p>
+</div>
+<h3>Exempel 2: Minimera kostnad</h3>
+<div class="example-box">
+<p>En låda utan lock ska ha volymen 500 cm³. Basen är kvadratisk. Vilket sidmått på basen ger minsta material?</p>
+<p>Låt $x$ = sidlängd på basen, $h$ = höjden</p>
+<p>Volym: $x^2 h = 500 \Rightarrow h = \frac{500}{x^2}$</p>
+<p>Material (area): $A = x^2 + 4xh = x^2 + 4x \cdot \frac{500}{x^2} = x^2 + \frac{2000}{x}$</p>
+<p>$$A'(x) = 2x - \frac{2000}{x^2} = 0$$</p>
+<p>$$2x = \frac{2000}{x^2}$$</p>
+<p>$$x^3 = 1000$$</p>
+<p>$$x = 10$$</p>
+<p>$h = \frac{500}{100} = 5$ cm</p>
+<p class="answer"><strong>Svar:</strong> Bas 10×10 cm och höjd 5 cm</p>
+</div>
+        </section>
+
+<div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+    <a href="kap4-05.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 4.5 Andraderivatan och lokala extrempunkter</a>
+    <a href="kap4-07.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 4.7 Extremvärdesproblem med digitala verktyg →</a>
+</div>
+
+
+
+<!-- Kommentarsfält -->
+<div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+    <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+    <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = 'kap4-06';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://enkel-matematik.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+</div>
+
+    </main>
+
+    <footer>
+<div class="container">
+<p>© 2024 Matematik 3c Kurshemsida</p>
+</div>
+</footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+
+</body>
+</html>

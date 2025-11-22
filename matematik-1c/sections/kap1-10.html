@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.10 Prioriteringsregler - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-10" class="content-section">
+            <h2>Kapitel 1.10: Prioriteringsregler</h2>
+
+            <div class="info-box">
+                <h3>Introduktion</h3>
+                <p>Beräkningen $5 + 2 \cdot 3$ ger olika svar beroende på i vilken ordning man räknar.</p>
+                <p>Om vi först räknar ut $5 + 2$ får vi: $5 + 2 \cdot 3 = 7 \cdot 3 = 21$</p>
+                <p>Om vi istället räknar ut $2 \cdot 3$ först får vi: $5 + 2 \cdot 3 = 5 + 6 = 11$</p>
+                <p>Eftersom svaren blir olika spelar ordningen på räkneoperationerna roll.</p>
+                <p>Regler för vilka beräkningar man ska utföra först kallas <strong>prioriteringsregler</strong>.</p>
+            </div>
+
+            <div class="definition-box">
+                <h3>Prioriteringsregler</h3>
+                <ol>
+                    <li>Parenteser ( )</li>
+                    <li>Potenser $a^b$</li>
+                    <li>Multiplikation och division · /</li>
+                    <li>Addition och subtraktion + −</li>
+                </ol>
+            </div>
+
+            <p>Den korrekta uträkningen för exemplet ovan är alltså att först beräkna multiplikationen, så $5 + 2 \cdot 3 = 5 + 6 = 11$</p>
+
+            <div class="definition-box">
+                <h3>Termer och räknesätt</h3>
+                <p>Lär dig dessa begrepp utantill!</p>
+                <table style="border-collapse: collapse; margin: 1rem auto; width: 100%;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Räknesätt</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Delarna</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Svar</th>
+                        <th style="padding: 0.75rem; border: 1px solid #ddd;">Exempel</th>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">Addition</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">term + term</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">summa</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">3 + 2 = 5</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">Subtraktion</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">term − term</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">differens</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">5 − 2 = 3</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">Multiplikation</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">faktor · faktor</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">produkt</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">3 · 4 = 12</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">Division</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">täljare / nämnare</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">kvot</td>
+                        <td style="padding: 0.75rem; border: 1px solid #ddd;">12 / 4 = 3</td>
+                    </tr>
+                </table>
+            </div>
+
+            <h3>Exempel 1: Beräkna $5 \cdot (3 + 6)$</h3>
+
+            <div class="example-box">
+                <p>$$5 \cdot (3 + 6) = 5 \cdot 9 = 45$$</p>
+                <p>(obs, beräkna parentesen först)</p>
+                <p class="answer"><strong>Svar:</strong> 45</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna $8 \cdot 10 - (4 \cdot 2 - 3)$</h3>
+
+            <div class="example-box">
+                <p>$$8 \cdot 10 - (4 \cdot 2 - 3) =$$</p>
+                <p>$$= 8 \cdot 10 - (8 - 3)$$</p>
+                <p>(beräknar multiplikationen i parentesen först ...)</p>
+                <p>$$= 8 \cdot 10 - 5$$</p>
+                <p>(... sedan parentesen ...)</p>
+                <p>$$= 80 - 5$$</p>
+                <p>(... sedan multiplikationen ...)</p>
+                <p>$$= 75$$</p>
+                <p>(... och till sist differensen)</p>
+                <p class="answer"><strong>Svar:</strong> 75</p>
+            </div>
+
+            <h3>Exempel 3: Beräkna $9 \cdot 5 - (10 - 7)^2$</h3>
+
+            <div class="example-box">
+                <p>$$9 \cdot 5 - (10 - 7)^2 =$$</p>
+                <p>$$= 9 \cdot 5 - 3^2$$</p>
+                <p>(beräkna parentesen först ...)</p>
+                <p>$$= 9 \cdot 5 - 9$$</p>
+                <p>(... sedan potensen ...)</p>
+                <p>$$= 45 - 9$$</p>
+                <p>(... sedan multiplikationen ...)</p>
+                <p>$$= 36$$</p>
+                <p>(... och till sist differensen)</p>
+                <p class="answer"><strong>Svar:</strong> 36</p>
+            </div>
+
+            <h3>Exempel 4: Beräkna $\displaystyle\frac{15}{5-2}$</h3>
+
+            <div class="example-box">
+                <p>I divisioner finns "osynliga" parenteser. Man kan tänka sig att det är en parentes kring täljaren och nämnaren.</p>
+                <p>$$\frac{15}{5-2} = \frac{15}{(5-2)} = \frac{15}{3} = 5$$</p>
+                <p>(nämnaren beräknas först)</p>
+                <p class="answer"><strong>Svar:</strong> 5</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-09.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.9 Prefix</a>
+            <a href="kap1-11.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.11 Räknaren →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-10';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.8 Rationella exponenter - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap1-08" class="content-section">
+            <h2>Kapitel 1.8: Rationella exponenter</h2>
+
+            <div class="definition-box">
+                <h3>Introduktion</h3>
+                <p>En exponent som innehåller ett bråk kallas <strong>rationell exponent</strong>. Hur ska vi tolka rationella exponenter, t.ex. $25^{1/2}$?</p>
+            </div>
+
+            <div class="proof-box">
+                <h3>Undersökning – Tolkning av rationella exponenter</h3>
+                <p>Vi bildar t.ex. talet 25 på två sätt.</p>
+                <p><strong>Med potenslagarna:</strong> $(25^{1/2})^2 = 25^{(1/2) \cdot 2} = 25^{2/2} = 25^1 = 25$</p>
+                <p><strong>Med rötter:</strong> $(\sqrt{25})^2 = 5^2 = 25$</p>
+                <p>Båda sätt är korrekta. Vi ser alltså att $25^{1/2} = \sqrt{25}$</p>
+                <p>På motsvarande sätt gäller:</p>
+                <p>$(27^{1/3})^3 = 27^{3/3} = 27^1 = 27$</p>
+                <p>$(\sqrt[3]{27})^3 = 3^3 = 3 \cdot 3 \cdot 3 = 27$</p>
+                <p>dvs. $27^{1/3} = \sqrt[3]{27}$</p>
+            </div>
+
+            <div class="formula-box">
+                <h3>Rationella exponenter</h3>
+                <p>$$a^{1/n} = \sqrt[n]{a}$$</p>
+            </div>
+
+            <h3>Exempel 1: Beräkna utan räknare</h3>
+
+            <div class="example-box">
+                <p><strong>a)</strong> $49^{1/2}$</p>
+                <p>$$49^{1/2} = \sqrt{49} = 7$$</p>
+                <p class="answer"><strong>Svar:</strong> 7</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>b)</strong> $5 \cdot 8^{1/3}$</p>
+                <p>$$5 \cdot 8^{1/3} = 5 \cdot \sqrt[3]{8} = 5 \cdot 2 = 10$$</p>
+                <p class="answer"><strong>Svar:</strong> 10</p>
+            </div>
+
+            <div class="example-box">
+                <p><strong>c)</strong> $27^{2/3}$</p>
+                <p>$$27^{2/3} = (27^{1/3})^2 = (\sqrt[3]{27})^2 = 3^2 = 9$$</p>
+                <p class="answer"><strong>Svar:</strong> 9</p>
+            </div>
+
+            <h3>Exempel 2: Förenkla $\displaystyle\frac{x^{7/2}}{x^3}$</h3>
+
+            <div class="example-box">
+                <p>$$\frac{x^{7/2}}{x^3} = x^{7/2 - 3} = x^{7/2 - 6/2} = x^{1/2} = \sqrt{x}$$</p>
+                <p class="answer"><strong>Svar:</strong> $\sqrt{x}$</p>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap1-07.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.7 Negativa exponenter och exponenten 0</a>
+            <a href="kap1-09.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 1.9 Prefix →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap1-08';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

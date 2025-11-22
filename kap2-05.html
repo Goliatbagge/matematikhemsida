@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.05 Ekvationslösningens grunder - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.05 Ekvationslösningens grunder</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>När vi har ett uttryck som ska vara lika med ett annat uttryck har vi en <strong>ekvation</strong>. En ekvation innehåller alltså alltid någon variabel, t.ex. \(x\), och ett likhetstecken, =. Vid ekvationslösning ska vi bestämma värdet på variabeln. Det gör vi genom att <strong>lösa ut</strong> variabeln, t.ex. \(x\), så att den står ensam på ena sidan av likhetstecknet.</p>
+
+            <p>För att lösa ut \(x\) används några grunder som beror på vilket räknesätt vi har. Grundprincipen är att det vi gör på ena sidan av likhetstecknet måste vi också göra på andra sidan av likhetstecknet, annars kommer ekvationen inte att stämma.</p>
+
+            <p>Vi kan alltid testa om en lösning är korrekt genom att sätta in den i den ursprungliga ekvationen. <strong>VIKTIGT!</strong> Prövning (att testa sig fram till en lösning) är inte tillåtet vid ekvationslösning!</p>
+
+            <div class="method-box">
+                <h3>Addition</h3>
+                <p>För att få bort en term som adderas, så <strong>subtraherar</strong> vi den från båda led.</p>
+                <p><strong>Exempel:</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x + 36 &= 53 \\
+                    x + 36 - 36 &= 53 - 36 \\
+                    x &= 17
+                    \end{align}
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h3>Subtraktion</h3>
+                <p>För att få bort en term som subtraheras, så <strong>adderar</strong> vi den till båda led.</p>
+                <p><strong>Exempel:</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    x - 24 &= 72 \\
+                    x - 24 + 24 &= 72 + 24 \\
+                    x &= 96
+                    \end{align}
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h3>Multiplikation</h3>
+                <p>För att få bort en faktor som multipliceras, så <strong>dividerar</strong> vi med den i båda led.</p>
+                <p><strong>Exempel:</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    7x &= 84 \\
+                    \frac{7x}{7} &= \frac{84}{7} \\
+                    x &= 12
+                    \end{align}
+                </div>
+            </div>
+
+            <div class="method-box">
+                <h3>Division</h3>
+                <p>För att få bort en nämnare som divideras, så <strong>multiplicerar</strong> vi den med båda led.</p>
+                <p><strong>Exempel:</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{x}{13} &= 6 \\
+                    \frac{x}{13} \cdot 13 &= 6 \cdot 13 \\
+                    x &= 78
+                    \end{align}
+                </div>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös</strong></p>
+            <p><strong>a)</strong> \(4x + 7 = 35\)<br>
+            <strong>b)</strong> \(\frac{7x}{6} - 15 = -11\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Vi subtraherar först 7 från båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    4x + 7 - 7 &= 35 - 7 \\
+                    4x &= 28
+                    \end{align}
+                </div>
+
+                <p>Därefter dividerar vi med 4 i båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{4x}{4} &= \frac{28}{4} \\
+                    x &= 7
+                    \end{align}
+                </div>
+
+                <p><strong>Kontroll:</strong> Vi kontrollerar att \(x = 7\) är en lösning till ekvationen genom att byta ut \(x\) mot 7 i den ursprungliga ekvationen \(4x + 7 = 35\).</p>
+                <p>VL = \(4 \cdot 7 + 7 = 28 + 7 = 35\)<br>
+                HL = 35<br>
+                VL = HL ⇒ Stämmer!</p>
+
+                <p class="answer">Svar: \(x = 7\)</p>
+
+                <p><strong>b)</strong> Vi adderar först 15 till båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{7x}{6} - 15 + 15 &= -11 + 15 \\
+                    \frac{7x}{6} &= 4
+                    \end{align}
+                </div>
+
+                <p>Därefter multiplicerar vi med 6 i båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{7x}{6} \cdot 6 &= 4 \cdot 6 \\
+                    7x &= 24
+                    \end{align}
+                </div>
+
+                <p>Till sista dividerar vi med 7 i båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{7x}{7} &= \frac{24}{7} \\
+                    x &= \frac{24}{7}
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = \frac{24}{7}\) (avrunda inte!)</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

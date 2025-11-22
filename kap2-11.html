@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.11 Olikheter - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.11 Olikheter</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>När två led är lika har vi en ekvation (likhet) som skrivs med likhetstecken, =. När två led är olika har vi en <strong>olikhet</strong> som skrivs med olikhetstecken. Det finns flera olikhetstecken.</p>
+
+            <div class="definition-box">
+                <h3>Olikhetstecken</h3>
+                <table style="width: 100%;">
+                    <tr>
+                        <td style="width: 20%; text-align: center;">\(<\)</td>
+                        <td>mindre än</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">\(>\)</td>
+                        <td>större än</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">\(\leq\)</td>
+                        <td>mindre än eller lika med</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">\(\geq\)</td>
+                        <td>större än eller lika med</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="note-box">
+                <h3>Exempel på ekvation och olikhet</h3>
+                <p>\(3x - 4 = 2\) är en <strong>ekvation</strong><br>
+                \(3x - 4 < 2\) är en <strong>olikhet</strong></p>
+            </div>
+
+            <p>Tolkningen av olikhetstecknen gäller om vi läser från vänster till höger. Vi utläser alltså \(3 < 5\) som "3 är mindre än 5".</p>
+
+            <p>En kom ihåg-regel är att olikhetstecknet "gapar åt" det större värdet. En annan är att man ser det som en pil som pekar på det mindre värdet. En tredje är att man ser det som en pil som säger om det vänstra värdet ligger till vänster om eller till höger om det högra värdet på tallinjen.</p>
+
+            <div class="method-box">
+                <h3>Lösa olikheter</h3>
+                <p>Olikheter löses på samma sätt som ekvationer, men olikhetstecknet vänds vid division eller multiplikation med negativa tal. Olikheter av andra graden löser vi genom att undersöka gränsfallet (se exemplet nedan).</p>
+            </div>
+
+            <div class="note-box">
+                <h3>Undersökning – Olikhetstecknets vändning</h3>
+                <p>Vi vet att \(5 > 3\).</p>
+
+                <p>Om vi multiplicerar eller dividerar med ett negativt tal, t.ex. \((-1)\), får vi</p>
+                <p>\(5 \cdot (-1) > 3 \cdot (-1)\)<br>
+                \(-5 > -3\)</p>
+
+                <p>Men detta är ju falskt eftersom \(-5\) är mindre än \(-3\). Alltså måste olikhetstecknet vändas, dvs. \(-5 < -3\), vid multiplikation och division med negativa tal.</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös</strong></p>
+            <p><strong>a)</strong> \(3x - 5 < 22\)<br>
+            <strong>b)</strong> \(7(6 - x) \leq 105\)<br>
+            <strong>c)</strong> \(\frac{6a}{5} > 3a - 18\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+
+                <p>Vi adderar 5 till båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    3x - 5 + 5 &< 22 + 5 \\
+                    3x &< 27
+                    \end{align}
+                </div>
+
+                <p>Vi dividerar båda led med 3.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{3x}{3} &< \frac{27}{3} \\
+                    x &< 9
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x < 9\)</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    7(6 - x) &\leq 105 \\
+                    42 - 7x &\leq 105
+                    \end{align}
+                </div>
+
+                <p>Vi subtraherar 42 från båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    42 - 7x - 42 &\leq 105 - 42 \\
+                    -7x &\leq 63
+                    \end{align}
+                </div>
+
+                <p>Vi dividerar med \((-7)\) i båda led. Eftersom vi dividerar med ett negativt tal ska olikhetstecknet vändas.</p>
+                <div class="calculation">
+                    \begin{align}
+                    \frac{-7x}{-7} &\geq \frac{63}{-7} \\
+                    x &\geq -9
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x \geq -9\)</p>
+
+                <p><strong>c)</strong></p>
+
+                <p>Vi multiplicerar båda led med 5 (vilket motsvarar täljaren = kvoten · nämnaren).</p>
+                <div class="calculation">
+                    \(6a > 5(3a - 18)\)
+                </div>
+
+                <div class="calculation">
+                    \(6a > 15a - 90\)
+                </div>
+
+                <p>Vi har variabeltermer på båda sidor. Vi tar bort \(a\)-termen från VL och löser sedan som vanligt.</p>
+                <div class="calculation">
+                    \begin{align}
+                    6a - 6a &> 15a - 90 - 6a \\
+                    0 &> 9a - 90 \\
+                    0 + 90 &> 9a - 90 + 90 \\
+                    90 &> 9a \\
+                    \frac{90}{9} &> \frac{9a}{9} \\
+                    10 &> a
+                    \end{align}
+                </div>
+
+                <p>När vi svarar med en olikhet vill vi som regel ha variabeln till vänster om olikhetstecknet. När vi nu vänder på "10" och "\(a\)" måste också olikhetstecknet vändas, dvs. \(a < 10\).</p>
+
+                <p class="answer">Svar: \(a < 10\)</p>
+            </div>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 2</h3>
+            <p><strong>Lös</strong></p>
+            <p><strong>a)</strong> \(x^2 < 9\)<br>
+            <strong>b)</strong> \(x^2 > 9\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong> Att lösa olikheter av andra graden gör vi på ett annat sätt. Vi undersöker vad som gäller på gränsen av intervallet.</p>
+
+                <p>På gränsen av intervallet är \(x^2 = 9\) där lösningen är \(x = \pm\sqrt{9} = \pm 3\).</p>
+
+                <p>Vi ritar en tallinje och placerar punkter vid \(x = -3\) och \(x = 3\). För att \(x^2 < 9\) gäller nu att \(x\) måste vara mellan \(-3\) och \(3\), vilket vi kan åskådliggöra med en sträcka däremellan.</p>
+
+                <div style="text-align: center; margin: 20px 0;">
+                    <svg width="500" height="60">
+                        <line x1="50" y1="30" x2="450" y2="30" stroke="black" stroke-width="2"/>
+                        <circle cx="170" cy="30" r="5" fill="white" stroke="blue" stroke-width="2"/>
+                        <circle cx="330" cy="30" r="5" fill="white" stroke="blue" stroke-width="2"/>
+                        <line x1="170" y1="30" x2="330" y2="30" stroke="blue" stroke-width="3"/>
+                        <text x="50" y="50" font-size="14">-6</text>
+                        <text x="100" y="50" font-size="14">-5</text>
+                        <text x="130" y="50" font-size="14">-4</text>
+                        <text x="165" y="50" font-size="14">-3</text>
+                        <text x="200" y="50" font-size="14">-2</text>
+                        <text x="230" y="50" font-size="14">-1</text>
+                        <text x="245" y="50" font-size="14">0</text>
+                        <text x="275" y="50" font-size="14">1</text>
+                        <text x="305" y="50" font-size="14">2</text>
+                        <text x="330" y="50" font-size="14">3</text>
+                        <text x="365" y="50" font-size="14">4</text>
+                        <text x="395" y="50" font-size="14">5</text>
+                        <text x="425" y="50" font-size="14">6</text>
+                    </svg>
+                </div>
+
+                <p>Detta intervall beskrivs av \(-3 < x < 3\).</p>
+
+                <p class="answer">Svar: \(-3 < x < 3\)</p>
+
+                <p><strong>b)</strong> Vi studerar gränsen av intervallet som återigen är \(x^2 = 9\) där lösningen är \(x = \pm\sqrt{9} = \pm 3\). På motsvarande sätt som i a-uppgiften placerar vi punkter vid \(x = -3\) och \(x = 3\).</p>
+
+                <p>För att \(x^2 > 9\) gäller nu att \(x\) måste vara större än 3 eller mindre än \(-3\), vilket kan åskådliggöras med strålarna nedan.</p>
+
+                <div style="text-align: center; margin: 20px 0;">
+                    <svg width="500" height="60">
+                        <line x1="50" y1="30" x2="450" y2="30" stroke="black" stroke-width="2"/>
+                        <circle cx="170" cy="30" r="5" fill="white" stroke="blue" stroke-width="2"/>
+                        <circle cx="330" cy="30" r="5" fill="white" stroke="blue" stroke-width="2"/>
+                        <line x1="50" y1="30" x2="170" y2="30" stroke="blue" stroke-width="3"/>
+                        <line x1="330" y1="30" x2="450" y2="30" stroke="blue" stroke-width="3"/>
+                        <text x="50" y="50" font-size="14">-6</text>
+                        <text x="100" y="50" font-size="14">-5</text>
+                        <text x="130" y="50" font-size="14">-4</text>
+                        <text x="165" y="50" font-size="14">-3</text>
+                        <text x="200" y="50" font-size="14">-2</text>
+                        <text x="230" y="50" font-size="14">-1</text>
+                        <text x="245" y="50" font-size="14">0</text>
+                        <text x="275" y="50" font-size="14">1</text>
+                        <text x="305" y="50" font-size="14">2</text>
+                        <text x="330" y="50" font-size="14">3</text>
+                        <text x="365" y="50" font-size="14">4</text>
+                        <text x="395" y="50" font-size="14">5</text>
+                        <text x="425" y="50" font-size="14">6</text>
+                    </svg>
+                </div>
+
+                <p>Dessa intervall beskrivs av \(x < -3\) och \(x > 3\).</p>
+
+                <p class="answer">Svar: \(x < -3\) och \(x > 3\).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>

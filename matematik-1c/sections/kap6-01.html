@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.1 Tangens för en vinkel - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap6-01" class="content-section">
+            <h2>Kapitel 6.1: Tangens för en vinkel</h2>
+
+            <h3>Introduktion</h3>
+            <p>För att beräkna sidor och vinklar i trianglar kan vi använda oss av de <strong>trigonometriska funktionerna</strong>. De vanligaste är tangens (tan), sinus (sin) och cosinus (cos).</p>
+
+            <h3>Grundläggande begrepp</h3>
+            <p>Först repeterar vi några grundläggande begrepp i rätvinkliga trianglar:</p>
+            <ul>
+                <li><strong>Hypotenusa:</strong> Den längsta sidan (sidan mitt emot den räta vinkeln)</li>
+                <li><strong>Kateter:</strong> De två kortare sidorna</li>
+                <li><strong>Motstående katet:</strong> Kateten mitt emot en vinkel</li>
+                <li><strong>Närliggande katet:</strong> Kateten som bildar vinkeln</li>
+            </ul>
+
+            <div class="definition-box">
+                <h4>Trigonometriska funktioner</h4>
+                <p><strong>OBS! Gäller endast rätvinkliga trianglar!</strong></p>
+
+                <div style="margin: 1.5rem 0;">
+                    <p>$$\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}} = \frac{a}{b}$$</p>
+
+                    <p>$$\sin v = \frac{\text{motstående katet}}{\text{hypotenusa}} = \frac{a}{c}$$</p>
+
+                    <p>$$\cos v = \frac{\text{närliggande katet}}{\text{hypotenusa}} = \frac{b}{c}$$</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Tips:</strong> De trigonometriska funktionerna kan beräknas med räknare. Hitta knappen med "tan", "sin" och "cos" på din räknare!</p>
+            </div>
+
+            <h3>Viktiga detaljer</h3>
+
+            <h4>Beteckning för vinklar</h4>
+            <p>Det finns olika skrivsätt för vinklar. $\angle ABC$ betyder den vinkel som uppstår om man utgår från hörn A, går till hörn B och sedan till hörn C.</p>
+
+            <div class="example-box">
+                <p><strong>Exempel:</strong></p>
+                <ul>
+                    <li>$\angle ABC = 41°$</li>
+                    <li>$\angle BCA = 79°$</li>
+                    <li>$\angle CAB = 60°$</li>
+                </ul>
+            </div>
+
+            <h4>Längdenheter</h4>
+            <p>Om vi ska ange en sträcka, men enhet saknas, så används beteckningen <strong>l.e.</strong> (längdenheter).</p>
+
+            <h3>Exempel 1: Beräkna tangens</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> Beräkna för en triangel med kateter 3 cm och 4 cm samt hypotenusa 5 cm:</p>
+                <p>a) $\tan u$ &nbsp;&nbsp; b) $\tan v$</p>
+
+                <p><strong>Lösning a):</strong></p>
+                <p>Vi ska nu titta på förhållandet mellan motstående och närliggande katet till vinkeln $u$.</p>
+                <p>$$\tan u = \frac{\text{motstående katet}}{\text{närliggande katet}} = \frac{4}{3}$$</p>
+                <p><strong>Svar:</strong> $\frac{4}{3}$</p>
+
+                <p><strong>Lösning b):</strong></p>
+                <p>Vi ska nu titta på förhållandet mellan motstående och närliggande katet till vinkeln $v$.</p>
+                <p>$$\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}} = \frac{3}{4} = 0{,}75$$</p>
+                <p><strong>Svar:</strong> $\frac{3}{4}$ eller $0{,}75$</p>
+            </div>
+
+            <h3>Exempel 2: Beräkna med räknare</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> Bestäm $\tan 29°$ med din räknare.</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi slår $\tan 29°$ på räknaren och får:</p>
+                <p>$$\tan 29° = 0{,}5543\ldots \approx 0{,}554$$</p>
+                <p><strong>Svar:</strong> $0{,}554$</p>
+            </div>
+
+            <h3>Exempel 3: Bestäm längden av en sida</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> Bestäm längden hos sidan $x$. Figurerna är inte skalenliga.</p>
+
+                <p><strong>a) Triangel med vinkel 30° och närliggande katet 1,3 m</strong></p>
+                <p><strong>Lösning:</strong></p>
+                <p>$$\tan 30° = \frac{x}{1{,}3} \quad \left(\frac{\text{motstående katet}}{\text{närliggande katet}}\right)$$</p>
+                <p>$$x = 1{,}3 \cdot \tan 30°$$</p>
+                <p>Vi slår på räknaren och får:</p>
+                <p>$$x = 0{,}750\ldots \text{ m} \approx 0{,}75 \text{ m}$$</p>
+                <p><strong>Svar:</strong> $0{,}75$ m</p>
+
+                <p><strong>b) Triangel med vinkel 22° och motstående katet 5,0</strong></p>
+                <p><strong>Lösning:</strong></p>
+                <p>$$\tan 22° = \frac{5{,}0}{x} \quad \left(\frac{\text{motstående katet}}{\text{närliggande katet}}\right)$$</p>
+                <p>$$x = \frac{5{,}0}{\tan 22°} = 12{,}375\ldots \approx 12 \text{ l.e.}$$</p>
+                <p>(Eftersom enhet saknas på sträckan 5,0 i uppgiften anger vi den i längdenheter.)</p>
+                <p><strong>Svar:</strong> $12$ l.e.</p>
+            </div>
+
+            <div class="key-points">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li>Trigonometriska funktioner gäller endast för <strong>rätvinkliga trianglar</strong></li>
+                    <li>$\tan v = \frac{\text{motstående katet}}{\text{närliggande katet}}$</li>
+                    <li>$\sin v = \frac{\text{motstående katet}}{\text{hypotenusa}}$</li>
+                    <li>$\cos v = \frac{\text{närliggande katet}}{\text{hypotenusa}}$</li>
+                    <li>Använd räknare för att beräkna trigonometriska funktioner</li>
+                    <li>Använd l.e. (längdenheter) när enhet saknas</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap5-08.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 5.8 Spridningsmått</a>
+            <a href="kap6-02.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 6.2 Sinus och cosinus →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap6-01';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

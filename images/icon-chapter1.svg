@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kapitel 1: Rationella uttryck - Algebraiska former (bråkstreck och polynom) -->
+
+  <!-- Täljare (polynom form) -->
+  <text x="32" y="22" text-anchor="middle" font-size="16" font-family="serif" fill="#2563EB" font-style="italic">x² + 3</text>
+
+  <!-- Bråkstreck -->
+  <line x1="12" y1="32" x2="52" y2="32" stroke="#F59E0B" stroke-width="2"/>
+
+  <!-- Nämnare -->
+  <text x="32" y="48" text-anchor="middle" font-size="16" font-family="serif" fill="#2563EB" font-style="italic">x - 1</text>
+</svg>

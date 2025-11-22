@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.7 Träddiagram - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap5-07" class="content-section">
+            <h2>Kapitel 5.7: Träddiagram</h2>
+
+            <h3>Träddiagram</h3>
+
+            <div class="definition">
+                <p>Om vi ska beräkna sannolikheten för en kombination där sannolikheterna för de enskilda utfallen är olika kan detta göras med ett diagram som byggs upp av grenar, ett så kallat <strong>träddiagram</strong>. För att beräkna sannolikheten för en kombination, multiplicerar vi bara sannolikheterna längs med den grenen.</p>
+            </div>
+
+            <h3>Exempel</h3>
+
+            <div class="example">
+                <h4>Exempel: Strumpor i en låda</h4>
+                <p>I en låda ligger 7 svarta och 3 vita strumpor. Du drar två strumpor efter varandra. Vad är sannolikheten att du</p>
+                <p><strong>a)</strong> med återläggning drar två svarta strumpor?</p>
+                <p><strong>b)</strong> utan återläggning drar två svarta strumpor?</p>
+                <p><strong>c)</strong> utan återläggning drar en svart och en vit strumpa (ordningen oviktig)?</p>
+
+                <p><strong>Lösning a):</strong></p>
+                <p>Vi börjar med att rita upp träddiagrammet och skriver sannolikheterna vid varje gren. Med återläggning ändras inte sannolikheterna för varje utfall.</p>
+
+                <p>Vi ringar in alla kombinationer som ger två svarta strumpor (endast en kombination).</p>
+
+                <p>Vi multiplicerar sannolikheterna längs med den grenen och får</p>
+                <div class="formula">
+                    $$P(\text{två svart}) = \frac{7}{10} \cdot \frac{7}{10} = \frac{49}{100} = 0{,}49 = 49\,\%$$
+                </div>
+
+                <p><strong>Svar:</strong> 49 %</p>
+
+                <p><strong>Lösning b):</strong></p>
+                <p>Vi ritar återigen upp ett träddiagram. Utan återläggning ändras sannolikheterna för varje utfall. Om vi skulle dra en svart strumpa första gången kommer det att finnas kvar 6 svarta strumpor av 9 strumpor totalt andra dragningen. Sannolikheten att dra en svart strumpa efter att ha dragit en svart strumpa är alltså \(\frac{6}{9}\).</p>
+
+                <div class="formula">
+                    $$P(\text{två svart}) = \frac{7}{10} \cdot \frac{6}{9} = \frac{42}{90} = \frac{7}{15} = 0{,}466\ldots \approx 47\,\%$$
+                </div>
+
+                <p><strong>Svar:</strong> \(\frac{7}{15}\) eller ca 47 %</p>
+
+                <p><strong>Lösning c):</strong></p>
+                <p>Samma träddiagram som i b-uppgiften gäller, men vi har nu flera kombinationer som ger en svart och en vit strumpa.</p>
+
+                <p>Vi multiplicerar sannolikheterna längs med varje gren och adderar dem med varandra.</p>
+                <div class="formula">
+                    \begin{align}
+                    P(\text{en svart, en vit}) &= \frac{7}{10} \cdot \frac{3}{9} + \frac{3}{10} \cdot \frac{7}{9}\\
+                    &= \frac{21}{90} + \frac{21}{90}\\
+                    &= \frac{42}{90}\\
+                    &= \frac{7}{15}\\
+                    &= 0{,}466\ldots \approx 47\,\%
+                    \end{align}
+                </div>
+
+                <p><strong>Svar:</strong> \(\frac{7}{15}\) eller ca 47 %</p>
+            </div>
+
+            <h4>Sammanfattning av träddiagram</h4>
+
+            <div class="info-box">
+                <h5>Så här använder du träddiagram:</h5>
+                <ol>
+                    <li>Rita upp alla möjliga utfall som grenar</li>
+                    <li>Skriv sannolikheten för varje gren</li>
+                    <li>Markera de grenar som leder till önskad händelse</li>
+                    <li>För varje markerad gren: multiplicera sannolikheterna längs grenen</li>
+                    <li>Om flera grenar leder till händelsen: addera sannolikheterna för de olika grenarna</li>
+                </ol>
+            </div>
+
+            <div class="info-box">
+                <p><strong>Kom ihåg:</strong></p>
+                <ul>
+                    <li>Med återläggning: sannolikheterna ändras inte mellan dragningarna</li>
+                    <li>Utan återläggning: sannolikheterna ändras efter varje dragning</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap5-06.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 5.6 Produktregeln</a>
+            <a href="kap5-08.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 5.8 Komplementhändelse →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap5-07';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

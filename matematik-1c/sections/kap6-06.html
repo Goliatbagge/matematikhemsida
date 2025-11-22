@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6.6 Räkneoperationer med vektorer - Matematik 1c</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            }
+        };
+    </script>
+    <script src="../../animations.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Hoppa till huvudinnehåll</a>
+
+    <header role="banner">
+        <div class="container">
+            <h1>Matematik 1c</h1>
+            <p class="subtitle">Lär dig allt i kursen - steg för steg</p>
+        </div>
+    </header>
+
+    <nav class="main-nav" role="navigation" aria-label="Huvudnavigation">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="../../index.html">← Alla kurser</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Byt kurs</a>
+                    <div class="dropdown-content">
+                        <a href="../../matematik-1c/index.html">Matematik 1c</a>
+                        <a href="../../matematik-2c/index.html">Matematik 2c</a>
+                        <a href="../../matematik-3c/index.html">Matematik 3c</a>
+                        <a href="../../fysik-1/index.html">Fysik 1</a>
+                        <a href="../../fysik-2/index.html">Fysik 2</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container" role="main" id="main-content">
+        <section id="kap6-06" class="content-section">
+            <h2>Kapitel 6.6: Räkneoperationer med vektorer</h2>
+
+            <h3>Multiplikation av vektor med skalär</h3>
+            <div class="definition-box">
+                <h4>Multiplikation av vektor med skalär (tal)</h4>
+                <p>Om en vektor multipliceras med en skalär (ett tal) bildas en ny vektor vars storlek förändras lika mycket som faktorn vi multiplicerar med.</p>
+                <p><strong>Om faktorn är negativ skiftar vektorn riktning.</strong></p>
+            </div>
+
+            <p><strong>Exempel:</strong> Jämfört med vektorn $\vec{w}$ är vektorn:</p>
+            <ul>
+                <li>$3\vec{w}$ tre gånger så lång och har samma riktning</li>
+                <li>$-2\vec{w}$ dubbelt så lång och har motsatt riktning</li>
+            </ul>
+
+            <h3>Addition av vektorer</h3>
+            <div class="definition-box">
+                <h4>Addition av vektorer (Polygonmetoden)</h4>
+                <p>Om två vektorer adderas parallellförflyttas den ena vektorn så att den startar vid spetsen hos den andra (eller vice versa).</p>
+                <p>Den resulterande vektorn fås som vektorn från startpunkten till slutpunkten och kallas <strong>resultant</strong>.</p>
+            </div>
+
+            <h3>Exempel 1: Addition av vektorer - Vågrät och lodrät</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> Figurerna visar vektorerna $\vec{u}$ och $\vec{v}$. Rita vektorn $\vec{w} = \vec{u} + \vec{v}$.</p>
+                <p>(Där $\vec{v}$ är vågrät och $\vec{u}$ är lodrät)</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi parallellförflyttar $\vec{v}$, så att den startar vid spetsen hos $\vec{u}$.</p>
+
+                <p>Vi drar sedan den resulterande vektorn $\vec{w}$ från startpunkten till slutpunkten.</p>
+
+                <p><strong>Svar:</strong> $\vec{w} = \vec{u} + \vec{v}$ är den diagonala vektorn från start till slut.</p>
+            </div>
+
+            <h3>Exempel 2: Addition av vektorer - Allmänt fall</h3>
+            <div class="example-box">
+                <p><strong>Uppgift:</strong> Figurerna visar vektorerna $\vec{u}$ och $\vec{v}$. Rita vektorn $\vec{w} = \vec{u} + \vec{v}$.</p>
+                <p>(Där båda vektorerna pekar nedåt och åt höger)</p>
+
+                <p><strong>Lösning:</strong></p>
+                <p>Vi parallellförflyttar $\vec{v}$, så att den startar vid spetsen hos $\vec{u}$.</p>
+
+                <p>Vi drar sedan den resulterande vektorn $\vec{w}$ från startpunkten till slutpunkten.</p>
+
+                <p><strong>Svar:</strong> $\vec{w} = \vec{u} + \vec{v}$ bildas genom att koppla samman vektorerna och dra resultanten.</p>
+            </div>
+
+            <div class="info-box">
+                <h4>Viktigt att komma ihåg</h4>
+                <ul>
+                    <li>Parallellförflytta en av vektorerna till spetsen av den andra</li>
+                    <li>Rita resultanten från startpunkt till slutpunkt</li>
+                    <li>Ordningen spelar ingen roll: $\vec{u} + \vec{v} = \vec{v} + \vec{u}$</li>
+                </ul>
+            </div>
+
+            <div class="key-points">
+                <h4>Sammanfattning</h4>
+                <ul>
+                    <li>Multiplikation med skalär: $k\vec{u}$ är $k$ gånger så lång som $\vec{u}$</li>
+                    <li>Om $k$ är negativ byter vektorn riktning</li>
+                    <li>Addition av vektorer: Använd polygonmetoden</li>
+                    <li>Parallellförflytta en vektor till spetsen av den andra</li>
+                    <li>Resultanten går från startpunkt till slutpunkt</li>
+                    <li>Resultanten kallas också för summan av vektorerna</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
+            <a href="kap6-05.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 6.5 Vektorer och skalärer</a>
+            <a href="kap6-07.html" class="nav-btn next-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">Nästa: 6.7 Subtraktion av vektorer →</a>
+        </div>
+
+        <div class="container" style="margin-top: 3rem; margin-bottom: 2rem;">
+            <h2 style="margin-bottom: 1.5rem; color: #2c3e50;">Frågor och kommentarer</h2>
+            <p style="margin-bottom: 2rem; color: #666;">Har du frågor om detta avsnitt? Skriv en kommentar nedan så hjälper vi dig!</p>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = window.location.href;
+                    this.page.identifier = 'ma1c-kap6-06';
+                };
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://enkel-matematik.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Aktivera JavaScript för att se kommentarer.</noscript>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Matematik 1c Kurshemsida</p>
+        </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+    <script src="../../graphs.js"></script>
+</body>
+</html>

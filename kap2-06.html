@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.06 Mer om ekvationer - Matematik 1c</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="back-button">← Tillbaka till startsidan</a>
+        <h1>2.06 Mer om ekvationer</h1>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <p>Om vi har variabler på båda sidor om likhetstecknet, så samla dem på ena sidan och lös sedan ekvationen som vanligt. Enklast brukar det bli genom att ta bort variabeltermen från den sida där som har minst koefficient. Om en ekvation leder till en motsägelse, t.ex. \(1 = 2\), så betyder det att ekvationen <strong>saknar lösning</strong>.</p>
+        </div>
+
+        <div class="example-box">
+            <h3>Exempel 1</h3>
+            <p><strong>Lös</strong></p>
+            <p><strong>a)</strong> \(5x + 8 - 3x = 9x - 20\)<br>
+            <strong>b)</strong> \(54 - 4(3x - 5) = 25x\)<br>
+            <strong>c)</strong> \(3(7x - 4) = 7(9 + 3x)\)</p>
+
+            <div class="solution">
+                <h4>Lösning:</h4>
+                <p><strong>a)</strong></p>
+                <div class="calculation">
+                    \begin{align}
+                    5x + 8 - 3x &= 9x - 20
+                    \end{align}
+                </div>
+
+                <p>Vi börjar med att förenkla båda led.</p>
+                <div class="calculation">
+                    \(2x + 8 = 9x - 20\)
+                </div>
+
+                <p>Därefter tar vi bort variabeltermen från VL eftersom den har minst koefficient.</p>
+                <div class="calculation">
+                    \begin{align}
+                    2x + 8 - 2x &= 9x - 20 - 2x \\
+                    8 &= 7x - 20
+                    \end{align}
+                </div>
+
+                <p>Sedan löser vi ekvationen enligt tidigare metod.</p>
+                <div class="calculation">
+                    \begin{align}
+                    8 + 20 &= 7x - 20 + 20 \\
+                    28 &= 7x \\
+                    \frac{28}{7} &= \frac{7x}{7} \\
+                    4 &= x
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = 4\)</p>
+
+                <p><strong>b)</strong></p>
+                <div class="calculation">
+                    \(24 - 4(3x - 5) = 10x\)
+                </div>
+
+                <p>Vi börjar återigen med att förenkla båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    24 - 12x + 20 &= 10x \\
+                    44 - 12x &= 10x
+                    \end{align}
+                </div>
+
+                <p>Därefter tar vi bort variabeltermen från VL eftersom den har minst koefficient, eftersom \((-12)\) är mindre än 10.</p>
+                <div class="calculation">
+                    \begin{align}
+                    44 - 12x + 12x &= 10x + 12x \\
+                    44 &= 22x \\
+                    \frac{44}{22} &= \frac{22x}{22} \\
+                    2 &= x
+                    \end{align}
+                </div>
+
+                <p class="answer">Svar: \(x = 2\)</p>
+
+                <p><strong>c)</strong></p>
+                <div class="calculation">
+                    \(3(7x - 4) = 7(9 + 3x)\)
+                </div>
+
+                <p>Vi börjar med att utveckla och förenkla båda led.</p>
+                <div class="calculation">
+                    \(21x - 12 = 63 + 21x\)
+                </div>
+
+                <p>Vi subtraherar \(21x\) från båda led.</p>
+                <div class="calculation">
+                    \begin{align}
+                    21x - 12 - 21x &= 63 + 21x - 21x \\
+                    -12 &= 63
+                    \end{align}
+                </div>
+
+                <p>Detta är falskt eftersom \(-12 \neq 63\). Alltså saknar ekvationen lösningar.</p>
+
+                <p class="answer">Svar: Saknar lösning.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Matematik 1c - Kapitel 2: Algebra</p>
+    </footer>
+</body>
+</html>
