@@ -47,9 +47,24 @@
 
     <main class="container" role="main" id="main-content">
         <section id="kap5-07" class="content-section">
-            <h2>Kapitel 5.7: Träddiagram</h2>
-
-            <h3>Träddiagram</h3>
+    <h2>
+     Kapitel 5.7: Träddiagram
+    </h2>
+    <!-- Flikar -->
+    <div class="tabs">
+     <button class="tab-button active" onclick="openTab(event, 'genomgang')">
+      Genomgång
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'exempel')">
+      Exempel
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'ovningar')">
+      Övningsuppgifter
+     </button>
+    </div>
+    <!-- Genomgång -->
+    <div class="tab-content active" id="genomgang">
+<h3>Träddiagram</h3>
 
             <div class="definition">
                 <p>Om vi ska beräkna sannolikheten för en kombination där sannolikheterna för de enskilda utfallen är olika kan detta göras med ett diagram som byggs upp av grenar, ett så kallat <strong>träddiagram</strong>. För att beräkna sannolikheten för en kombination, multiplicerar vi bara sannolikheterna längs med den grenen.</p>
@@ -122,7 +137,26 @@
                     <li>Utan återläggning: sannolikheterna ändras efter varje dragning</li>
                 </ul>
             </div>
-        </section>
+    </div>
+    <!-- Exempel -->
+    <div class="tab-content" id="exempel">
+     <h3>
+      Exempel kommer snart
+     </h3>
+     <p>
+      Fullständiga exempel med pedagogiska lösningar kommer att läggas till här.
+     </p>
+    </div>
+    <!-- Övningsuppgifter -->
+    <div class="tab-content" id="ovningar">
+     <h3>
+      Övningsuppgifter kommer snart
+     </h3>
+     <p>
+      Interaktiva övningsuppgifter med automatisk rättning kommer att läggas till här.
+     </p>
+    </div>
+   </section>
 
         <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
             <a href="kap5-06.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 5.6 Produktregeln</a>
@@ -149,7 +183,26 @@
         </div>
     </main>
 
-    <footer>
+    <script>
+   // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+  </script>
+  <footer>
         <div class="container">
             <p>&copy; 2024 Matematik 1c Kurshemsida</p>
         </div>

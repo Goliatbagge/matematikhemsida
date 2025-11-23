@@ -118,9 +118,24 @@
 
     <main class="container" role="main" id="main-content">
         <section id="kap2-03" class="content-section">
-            <h2>Kapitel 2.3: Nollproduktmetoden</h2>
-
-            <div class="definition-box">
+    <h2>
+     Kapitel 2.3: Nollproduktmetoden
+    </h2>
+    <!-- Flikar -->
+    <div class="tabs">
+     <button class="tab-button active" onclick="openTab(event, 'genomgang')">
+      Genomgång
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'exempel')">
+      Exempel
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'ovningar')">
+      Övningsuppgifter
+     </button>
+    </div>
+    <!-- Genomgång -->
+    <div class="tab-content active" id="genomgang">
+<div class="definition-box">
                 <h3>Nollproduktmetoden</h3>
                 <p>Ekvationer som innehåller $x^2$-termer och $x$-termer kan vi inte lösa med vår vanliga metod. Dessa ekvationer, samt ekvationer där en produkt (multiplikation) är lika med 0, löser vi med <strong>nollproduktmetoden</strong>.</p>
                 <p>Principen för nollproduktmetoden är att om vi har en multiplikation som ska vara lika med 0, så måste någon av faktorerna (delarna i multiplikationen) vara lika med 0. Det går inte att multiplicera två tal, så att de blir lika med 0, om inte något av talen är 0.</p>
@@ -214,8 +229,26 @@
                 <p>(Vi ser med en snabb kontroll att $x = 3$ gör att första faktorn blir 0 och $x = -10$ gör att andra faktorn blir 0 och därmed gör att hela ekvationen blir lika med 0.)</p>
                 <p class="answer"><strong>Svar:</strong> $(x - 3)(x + 10) = 0$</p>
             </div>
-
-        </section>
+    </div>
+    <!-- Exempel -->
+    <div class="tab-content" id="exempel">
+     <h3>
+      Exempel kommer snart
+     </h3>
+     <p>
+      Fullständiga exempel med pedagogiska lösningar kommer att läggas till här.
+     </p>
+    </div>
+    <!-- Övningsuppgifter -->
+    <div class="tab-content" id="ovningar">
+     <h3>
+      Övningsuppgifter kommer snart
+     </h3>
+     <p>
+      Interaktiva övningsuppgifter med automatisk rättning kommer att läggas till här.
+     </p>
+    </div>
+   </section>
 
         <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
             <a href="kap2-02.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;"> Föregående: 2.2 Faktorisering</a>
@@ -242,7 +275,26 @@
         </div>
     </main>
 
-    <footer>
+    <script>
+   // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+  </script>
+  <footer>
         <div class="container">
             <p>&copy; 2024 Matematik 2c Kurshemsida</p>
         </div>

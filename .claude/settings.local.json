@@ -4,7 +4,11 @@
       "Bash(dir:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(find:*)",
+      "Bash(python add_tabs_structure.py:*)",
+      "Bash(matematik-2c/sections/kap4-10.html)",
+      "Bash(matematik-2c/sections/kap4-11.html)"
     ],
     "deny": [],
     "ask": []

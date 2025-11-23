@@ -47,9 +47,24 @@
 
     <main class="container" role="main" id="main-content">
         <section id="kap1-09" class="content-section">
-            <h2>Kapitel 1.9: Grundpotensform och prefix</h2>
-
-            <div class="definition-box">
+    <h2>
+     Kapitel 1.9: Grundpotensform och prefix
+    </h2>
+    <!-- Flikar -->
+    <div class="tabs">
+     <button class="tab-button active" onclick="openTab(event, 'genomgang')">
+      Genomgång
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'exempel')">
+      Exempel
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'ovningar')">
+      Övningsuppgifter
+     </button>
+    </div>
+    <!-- Genomgång -->
+    <div class="tab-content active" id="genomgang">
+<div class="definition-box">
                 <h3>Grundpotensform</h3>
                 <p>En potens av 10 kallas <strong>tiopotens</strong>. För att enklare skriva stora och små tal kan man använda sig av tiopotenser. Om man anger ett tal med ett tal mellan 1-10 följt av en tiopotens är det skrivet i <strong>grundpotensform</strong>.</p>
                 <p>Ett tal i grundpotensform skrivs $a \cdot 10^n$ där $1 \leq a < 10$ och $n$ är ett heltal.</p>
@@ -189,7 +204,26 @@
                 <p>$$\text{Antal filer} = \frac{2,0\text{ TB}}{4,0\text{ GB}} = \frac{2,0 \cdot 10^{12}\text{ B}}{4,0 \cdot 10^9\text{ B}} = 0,5 \cdot 10^3 = 500\text{ st}$$</p>
                 <p class="answer"><strong>Svar:</strong> 500 st</p>
             </div>
-        </section>
+    </div>
+    <!-- Exempel -->
+    <div class="tab-content" id="exempel">
+     <h3>
+      Exempel kommer snart
+     </h3>
+     <p>
+      Fullständiga exempel med pedagogiska lösningar kommer att läggas till här.
+     </p>
+    </div>
+    <!-- Övningsuppgifter -->
+    <div class="tab-content" id="ovningar">
+     <h3>
+      Övningsuppgifter kommer snart
+     </h3>
+     <p>
+      Interaktiva övningsuppgifter med automatisk rättning kommer att läggas till här.
+     </p>
+    </div>
+   </section>
 
         <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
             <a href="kap1-08.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.8 Rationella exponenter</a>
@@ -216,7 +250,26 @@
         </div>
     </main>
 
-    <footer>
+    <script>
+   // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+  </script>
+  <footer>
         <div class="container">
             <p>&copy; 2024 Matematik 1c Kurshemsida</p>
         </div>

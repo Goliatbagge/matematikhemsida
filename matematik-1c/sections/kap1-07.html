@@ -47,9 +47,24 @@
 
     <main class="container" role="main" id="main-content">
         <section id="kap1-07" class="content-section">
-            <h2>Kapitel 1.7: Negativa exponenter och exponenten 0</h2>
-
-            <div class="definition-box">
+    <h2>
+     Kapitel 1.7: Negativa exponenter och exponenten 0
+    </h2>
+    <!-- Flikar -->
+    <div class="tabs">
+     <button class="tab-button active" onclick="openTab(event, 'genomgang')">
+      Genomgång
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'exempel')">
+      Exempel
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'ovningar')">
+      Övningsuppgifter
+     </button>
+    </div>
+    <!-- Genomgång -->
+    <div class="tab-content active" id="genomgang">
+<div class="definition-box">
                 <h3>Exponenten noll</h3>
                 <p>$7^3$ betyder att 7 ska multipliceras med sig själv 3 gånger, dvs. $7^3 = 7 \cdot 7 \cdot 7$, men hur ska vi tolka exponenten noll, t.ex. $7^0$?</p>
             </div>
@@ -158,7 +173,26 @@
                 <p>$$\left(\frac{4}{5}\right)^{-2} = \left(\frac{5}{4}\right)^2 = \frac{5^2}{4^2} = \frac{25}{16}$$</p>
                 <p class="answer"><strong>Svar:</strong> $\displaystyle\frac{25}{16}$</p>
             </div>
-        </section>
+    </div>
+    <!-- Exempel -->
+    <div class="tab-content" id="exempel">
+     <h3>
+      Exempel kommer snart
+     </h3>
+     <p>
+      Fullständiga exempel med pedagogiska lösningar kommer att läggas till här.
+     </p>
+    </div>
+    <!-- Övningsuppgifter -->
+    <div class="tab-content" id="ovningar">
+     <h3>
+      Övningsuppgifter kommer snart
+     </h3>
+     <p>
+      Interaktiva övningsuppgifter med automatisk rättning kommer att läggas till här.
+     </p>
+    </div>
+   </section>
 
         <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
             <a href="kap1-06.html" class="nav-btn prev-btn" style="padding: 0.75rem 1.5rem; background: #4a90e2; color: white; text-decoration: none; border-radius: 4px;">← Föregående: 1.6 Potenser med positiva heltalsexponenter</a>
@@ -185,7 +219,26 @@
         </div>
     </main>
 
-    <footer>
+    <script>
+   // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+  </script>
+  <footer>
         <div class="container">
             <p>&copy; 2024 Matematik 1c Kurshemsida</p>
         </div>

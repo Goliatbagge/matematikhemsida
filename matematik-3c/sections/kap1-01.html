@@ -117,7 +117,23 @@
         </div>
     </nav><main class="container" role="main" id="main-content">
         <section id="kap1-01" class="content-section">
-<h2>Kapitel 1.1: Förkortning och förlängning av rationella uttryck</h2>
+    <h2>
+     Kapitel 1.1: Förkortning och förlängning av rationella uttryck
+    </h2>
+    <!-- Flikar -->
+    <div class="tabs">
+     <button class="tab-button active" onclick="openTab(event, 'genomgang')">
+      Genomgång
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'exempel')">
+      Exempel
+     </button>
+     <button class="tab-button" onclick="openTab(event, 'ovningar')">
+      Övningsuppgifter
+     </button>
+    </div>
+    <!-- Genomgång -->
+    <div class="tab-content active" id="genomgang">
 <div class="definition-box">
 <h3>Grundläggande begrepp</h3>
 <p><strong>Polynom:</strong> Ett uttryck där alla variabeltermer har positiva heltalsexponenter.</p>
@@ -192,7 +208,26 @@
 <p>Inga ytterligare förkortningar är möjliga.</p>
 <p class="answer"><strong>Svar:</strong> $\frac{(x - 1)(x - 7)}{x + 1}$ eller i utvecklad form $\frac{x^2 - 8x + 7}{x + 1}$</p>
 </div>
-        </section>
+    </div>
+    <!-- Exempel -->
+    <div class="tab-content" id="exempel">
+     <h3>
+      Exempel kommer snart
+     </h3>
+     <p>
+      Fullständiga exempel med pedagogiska lösningar kommer att läggas till här.
+     </p>
+    </div>
+    <!-- Övningsuppgifter -->
+    <div class="tab-content" id="ovningar">
+     <h3>
+      Övningsuppgifter kommer snart
+     </h3>
+     <p>
+      Interaktiva övningsuppgifter med automatisk rättning kommer att läggas till här.
+     </p>
+    </div>
+   </section>
 
 <div class="section-navigation" style="margin: 2rem 0; display: flex; justify-content: space-between; gap: 1rem;">
     <span></span>
@@ -223,7 +258,26 @@
 
     </main>
 
-    <footer>
+    <script>
+   // Flikhantering
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+            }
+
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+  </script>
+  <footer>
 <div class="container">
 <p>© 2024 Matematik 3c Kurshemsida</p>
 </div>
